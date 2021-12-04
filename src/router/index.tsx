@@ -8,7 +8,7 @@ import { HOME_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/d2-holy-grail">
       <Routes>
         <Route path={LOGIN_PATH()} element={<Login />} />
         <Route
