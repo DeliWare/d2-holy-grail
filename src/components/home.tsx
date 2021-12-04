@@ -20,7 +20,7 @@ function Home() {
   console.info(parsedProfiles);
 
   return (
-    <main>
+    <>
       <header>
         <input
           type="text"
@@ -34,8 +34,7 @@ function Home() {
         </button>
         <button onClick={() => setLang(lang === '🇵🇱' ? '🇬🇧' : '🇵🇱')}>{lang}</button>
       </header>
-
-      <section>
+      <main>
         {search && (
           <table>
             <thead>
@@ -72,8 +71,8 @@ function Home() {
             </tbody>
           </table>
         )}
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
 
