@@ -15,6 +15,10 @@ body {
   color: #eee;
 }
 
+main {
+  padding: 10px;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -22,13 +26,22 @@ header {
   align-items: center;
   gap: 30px;
   width: 100%;
-  padding: 30px;
+  padding: 10px;
   background-color: #181818;
+
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 input {
   width: 100%;
-  padding: 5px;
+  height: 40px;
+  padding: 10px;
 }
 
 table {

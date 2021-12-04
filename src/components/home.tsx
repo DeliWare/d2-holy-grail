@@ -1,63 +1,56 @@
 import React, { useState } from 'react';
-import items from './items';
-import profiles from './loadProfile.mock.json';
-import Login from './components/login';
+import items from '../items';
+import profiles from '../loadProfile.mock.json';
 
-function App() {
+function Home() {
   const [search, setSearch] = useState('');
-  const [lang, setLang] = useState('pl');
-  const [profileVisibility, setProfileVisibility] = useState('all');
+  const [lang, setLang] = useState('🇵🇱');
+  const [profileVisibility, setProfileVisibility] = useState('👪');
 
   const matchingItems = search
     ? items.filter((item) => item.search.includes(search.toLowerCase()))
     : [];
 
-  const parsedProfiles = (profileVisibility === 'single' ? [profiles[0]] : profiles).map(
-    (profile) => ({
-      ...profile,
-      data: JSON.parse(profile.data).data,
-    })
-  );
+  const parsedProfiles = (profileVisibility === '🧑' ? [profiles[0]] : profiles).map((profile) => ({
+    ...profile,
+    data: JSON.parse(profile.data).data,
+  }));
 
   console.info(matchingItems);
   console.info(parsedProfiles);
 
   return (
     <>
-      <Login/>
       <header>
         <input
           type="text"
           id="search"
-          placeholder={lang === 'pl' ? 'Szukaj' : 'Search'}
+          placeholder={lang === '🇵🇱' ? 'Szukaj' : 'Search'}
           value={search}
           onChange={({ target: { value } }) => setSearch(value)}
         />
-        <button
-          onClick={() => setProfileVisibility(profileVisibility === 'all' ? 'single' : 'all')}
-        >
+        <button onClick={() => setProfileVisibility(profileVisibility === '👪' ? '🧑' : '👪')}>
           {profileVisibility}
         </button>
-        <button onClick={() => setLang(lang === 'pl' ? 'en' : 'pl')}>{lang}</button>
+        <button onClick={() => setLang(lang === '🇵🇱' ? '🇬🇧' : '🇵🇱')}>{lang}</button>
       </header>
-
       <main>
         {search && (
           <table>
             <thead>
               <tr>
-                <th scope="col">{lang === 'pl' ? 'Przedmiot' : 'Item'}</th>
+                <th scope="col">{lang === '🇵🇱' ? 'Przedmiot' : 'Item'}</th>
                 {parsedProfiles.map((profile) => (
                   <React.Fragment key={profile.user}>
                     <th scope="col">
-                      {profileVisibility === 'single'
-                        ? lang === 'pl'
+                      {profileVisibility === '🧑'
+                        ? lang === '🇵🇱'
                           ? 'Ilość'
                           : 'Count'
                         : profile.username.charAt(0).toUpperCase()}
                     </th>
-                    {profileVisibility === 'single' && (
-                      <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>
+                    {profileVisibility === '🧑' && (
+                      <th>{lang === '🇵🇱' ? 'Komentarz' : 'Comment'}</th>
                     )}
                   </React.Fragment>
                 ))}
@@ -66,11 +59,11 @@ function App() {
             <tbody>
               {matchingItems.map((item) => (
                 <tr key={item.key}>
-                  <td className={item.type}>{item[lang]}</td>
+                  <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
                   {parsedProfiles.map((profile, i) => (
                     <React.Fragment key={profile.user}>
                       <td>{profile.data[item.key]?.count}</td>
-                      {profileVisibility === 'single' && <td>{profile.data[item.key]?.comment}</td>}
+                      {profileVisibility === '🧑' && <td>{profile.data[item.key]?.comment}</td>}
                     </React.Fragment>
                   ))}
                 </tr>
@@ -83,4 +76,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
