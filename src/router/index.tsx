@@ -20,7 +20,7 @@ function App() {
           }
         />
         <Route
-          path="*"
+          path={HOME_PATH()}
           element={
             <RequireAuth>
               <Home />
