@@ -20,7 +20,7 @@ function Home() {
   console.info(parsedProfiles);
 
   return (
-    <>
+    <main>
       <header>
         <input
           type="text"
@@ -73,7 +73,7 @@ function Home() {
           </table>
         )}
       </section>
-    </>
+    </main>
   );
 }
 
