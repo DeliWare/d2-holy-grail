@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RequireAuth from './requireAuth';
-import Home from '../components/home';
-import Login from '../components/login';
-import { HOME_PATH, LOGIN_PATH } from './paths';
+import Home from '../pages/home';
+import Login from '../pages/login';
+import Item from '../pages/item';
+import { HOME_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
 
 function App() {
   return (
@@ -15,6 +16,14 @@ function App() {
           element={
             <RequireAuth>
               <Home />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path={ITEM_PATH()}
+          element={
+            <RequireAuth>
+              <Item />
             </RequireAuth>
           }
         />
