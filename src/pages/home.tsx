@@ -1,16 +1,20 @@
 import React, { useCallback, useState } from 'react';
+import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import { useAuth } from '../hooks/auth-hook';
 import profiles from '../loadProfile.mock.json';
+import { HOME_PATH } from '../router/paths';
 
 const LANG_KEY = 'lang';
 const MODE_KEY = 'mode';
 
 function Home() {
   const { user } = useAuth();
-  const [search, setSearch] = useState('');
+  const params = useParams();
+  const navigate = useNavigate();
   const [mode, setMode] = useState(window.localStorage.getItem(MODE_KEY) || '👪');
   const [lang, setLang] = useState(window.localStorage.getItem(LANG_KEY) || '🇵🇱');
+  const search = params[HOME_PATH()];
 
   const saveMode = useCallback((mode: string) => {
     window.localStorage.setItem(MODE_KEY, mode);
@@ -30,7 +34,7 @@ function Home() {
   }));
 
   const onSearch = ({ target: { value } }) => {
-    setSearch(value);
+    navigate(`/${value}`, { replace: true });
   };
 
   return (

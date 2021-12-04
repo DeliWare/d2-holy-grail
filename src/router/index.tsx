@@ -12,18 +12,18 @@ function App() {
       <Routes>
         <Route path={LOGIN_PATH()} element={<Login />} />
         <Route
-          path={HOME_PATH()}
-          element={
-            <RequireAuth>
-              <Home />
-            </RequireAuth>
-          }
-        />
-        <Route
           path={ITEM_PATH()}
           element={
             <RequireAuth>
               <Item />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <RequireAuth>
+              <Home />
             </RequireAuth>
           }
         />
