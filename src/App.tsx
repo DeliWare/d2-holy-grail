@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import items from './items';
 import profiles from './loadProfile.mock.json';
+import Login from './components/login';
 
 function App() {
   const [search, setSearch] = useState('');
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+      <Login/>
       <header>
         <input
           type="text"
