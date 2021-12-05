@@ -6,6 +6,7 @@
     "start_url": "/d2-holy-grail/",
     "name": "Better D2R Holy Grail",
     "short_name": "D2R Holy Grail",
+    "description": "Diablo 2 Resurrected Holy Grail items collection",
     "icons": [
         {
             "src": "images/icon_x48.png",
