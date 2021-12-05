@@ -1,9 +1,11 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import RequireAuth from './requireAuth';
+import RequireUser from './requireUser';
 import Home from '../pages/home';
 import Login from '../pages/login';
 import Item from '../pages/item';
+import RequireAuth from './requireAuth';
+import RequireProfile from './requireProfile';
 import { HOME_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
 
 function App() {
@@ -15,7 +17,11 @@ function App() {
           path={ITEM_PATH()}
           element={
             <RequireAuth>
-              <Item />
+              <RequireUser>
+                <RequireProfile>
+                  <Item />
+                </RequireProfile>
+              </RequireUser>
             </RequireAuth>
           }
         />
@@ -23,7 +29,11 @@ function App() {
           path={HOME_PATH()}
           element={
             <RequireAuth>
-              <Home />
+              <RequireUser>
+                <RequireProfile>
+                  <Home />
+                </RequireProfile>
+              </RequireUser>
             </RequireAuth>
           }
         />

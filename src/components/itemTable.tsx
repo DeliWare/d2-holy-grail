@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import items from '../items';
 import { ITEM_PATH } from '../router/paths';
 
-function ItemTable({ parsedProfiles, search, lang, mode }) {
+function ItemTable({ parsedProfile, search, lang, mode }) {
   const matchingItems = search
     ? items.filter((item) => item.search.includes(search.toLowerCase()))
     : [];
@@ -13,14 +13,14 @@ function ItemTable({ parsedProfiles, search, lang, mode }) {
       <thead>
         <tr>
           <th scope="col">{lang === '🇵🇱' ? 'Przedmiot' : 'Item'}</th>
-          {parsedProfiles.map((profile) => (
-            <React.Fragment key={profile.user}>
+          {parsedProfile.map(({ user, username }) => (
+            <React.Fragment key={user}>
               <th scope="col">
                 {mode === '🧑'
                   ? lang === '🇵🇱'
                     ? 'Ilość'
                     : 'Count'
-                  : profile.username.charAt(0).toUpperCase()}
+                  : username.charAt(0).toUpperCase()}
               </th>
               {mode === '🧑' && <th>{lang === '🇵🇱' ? 'Komentarz' : 'Comment'}</th>}
             </React.Fragment>
@@ -35,10 +35,10 @@ function ItemTable({ parsedProfiles, search, lang, mode }) {
                 {item[lang === '🇵🇱' ? 'pl' : 'en']}
               </Link>
             </td>
-            {parsedProfiles.map((profile, i) => (
-              <React.Fragment key={profile.user}>
-                <td>{profile.data.data[item.key]?.count}</td>
-                {mode === '🧑' && <td>{profile.data.data[item.key]?.comment}</td>}
+            {parsedProfile.map(({ user, data }, i) => (
+              <React.Fragment key={user}>
+                <td>{data.data[item.key]?.count}</td>
+                {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}
               </React.Fragment>
             ))}
           </tr>

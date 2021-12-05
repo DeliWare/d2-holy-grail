@@ -41,26 +41,36 @@ function Login() {
   };
   return (
     <main>
+      {' '}
+      <h1>Better D2 Holy Grail</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          placeholder="Username"
-          name={'username'}
-          type={'text'}
-          required
-          value={userName}
-          onChange={(event) => setUserName(event.target.value)}
-        />
-        <input
-          placeholder="Password"
-          name={'password'}
-          type={'password'}
-          required
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-        />
-        <button disabled={loading} type={'submit'}>
-          Login
-        </button>
+        <label>
+          <span>Username</span>
+          <input
+            placeholder="Username"
+            name="username"
+            type="text"
+            required
+            value={userName}
+            onChange={(event) => setUserName(event.target.value)}
+          />
+        </label>
+        <label>
+          <span>Password</span>
+          <input
+            placeholder="Password"
+            name="password"
+            type="password"
+            required
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        </label>
+        <footer>
+          <button disabled={loading} type="submit">
+            Login
+          </button>
+        </footer>
       </form>
     </main>
   );

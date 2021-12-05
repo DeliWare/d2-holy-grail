@@ -1,5 +1,7 @@
 import { useCallback } from 'react';
 import jwt_decode from 'jwt-decode';
+import { TOKEN_KEY, USER_KEY } from '../config/localStorage';
+import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
 
 interface JWT {
   exp: number;
@@ -11,19 +13,16 @@ interface JWT {
   userName: 'string';
 }
 
-export const TOKEN_KEY = 'token-maxroll';
-export const USER_KEY = 'user-maxroll';
-
 export function useAuth() {
   const saveToken = useCallback((token: string) => {
     const decoded: JWT = jwt_decode(token);
 
-    window.localStorage.setItem(TOKEN_KEY, token);
-    window.localStorage.setItem(USER_KEY, `${decoded.userId}`);
+    setLocalStorage(TOKEN_KEY, token);
+    setLocalStorage(USER_KEY, `${decoded.userId}`);
   }, []);
 
-  const isLoggedIn = window.localStorage.getItem(TOKEN_KEY) !== null;
-  const user = Number(window.localStorage.getItem(USER_KEY));
+  const isLoggedIn = getLocalStorage(TOKEN_KEY) !== null;
+  const user = Number(getLocalStorage(USER_KEY));
 
   return {
     saveToken,
