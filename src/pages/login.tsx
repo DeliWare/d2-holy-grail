@@ -36,21 +36,21 @@ function Login() {
     data.append('password_hash', hashPassword(password));
 
     execute({
-      data
+      data,
     });
   };
   return (
     <main>
-      <div className='login-box'>
-        <img src='images/d2r_logo.gif' alt="" width="250" height="170" className="logo"/>
+      <div className="login-box">
+        <img src="/images/d2r_logo.gif" alt="" width="250" height="170" className="logo" />
         <h1>Better D2 Holy Grail</h1>
         <form onSubmit={handleSubmit}>
           <label>
             <span>Username</span>
             <input
-              placeholder='Username'
-              name='username'
-              type='text'
+              placeholder="Username"
+              name="username"
+              type="text"
               required
               value={userName}
               onChange={(event) => setUserName(event.target.value)}
@@ -59,16 +59,16 @@ function Login() {
           <label>
             <span>Password</span>
             <input
-              placeholder='Password'
-              name='password'
-              type='password'
+              placeholder="Password"
+              name="password"
+              type="password"
               required
               value={password}
               onChange={(event) => setPassword(event.target.value)}
             />
           </label>
           <footer>
-            <button disabled={loading} type='submit'>
+            <button disabled={loading} type="submit">
               Login
             </button>
           </footer>

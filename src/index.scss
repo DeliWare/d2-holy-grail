@@ -1,3 +1,12 @@
+$colorRune: #ffa800;
+$colorUnique: #c7b377;
+$colorSet: #0f0;
+$colorPrimary: #057af0;
+$colorText: #eee;
+$colorBg: #181818;
+$colorBgTH: #1c1c1c;
+$colorBorder: #242424;
+
 *,
 *:before,
 *:after {
@@ -11,12 +20,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #181818;
-  color: #eee;
-}
-
-main {
-  padding: 10px;
+  background-color: $colorBg;
+  color: $colorText;
 }
 
 header {
@@ -27,7 +32,9 @@ header {
   gap: 30px;
   width: 100%;
   padding: 10px;
-  background-color: #181818;
+  background-color: $colorBg;
+  border-bottom: 1px solid $colorBorder;
+  z-index: 1;
 
   button {
     padding: 0;
@@ -36,6 +43,10 @@ header {
     font-size: 20px;
     line-height: 1;
   }
+}
+
+form {
+  padding: 10px;
 }
 
 input:not([type='checkbox']),
@@ -52,12 +63,12 @@ input[type='checkbox'] {
 
 table {
   border-collapse: collapse;
-  border: 1px solid #242424;
+  border: 1px solid $colorBorder;
 
   th {
     padding: 10px;
-    border: 1px solid #242424;
-    background-color: #1c1c1c;
+    border: 1px solid $colorBorder;
+    background-color: $colorBgTH;
     text-align: left;
 
     &:first-child {
@@ -67,7 +78,7 @@ table {
 
   td {
     padding: 10px;
-    border: 1px solid #242424;
+    border: 1px solid $colorBorder;
   }
 }
 
@@ -103,23 +114,27 @@ footer {
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: #057af0;
-    color: #fff;
+    background-color: $colorPrimary;
+    color: $colorText;
     font-weight: bold;
     text-transform: uppercase;
   }
 }
 
 .rune {
-  color: #ffa800;
+  color: $colorRune;
 }
 
 .unique {
-  color: #c7b377;
+  color: $colorUnique;
 }
 
 .set {
-  color: #0f0;
+  color: $colorSet;
+}
+
+.dimmed {
+  opacity: 0.3;
 }
 
 .login-box {
