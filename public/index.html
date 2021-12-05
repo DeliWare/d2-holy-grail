@@ -40,9 +40,9 @@
     -->
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register(`sw.js?v2`, {scope: '.'})
+        navigator.serviceWorker.register('./sw.js?v2')
           .then(function (res) {
-            console.log('Service Worker registered', res;
+            console.log('Service Worker registered', res);
           })
           .catch(function (err) {
             console.log(err);
