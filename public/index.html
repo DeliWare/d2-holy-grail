@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="canonical" href="https://deliware.github.io/d2-holy-grail/" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Better D2 Holy Grail" />
@@ -40,7 +41,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register(`${window.location.pathname}/sw.js`)
+          navigator.serviceWorker.register(`/d2-holy-grail/sw.js`, {scope: '/d2-holy-grail/'})
             .then(function () {
               console.log('Service Worker registered');
             })
