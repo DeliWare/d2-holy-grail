@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { formatDistanceToNowStrict } from 'date-fns';
+import { enUS, pl } from 'date-fns/locale';
 import items from '../items';
 import { ITEM_PATH } from '../router/paths';
 
@@ -21,6 +23,18 @@ function RecentItems({ parsedProfile, lang, mode }) {
     }, [])
     .sort((a, b) => b.date - a.date);
 
+  const groupedRecentItems = recentItems.reduce((obj, item) => {
+    const dateDistance = formatDistanceToNowStrict(item.date, {
+      addSuffix: true,
+      locale: lang === '🇵🇱' ? pl : enUS,
+    });
+
+    obj[dateDistance] = obj[dateDistance] || [];
+    obj[dateDistance].push(item);
+
+    return obj;
+  }, {});
+
   return (
     <table>
       <thead>
@@ -41,27 +55,36 @@ function RecentItems({ parsedProfile, lang, mode }) {
         </tr>
       </thead>
       <tbody>
-        {recentItems.map(({ key, date, user: itemUser }) => {
-          const item = items.find((item) => item.key === key);
-          return (
-            <tr
-              key={date}
-              onClick={() => {
-                navigate(ITEM_PATH(item.key));
-              }}
-            >
-              <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
-              {parsedProfile.map(({ user, data }) => (
-                <React.Fragment key={user}>
-                  <td className={mode === '👪' && user !== itemUser ? 'dimmed' : ''}>
-                    {data.data[item.key]?.count}
-                  </td>
-                  {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}
-                </React.Fragment>
-              ))}
-            </tr>
-          );
-        })}
+        {Object.entries(groupedRecentItems).map(
+          ([group, recentItems]: [string, { key: string; date: number; user: string }[]]) => (
+            <React.Fragment key={group}>
+              <tr className="sticky">
+                <td colSpan={100}>{group}</td>
+              </tr>
+              {recentItems.map(({ key, date, user: itemUser }) => {
+                const item = items.find((item) => item.key === key);
+                return (
+                  <tr
+                    key={date}
+                    onClick={() => {
+                      navigate(ITEM_PATH(item.key));
+                    }}
+                  >
+                    <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
+                    {parsedProfile.map(({ user, data }) => (
+                      <React.Fragment key={user}>
+                        <td className={mode === '👪' && user !== itemUser ? 'dimmed' : ''}>
+                          {data.data[item.key]?.count}
+                        </td>
+                        {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}
+                      </React.Fragment>
+                    ))}
+                  </tr>
+                );
+              })}
+            </React.Fragment>
+          )
+        )}
       </tbody>
     </table>
   );

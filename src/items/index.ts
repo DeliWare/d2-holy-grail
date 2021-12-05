@@ -20,7 +20,7 @@ const mapItemNames = (items, type, customSearch = '') =>
 
 const items = [
   ...mapItemNames(runes, 'rune', 'runes runa runy'),
-  ...mapItemNames(setItems, 'set', 'sets zestawy'),
+  ...mapItemNames(setItems, 'set', 'sets sety zestawy'),
   ...mapItemNames(uniqueItems, 'unique', 'uniques unikaty'),
 ];
 
