@@ -121,3 +121,16 @@ footer {
 .set {
   color: #0f0;
 }
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  .logo {
+    align-self: center;
+  }
+}
