@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "ligthouse": "lighthouse http://localhost:3000/d2-holy-grail/ --view --chrome-flags='--headless'"
   },
   "eslintConfig": {
     "extends": [
