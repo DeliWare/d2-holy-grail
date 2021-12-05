@@ -2,8 +2,8 @@
     "theme_color": "#181818",
     "background_color": "#000000",
     "display": "standalone",
-    "scope": "/",
-    "start_url": ".",
+    "scope": "/d2-holy-grail/",
+    "start_url": "/d2-holy-grail/",
     "name": "Better D2R Holy Grail",
     "short_name": "D2R Holy Grail",
     "icons": [
