@@ -41,7 +41,7 @@ function Login() {
   };
   return (
     <main>
-      <div className="login-box">
+      <section>
         <img src="./images/d2r_logo.gif" alt="" width="250" height="170" className="logo" />
         <h1>Better D2 Holy Grail</h1>
         <form onSubmit={handleSubmit}>
@@ -73,7 +73,7 @@ function Login() {
             </button>
           </footer>
         </form>
-      </div>
+      </section>
     </main>
   );
 }

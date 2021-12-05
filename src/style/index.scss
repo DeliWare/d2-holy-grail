@@ -1,33 +1,14 @@
-$colorRune: #ffa800;
-$colorUnique: #c7b377;
-$colorSet: #0f0;
-$colorPrimary: #057af0;
-$colorText: #eee;
-$colorTextDimmed: rgba($colorText, 0.3);
-$colorBg: #181818;
-$colorBgTH: #1c1c1c;
-$colorBorder: #242424;
-
-$heightHeader: 60px;
-$heightTD: 40px;
-
-$border: 1px solid $colorBorder;
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+@import 'reset';
+@import 'variables';
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-color: $colorBg;
+  background-color: $colorBgPrimary;
   color: $colorText;
+  font-size: 16px;
 }
 
 header {
@@ -38,32 +19,34 @@ header {
   padding: 10px;
   align-items: center;
   gap: 30px;
-  background-color: $colorBg;
+  background-color: $colorBgPrimary;
   z-index: 1;
-
-  button {
-    padding: 0;
-    border: none;
-    background: none;
-    font-size: 20px;
-    line-height: 1;
-  }
-}
-
-form {
-  padding: 10px;
 }
 
 input:not([type='checkbox']),
+textarea,
 select {
   width: 100%;
-  height: 40px;
-  padding: 10px;
+  min-height: 2rem;
+  padding: 8px;
+  border: none;
+  border-bottom: $borderInput;
+  background-color: $colorBgSecondary;
+  color: $colorText;
 }
 
 input[type='checkbox'] {
-  width: 20px;
-  height: 20px;
+  width: 1rem;
+  height: 1rem;
+  border: $borderInput;
+
+  &:checked {
+    background-color: $colorUnique;
+  }
+}
+
+[disabled] {
+  opacity: $opacity;
 }
 
 table {
@@ -78,8 +61,9 @@ table {
     border-top: $border;
     border-bottom: $border;
     border-right: $border;
-    background-color: $colorBgTH;
+    background-color: $colorBgSecondary;
     text-align: left;
+    font-weight: bold;
     z-index: 1;
 
     &:first-child {
@@ -93,7 +77,7 @@ table {
       td {
         position: sticky;
         top: $heightHeader + $heightTD;
-        background-color: $colorBgTH;
+        background-color: $colorBgSecondary;
         color: $colorTextDimmed;
         z-index: 1;
       }
@@ -119,7 +103,8 @@ a {
 
 h1 {
   text-align: center;
-  margin: 30px 0 40px;
+  margin: 20px 0 40px;
+  font-size: 24px;
 }
 
 label {
@@ -136,19 +121,31 @@ label {
 
 footer {
   display: flex;
-  padding: 30px;
   align-items: center;
   justify-content: center;
 
   button {
     width: 100%;
     padding: 10px;
-    border: none;
-    background-color: $colorPrimary;
-    color: $colorText;
-    font-weight: bold;
+    background-color: $colorBgSecondary;
+    color: $colorPrimary;
+    text-align: center;
     text-transform: uppercase;
   }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  align-self: center;
 }
 
 .rune {
@@ -165,17 +162,4 @@ footer {
 
 .dimmed {
   color: $colorTextDimmed;
-}
-
-.login-box {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-
-  .logo {
-    align-self: center;
-  }
 }

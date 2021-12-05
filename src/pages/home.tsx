@@ -2,14 +2,11 @@ import React, { useCallback, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import RecentItems from '../components/recentItems';
+import { LANG_KEY, MODE_KEY } from '../config/localStorage';
 import { useAuth } from '../hooks/auth-hook';
 import { useProfile } from '../hooks/resources';
 import { HOME_PATH } from '../router/paths';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
-
-// const TYPE_KEY = 'type';
-const LANG_KEY = 'lang';
-const MODE_KEY = 'mode';
 
 function Home() {
   const { user } = useAuth();
