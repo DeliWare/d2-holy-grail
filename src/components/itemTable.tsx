@@ -29,22 +29,28 @@ function ItemTable({ parsedProfile, search, lang, mode }) {
         </tr>
       </thead>
       <tbody>
-        {matchingItems.map((item) => (
-          <tr
-            key={item.key}
-            onClick={() => {
-              navigate(ITEM_PATH(item.key), { state: { search } });
-            }}
-          >
-            <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
-            {parsedProfile.map(({ user, data }) => (
-              <React.Fragment key={user}>
-                <td>{data.data[item.key]?.count}</td>
-                {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}
-              </React.Fragment>
-            ))}
+        {matchingItems.length ? (
+          matchingItems.map((item) => (
+            <tr
+              key={item.key}
+              onClick={() => {
+                navigate(ITEM_PATH(item.key), { state: { search } });
+              }}
+            >
+              <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
+              {parsedProfile.map(({ user, data: { data } }) => (
+                <React.Fragment key={user}>
+                  <td>{data[item.key]?.count}</td>
+                  {mode === '🧑' && <td>{data[item.key]?.comment}</td>}
+                </React.Fragment>
+              ))}
+            </tr>
+          ))
+        ) : (
+          <tr>
+            <td colSpan={100}>{lang === '🇵🇱' ? 'Nic nie znaleziono' : 'Nothing found'}</td>
           </tr>
-        ))}
+        )}
       </tbody>
     </table>
   );

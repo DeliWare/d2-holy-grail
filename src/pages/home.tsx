@@ -7,6 +7,7 @@ import { useProfile } from '../hooks/resources';
 import { HOME_PATH } from '../router/paths';
 import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
 
+// const TYPE_KEY = 'type';
 const LANG_KEY = 'lang';
 const MODE_KEY = 'mode';
 
@@ -15,6 +16,7 @@ function Home() {
   const [{ data: profile }] = useProfile();
   const params = useParams();
   const navigate = useNavigate();
+  // const [type, setType] = useState(getLocalStorage(TYPE_KEY) || 'all');
   const [mode, setMode] = useState(getLocalStorage(MODE_KEY) || '👪');
   const [lang, setLang] = useState(getLocalStorage(LANG_KEY) || '🇬🇧');
   const search = params[HOME_PATH()];
@@ -32,10 +34,20 @@ function Home() {
   const parsedProfile =
     profile &&
     (mode === '🧑' ? profile.filter((profileUser) => profileUser.user === user) : profile).map(
-      (profile) => ({
-        ...profile,
-        data: JSON.parse(profile.data),
-      })
+      (profile) => {
+        const parsedData = JSON.parse(profile.data);
+
+        Object.entries(parsedData.data).forEach(([key, { count }]: [string, { count: string }]) => {
+          if (!count) {
+            delete parsedData.data[key];
+          }
+        });
+
+        return {
+          ...profile,
+          data: parsedData,
+        };
+      }
     );
 
   const onSearch = ({ target: { value } }) => {
