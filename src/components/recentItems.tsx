@@ -2,10 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { formatDistanceToNowStrict } from 'date-fns';
 import { enUS, pl } from 'date-fns/locale';
-import items from '../items';
 import { ITEM_PATH } from '../router/paths';
 
-function RecentItems({ parsedProfile, lang, mode }) {
+function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
 
   const recentItems = parsedProfile
@@ -26,7 +25,7 @@ function RecentItems({ parsedProfile, lang, mode }) {
   const groupedRecentItems = recentItems.reduce((obj, item) => {
     const dateDistance = formatDistanceToNowStrict(item.date, {
       addSuffix: true,
-      locale: lang === '🇵🇱' ? pl : enUS,
+      locale: lang === 'pl' ? pl : enUS,
     });
 
     obj[dateDistance] = obj[dateDistance] || [];
@@ -39,17 +38,17 @@ function RecentItems({ parsedProfile, lang, mode }) {
     <table>
       <thead>
         <tr>
-          <th scope="col">{lang === '🇵🇱' ? 'Przedmiot' : 'Item'}</th>
+          <th scope="col">{lang === 'pl' ? 'Przedmiot' : 'Item'}</th>
           {parsedProfile.map(({ username }) => (
             <React.Fragment key={username}>
               <th scope="col">
-                {mode === '🧑'
-                  ? lang === '🇵🇱'
+                {mode === 'solo'
+                  ? lang === 'pl'
                     ? 'Ilość'
                     : 'Count'
                   : username.charAt(0).toUpperCase()}
               </th>
-              {mode === '🧑' && <th>{lang === '🇵🇱' ? 'Komentarz' : 'Comment'}</th>}
+              {mode === 'solo' && <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>}
             </React.Fragment>
           ))}
         </tr>
@@ -62,7 +61,7 @@ function RecentItems({ parsedProfile, lang, mode }) {
                 <td colSpan={100}>{group}</td>
               </tr>
               {recentItems.map(({ key, date, user: itemUser }) => {
-                const item = items.find((item) => item.key === key);
+                const item = filteredItems.find((item) => item.key === key);
                 return (
                   <tr
                     key={date}
@@ -70,13 +69,13 @@ function RecentItems({ parsedProfile, lang, mode }) {
                       navigate(ITEM_PATH(item.key));
                     }}
                   >
-                    <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
+                    <td className={item.type}>{item[lang]}</td>
                     {parsedProfile.map(({ user, data }) => (
                       <React.Fragment key={user}>
-                        <td className={mode === '👪' && user !== itemUser ? 'dimmed' : ''}>
+                        <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
                           {data.data[item.key]?.count}
                         </td>
-                        {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}
+                        {mode === 'solo' && <td>{data.data[item.key]?.comment}</td>}
                       </React.Fragment>
                     ))}
                   </tr>

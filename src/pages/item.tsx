@@ -57,10 +57,10 @@ function Item() {
   return (
     <main>
       <section>
-        <h1 className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</h1>
+        <h1 className={item.type}>{item[lang]}</h1>
         <form onSubmit={handleSubmit}>
           <label>
-            <span>{lang === '🇵🇱' ? 'Ilość:' : 'Count:'}</span>
+            <span>{lang === 'pl' ? 'Ilość:' : 'Count:'}</span>
             <input name="count" type="number" value={itemState.count} min={0} onChange={onChange} />
             <button type="button" onClick={onDecrementCount}>
               ➖
@@ -71,7 +71,7 @@ function Item() {
           </label>
 
           <label>
-            <span>{lang === '🇵🇱' ? 'Komentarz:' : 'Comment:'}</span>
+            <span>{lang === 'pl' ? 'Komentarz:' : 'Comment:'}</span>
             <select
               id="comment"
               value={itemState.comment}
@@ -93,7 +93,7 @@ function Item() {
 
           {newComment && (
             <label>
-              <span>{lang === '🇵🇱' ? 'Dodaj nowy komentarz:' : 'Add new comment:'}</span>
+              <span>{lang === 'pl' ? 'Dodaj nowy komentarz:' : 'Add new comment:'}</span>
               <textarea name="comment" value={itemState.comment} onChange={onChange} />
               <button type="button" onClick={() => setNewComment(false)}>
                 ➖
@@ -102,7 +102,7 @@ function Item() {
           )}
 
           <label>
-            <span>{lang === '🇵🇱' ? 'Idealny:' : 'Perfect:'}</span>
+            <span>{lang === 'pl' ? 'Idealny:' : 'Perfect:'}</span>
             <input
               name="perfect"
               type="checkbox"
@@ -112,7 +112,7 @@ function Item() {
           </label>
 
           <label>
-            <span>{lang === '🇵🇱' ? 'Eteryczny:' : 'Etheral:'}</span>
+            <span>{lang === 'pl' ? 'Eteryczny:' : 'Etheral:'}</span>
             <input
               name="ethereal"
               type="checkbox"
@@ -123,7 +123,7 @@ function Item() {
 
           <footer>
             <button className="button-cta" type="submit">
-              {lang === '🇵🇱' ? 'Zapisz' : 'Save'}
+              {lang === 'pl' ? 'Zapisz' : 'Save'}
             </button>
           </footer>
         </form>

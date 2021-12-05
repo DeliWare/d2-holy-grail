@@ -18,15 +18,25 @@ header {
   height: $heightHeader;
   padding: 10px;
   align-items: center;
-  gap: 30px;
   background-color: $colorBgPrimary;
   z-index: 1;
+
+  select {
+    color: $colorTextDimmed;
+  }
+}
+
+input {
+  min-width: 0;
+
+  &::placeholder {
+    color: $colorText;
+  }
 }
 
 input:not([type='checkbox']),
 textarea,
 select {
-  width: 100%;
   min-height: 2rem;
   padding: 8px;
   border: none;
@@ -113,6 +123,11 @@ label {
   gap: 20px;
   margin-bottom: 40px;
 
+  input,
+  select {
+    width: 100%;
+  }
+
   span {
     flex-basis: 90px;
     flex-shrink: 0;
@@ -142,6 +157,18 @@ section {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }
 
 .logo {

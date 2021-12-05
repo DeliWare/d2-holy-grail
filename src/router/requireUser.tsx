@@ -35,7 +35,7 @@ function RequireUser({ children }) {
     ) : (
       <main>
         <section>
-          <h1>{lang === '🇵🇱' ? 'Wybierz profil:' : 'Choose profile:'}</h1>
+          <h1>{lang === 'pl' ? 'Wybierz profil:' : 'Choose profile:'}</h1>
           <ChooseProfile profiles={profiles} saveProfile={saveProfile} />
         </section>
       </main>
