@@ -41,7 +41,6 @@ function Login() {
   };
   return (
     <main>
-      {' '}
       <h1>Better D2 Holy Grail</h1>
       <form onSubmit={handleSubmit}>
         <label>

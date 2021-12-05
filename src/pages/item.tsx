@@ -40,7 +40,9 @@ function Item() {
     setItemState({ ...itemState, count: itemState.count + 1 });
   };
 
-  const onSave = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
     executeSave({ data: JSON.stringify(parsedUserData) })
       .then(() => executeProfile())
@@ -50,68 +52,75 @@ function Item() {
   return (
     <main>
       <h1 className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</h1>
-
-      <label>
-        <span>{lang === '🇵🇱' ? 'Ilość:' : 'Count:'}</span>
-        <input name="count" type="number" value={itemState.count} min={0} onChange={onChange} />
-        <button onClick={onDecrementCount}>➖</button>
-        <button onClick={onIncrementCount}>➕</button>
-      </label>
-
-      <label>
-        <span>{lang === '🇵🇱' ? 'Komentarz:' : 'Comment:'}</span>
-        <select
-          id="comment"
-          value={itemState.comment}
-          name="comment"
-          disabled={newComment}
-          onChange={onChange}
-        >
-          <option value=""></option>
-          {existingComments.map((comment) => (
-            <option key={comment} value={comment}>
-              {comment}
-            </option>
-          ))}
-        </select>
-        <button onClick={() => setNewComment(true)} disabled={newComment}>
-          ➕
-        </button>
-      </label>
-
-      {newComment && (
+      <form onSubmit={handleSubmit}>
         <label>
-          <span>{lang === '🇵🇱' ? 'Dodaj nowy komentarz:' : 'Add new comment:'}</span>
-          <input name="comment" type="text" value={itemState.comment} onChange={onChange} />
-          <button onClick={() => setNewComment(false)}>➖</button>
+          <span>{lang === '🇵🇱' ? 'Ilość:' : 'Count:'}</span>
+          <input name="count" type="number" value={itemState.count} min={0} onChange={onChange} />
+          <button type="button" onClick={onDecrementCount}>
+            ➖
+          </button>
+          <button type="button" onClick={onIncrementCount}>
+            ➕
+          </button>
         </label>
-      )}
 
-      <label>
-        <span>{lang === '🇵🇱' ? 'Idealny:' : 'Perfect:'}</span>
-        <input
-          name="perfect"
-          type="checkbox"
-          defaultChecked={itemState.perfect}
-          onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
-        />
-      </label>
+        <label>
+          <span>{lang === '🇵🇱' ? 'Komentarz:' : 'Comment:'}</span>
+          <select
+            id="comment"
+            value={itemState.comment}
+            name="comment"
+            disabled={newComment}
+            onChange={onChange}
+          >
+            <option value=""></option>
+            {existingComments.map((comment) => (
+              <option key={comment} value={comment}>
+                {comment}
+              </option>
+            ))}
+          </select>
+          <button type="button" onClick={() => setNewComment(true)} disabled={newComment}>
+            ➕
+          </button>
+        </label>
 
-      <label>
-        <span>{lang === '🇵🇱' ? 'Eteryczny:' : 'Etheral:'}</span>
-        <input
-          name="ethereal"
-          type="checkbox"
-          defaultChecked={itemState.ethereal}
-          onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
-        />
-      </label>
+        {newComment && (
+          <label>
+            <span>{lang === '🇵🇱' ? 'Dodaj nowy komentarz:' : 'Add new comment:'}</span>
+            <input name="comment" type="text" value={itemState.comment} onChange={onChange} />
+            <button type="button" onClick={() => setNewComment(false)}>
+              ➖
+            </button>
+          </label>
+        )}
 
-      <footer>
-        <button className="button-cta" onClick={onSave}>
-          {lang === '🇵🇱' ? 'Zapisz' : 'Save'}
-        </button>
-      </footer>
+        <label>
+          <span>{lang === '🇵🇱' ? 'Idealny:' : 'Perfect:'}</span>
+          <input
+            name="perfect"
+            type="checkbox"
+            defaultChecked={itemState.perfect}
+            onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
+          />
+        </label>
+
+        <label>
+          <span>{lang === '🇵🇱' ? 'Eteryczny:' : 'Etheral:'}</span>
+          <input
+            name="ethereal"
+            type="checkbox"
+            defaultChecked={itemState.ethereal}
+            onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
+          />
+        </label>
+
+        <footer>
+          <button className="button-cta" type="submit">
+            {lang === '🇵🇱' ? 'Zapisz' : 'Save'}
+          </button>
+        </footer>
+      </form>
     </main>
   );
 }
