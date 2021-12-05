@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
+import RecentItems from '../components/recentItems';
 import { useAuth } from '../hooks/auth-hook';
 import { useProfile } from '../hooks/resources';
 import { HOME_PATH } from '../router/paths';
@@ -27,8 +28,6 @@ function Home() {
     setLocalStorage(LANG_KEY, lang);
     setLang(lang);
   }, []);
-
-  console.info({ profile });
 
   const parsedProfile =
     profile &&
@@ -57,10 +56,10 @@ function Home() {
         <button onClick={() => saveLang(lang === '🇬🇧' ? '🇵🇱' : '🇬🇧')}>{lang}</button>
       </header>
       <main>
-        {parsedProfile && search ? (
+        {search ? (
           <ItemTable lang={lang} mode={mode} search={search} parsedProfile={parsedProfile} />
         ) : (
-          <p>Search!</p>
+          <RecentItems lang={lang} mode={mode} parsedProfile={parsedProfile} />
         )}
       </main>
     </>

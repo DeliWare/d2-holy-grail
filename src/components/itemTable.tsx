@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import items from '../items';
 import { ITEM_PATH } from '../router/paths';
 
 function ItemTable({ parsedProfile, search, lang, mode }) {
+  const navigate = useNavigate();
   const matchingItems = search
     ? items.filter((item) => item.search.includes(search.toLowerCase()))
     : [];
@@ -29,13 +30,14 @@ function ItemTable({ parsedProfile, search, lang, mode }) {
       </thead>
       <tbody>
         {matchingItems.map((item) => (
-          <tr key={item.key}>
-            <td className={item.type}>
-              <Link to={ITEM_PATH(item.key)} state={{ search }}>
-                {item[lang === '🇵🇱' ? 'pl' : 'en']}
-              </Link>
-            </td>
-            {parsedProfile.map(({ user, data }, i) => (
+          <tr
+            key={item.key}
+            onClick={() => {
+              navigate(ITEM_PATH(item.key), { state: { search } });
+            }}
+          >
+            <td className={item.type}>{item[lang === '🇵🇱' ? 'pl' : 'en']}</td>
+            {parsedProfile.map(({ user, data }) => (
               <React.Fragment key={user}>
                 <td>{data.data[item.key]?.count}</td>
                 {mode === '🧑' && <td>{data.data[item.key]?.comment}</td>}

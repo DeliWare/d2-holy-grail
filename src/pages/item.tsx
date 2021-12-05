@@ -44,6 +44,7 @@ function Item() {
     e.preventDefault();
 
     parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
+
     executeSave({ data: JSON.stringify(parsedUserData) })
       .then(() => executeProfile())
       .then(() => navigate(-1));
