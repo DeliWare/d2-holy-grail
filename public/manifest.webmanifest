@@ -3,10 +3,11 @@
     "background_color": "#000000",
     "display": "standalone",
     "scope": "/",
-    "start_url": ".",
+    "start_url": "./",
     "name": "Better D2R Holy Grail",
     "short_name": "D2R Holy Grail",
     "description": "Diablo 2 Resurrected Holy Grail items collection",
+    "lang": "en-GB",
     "icons": [
         {
             "src": "images/icon_x48.png",

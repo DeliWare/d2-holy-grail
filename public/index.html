@@ -40,15 +40,13 @@
     -->
     <script>
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register(`/d2-holy-grail/sw.js`, {scope: '/d2-holy-grail/'})
-            .then(function () {
-              console.log('Service Worker registered');
-            })
-            .catch(function (err) {
-              console.log(err);
-            })
-        })
+        navigator.serviceWorker.register(`sw.js?v2`, {scope: '.'})
+          .then(function (res) {
+            console.log('Service Worker registered', res;
+          })
+          .catch(function (err) {
+            console.log(err);
+          })
       }
     </script>
   </body>
