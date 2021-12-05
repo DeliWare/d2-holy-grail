@@ -21,6 +21,10 @@ function Home() {
 
   const filteredItems = items.filter((item) => type === 'all' || item.type === type);
 
+  const onSearch = ({ target: { value } }) => {
+    navigate(`/${encodeURIComponent(value)}`, { replace: true });
+  };
+
   const saveType = ({ target: { value } }) => {
     setLocalStorage(TYPE_KEY, value);
     setType(value);
@@ -56,10 +60,6 @@ function Home() {
         };
       }
     );
-
-  const onSearch = ({ target: { value } }) => {
-    navigate(`/${value}`, { replace: true });
-  };
 
   return (
     <>
