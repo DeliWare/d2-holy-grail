@@ -43,11 +43,7 @@ function Item() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (itemState.count === 0) {
-      delete parsedUserData.data[params.itemKey];
-    } else {
-      parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
-    }
+    parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
 
     executeSave({ data: JSON.stringify(parsedUserData) })
       .then(() => executeProfile())

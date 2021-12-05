@@ -3,11 +3,11 @@ import runes from './runes.json';
 import setItems from './setItems.json';
 import uniqueItems from './uniqueItems.json';
 
-const mapItemNames = (items, type) =>
+const mapItemNames = (items, type, customSearch = '') =>
   Object.entries(items).map(([key, name]: [string, string]) => {
     const en = itemNames[name]?.en || name || '';
     const pl = itemNames[name]?.pl || en;
-    const search = `${en} ${pl}`.trim().toLowerCase();
+    const search = `${en} ${pl} ${customSearch}`.trim().toLowerCase();
 
     return {
       key,
@@ -19,9 +19,9 @@ const mapItemNames = (items, type) =>
   });
 
 const items = [
-  ...mapItemNames(runes, 'rune'),
-  ...mapItemNames(setItems, 'set'),
-  ...mapItemNames(uniqueItems, 'unique'),
+  ...mapItemNames(runes, 'rune', 'runes runa runy'),
+  ...mapItemNames(setItems, 'set', 'sets zestawy'),
+  ...mapItemNames(uniqueItems, 'unique', 'uniques unikaty'),
 ];
 
 export default items;
