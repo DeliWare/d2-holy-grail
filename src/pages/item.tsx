@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { useProfile, useSaveProfile } from '../hooks/resources';
 import items from '../items';
+import { HOME_PATH } from '../router/paths';
 import { getLang, getUser } from '../utils/localStorage';
 
 function Item() {
@@ -48,7 +49,7 @@ function Item() {
 
     executeSave({ data: JSON.stringify(parsedUserData) })
       .then(() => executeProfile())
-      .then(() => navigate(-1));
+      .then(() => navigate(HOME_PATH()));
   };
 
   return (
