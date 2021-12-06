@@ -5,9 +5,9 @@ import RecentItems from '../components/recentItems';
 import { LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
 import { useAuth } from '../hooks/auth-hook';
 import { useProfile } from '../hooks/resources';
-import { HOME_PATH } from '../router/paths';
 import { getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
 import items from '../items';
+import { DEFAULT_PATH } from '../router/paths';
 
 function Home() {
   const { user } = useAuth();
@@ -17,7 +17,7 @@ function Home() {
   const [type, setType] = useState(getType());
   const [mode, setMode] = useState(getMode());
   const [lang, setLang] = useState(getLang());
-  const search = params[HOME_PATH()];
+  const search = params[DEFAULT_PATH()];
 
   const filteredItems = items.filter((item) => type === 'all' || item.type === type);
 

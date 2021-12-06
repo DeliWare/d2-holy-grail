@@ -6,7 +6,7 @@ import Login from '../pages/login';
 import Item from '../pages/item';
 import RequireAuth from './requireAuth';
 import RequireProfile from './requireProfile';
-import { HOME_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
+import { DEFAULT_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           }
         />
         <Route
-          path={HOME_PATH()}
+          path={DEFAULT_PATH()}
           element={
             <RequireAuth>
               <RequireUser>
