@@ -6,7 +6,7 @@ import { LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
 import { useAuth } from '../hooks/auth-hook';
 import { useProfile } from '../hooks/resources';
 import { HOME_PATH } from '../router/paths';
-import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
+import { getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
 import items from '../items';
 
 function Home() {
@@ -14,9 +14,9 @@ function Home() {
   const [{ data: profile }] = useProfile();
   const params = useParams();
   const navigate = useNavigate();
-  const [type, setType] = useState(getLocalStorage(TYPE_KEY) || 'all');
-  const [mode, setMode] = useState(getLocalStorage(MODE_KEY) || 'group');
-  const [lang, setLang] = useState(getLocalStorage(LANG_KEY) || 'pl');
+  const [type, setType] = useState(getType());
+  const [mode, setMode] = useState(getMode());
+  const [lang, setLang] = useState(getLang());
   const search = params[HOME_PATH()];
 
   const filteredItems = items.filter((item) => type === 'all' || item.type === type);

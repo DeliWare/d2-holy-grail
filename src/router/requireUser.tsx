@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
-import { LANG_KEY, PROFILE_KEY } from '../config/localStorage';
+import { PROFILE_KEY } from '../config/localStorage';
 import { useUser } from '../hooks/resources';
-import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
+import { getLang, getProfile, setLocalStorage } from '../utils/localStorage';
 import ChooseProfile from '../components/chooseProfile';
 
 function RequireUser({ children }) {
   const [{ data }, execute] = useUser({ manual: true });
-  const [profile, setProfile] = useState(getLocalStorage(PROFILE_KEY) || '');
-  const lang = getLocalStorage(LANG_KEY);
+  const [profile, setProfile] = useState(getProfile());
+  const lang = getLang();
 
   const profiles = data?.map((profile) => ({
     id: profile.id,

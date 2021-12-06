@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { USER_KEY } from '../config/localStorage';
 import { useProfile, useSaveProfile } from '../hooks/resources';
 import items from '../items';
-import { getLocalStorage } from '../utils/localStorage';
+import { getLang, getUser } from '../utils/localStorage';
 
 function Item() {
   const params = useParams();
   const [{ data: profile }, executeProfile] = useProfile();
   const [, executeSave] = useSaveProfile();
-  const lang = getLocalStorage('lang');
+  const lang = getLang();
   const item = items.find((item) => item.key === params.itemKey);
   const navigate = useNavigate();
 
-  const currentUserProfile = profile.find(
-    (profile) => profile.user === Number(getLocalStorage(USER_KEY))
-  );
+  const currentUserProfile = profile.find((profile) => profile.user === getUser());
   const parsedUserData = JSON.parse(currentUserProfile.data);
   const userItem = parsedUserData.data[params.itemKey];
   const existingComments = Array.from(

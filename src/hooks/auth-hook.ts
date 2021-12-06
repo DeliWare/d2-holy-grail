@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import jwt_decode from 'jwt-decode';
 import { TOKEN_KEY, USER_KEY } from '../config/localStorage';
-import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
+import { getLocalStorage, getUser, setLocalStorage } from '../utils/localStorage';
 
 interface JWT {
   exp: number;
@@ -22,7 +22,7 @@ export function useAuth() {
   }, []);
 
   const isLoggedIn = getLocalStorage(TOKEN_KEY) !== null;
-  const user = Number(getLocalStorage(USER_KEY));
+  const user = getUser();
 
   return {
     saveToken,
