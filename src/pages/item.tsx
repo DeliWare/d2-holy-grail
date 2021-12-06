@@ -49,7 +49,7 @@ function Item() {
     } else {
       parsedUserData.data[params.itemKey] = itemState;
 
-      if (userItem.count < itemState.count) {
+      if (!userItem || userItem.count < itemState.count) {
         parsedUserData.data[params.itemKey].date = Date.now();
       }
     }
