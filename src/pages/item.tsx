@@ -47,7 +47,11 @@ function Item() {
     if (itemState.count === 0) {
       delete parsedUserData.data[params.itemKey];
     } else {
-      parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
+      parsedUserData.data[params.itemKey] = itemState;
+
+      if (userItem.count < itemState.count) {
+        parsedUserData.data[params.itemKey].date = Date.now();
+      }
     }
 
     executeSave({ data: JSON.stringify(parsedUserData) })
