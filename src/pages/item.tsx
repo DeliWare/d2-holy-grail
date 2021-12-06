@@ -27,6 +27,9 @@ function Item() {
   const [itemState, setItemState] = useState(userItem || { count: 0 });
   const [newComment, setNewComment] = useState(false);
 
+  const canBeEthereal = !['rune', 'set'].includes(item.type);
+  const canBePerfect = item.type !== 'rune';
+
   const onChange = ({ target: { name, value } }) => {
     setItemState({ ...itemState, [name]: value });
   };
@@ -99,25 +102,29 @@ function Item() {
             </label>
           )}
 
-          <label>
-            <span>{lang === 'pl' ? 'Idealny:' : 'Perfect:'}</span>
-            <input
-              name="perfect"
-              type="checkbox"
-              defaultChecked={itemState.perfect}
-              onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
-            />
-          </label>
+          {canBeEthereal && (
+            <label>
+              <span>{lang === 'pl' ? 'Eteryczny:' : 'Ethereal:'}</span>
+              <input
+                name="ethereal"
+                type="checkbox"
+                defaultChecked={itemState.ethereal}
+                onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
+              />
+            </label>
+          )}
 
-          <label>
-            <span>{lang === 'pl' ? 'Eteryczny:' : 'Ethereal:'}</span>
-            <input
-              name="ethereal"
-              type="checkbox"
-              defaultChecked={itemState.ethereal}
-              onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
-            />
-          </label>
+          {canBePerfect && (
+            <label>
+              <span>{lang === 'pl' ? 'Idealny:' : 'Perfect:'}</span>
+              <input
+                name="perfect"
+                type="checkbox"
+                defaultChecked={itemState.perfect}
+                onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
+              />
+            </label>
+          )}
 
           <footer>
             <button className="button-cta" type="submit">
