@@ -1,0 +1,33 @@
+[
+  {
+    "r01": {
+      "name": "El Rune",
+      "code": "r01",
+      "namestr": "r01",
+      "invfile": "invrEl",
+      "type": "rune",
+      "spawnable": 1,
+      "version": 100,
+      "level": 11,
+      "levelreq": 11,
+      "speed": 0,
+      "nodurability": 1,
+      "cost": 560,
+      "invwidth": 1,
+      "invheight": 1,
+      "hasinv": 0,
+      "gemsockets": 0,
+      "bitfield1": 0,
+      "gemapplytype": 0,
+      "unique": 0,
+      "belt": 0,
+      "stackable": 0,
+      "minstack": 0,
+      "maxstack": 0,
+      "invtrans": 0,
+      "skipname": 0,
+      "useable": 0,
+      "hd": "rune/el_rune"
+    }
+  }
+]
