@@ -4,6 +4,7 @@ import { useProfile, useSaveProfile } from '../hooks/resources';
 import items from '../items';
 import { HOME_PATH } from '../router/paths';
 import { getLang, getUser } from '../utils/localStorage';
+import ItemPreview from '../components/itemPreview';
 
 function Item() {
   const params = useParams();
@@ -125,6 +126,9 @@ function Item() {
             </button>
           </footer>
         </form>
+      </section>
+      <section>
+        <ItemPreview item={item} lang={lang} />
       </section>
     </main>
   );
