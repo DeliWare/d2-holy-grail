@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/d2-holy-grail/static/css/main.2886328b.chunk.css",
-    "main.js": "/d2-holy-grail/static/js/main.6b86a94d.chunk.js",
-    "main.js.map": "/d2-holy-grail/static/js/main.6b86a94d.chunk.js.map",
+    "main.css": "/d2-holy-grail/static/css/main.e26aa838.chunk.css",
+    "main.js": "/d2-holy-grail/static/js/main.f55b3610.chunk.js",
+    "main.js.map": "/d2-holy-grail/static/js/main.f55b3610.chunk.js.map",
     "runtime-main.js": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js",
     "runtime-main.js.map": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js.map",
-    "static/js/2.539371a6.chunk.js": "/d2-holy-grail/static/js/2.539371a6.chunk.js",
-    "static/js/2.539371a6.chunk.js.map": "/d2-holy-grail/static/js/2.539371a6.chunk.js.map",
+    "static/js/2.aa4c7b61.chunk.js": "/d2-holy-grail/static/js/2.aa4c7b61.chunk.js",
+    "static/js/2.aa4c7b61.chunk.js.map": "/d2-holy-grail/static/js/2.aa4c7b61.chunk.js.map",
     "index.html": "/d2-holy-grail/index.html",
-    "static/css/main.2886328b.chunk.css.map": "/d2-holy-grail/static/css/main.2886328b.chunk.css.map",
-    "static/js/2.539371a6.chunk.js.LICENSE.txt": "/d2-holy-grail/static/js/2.539371a6.chunk.js.LICENSE.txt"
+    "static/css/main.e26aa838.chunk.css.map": "/d2-holy-grail/static/css/main.e26aa838.chunk.css.map",
+    "static/js/2.aa4c7b61.chunk.js.LICENSE.txt": "/d2-holy-grail/static/js/2.aa4c7b61.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cb929bfb.js",
-    "static/js/2.539371a6.chunk.js",
-    "static/css/main.2886328b.chunk.css",
-    "static/js/main.6b86a94d.chunk.js"
+    "static/js/2.aa4c7b61.chunk.js",
+    "static/css/main.e26aa838.chunk.css",
+    "static/js/main.f55b3610.chunk.js"
   ]
 }
