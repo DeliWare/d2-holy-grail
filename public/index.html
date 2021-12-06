@@ -42,7 +42,7 @@
       window.onload = () => {
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker
-            .register('./sw.js')
+            .register('sw.js?v5', { scope: '.' })
             .then((res) => {
               console.log('Service Worker registered', res);
             })

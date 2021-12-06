@@ -1,8 +1,8 @@
 const CACHE_NAME = 'd2r-holy-grail-cache-v2';
 const FILES_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/images/d2r_logo.gif'
+  './',
+  'manifest.webmanifest',
+  'images/d2r_logo.gif'
 ];
 
 // eslint-disable-next-line no-restricted-globals

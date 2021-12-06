@@ -2,7 +2,7 @@
     "theme_color": "#181818",
     "background_color": "#000000",
     "display": "standalone",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "name": "Better D2R Holy Grail",
     "short_name": "D2R Holy Grail",
     "description": "Diablo 2 Resurrected Holy Grail items collection",
