@@ -112,7 +112,7 @@ function Item() {
           </label>
 
           <label>
-            <span>{lang === 'pl' ? 'Eteryczny:' : 'Etheral:'}</span>
+            <span>{lang === 'pl' ? 'Eteryczny:' : 'Ethereal:'}</span>
             <input
               name="ethereal"
               type="checkbox"
