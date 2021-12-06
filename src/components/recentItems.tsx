@@ -42,11 +42,18 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
           {parsedProfile.map(({ username }) => (
             <React.Fragment key={username}>
               <th scope="col">
-                {mode === 'solo'
-                  ? lang === 'pl'
-                    ? 'Ilość'
-                    : 'Count'
-                  : username.charAt(0).toUpperCase()}
+                {mode === 'solo' ? (
+                  lang === 'pl' ? (
+                    'Ilość'
+                  ) : (
+                    'Count'
+                  )
+                ) : (
+                  <>
+                    {username.charAt(0).toUpperCase()}
+                    <span className="absolute">{username}</span>
+                  </>
+                )}
               </th>
               {mode === 'solo' && <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>}
             </React.Fragment>

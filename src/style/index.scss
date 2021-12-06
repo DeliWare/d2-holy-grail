@@ -65,6 +65,8 @@ table {
   border-spacing: 0;
 
   th {
+    $padding: 10px;
+
     position: sticky;
     top: $heightHeader;
     height: $heightTD;
@@ -76,9 +78,33 @@ table {
     text-align: left;
     font-weight: bold;
     z-index: 1;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $padding;
+      height: 100%;
+      background-color: inherit;
+    }
 
     &:first-child {
       border-left: $border;
+    }
+
+    .absolute {
+      display: none;
+      position: absolute;
+      left: $padding;
+      text-transform: capitalize;
+    }
+
+    @media screen and (min-width: 768px) {
+      .absolute {
+        display: initial;
+      }
     }
   }
 
