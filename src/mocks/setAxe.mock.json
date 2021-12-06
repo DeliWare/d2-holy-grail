@@ -1,26 +1,24 @@
-[
-  {
-    "set046": {
-      "index": "Berserker's Hatchet",
-      "set": "Berserker's Garb",
-      "item": "2ax",
-      "invtransform": "dred",
-      "prop1": "att%",
-      "prop2": "manasteal",
-      "aprop1a": "dmg%",
-      "lvl": 5,
-      "lvlreq": 3,
-      "costmult": 5,
-      "costadd": 2500,
-      "addfunc": 2,
-      "min1": 30,
-      "min2": 5,
-      "max1": 30,
-      "max2": 5,
-      "amin1a": 50,
-      "amax1a": 50,
-      "rarity": 7,
-      "hd": ["axe/double_axe", "axe/double_axe", "axe/double_axe"]
-    }
+{
+  "set046": {
+    "index": "Berserker's Hatchet",
+    "set": "Berserker's Garb",
+    "item": "2ax",
+    "invtransform": "dred",
+    "prop1": "att%",
+    "prop2": "manasteal",
+    "aprop1a": "dmg%",
+    "lvl": 5,
+    "lvlreq": 3,
+    "costmult": 5,
+    "costadd": 2500,
+    "addfunc": 2,
+    "min1": 30,
+    "min2": 5,
+    "max1": 30,
+    "max2": 5,
+    "amin1a": 50,
+    "amax1a": 50,
+    "rarity": 7,
+    "hd": ["axe/double_axe", "axe/double_axe", "axe/double_axe"]
   }
-]
+}

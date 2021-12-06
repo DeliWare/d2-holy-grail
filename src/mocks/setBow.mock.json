@@ -1,29 +1,27 @@
-[
-  {
-    "set054": {
-      "index": "Arctic Horn",
-      "set": "Arctic Gear",
-      "item": "swb",
-      "invtransform": "lgld",
-      "prop1": "att%",
-      "prop2": "dmg%",
-      "aprop1a": "att/lvl",
-      "aprop2a": "dmg-cold",
-      "lvl": 3,
-      "lvlreq": 2,
-      "costmult": 5,
-      "costadd": 2500,
-      "addfunc": 2,
-      "min1": 20,
-      "min2": 50,
-      "max1": 20,
-      "max2": 50,
-      "apar1a": 16,
-      "apar2a": 75,
-      "amin2a": 20,
-      "amax2a": 30,
-      "rarity": 7,
-      "hd": ["bow/hellclap", "bow/hellclap", "bow/hellclap"]
-    }
+{
+  "set054": {
+    "index": "Arctic Horn",
+    "set": "Arctic Gear",
+    "item": "swb",
+    "invtransform": "lgld",
+    "prop1": "att%",
+    "prop2": "dmg%",
+    "aprop1a": "att/lvl",
+    "aprop2a": "dmg-cold",
+    "lvl": 3,
+    "lvlreq": 2,
+    "costmult": 5,
+    "costadd": 2500,
+    "addfunc": 2,
+    "min1": 20,
+    "min2": 50,
+    "max1": 20,
+    "max2": 50,
+    "apar1a": 16,
+    "apar2a": 75,
+    "amin2a": 20,
+    "amax2a": 30,
+    "rarity": 7,
+    "hd": ["bow/hellclap", "bow/hellclap", "bow/hellclap"]
   }
-]
+}

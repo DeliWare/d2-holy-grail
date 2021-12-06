@@ -1,23 +1,21 @@
-[
-  {
-    "set040": {
-      "index": "Sigon's Guard",
-      "set": "Sigon's Complete Steel",
-      "item": "tow",
-      "invtransform": "whit",
-      "prop1": "allskills",
-      "prop2": "block",
-      "lvl": 9,
-      "lvlreq": 6,
-      "costmult": 5,
-      "costadd": 2500,
-      "addfunc": 2,
-      "min1": 1,
-      "min2": 20,
-      "max1": 1,
-      "max2": 20,
-      "rarity": 7,
-      "hd": ["shield/bverrit_keep", "shield/bverrit_keep", "shield/bverrit_keep"]
-    }
+{
+  "set040": {
+    "index": "Sigon's Guard",
+    "set": "Sigon's Complete Steel",
+    "item": "tow",
+    "invtransform": "whit",
+    "prop1": "allskills",
+    "prop2": "block",
+    "lvl": 9,
+    "lvlreq": 6,
+    "costmult": 5,
+    "costadd": 2500,
+    "addfunc": 2,
+    "min1": 1,
+    "min2": 20,
+    "max1": 1,
+    "max2": 20,
+    "rarity": 7,
+    "hd": ["shield/bverrit_keep", "shield/bverrit_keep", "shield/bverrit_keep"]
   }
-]
+}

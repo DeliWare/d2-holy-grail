@@ -1,6 +1,4 @@
-[
-  {
-    "r01": {
+"r01": {
       "name": "El Rune",
       "code": "r01",
       "namestr": "r01",
@@ -30,4 +28,3 @@
       "hd": "rune/el_rune"
     }
   }
-]
