@@ -39,14 +39,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js?v2')
-          .then(function (res) {
-            console.log('Service Worker registered', res);
-          })
-          .catch(function (err) {
-            console.log(err);
-          })
+      window.onload = () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker
+            .register('./sw.js')
+            .then((res) => {
+              console.log('Service Worker registered', res);
+            })
+            .catch((err) => {
+              console.log(err);
+            })
+        }
       }
     </script>
   </body>
