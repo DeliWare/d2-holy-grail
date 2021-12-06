@@ -43,7 +43,7 @@ function Login() {
     <main>
       <section>
         <img src="./images/d2r_logo.gif" alt="" width="250" height="170" className="logo" />
-        <h1>Better D2 Holy Grail</h1>
+        <h1>Better D2R Holy Grail</h1>
         <form onSubmit={handleSubmit}>
           <label>
             <span>Username</span>
