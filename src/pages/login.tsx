@@ -36,7 +36,7 @@ function Login() {
     data.append('password_hash', hashPassword(password));
 
     execute({
-      data,
+      data
     });
   };
   return (

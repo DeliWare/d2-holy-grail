@@ -1,3 +1,5 @@
+import React from 'react';
+
 function ChooseProfile({ profiles, saveProfile }) {
   const onChange = ({ target: { value } }) => {
     saveProfile(value);
