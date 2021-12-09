@@ -4,6 +4,7 @@ const normalized = (string: string) =>
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
-    .replace(/\u0142/g, 'l');
+    .replace(/\u0142/g, 'l')
+    .replace(/\s+/g, '');
 
 export default normalized;
