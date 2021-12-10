@@ -1,3 +1,4 @@
+import React from 'react';
 import { useCallback, useEffect, useState } from 'react';
 import { PROFILE_KEY } from '../config/localStorage';
 import { useUser } from '../hooks/resources';
@@ -11,7 +12,7 @@ function RequireUser({ children }) {
 
   const profiles = data?.map((profile) => ({
     id: profile.id,
-    name: JSON.parse(profile.data).name,
+    name: JSON.parse(profile.data).name
   }));
 
   const saveProfile = useCallback((profile: string) => {

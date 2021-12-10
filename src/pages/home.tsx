@@ -68,6 +68,7 @@ function Home() {
           className="grow"
           type="text"
           id="search"
+          autoComplete="off"
           placeholder={lang === 'pl' ? 'szukaj' : 'search'}
           value={search}
           onChange={onSearch}

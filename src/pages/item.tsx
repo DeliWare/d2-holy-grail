@@ -8,8 +8,8 @@ import ItemPreview from '../components/itemPreview';
 
 function Item() {
   const params = useParams();
-  const [{ data: profile }, executeProfile] = useProfile();
-  const [, executeSave] = useSaveProfile();
+  const [{ data: profile, loading }, executeProfile] = useProfile();
+  const [{ loading: saving }, executeSave] = useSaveProfile();
   const lang = getLang();
   const item = items.find((item) => item.key === params.itemKey);
   const navigate = useNavigate();
@@ -28,6 +28,9 @@ function Item() {
   const [itemState, setItemState] = useState(userItem || { count: 0 });
   const [newComment, setNewComment] = useState(false);
 
+  const canBeEthereal = !['rune', 'set'].includes(item.type);
+  const canBePerfect = item.type !== 'rune';
+
   const onChange = ({ target: { name, value } }) => {
     setItemState({ ...itemState, [name]: value });
   };
@@ -45,7 +48,11 @@ function Item() {
     if (itemState.count === 0) {
       delete parsedUserData.data[params.itemKey];
     } else {
-      parsedUserData.data[params.itemKey] = { ...itemState, date: Date.now() };
+      parsedUserData.data[params.itemKey] = itemState;
+
+      if (!userItem || userItem.count < itemState.count) {
+        parsedUserData.data[params.itemKey].date = Date.now();
+      }
     }
 
     executeSave({ data: JSON.stringify(parsedUserData) })
@@ -100,28 +107,32 @@ function Item() {
             </label>
           )}
 
-          <label>
-            <span>{lang === 'pl' ? 'Idealny:' : 'Perfect:'}</span>
-            <input
-              name="perfect"
-              type="checkbox"
-              defaultChecked={itemState.perfect}
-              onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
-            />
-          </label>
+          {canBeEthereal && (
+            <label>
+              <span>{lang === 'pl' ? 'Eteryczny:' : 'Ethereal:'}</span>
+              <input
+                name="ethereal"
+                type="checkbox"
+                defaultChecked={itemState.ethereal}
+                onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
+              />
+            </label>
+          )}
 
-          <label>
-            <span>{lang === 'pl' ? 'Eteryczny:' : 'Ethereal:'}</span>
-            <input
-              name="ethereal"
-              type="checkbox"
-              defaultChecked={itemState.ethereal}
-              onChange={() => setItemState({ ...itemState, ethereal: !itemState.ethereal })}
-            />
-          </label>
+          {canBePerfect && (
+            <label>
+              <span>{lang === 'pl' ? 'Idealny:' : 'Perfect:'}</span>
+              <input
+                name="perfect"
+                type="checkbox"
+                defaultChecked={itemState.perfect}
+                onChange={() => setItemState({ ...itemState, perfect: !itemState.perfect })}
+              />
+            </label>
+          )}
 
           <footer>
-            <button className="button-cta" type="submit">
+            <button className="button-cta" type="submit" disabled={loading || saving}>
               {lang === 'pl' ? 'Zapisz' : 'Save'}
             </button>
           </footer>

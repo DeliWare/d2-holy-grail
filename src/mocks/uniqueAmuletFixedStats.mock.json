@@ -1,0 +1,30 @@
+{
+  "unique269": {
+    "index": "The Cat's Eye",
+    "code": "amu",
+    "invtransform": "oran",
+    "prop1": "move2",
+    "prop2": "swing2",
+    "prop3": "ac",
+    "prop4": "ac-miss",
+    "prop5": "dex",
+    "version": 100,
+    "lvl": 58,
+    "lvlreq": 50,
+    "costmult": 5,
+    "costadd": 5000,
+    "min1": 30,
+    "min2": 20,
+    "min3": 100,
+    "min4": 100,
+    "min5": 25,
+    "max1": 30,
+    "max2": 20,
+    "max3": 100,
+    "max4": 100,
+    "max5": 25,
+    "enabled": 1,
+    "rarity": 5,
+    "hd": ["amulet/amulet", "amulet/amulet", "amulet/amulet"]
+  }
+}

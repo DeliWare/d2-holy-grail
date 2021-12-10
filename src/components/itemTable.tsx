@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ITEM_PATH } from '../router/paths';
+import normalized from '../utils/normalized';
 
 function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
   const navigate = useNavigate();
   const matchingItems = search
-    ? filteredItems.filter((item) => item.search.includes(search.toLowerCase()))
+    ? filteredItems.filter((item) => normalized(item.search).includes(normalized(search)))
     : [];
 
   return (
@@ -16,11 +17,18 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
           {parsedProfile.map(({ user, username }) => (
             <React.Fragment key={user}>
               <th scope="col">
-                {mode === 'solo'
-                  ? lang === 'pl'
-                    ? 'Ilość'
-                    : 'Count'
-                  : username.charAt(0).toUpperCase()}
+                {mode === 'solo' ? (
+                  lang === 'pl' ? (
+                    'Ilość'
+                  ) : (
+                    'Count'
+                  )
+                ) : (
+                  <>
+                    {username.charAt(0).toUpperCase()}
+                    <span className="absolute">{username}</span>
+                  </>
+                )}
               </th>
               {mode === 'solo' && <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>}
             </React.Fragment>
