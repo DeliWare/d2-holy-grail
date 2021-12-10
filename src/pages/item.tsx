@@ -7,8 +7,8 @@ import { getLang, getUser } from '../utils/localStorage';
 
 function Item() {
   const params = useParams();
-  const [{ data: profile }, executeProfile] = useProfile();
-  const [, executeSave] = useSaveProfile();
+  const [{ data: profile, loading }, executeProfile] = useProfile();
+  const [{ loading: saving }, executeSave] = useSaveProfile();
   const lang = getLang();
   const item = items.find((item) => item.key === params.itemKey);
   const navigate = useNavigate();
@@ -131,7 +131,7 @@ function Item() {
           )}
 
           <footer>
-            <button className="button-cta" type="submit">
+            <button className="button-cta" type="submit" disabled={loading || saving}>
               {lang === 'pl' ? 'Zapisz' : 'Save'}
             </button>
           </footer>

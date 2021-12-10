@@ -11,6 +11,12 @@ body {
   font-size: 16px;
 }
 
+button,
+select,
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
 header {
   position: sticky;
   top: 0;
