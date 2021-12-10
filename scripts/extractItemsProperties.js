@@ -2,8 +2,9 @@ const fs = require('fs');
 
 let strings = null;
 let data = null;
+let itemNames = null;
 
-function getStrings() {
+function loadStrings() {
   if (strings === null) {
     strings = JSON.parse(fs.readFileSync('./data/strings.json', 'utf8'));
   }
@@ -11,7 +12,7 @@ function getStrings() {
   return strings;
 }
 
-function getData() {
+function loadData() {
   if (data === null) {
     data = JSON.parse(fs.readFileSync('./data/data.json', 'utf8'));
   }
@@ -19,9 +20,124 @@ function getData() {
   return data;
 }
 
-function getProData(propKey) {
+function loadItemNames() {
+  if (itemNames === null) {
+    itemNames = JSON.parse(fs.readFileSync('../src/items/itemNames.json', 'utf8'));
+  }
+
+  return itemNames;
+}
+
+function findString(key) {
+  return strings.find((string) => Array.isArray(string) && string[0] === key)[1];
+}
+
+function getSkillName(id) {
+  const skillData = data.skills[id];
+  if (!skillData) {
+    return 'to UNKNOWN';
+  }
+
+  return `to ${skillData.skill} (${skillData.charclass})`;
+}
+
+function executePropFunction(set, val, func, stat, skillId) {
+  let itemStatCost = data.itemStatCost[stat];
+  let translation = '';
+
+  switch (func) {
+    // case 3:
+    //   m(stat, null, resultMaybe);
+    //   break;
+    case 5:
+      itemStatCost = data.itemStatCost['mindamage'];
+      translation = findString(itemStatCost.descstrpos);
+      break;
+    case 6:
+      itemStatCost = data.itemStatCost['maxdamage'];
+      translation = findString(itemStatCost.descstrpos);
+      break;
+    case 7:
+      itemStatCost = data.itemStatCost['damagepercent'];
+      translation = findString('strModEnhancedDamage');
+      break;
+    // case 10:
+    //   m(stat, n, i);
+    //   break;
+    // case 11:
+    //   if (0 === r) {
+    //     var v = p.a.skills[n].reqlevel;
+    //     r = Math.round((l - v + 1) / 3.9), m(stat, ''.concat(n, '#').concat(a, '#x'), r);
+    //   } else m(stat, ''.concat(n, '#').concat(a), r);
+    //   break;
+    case 12:
+      translation = getSkillName(skillId);
+      break;
+    case 14:
+      translation = findString('Socketable');
+      break;
+    // case 15:
+    //   m(stat, null, a);
+    //   break;
+    // case 16:
+    //   m(stat, null, r);
+    //   break;
+    // case 17:
+    //   m(stat, null, null != n ? n : i);
+    //   break;
+    // case 19:
+    //   if (a < 0 && r < 0 && p.a.skills[n]) {
+    //     var b = p.a.skills[n].reqlevel,
+    //       g = Math.max(1, Math.floor((l - b) / Math.floor((99 - b) / -r))),
+    //       y = Math.floor(-a * g / 8) + -a;
+    //     m(stat, ''.concat(n, '#').concat(g), y);
+    //   } else m(stat, ''.concat(n, '#').concat(r), a);
+    //   break;
+    case 20:
+      itemStatCost = data.itemStatCost['item_indesctructible'];
+      translation = findString(itemStatCost.descstrpos);
+      break;
+    // case 21:
+    //   m(stat, val, i);
+    //   break;
+    case 22:
+    case 24:
+      translation = getSkillName(skillId);
+      break;
+    case 23:
+      translation = 'Ethereal (Cannot be Repaired)';
+      break;
+    // case 36:
+    //   m(stat, ''.concat(val, '#x'), i);
+    //   break;
+    default:
+      if ([
+        'poisonlength',
+        'coldlength',
+        'item_extrablood',
+        'item_fastergethitrate',
+        'maxdurability'
+      ].includes(stat)) {
+        // fallback for some functions
+        translation = stat;
+      } else {
+        translation = findString(itemStatCost.descstrpos);
+      }
+  }
+
+  return {
+    priority: (itemStatCost ? itemStatCost.descpriority || 0 : 0) + .001 * (itemStatCost ? itemStatCost.id || 999 : 999),
+    name: {
+      en: translation,
+      pl: translation
+    }
+  };
+}
+
+function getPropData(propKey, skillId) {
+  const parsedPropKey = propKey.replace('*', '');
   const property = Object.entries(data.properties).find(([key]) => {
-    return key === propKey;
+    return key === parsedPropKey;
   });
 
   if (!property) {
@@ -32,23 +148,10 @@ function getProData(propKey) {
     };
   }
 
-  const itemStatCost = Object.entries(data.itemStatCost).find(([key]) => key === property[1].stat1);
+  // TODO functions can be 7 and modify dmg, required level, attack speed etc
+  const result = executePropFunction(property[1].set1, property[1].val1, property[1].func1, property[1].stat1, skillId);
 
-  if (!itemStatCost) {
-    console.warn(`Translation itemStatCost not found for ${propKey}`);
-    return {
-      en: propKey,
-      pl: propKey
-    };
-  }
-
-  const translation = strings.find((string) => Array.isArray(string) && string[0] === itemStatCost[1].descstrpos);
-
-  return {
-    en: translation ? translation[1] : propKey,
-    pl: translation ? translation[1] : propKey,
-    itemStatCost: itemStatCost[1],
-  };
+  return result;
 }
 
 function getItemProps(item) {
@@ -58,35 +161,90 @@ function getItemProps(item) {
     })
     .map(([key, value]) => {
       const propNumber = parseInt(key.slice(4), 10);
+      const skillId = item[`par${propNumber}`];
 
       return {
         key: value,
-        ...getProData(value),
+        ...getPropData(value, skillId),
         min: item[`min${propNumber}`],
         max: item[`max${propNumber}`]
       };
-    });
+    }).sort((a, b) => b.priority - a.priority);
+}
+
+function calculateItemDmg({ mindam, maxdam }, item) {
+  const props = getItemProps(item);
+  const result = {
+    min: [mindam, mindam],
+    max: [maxdam, maxdam]
+  };
+
+  // TODO replace with func7
+  const dmgPercent = props.find(({ key }) => key === 'dmg%');
+  if (dmgPercent) {
+    result.min[0] = Math.floor(result.min[0] * (1 + dmgPercent.min / 100));
+    result.min[1] = Math.floor(result.min[1] * (1 + dmgPercent.max / 100));
+    result.max[0] = Math.floor(result.max[0] * (1 + dmgPercent.min / 100));
+    result.max[1] = Math.floor(result.max[1] * (1 + dmgPercent.max / 100));
+  }
+
+  // TODO min max and other type of enhanced dmg
+  return result;
+}
+
+function getItemBaseData(item) {
+  const weapons = data.weapons;
+  const armors = data.armor;
+  const misc = data.misc;
+  const items = { ...weapons, ...armors, ...misc };
+  const itemDetails = items[item.code] || items[item.item];
+  const tier = itemDetails.code === itemDetails.ultracode ? 3 : itemDetails.code === itemDetails.ubercode ? 2 : 1;
+
+  return {
+    type: {
+      key: item.code,
+      en: itemDetails.name,
+      pl: itemDetails.name
+    },
+    weaponClass: itemDetails.wclass || 'unknown', // ['1hs', 'stf', '1ht', '2ht', 'bow', 'xbw', 'ht1']
+    // dmgBase: { // TODO only for weapons
+    //   min: itemDetails.mindam,
+    //   max: itemDetails.maxdam
+    // },
+    // dmgModified: calculateItemDmg(itemDetails, item), // TODO value can be mutated by props
+    durability: itemDetails.durability || null,
+    // requiredLevel: item.lvlreq || 0, // TODO value can be mutated by props
+    // attackSpeed: itemDetails.speed || 0, // TODO value can be mutated by props
+    set: item.set || null,
+    isSet: !!item.set,
+    tier,
+    tierName: ['None', 'Normal', 'Exceptional', 'Elite'][tier],
+    rarity: itemDetails.rarity || 0
+  };
 }
 
 function convert() {
-  getStrings();
-  getData();
+  loadStrings();
+  loadData();
+  loadItemNames();
 
-  const res = Object.keys(data.uniqueItems)
-    .filter((key, index) => { // TODO remove
-      return index < 10;
-    })
+  const items = { ...data.uniqueItems, ...data.setItems };
+  const res = Object.keys(items)
     .map((key) => {
-      const item = data.uniqueItems[key];
+      const item = items[key];
 
       return {
         key,
-        props: getItemProps(item),
-        item,
+        name: {
+          key: item.index,
+          ...itemNames[item.index],
+        },
+        ...getItemBaseData(item),
+        props: getItemProps(item)
       };
     });
 
-  fs.writeFileSync('./data_parsed.json', JSON.stringify(res));
+  fs.writeFileSync('../src/items/items.json', JSON.stringify(res));
   console.log('Success');
 }
 
