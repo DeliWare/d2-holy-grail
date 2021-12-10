@@ -1,6 +1,8 @@
 $opacity: 0.3;
 $colorRune: #ffa800;
 $colorUnique: #c7b377;
+$colorMagic: #6969ff;
+$colorRequirement: #ff4d4d;
 $colorSet: #0f0;
 $colorPrimary: $colorUnique;
 $colorText: #eee;
@@ -12,3 +14,8 @@ $heightHeader: 60px;
 $heightTD: 40px;
 $border: 1px solid $colorBorder;
 $borderInput: 1px solid $colorUnique;
+
+@font-face {
+  font-family: Diablo;
+  src: url(Exocet2.ttf);
+}

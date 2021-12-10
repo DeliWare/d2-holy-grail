@@ -219,6 +219,24 @@ section {
   color: $colorSet;
 }
 
+.magic {
+  color: $colorMagic;
+}
+
+.requirement {
+  color: $colorRequirement;
+}
+
 .dimmed {
   color: $colorTextDimmed;
+}
+
+.item-preview {
+  font-family: "Diablo";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(8, 8, 8, .95);
 }

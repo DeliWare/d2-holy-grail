@@ -4,6 +4,12 @@ let strings = null;
 let data = null;
 let itemNames = null;
 
+const ITEM_TYPES_ENUM = {
+  WEAPON: 'Weapon',
+  ARMOR: 'Armor',
+  OTHER: 'Other'
+};
+
 function loadStrings() {
   if (strings === null) {
     strings = JSON.parse(fs.readFileSync('./data/strings.json', 'utf8'));
@@ -62,7 +68,7 @@ function executePropFunction(set, val, func, stat, skillId) {
       translation = findString('strModEnhancedDamage');
       break;
     // case 10:
-    //   m(stat, n, i);
+    //   translation = getSkillName(skillId); // TODO char skill tree
     //   break;
     // case 11:
     //   if (0 === r) {
@@ -124,7 +130,6 @@ function executePropFunction(set, val, func, stat, skillId) {
         translation = findString(itemStatCost.descstrpos);
       }
   }
-
   return {
     priority: (itemStatCost ? itemStatCost.descpriority || 0 : 0) + .001 * (itemStatCost ? itemStatCost.id || 999 : 999),
     name: {
@@ -172,11 +177,11 @@ function getItemProps(item) {
     }).sort((a, b) => b.priority - a.priority);
 }
 
-function calculateItemDmg({ mindam, maxdam }, item) {
+function calculateItemDmg({ min, max }, item) {
   const props = getItemProps(item);
   const result = {
-    min: [mindam, mindam],
-    max: [maxdam, maxdam]
+    min: [min, min],
+    max: [max, max]
   };
 
   // TODO replace with func7
@@ -188,33 +193,109 @@ function calculateItemDmg({ mindam, maxdam }, item) {
     result.max[1] = Math.floor(result.max[1] * (1 + dmgPercent.max / 100));
   }
 
-  // TODO min max and other type of enhanced dmg
+  const dmgNormal = props.find(({ key }) => key === 'dmg-norm');
+  if (dmgNormal) {
+    result.min[0] = result.min[0] + dmgNormal.min;
+    result.min[1] = result.min[1] + dmgNormal.min;
+    result.max[0] = result.max[0] + dmgNormal.max;
+    result.max[1] = result.max[1] + dmgNormal.max;
+  }
+
+  const dmgMin = props.find(({ key }) => key === 'dmg-min');
+  if (dmgMin) {
+    result.min[0] = result.min[0] + dmgMin.min;
+    result.min[1] = result.min[1] + dmgMin.min;
+  }
+
+  const dmgMax = props.find(({ key }) => key === 'dmg-max');
+  if (dmgMax) {
+    result.min[0] = result.min[0] + dmgMax.min;
+    result.min[1] = result.min[1] + dmgMax.min;
+  }
+
+  const dmgFlat = props.find(({ key }) => key === 'dmg');
+  if (dmgFlat) {
+    result.min[0] = result.min[0] + dmgFlat.min;
+    result.min[1] = result.min[1] + dmgFlat.min;
+    result.max[0] = result.max[0] + dmgFlat.max;
+    result.max[1] = result.max[1] + dmgFlat.max;
+  }
+
+  // TODO dmg/lvl ?
+
   return result;
+}
+
+function getWeaponStats(itemDetails, item) {
+  // console.log({itemDetails, item})
+  // console.log(itemDetails['2handmindam'])
+  const twoHanded = itemDetails['2handed'] === 1;
+  const dmgBase = {
+    min: itemDetails.mindam,
+    max: itemDetails.maxdam
+  }
+  const dmgTwoHandedBase = {
+    min: itemDetails['2handmindam'],
+    max: itemDetails['2handmaxdam']
+  }
+
+  return {
+    twoHanded,
+    weaponClass: itemDetails.wclass || 'unknown', // ['1hs', 'stf', '1ht', '2ht', 'bow', 'xbw', 'ht1']
+    dmgBase,
+    dmgTwoHandedBase,
+    dmgModified: calculateItemDmg(dmgBase, item), // TODO value can be mutated by props
+    dmgTwoHeadedModified: calculateItemDmg(dmgTwoHandedBase, item), // TODO value can be mutated by props
+    attackSpeed: itemDetails.speed || 0, // TODO value can be mutated by props
+    requiredStrength: itemDetails.reqstr,
+    requiredDexterity: itemDetails.reqdex,
+  };
+}
+
+function getArmorStats(itemDetails, item) {
+  return {};
+}
+
+function getOtherStats(itemDetails, item) {
+  return {};
 }
 
 function getItemBaseData(item) {
   const weapons = data.weapons;
   const armors = data.armor;
   const misc = data.misc;
-  const items = { ...weapons, ...armors, ...misc };
-  const itemDetails = items[item.code] || items[item.item];
+
+  let itemDetails = null;
+  let itemType = null;
+
+  if (weapons[item.code] || weapons[item.item]) {
+    itemType = ITEM_TYPES_ENUM.WEAPON;
+    itemDetails = weapons[item.code] || weapons[item.item];
+  } else if (armors[item.code] || armors[item.item]) {
+    itemType = ITEM_TYPES_ENUM.ARMOR;
+    itemDetails = armors[item.code] || armors[item.item];
+  } else if (misc[item.code] || misc[item.item]) {
+    itemType = ITEM_TYPES_ENUM.OTHER;
+    itemDetails = misc[item.code] || misc[item.item];
+  } else {
+    console.warn('ITEM TYP NOT DETECTED', item);
+    return;
+  }
+
   const tier = itemDetails.code === itemDetails.ultracode ? 3 : itemDetails.code === itemDetails.ubercode ? 2 : 1;
 
   return {
+    itemType,
     type: {
       key: item.code,
       en: itemDetails.name,
       pl: itemDetails.name
     },
-    weaponClass: itemDetails.wclass || 'unknown', // ['1hs', 'stf', '1ht', '2ht', 'bow', 'xbw', 'ht1']
-    // dmgBase: { // TODO only for weapons
-    //   min: itemDetails.mindam,
-    //   max: itemDetails.maxdam
-    // },
-    // dmgModified: calculateItemDmg(itemDetails, item), // TODO value can be mutated by props
+    ...(itemType === ITEM_TYPES_ENUM.WEAPON && { stats: getWeaponStats(itemDetails, item) }),
+    ...(itemType === ITEM_TYPES_ENUM.ARMOR && { stats: getArmorStats(itemDetails, item) }),
+    ...(itemType === ITEM_TYPES_ENUM.OTHER && { stats: getOtherStats(itemDetails, item) }),
+    requiredLevel: item.lvlreq || 0, // TODO value can be mutated by props
     durability: itemDetails.durability || null,
-    // requiredLevel: item.lvlreq || 0, // TODO value can be mutated by props
-    // attackSpeed: itemDetails.speed || 0, // TODO value can be mutated by props
     set: item.set || null,
     isSet: !!item.set,
     tier,
@@ -230,22 +311,31 @@ function convert() {
 
   const items = { ...data.uniqueItems, ...data.setItems };
   const res = Object.keys(items)
+    // .filter((item) => {
+    //   return [
+    //     'Lycander\'s Aim'
+    //   ].includes(items[item].index)
+    // })
     .map((key) => {
       const item = items[key];
+
+      // TODO base defense for armor pieces
 
       return {
         key,
         name: {
           key: item.index,
-          ...itemNames[item.index],
+          ...itemNames[item.index]
         },
+        canBePerfect: false, // TODO
+        canBeEthereal: 1, // TODO
         ...getItemBaseData(item),
         props: getItemProps(item)
       };
     });
 
   fs.writeFileSync('../src/items/items.json', JSON.stringify(res));
-  console.log('Success');
+  console.log(`Success. Converted ${res.length} items`);
 }
 
 convert();
