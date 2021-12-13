@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { formatDistanceToNowStrict } from 'date-fns';
 import { enUS, pl } from 'date-fns/locale';
 import { ITEM_PATH } from '../router/paths';
+import Tooltip from './tooltip';
+import ItemPreview from './itemPreview';
 
 function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -76,7 +78,11 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                       navigate(ITEM_PATH(item.key));
                     }}
                   >
-                    <td className={item.type}>{item[lang]}</td>
+                    <td className={item.type}>
+                      <Tooltip content={<ItemPreview item={item} lang={lang} />}>
+                        {item[lang]}
+                      </Tooltip>
+                    </td>
                     {parsedProfile.map(({ user, data }) => (
                       <React.Fragment key={user}>
                         <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
