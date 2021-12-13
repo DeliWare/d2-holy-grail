@@ -246,3 +246,16 @@ section {
   text-transform: uppercase;
   background-color: rgba(8, 8, 8, .95);
 }
+
+.tooltip-wrapper {
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    min-width: 100px;
+    padding: 1rem;
+    top: -50px;
+    left: 150px;
+    z-index: 2;
+  }
+}
