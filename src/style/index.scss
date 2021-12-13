@@ -2,8 +2,8 @@
 @import 'variables';
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: $fontFamily, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $colorBgPrimary;
@@ -30,6 +30,11 @@ header {
   select {
     color: $colorTextDimmed;
   }
+
+  input,
+  select {
+    height: 40px;
+  }
 }
 
 input {
@@ -44,7 +49,7 @@ input:not([type='checkbox']),
 textarea,
 select {
   min-height: 2rem;
-  padding: 8px;
+  padding: 10px;
   border: none;
   border-bottom: $borderInput;
   background-color: $colorBgSecondary;
@@ -239,7 +244,6 @@ section {
 }
 
 .item-preview {
-  font-family: 'Diablo';
   font-size: 20px;
   line-height: 1em;
   text-align: center;
