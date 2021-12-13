@@ -21,19 +21,17 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  height: $heightHeader;
-  padding: 10px;
   align-items: center;
   background-color: $colorBgPrimary;
   z-index: 1;
 
-  select {
-    color: $colorTextDimmed;
-  }
-
   input,
   select {
-    height: 40px;
+    height: $heightHeader;
+  }
+
+  select {
+    color: $colorTextDimmed;
   }
 }
 
@@ -209,6 +207,10 @@ section {
 
 .left {
   text-align: left;
+}
+
+.center {
+  text-align: center;
 }
 
 .right {

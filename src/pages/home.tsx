@@ -69,7 +69,7 @@ function Home() {
           type="text"
           id="search"
           autoComplete="off"
-          placeholder={lang === 'pl' ? 'szukaj' : 'search'}
+          placeholder={lang === 'pl' ? 'Szukaj' : 'Search'}
           value={search}
           onChange={onSearch}
           // eslint-disable-next-line jsx-a11y/no-autofocus
@@ -81,7 +81,7 @@ function Home() {
           <option value="unique">{lang === 'pl' ? 'unikaty' : 'uniques'}</option>
           <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
         </select>
-        <select className="left" value={mode} onChange={saveMode}>
+        <select className="center" value={mode} onChange={saveMode}>
           <option value="group">{lang === 'pl' ? 'grupa' : 'group'}</option>
           <option value="solo">{lang === 'pl' ? 'solo' : 'solo'}</option>
         </select>
