@@ -56,7 +56,7 @@ function Home() {
 
         return {
           ...profile,
-          data: parsedData,
+          data: parsedData
         };
       }
     );
@@ -72,6 +72,8 @@ function Home() {
           placeholder={lang === 'pl' ? 'szukaj' : 'search'}
           value={search}
           onChange={onSearch}
+          // eslint-disable-next-line jsx-a11y/no-autofocus
+          autoFocus
         />
         <select className="right" value={type} onChange={saveType}>
           <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>
