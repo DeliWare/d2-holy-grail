@@ -4,6 +4,7 @@ import { useProfile, useSaveProfile } from '../hooks/resources';
 import items from '../items';
 import { HOME_PATH } from '../router/paths';
 import { getLang, getUser } from '../utils/localStorage';
+import ItemPreview from '../components/itemPreview';
 
 function Item() {
   const params = useParams();
@@ -148,8 +149,14 @@ function Item() {
             <button className="button-cta" type="submit" disabled={loading || saving}>
               {lang === 'pl' ? 'Zapisz' : 'Save'}
             </button>
+            <button className="button-cta" type="button" onClick={() => navigate(HOME_PATH())}>
+              {lang === 'pl' ? 'Anuluj' : 'Cancel'}
+            </button>
           </footer>
         </form>
+      </section>
+      <section>
+        <ItemPreview item={item} lang={lang} />
       </section>
     </main>
   );
