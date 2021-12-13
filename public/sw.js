@@ -1,7 +1,6 @@
 const CACHE_NAME = 'd2r-holy-grail-cache-v2';
 const FILES_TO_CACHE = [
   './',
-  'manifest.webmanifest',
   'images/d2r_logo.gif'
 ];
 
@@ -19,8 +18,8 @@ self.addEventListener('install', function(e) {
 // eslint-disable-next-line no-restricted-globals
 self.addEventListener('fetch', function(e) {
   e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+    fetch(e.request).catch(function() {
+      return caches.match(e.request)
     })
   );
 });
