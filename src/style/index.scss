@@ -238,13 +238,16 @@ section {
 }
 
 .item-preview {
-  font-family: "Diablo";
-  font-weight: 600;
-  font-size: 18px;
+  font-family: 'Diablo';
+  font-size: 20px;
   line-height: 1em;
   text-align: center;
-  text-transform: uppercase;
-  background-color: rgba(8, 8, 8, .95);
+  background-color: rgba(8, 8, 8, 0.95);
+
+  .unique,
+  .set {
+    font-size: 24px;
+  }
 }
 
 .tooltip-wrapper {
