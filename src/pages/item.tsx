@@ -21,6 +21,7 @@ function Item() {
       Object.values(parsedUserData.data)
         .map((item: { comment: string }) => item.comment)
         .filter(Boolean)
+        .sort()
     )
   );
 
