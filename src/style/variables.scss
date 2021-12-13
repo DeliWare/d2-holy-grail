@@ -15,7 +15,9 @@ $heightTD: 40px;
 $border: 1px solid $colorBorder;
 $borderInput: 1px solid $colorUnique;
 
+$fontFamily: Diablo;
+
 @font-face {
-  font-family: Diablo;
+  font-family: $fontFamily;
   src: url(ExocetBlizzardMixedCaps-Medium.woff2);
 }

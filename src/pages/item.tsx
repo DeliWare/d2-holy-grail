@@ -79,6 +79,7 @@ function Item() {
               value={Number(itemState.count).toString()}
               min={0}
               onChange={onChange}
+              autoComplete="off"
               // eslint-disable-next-line jsx-a11y/no-autofocus
               autoFocus
             />
