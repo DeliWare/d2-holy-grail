@@ -63,11 +63,24 @@ function Item() {
   return (
     <main>
       <section>
-        <h1 className={item.type}>{item[lang]}</h1>
+        <h1 className={item.type}>
+          <a href={`https://diablo.fandom.com/wiki/${item.en}`} target="__blank">
+            {item[lang]}
+          </a>
+        </h1>
+
         <form onSubmit={handleSubmit}>
           <label>
             <span>{lang === 'pl' ? 'Ilość:' : 'Count:'}</span>
-            <input name="count" type="number" value={itemState.count} min={0} onChange={onChange} />
+            <input
+              name="count"
+              type="number"
+              value={Number(itemState.count).toString()}
+              min={0}
+              onChange={onChange}
+              // eslint-disable-next-line jsx-a11y/no-autofocus
+              autoFocus
+            />
             <button type="button" onClick={onDecrementCount}>
               ➖
             </button>
