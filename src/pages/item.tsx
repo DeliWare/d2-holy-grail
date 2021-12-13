@@ -149,6 +149,9 @@ function Item() {
             <button className="button-cta" type="submit" disabled={loading || saving}>
               {lang === 'pl' ? 'Zapisz' : 'Save'}
             </button>
+            <button className="button-cta" type="button" onClick={() => navigate(HOME_PATH())}>
+              {lang === 'pl' ? 'Anuluj' : 'Cancel'}
+            </button>
           </footer>
         </form>
       </section>
