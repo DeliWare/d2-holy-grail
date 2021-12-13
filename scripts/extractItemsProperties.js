@@ -61,7 +61,7 @@ function getPropertyRangeOrValue(values, percent, disablePrefixSuffix) {
   }
 
   const isSame = values[1] === undefined || values[0] === values[1];
-  let prefix = values[0] >= 0 ? '+' : '-';
+  let prefix = values[0] >= 0 ? '+' : '';
   let suffix = ' ';
 
   if (disablePrefixSuffix) {
@@ -78,6 +78,18 @@ function executePropFunction({ set, val, func, stat }, propData) {
     'cast1',
     'crush',
     'swing1',
+    'swing2',
+    'move2',
+    'deadly',
+    'res-all',
+    'res-fire',
+    'res-cold',
+    'res-ltng',
+    'res-pois',
+    'res-cold-max',
+    'res-pois-max',
+    'res-fire-max',
+    'res-ltng-max',
     'block',
     'block2',
     'openwounds'
@@ -183,6 +195,19 @@ function executePropFunction({ set, val, func, stat }, propData) {
         translation = stat;
       } else if (propData.key === 'res-all') {
         translation = findString('strModAllResistances').replace('+%d', getPropertyRangeOrValue([propData.min, propData.max], false));
+      } else if (propData.key === 'nofreeze') {
+        translation = findString(itemStatCost.descstrpos);
+      }
+        // else if (stat === 'poisonmindam') {
+        //   console.log({ set, val, func, stat }, propData)
+        //   translation = findString('strModPoisonDamage')
+        //     .replace('%d', getPropertyRangeOrValue([propData.min, propData.max], false, true))
+        //     .replace('%d', val);
+      // }
+      else if (propData.key === 'res-pois-len') {
+        translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], true, true);
+      } else if (['red-dmg', 'red-mag'].includes(propData.key)) {
+        translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], false, true);
       } else {
         translation = getPropertyRangeOrValue([propData.min, propData.max], percent) + findString(itemStatCost.descstrpos);
       }
