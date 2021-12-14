@@ -32,12 +32,12 @@ function Home() {
     setType(value);
   };
 
-  const saveMode = ({ target: { value } }) => {
+  const saveMode = (value) => {
     setLocalStorage(MODE_KEY, value);
     setMode(value);
   };
 
-  const saveLang = ({ target: { value } }) => {
+  const saveLang = (value) => {
     setLocalStorage(LANG_KEY, value);
     setLang(value);
   };
@@ -83,14 +83,12 @@ function Home() {
           <option value="unique">{lang === 'pl' ? 'unikaty' : 'uniques'}</option>
           <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
         </select>
-        <select className="center" value={mode} onChange={saveMode}>
-          <option value="group">{lang === 'pl' ? 'grupa' : 'group'}</option>
-          <option value="solo">{lang === 'pl' ? 'solo' : 'solo'}</option>
-        </select>
-        <select className="right" value={lang} onChange={saveLang}>
-          <option value="pl">pl</option>
-          <option value="en">en</option>
-        </select>
+        <button onClick={() => saveMode(mode === 'group' ? 'solo' : 'group')}>
+          {mode === 'group' ? (lang === 'pl' ? 'grupa' : 'group') : lang === 'pl' ? 'solo' : 'solo'}
+        </button>
+        <button onClick={() => saveLang(lang === 'pl' ? 'en' : 'pl')}>
+          {lang === 'pl' ? 'pl' : 'en'}
+        </button>
       </header>
       <main>
         {search ? (

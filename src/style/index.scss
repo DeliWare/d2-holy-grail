@@ -17,36 +17,6 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  background-color: $colorBgPrimary;
-  z-index: 1;
-
-  input,
-  select {
-    height: $heightHeader;
-  }
-
-  select {
-    color: $colorTextDimmed;
-  }
-}
-
-main {
-  margin-bottom: 10rem; // TODO remove, temp fix till popper is integrated
-}
-
-input {
-  min-width: 0;
-
-  &::placeholder {
-    color: $colorText;
-  }
-}
-
 input:not([type='checkbox']),
 textarea,
 select {
@@ -70,6 +40,47 @@ input[type='checkbox'] {
 
 [disabled] {
   opacity: $opacity;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: $colorBgPrimary;
+  z-index: 1;
+
+  input,
+  select,
+  button {
+    height: $heightHeader;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  select,
+  button {
+    color: $colorTextDimmed;
+  }
+
+  button {
+    border-bottom: $borderInput;
+    background-color: $colorBgSecondary;
+  }
+}
+
+main {
+  margin-bottom: 10rem; // TODO remove, temp fix till popper is integrated
+}
+
+input {
+  min-width: 0;
+
+  &::placeholder {
+    color: $colorText;
+  }
 }
 
 table {
@@ -254,14 +265,14 @@ section {
 }
 
 .item-preview {
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1em;
   text-align: center;
   background-color: rgba(8, 8, 8, 0.95);
 
   .unique,
   .set {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
