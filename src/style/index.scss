@@ -35,6 +35,10 @@ header {
   }
 }
 
+main {
+  margin-bottom: 10rem; // TODO remove, temp fix till popper is integrated
+}
+
 input {
   min-width: 0;
 
