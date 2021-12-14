@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ITEM_PATH } from '../router/paths';
 import normalized from '../utils/normalized';
+import Tooltip from './tooltip';
+import ItemPreview from './itemPreview';
 
 function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -44,7 +46,11 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
                 navigate(ITEM_PATH(item.key), { state: { search } });
               }}
             >
-              <td className={item.type}>{item[lang]}</td>
+              <td className={item.type}>
+                <Tooltip content={<ItemPreview item={item} lang={lang} />}>
+                  {item[lang]}
+                </Tooltip>
+              </td>
               {parsedProfile.map(({ user, data: { data } }) => (
                 <React.Fragment key={user}>
                   <td>{data[item.key]?.count}</td>
