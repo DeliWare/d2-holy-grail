@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/d2-holy-grail/static/css/main.3f5d4392.chunk.css",
-    "main.js": "/d2-holy-grail/static/js/main.41787d10.chunk.js",
-    "main.js.map": "/d2-holy-grail/static/js/main.41787d10.chunk.js.map",
+    "main.css": "/d2-holy-grail/static/css/main.8c9356a1.chunk.css",
+    "main.js": "/d2-holy-grail/static/js/main.fe13158e.chunk.js",
+    "main.js.map": "/d2-holy-grail/static/js/main.fe13158e.chunk.js.map",
     "runtime-main.js": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js",
     "runtime-main.js.map": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js.map",
-    "static/js/2.48dae223.chunk.js": "/d2-holy-grail/static/js/2.48dae223.chunk.js",
-    "static/js/2.48dae223.chunk.js.map": "/d2-holy-grail/static/js/2.48dae223.chunk.js.map",
+    "static/js/2.67670c3e.chunk.js": "/d2-holy-grail/static/js/2.67670c3e.chunk.js",
+    "static/js/2.67670c3e.chunk.js.map": "/d2-holy-grail/static/js/2.67670c3e.chunk.js.map",
     "index.html": "/d2-holy-grail/index.html",
-    "static/css/main.3f5d4392.chunk.css.map": "/d2-holy-grail/static/css/main.3f5d4392.chunk.css.map",
-    "static/js/2.48dae223.chunk.js.LICENSE.txt": "/d2-holy-grail/static/js/2.48dae223.chunk.js.LICENSE.txt",
+    "static/css/main.8c9356a1.chunk.css.map": "/d2-holy-grail/static/css/main.8c9356a1.chunk.css.map",
+    "static/js/2.67670c3e.chunk.js.LICENSE.txt": "/d2-holy-grail/static/js/2.67670c3e.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/d2-holy-grail/static/media/ExocetBlizzardMixedCaps-Medium.79393b60.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.cb929bfb.js",
-    "static/js/2.48dae223.chunk.js",
-    "static/css/main.3f5d4392.chunk.css",
-    "static/js/main.41787d10.chunk.js"
+    "static/js/2.67670c3e.chunk.js",
+    "static/css/main.8c9356a1.chunk.css",
+    "static/js/main.fe13158e.chunk.js"
   ]
 }
