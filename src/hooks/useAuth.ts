@@ -13,7 +13,7 @@ interface JWT {
   userName: 'string';
 }
 
-export function useAuth() {
+function useAuth() {
   const saveToken = useCallback((token: string) => {
     const decoded: JWT = jwt_decode(token);
 
@@ -27,6 +27,8 @@ export function useAuth() {
   return {
     saveToken,
     isLoggedIn,
-    user,
+    user
   };
 }
+
+export default useAuth;

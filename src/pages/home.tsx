@@ -3,11 +3,12 @@ import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import RecentItems from '../components/recentItems';
 import { LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
-import { useAuth } from '../hooks/auth-hook';
+import useAuth from '../hooks/useAuth';
 import { useProfile } from '../hooks/resources';
 import { getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
 import items from '../items';
 import { DEFAULT_PATH } from '../router/paths';
+import useWindowSize from '../hooks/useWindowSize';
 
 function Home() {
   const { user } = useAuth();
@@ -18,6 +19,7 @@ function Home() {
   const [mode, setMode] = useState(getMode());
   const [lang, setLang] = useState(getLang());
   const search = params[DEFAULT_PATH()];
+  const { isMobile } = useWindowSize();
 
   const filteredItems = items.filter((item) => type === 'all' || item.type === type);
 
@@ -73,7 +75,7 @@ function Home() {
           value={search}
           onChange={onSearch}
           // eslint-disable-next-line jsx-a11y/no-autofocus
-          autoFocus
+          autoFocus={!isMobile}
         />
         <select className="right" value={type} onChange={saveType}>
           <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>

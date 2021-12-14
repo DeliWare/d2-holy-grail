@@ -5,6 +5,7 @@ import items from '../items';
 import { HOME_PATH } from '../router/paths';
 import { getLang, getUser } from '../utils/localStorage';
 import ItemPreview from '../components/itemPreview';
+import useWindowSize from '../hooks/useWindowSize';
 
 function Item() {
   const params = useParams();
@@ -13,6 +14,7 @@ function Item() {
   const lang = getLang();
   const item = items.find((item) => item.key === params.itemKey);
   const navigate = useNavigate();
+  const { isMobile } = useWindowSize();
 
   const currentUserProfile = profile.find((profile) => profile.user === getUser());
   const parsedUserData = JSON.parse(currentUserProfile.data);
@@ -81,7 +83,7 @@ function Item() {
               onChange={onChange}
               autoComplete="off"
               // eslint-disable-next-line jsx-a11y/no-autofocus
-              autoFocus
+              autoFocus={!isMobile}
             />
             <button type="button" onClick={onDecrementCount}>
               ➖

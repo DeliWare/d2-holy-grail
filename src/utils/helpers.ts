@@ -7,3 +7,7 @@ export function isEmpty(obj): boolean {
 
   return JSON.stringify(obj) === JSON.stringify({});
 }
+
+export function isClient() {
+  return typeof window !== 'undefined';
+}

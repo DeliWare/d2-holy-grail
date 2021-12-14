@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLogin } from '../hooks/resources';
-import { useAuth } from '../hooks/auth-hook';
+import useAuth from '../hooks/useAuth';
 import { hashPassword } from '../utils/password-hash';
 import { useLocation, useNavigate } from 'react-router';
 import { HOME_PATH } from '../router/paths';

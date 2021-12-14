@@ -24,7 +24,8 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "react/prop-types": "off",
-    "@typescript-eslint/ban-types": "off"
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "settings": {
     "react": {
