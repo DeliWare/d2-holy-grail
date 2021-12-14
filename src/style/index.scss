@@ -181,7 +181,7 @@ label {
   }
 
   span {
-    flex-basis: 90px;
+    flex-basis: 100px;
     flex-shrink: 0;
   }
 }
@@ -265,14 +265,14 @@ section {
 }
 
 .item-preview {
-  font-size: 20px;
-  line-height: 1em;
+  font-size: 18px;
+  line-height: 1.2;
   text-align: center;
   background-color: rgba(8, 8, 8, 0.95);
 
   .unique,
   .set {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
