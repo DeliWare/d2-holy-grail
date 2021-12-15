@@ -58,6 +58,11 @@ header {
     padding: 10px;
     align-items: center;
     justify-items: center;
+
+    &:hover,
+    &:focus {
+      color: $colorText;
+    }
   }
 
   select,
@@ -202,6 +207,11 @@ footer {
 
     & + button {
       margin-top: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colorRune;
     }
   }
 }
