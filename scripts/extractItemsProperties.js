@@ -13,6 +13,7 @@ const ITEM_TYPES_ENUM = {
 };
 
 const CHARACTER_LEVEL = 99;
+const FRAME_LENGTH = 25;
 
 function loadStrings() {
   if (strings === null) {
@@ -42,17 +43,39 @@ function findString(key) {
   return strings.find((string) => Array.isArray(string) && string[0] === key)[1];
 }
 
+const CHARACTERS = {
+  ama: 'Amazon',
+  sor: 'Sorceress',
+  nec: 'Necromancer',
+  pal: 'Paladin',
+  bar: 'Barbarian',
+  dru: 'Druid',
+  ass: 'Assassin'
+};
+
 function getSkillName(id) {
   const skillData = data.skills[id];
   if (!skillData) {
     return 'to UNKNOWN';
   }
 
-  return `to ${skillData.skill} (${skillData.charclass})`;
+  return `to ${skillData.skill} (${CHARACTERS[skillData.charclass]} Only)`;
 }
 
 function getSkill(id) {
   return data.skills[id];
+}
+
+function getPercentPropertyValue(value) {
+  return getPropertyRangeOrValue(Array.isArray(value) ? value : [value], true, true) + ' ';
+}
+
+function getPlusPercentPropertyValue(value) {
+  return getPropertyRangeOrValue(Array.isArray(value) ? value : [value], true, false);
+}
+
+function getFlatPropertyValue(value) {
+  return getPropertyRangeOrValue(Array.isArray(value) ? value : [value], false, true);
 }
 
 function getPropertyRangeOrValue(values, percent, disablePrefixSuffix) {
@@ -79,6 +102,7 @@ function executePropFunction({ set, val, func, stat }, propData) {
     'crush',
     'swing1',
     'swing2',
+    'swing3',
     'move2',
     'deadly',
     'res-all',
@@ -92,7 +116,13 @@ function executePropFunction({ set, val, func, stat }, propData) {
     'res-ltng-max',
     'block',
     'block2',
-    'openwounds'
+    'ease',
+    'openwounds',
+    'dmg-undead',
+    'pierce-fire',
+    'pierce-cold',
+    'pierce-pois',
+    'pierce-ltng'
   ].includes(propData.key);
 
   switch (func) {
@@ -115,7 +145,6 @@ function executePropFunction({ set, val, func, stat }, propData) {
       translation = getCharTreeString(propData.par).replace('+%d ', getPropertyRangeOrValue([propData.min, propData.max]));
       break;
     case 11:
-
       const skill = getSkill(propData.par);
       translation = findString(itemStatCost.descstrpos);
       translation = translation.replace('%d%', propData.min);
@@ -125,11 +154,10 @@ function executePropFunction({ set, val, func, stat }, propData) {
       if (stat === 'item_skillongethit') {
         translation = translation.replace('%d', propData.max);
       }
+      if (stat === 'item_skillonhit') {
+        translation = translation.replace('%d', propData.max);
+      }
       translation = translation.replace('%s', skill.skill);
-      // if (0 === r) {
-      //   var v = p.a.skills[n].reqlevel;
-      //   r = Math.round((l - v + 1) / 3.9), m(stat, ''.concat(n, '#').concat(a, '#x'), r);
-      // } else m(stat, ''.concat(n, '#').concat(a), r);
       break;
     case 12:
       translation = getSkillName(propData.par);
@@ -157,16 +185,21 @@ function executePropFunction({ set, val, func, stat }, propData) {
         minMax.push(Math.floor(CHARACTER_LEVEL * 1.25));
         percent = false;
       }
+      if (['item_armor_perlevel'].includes(stat)) {
+        minMax.push(Math.floor(CHARACTER_LEVEL * 2));
+        percent = false;
+      }
       translation = getPropertyRangeOrValue(minMax, percent) + findString(itemStatCost.descstrpos) + ' ' + findString('increaseswithplaylevelX');
+
+      if (['item_replenish_quantity'].includes(stat)) {
+        translation = findString(itemStatCost.descstrpos) + ' ' + propData.par;
+      }
       break;
-    // case 19:
-    //   if (a < 0 && r < 0 && p.a.skills[n]) {
-    //     var b = p.a.skills[n].reqlevel,
-    //       g = Math.max(1, Math.floor((l - b) / Math.floor((99 - b) / -r))),
-    //       y = Math.floor(-a * g / 8) + -a;
-    //     m(stat, ''.concat(n, '#').concat(g), y);
-    //   } else m(stat, ''.concat(n, '#').concat(r), a);
-    //   break;
+    case 19:
+      const skill19 = getSkill(propData.par);
+      translation = findString(itemStatCost.descstrpos);
+      translation = `${findString('strchrlvl')} ${propData.max} ${skill19.skill} ${translation.replace('%d', propData.min).replace('%d', propData.min)}`;
+      break;
     case 20:
       itemStatCost = data.itemStatCost['item_indesctructible'];
       translation = findString(itemStatCost.descstrpos);
@@ -185,31 +218,68 @@ function executePropFunction({ set, val, func, stat }, propData) {
     //   m(stat, ''.concat(val, '#x'), i);
     //   break;
     default:
-      if ([
-        'poisonlength',
-        'coldlength',
-        'item_extrablood',
-        'item_fastergethitrate',
-        'maxdurability'
-      ].includes(stat)) {
-        translation = stat;
-      } else if (propData.key === 'res-all') {
-        translation = findString('strModAllResistances').replace('+%d', getPropertyRangeOrValue([propData.min, propData.max], false));
-      } else if (propData.key === 'nofreeze') {
-        translation = findString(itemStatCost.descstrpos);
-      }
-        // else if (stat === 'poisonmindam') {
-        //   console.log({ set, val, func, stat }, propData)
-        //   translation = findString('strModPoisonDamage')
-        //     .replace('%d', getPropertyRangeOrValue([propData.min, propData.max], false, true))
-        //     .replace('%d', val);
-      // }
-      else if (propData.key === 'res-pois-len') {
-        translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], true, true);
-      } else if (['red-dmg', 'red-mag'].includes(propData.key)) {
-        translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], false, true);
-      } else {
-        translation = getPropertyRangeOrValue([propData.min, propData.max], percent) + findString(itemStatCost.descstrpos);
+
+      switch (propData.key) {
+        case 'res-all':
+          translation = findString('strModAllResistances')
+            .replace('+%d', getPropertyRangeOrValue([propData.min, propData.max], false));
+          break;
+        case 'explosivearrow':
+        case 'nofreeze':
+        // case 'stupidity':
+          translation = findString(itemStatCost.descstrpos);
+          break;
+        case 'manasteal':
+        case 'lifesteal':
+          translation = getPercentPropertyValue([propData.min, propData.max]) + findString(itemStatCost.descstrpos);
+          break;
+        case 'res-pois-len':
+          translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], true, true);
+          break;
+        case 'red-dmg':
+        case 'red-mag':
+          translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], false, true);
+          break;
+        case 'dmg-norm':
+          translation = findString('strModMinDamageRange')
+            .replace('%d', propData.min)
+            .replace('%d', propData.max);
+          break;
+        case 'dmg-mag':
+          translation = findString('strModMagicDamageRange')
+            .replace('%d', propData.min)
+            .replace('%d', propData.max);
+          break;
+        case 'pierce-fire':
+        case 'pierce-cold':
+        case 'pierce-pois':
+        case 'pierce-ltng':
+          translation = getPropertyRangeOrValue([-propData.min, -propData.max], percent) + findString(itemStatCost.descstrpos);
+          break;
+        case 'fire-min':
+        case 'dmg-fire':
+          translation = findString('strModFireDamageRange')
+            .replace('%d', propData.min)
+            .replace('%d', propData.max);
+          break;
+        case 'pois-min':
+        case 'dmg-pois':
+          translation = findString('strModPoisonDamage')
+            .replace('%d', Math.round(propData.min * propData.par / 256))
+            .replace('%d', propData.par / FRAME_LENGTH);
+          break;
+        default:
+          if ([
+            'poisonlength',
+            'coldlength',
+            'item_extrablood',
+            'item_fastergethitrate',
+            'maxdurability'
+          ].includes(stat)) { // todo
+            translation = stat;
+          }  else {
+            translation = getPropertyRangeOrValue([propData.min, propData.max], percent) + findString(itemStatCost.descstrpos);
+          }
       }
   }
 
@@ -231,6 +301,18 @@ function getPropData(propNumber, key, item) {
     max: item[`max${propNumber}`],
     par: item[`par${propNumber}`]
   };
+
+  if (key === 'fire-min') {
+    prop.max = item[`min${propNumber + 1}`];
+  }
+
+  if (key === 'pois-min') {
+    prop.par = item[`min${propNumber + 2}`];
+  }
+
+  if (['fire-max', 'pois-max', 'pois-len'].includes(key)) {
+    return null;
+  }
 
   const parsedPropKey = prop.key.replace('*', ''); // TODO why?
   const property = Object.entries(data.properties).find(([key]) => {
@@ -272,7 +354,9 @@ function getItemProps(item) {
     .map(([key, value]) => {
       const propNumber = parseInt(key.slice(4), 10);
       return getPropData(propNumber, value, item);
-    }).sort((a, b) => b.priority - a.priority);
+    })
+    .filter((prop) => prop)
+    .sort((a, b) => b.priority - a.priority);
 }
 
 function calculateItemDmg({ min, max }, item) {
@@ -304,13 +388,13 @@ function calculateItemDmg({ min, max }, item) {
   const dmgMin = props.find(({ key }) => key === 'dmg-min');
   if (dmgMin) {
     result.min[0] = result.min[0] + dmgMin.min;
-    result.min[1] = result.min[1] + dmgMin.min;
+    result.min[1] = result.min[1] + dmgMin.max;
   }
 
   const dmgMax = props.find(({ key }) => key === 'dmg-max');
   if (dmgMax) {
-    result.min[0] = result.min[0] + dmgMax.min;
-    result.min[1] = result.min[1] + dmgMax.min;
+    result.max[0] = result.max[0] + dmgMax.min;
+    result.max[1] = result.max[1] + dmgMax.max;
   }
 
   const dmgFlat = props.find(({ key }) => key === 'dmg');
@@ -360,17 +444,24 @@ function getWeaponStats(itemDetails, item) {
     min: itemDetails['2handmindam'],
     max: itemDetails['2handmaxdam']
   };
+  const dmgThrowBase = {
+    min: itemDetails.minmisdam,
+    max: itemDetails.maxmisdam
+  };
 
   return {
     twoHanded,
     weaponClass: itemDetails.wclass || 'unknown', // ['1hs', 'stf', '1ht', '2ht', 'bow', 'xbw', 'ht1']
+    dmgThrowBase,
     dmgBase,
     dmgTwoHandedBase,
+    dmgThrowModified: calculateItemDmg(dmgThrowBase, item),
     dmgModified: calculateItemDmg(dmgBase, item),
     dmgTwoHeadedModified: calculateItemDmg(dmgTwoHandedBase, item),
     ...getAttackSpeed(itemDetails.speed || 0, item),
-    requiredStrength: itemDetails.reqstr,
-    requiredDexterity: itemDetails.reqdex
+    requiredStrength: calculateRequirement(itemDetails.reqstr || 0, item),
+    requiredDexterity: calculateRequirement(itemDetails.reqdex || 0, item),
+    requiredLevel: item.lvlreq || 0 // TODO value can be mutated by props
   };
 }
 
@@ -387,11 +478,27 @@ function calculateItemArmor({ min, max }, item) {
     result.max = Math.floor(result.max * (1 + (ac.max) / 100));
   }
 
+  const acLvl = props.find(({ key }) => key === 'ac/lvl');
+  if (acLvl) {
+    result.max = result.max + Math.floor(CHARACTER_LEVEL * 2);
+  }
+
+  return result;
+}
+
+function calculateRequirement(defaultValue, item) {
+  const props = getItemProps(item);
+  let result = defaultValue;
+
+  const ease = props.find(({ key }) => key === 'ease');
+  if (ease) {
+    result = Math.floor(result * (1 + ease.min / 100));
+  }
+
   return result;
 }
 
 function getArmorStats(itemDetails, item) {
-  // console.log({ itemDetails, item });
   let armorBase = {
     min: itemDetails.minac,
     max: itemDetails.maxac
@@ -399,7 +506,7 @@ function getArmorStats(itemDetails, item) {
 
   if (Object.values(item).includes('ac%')) {
     armorBase = {
-      min: itemDetails.maxac + 1,
+      min: itemDetails.minac + 1,
       max: itemDetails.maxac + 1
     };
   }
@@ -408,8 +515,9 @@ function getArmorStats(itemDetails, item) {
     armorClass: itemDetails.type || 'unknown', // ['pelt', 'phlm', 'head', 'ashd', 'amaz', 'rod']
     armorBase,
     armorModified: calculateItemArmor(armorBase, item),
-    requiredStrength: itemDetails.reqstr,
-    requiredDexterity: itemDetails.reqdex || 0
+    requiredStrength: calculateRequirement(itemDetails.reqstr || 0, item),
+    requiredDexterity: calculateRequirement(itemDetails.reqdex || 0, item),
+    requiredLevel: item.lvlreq || 0 // TODO value can be mutated by props
   };
 }
 
@@ -451,7 +559,6 @@ function getItemBaseData(item) {
     ...(itemType === ITEM_TYPES_ENUM.WEAPON && { stats: getWeaponStats(itemDetails, item) }),
     ...(itemType === ITEM_TYPES_ENUM.ARMOR && { stats: getArmorStats(itemDetails, item) }),
     ...(itemType === ITEM_TYPES_ENUM.OTHER && { stats: getOtherStats(itemDetails, item) }),
-    requiredLevel: item.lvlreq || 0, // TODO value can be mutated by props
     durability: itemDetails.durability || null,
     set: item.set || null,
     isSet: !!item.set,
@@ -461,19 +568,84 @@ function getItemBaseData(item) {
   };
 }
 
+const CLASS_WHITE = 'white';
 const CLASS_MAGIC = 'magic';
 const CLASS_UNIQUE = 'unique';
 const CLASS_SET = 'set';
 const CLASS_REQUIREMENT = 'requirement';
+const ITEMS_NOT_ETHEREAL = [
+  'bow'
+];
+const ITEMS_WITHOUT_DURABILITY = [
+  'bow'
+];
+
+function getCanBeEthereal(item) {
+  const weaponClass = item.stats.weaponClass;
+
+  return !ITEMS_NOT_ETHEREAL.includes(weaponClass);
+}
+
+function getItemDurability(item) {
+  const weaponClass = item.stats.weaponClass;
+
+  return ITEMS_WITHOUT_DURABILITY.includes(weaponClass) ? null : item.durability || 0;
+}
+
+function getWeaponName(item) {
+  // todo translate
+  return item.stats.weaponClass;
+}
+
+function getClassRestriction(item) {
+  // todo items
+  const ITEM_RESTRICTIONS = [
+    {
+      items: ['nea', 'ne5', 'nef'],
+      class: 'Necromancer'
+    },
+    {
+      items: ['am2', 'am7', 'amc', 'am1', 'am6', 'amb', 'am5', 'ama', 'amf', 'am9', 'am4', 'ame', 'am3', 'am8', 'amd'],
+      class: 'Amazon'
+    },
+    {
+      items: [],
+      class: 'Assassin'
+    },
+    {
+      items: [],
+      class: 'Barbarian'
+    },
+    {
+      items: [],
+      class: 'Druid'
+    },
+    {
+      items: ['pa4', 'pa9', 'pae'],
+      class: 'Paladin'
+    },
+    {
+      items: ['ob5', 'oba', 'obf'],
+      class: 'Sorceress'
+    }
+  ];
+  const result = ITEM_RESTRICTIONS.find((restriction) => {
+    return restriction.items.includes(item.type.key);
+  });
+
+  return result ? result.class : false;
+}
 
 function itemToParsedArray(item) {
   const isSet = item.isSet;
   const isArmor = item.itemType === ITEM_TYPES_ENUM.ARMOR;
   const isWeapon = item.itemType === ITEM_TYPES_ENUM.WEAPON;
   const isOther = item.itemType === ITEM_TYPES_ENUM.OTHER;
-  const destructible = true; // todo
   const isPerfect = false; // todo
-  const canBeEthereal = 1; // todo
+  const canBeEthereal = getCanBeEthereal(item);
+  const durability = getItemDurability(item);
+  const weaponName = getWeaponName(item);
+  const classRestriction = getClassRestriction(item);
   const en = [];
   const pl = [];
 
@@ -485,28 +657,31 @@ function itemToParsedArray(item) {
 
   if (isWeapon) {
     // Damage
-    if (item.stats.dmgBase.min) {
-      en.push(`One-Hand Damage: <span class='${CLASS_MAGIC}'>${getPropertyRangeOrValue(item.stats.dmgModified.min, false, true)} to ${getPropertyRangeOrValue(item.stats.dmgModified.max, false, true)}</span>`);
+    if (item.stats.dmgThrowBase.min) {
+      en.push(`<span class='${CLASS_WHITE}'>Throw Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgThrowModified.min)} to ${getFlatPropertyValue(item.stats.dmgThrowModified.max)}</span>`);
     }
 
-    if (item.stats.dmgTwoHandedBase) {
-      en.push(`Two-Hand Damage: <span class='${CLASS_MAGIC}'>${getPropertyRangeOrValue(item.stats.dmgTwoHeadedModified.min, false, true)} to ${getPropertyRangeOrValue(item.stats.dmgTwoHeadedModified.max, false, true)}</span>`);
+    if (item.stats.dmgBase.min) {
+      en.push(`<span class='${CLASS_WHITE}'>One-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgModified.min)} to ${getFlatPropertyValue(item.stats.dmgModified.max)}</span>`);
+    }
+
+    if (item.stats.dmgTwoHandedBase.min) {
+      en.push(`<span class='${CLASS_WHITE}'>Two-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgTwoHeadedModified.min)} to ${getFlatPropertyValue(item.stats.dmgTwoHeadedModified.max)}</span>`);
     }
   }
 
   if (isArmor) {
-    // Defense
-    if (item.stats.dmgBase) {
-      en.push(`One-Hand Damage: <span class='${CLASS_MAGIC}'>${getPropertyRangeOrValue(item.stats.dmgModified.min, false, true)} to ${getPropertyRangeOrValue(item.stats.dmgModified.max, false, true)}</span>`);
-    }
-
-    if (item.stats.dmgTwoHandedBase) {
-      en.push(`Two-Hand Damage: <span class='${CLASS_MAGIC}'>${getPropertyRangeOrValue(item.stats.dmgTwoHeadedModified.min, false, true)} to ${getPropertyRangeOrValue(item.stats.dmgTwoHeadedModified.max, false, true)}</span>`);
+    if (item.stats.armorModified) {
+      en.push(`<span class='${CLASS_WHITE}'>Defense:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.armorModified.min)} to ${getFlatPropertyValue(item.stats.armorModified.max)}</span>`);
     }
   }
 
-  if (destructible && item.durability) {
-    en.push(`Durability: ${item.durability} of ${item.durability}`);
+  if (durability) {
+    en.push(`<span class='${CLASS_WHITE}'>Durability: ${item.durability} of ${item.durability}</span>`);
+  }
+
+  if (classRestriction) {
+    en.push(`<span class='${CLASS_REQUIREMENT}'>[${classRestriction} Only]</span>`);
   }
 
   if (item.stats.requiredDexterity) {
@@ -518,11 +693,12 @@ function itemToParsedArray(item) {
   }
 
   if (item.stats.requiredLevel) {
-    en.push(`<span class='${CLASS_REQUIREMENT}'>Required Level: ${item.stats.requiredLevel}</span>`);
+    en.push(`<span class='${CLASS_WHITE}'>Required Level: ${item.stats.requiredLevel}</span>`);
   }
 
+  // TODO attack speed
   if (isWeapon) {
-    en.push(`${item.stats.weaponClass} - <span class='${CLASS_MAGIC}'>${item.stats.attackSpeed.en}</span>`);
+    en.push(`<span class='${CLASS_WHITE}'>${weaponName} -</span> <span class='${CLASS_MAGIC}'>${item.stats.attackSpeed.en}</span>`);
   }
 
   item.props.forEach((prop) => {
@@ -548,10 +724,14 @@ function convert() {
   const res = Object.keys(items)
     // .filter((item) => {
     //   return [
-    //     'Lycander\'s Aim',
-    //     'Herald of Zakarum',
-    //     'Hellslayer',
-    //     'Arm of King Leoric',
+    //     // 'Darksight Helm'
+    //     // 'The Jade Tan Do'
+    //     'The Humongous'
+    //     // 'Goreshovel'
+    //     // 'Lycander\'s Aim',
+    //     // 'Herald of Zakarum',
+    //     // 'Hellslayer',
+    //     // 'Arm of King Leoric',
     //   ].includes(items[item].index);
     // })
     .map((key) => {
@@ -591,13 +771,24 @@ function getCharTreeString(index) {
   const res = Object.values(charStats).reduce((acc, val) => {
     return [
       ...acc,
-      val.strskilltab1,
-      val.strskilltab2,
-      val.strskilltab3
+      {
+        class: val.class,
+        skillTab: val.strskilltab1
+      },
+      {
+        class: val.class,
+        skillTab: val.strskilltab2
+      },
+      {
+        class: val.class,
+        skillTab: val.strskilltab3
+      }
     ];
   }, []);
 
-  return findString(res[index]);
+  const tab = res[index];
+
+  return `${findString(tab.skillTab)} (${tab.class} Only)`;
 }
 
 convert();
