@@ -228,6 +228,9 @@ function executePropFunction({ set, val, func, stat }, propData) {
       if (['item_replenish_quantity'].includes(stat)) {
         translation = findString(itemStatCost.descstrpos) + ' ' + propData.par;
       }
+      if (['item_replenish_durability'].includes(stat)) {
+        translation = findString('ModStre9u').replace('%d', 1).replace('%d', 100 / propData.par);
+      }
       break;
     case 19:
       const skill19 = getSkill(propData.par);
@@ -304,6 +307,19 @@ function executePropFunction({ set, val, func, stat }, propData) {
           translation = findString('strModPoisonDamage')
             .replace('%d', Math.round(propData.min * propData.par / 256))
             .replace('%d', propData.par / FRAME_LENGTH);
+          fixedValues = true;
+          break;
+        case 'thorns':
+        case 'light-thorns':
+          translation = findString(itemStatCost.descstrpos) + ' ' + getFlatPropertyValue([propData.min, propData.max]);
+          break;
+        case 'slow':
+        case 'regen-mana':
+          translation = findString(itemStatCost.descstrpos) + ' ' + getPercentPropertyValue([propData.min, propData.max]);
+          break;
+        case 'knock':
+        case 'half-freeze':
+          translation = findString(itemStatCost.descstrpos);
           fixedValues = true;
           break;
         default:
@@ -616,7 +632,7 @@ function calculateRequirement(defaultValue, item) {
 
   const ease = props.find(({ key }) => key === 'ease');
   if (ease) {
-    result = Math.floor(result * (1 + ease.min / 100));
+    result = Math.ceil(result * (1 + ease.min / 100));
   }
 
   return result;
@@ -747,6 +763,15 @@ function getCanBeEthereal(item) {
 }
 
 function getItemDurability(item) {
+  const indestructible = item.props.some((prop) => prop.key === 'indestruct');
+  if (indestructible) {
+    return 0;
+  }
+  const maxDurability = item.props.find((prop) => prop.key === 'dur');
+  if (maxDurability) {
+    item.durability = item.durability + maxDurability.min;
+  }
+
   const weaponClass = item.stats.weaponClass;
 
   return ITEMS_WITHOUT_DURABILITY.includes(weaponClass) ? null : item.durability || 0;
@@ -854,9 +879,11 @@ function itemToParsedArray(item) {
     en.push(`<span class='${CLASS_WHITE}'>${item.typeClass.en} -</span> <span class='${item.stats.attackSpeed.modified ? CLASS_MAGIC : CLASS_WHITE}'>${item.stats.attackSpeed.en}</span>`);
   }
 
-  item.props.forEach((prop) => {
-    en.push(`<span class='${CLASS_MAGIC}'>${prop.name.en}</span>`);
-  });
+  item.props
+    .filter(prop => !['dur'].includes(prop.key))
+    .forEach((prop) => {
+      en.push(`<span class='${CLASS_MAGIC}'>${prop.name.en}</span>`);
+    });
 
   return {
     key: item.key,
@@ -864,7 +891,7 @@ function itemToParsedArray(item) {
     canBeEthereal,
     // item, // for development
     en,
-    pl: en // todo
+    pl: en
   };
 }
 

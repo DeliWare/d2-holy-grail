@@ -115,7 +115,7 @@
       "<span class='magic'>+12-15 to Maximum Lightning Damage</span>",
       "<span class='magic'>+15% Chance of Open Wounds</span>",
       "<span class='magic'>+2 Hit blinds target</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ],
     "pl": [
       "<span class='unique'>Skull Splitter</span>",
@@ -132,7 +132,7 @@
       "<span class='magic'>+12-15 to Maximum Lightning Damage</span>",
       "<span class='magic'>+15% Chance of Open Wounds</span>",
       "<span class='magic'>+2 Hit blinds target</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ]
   },
   {
@@ -352,7 +352,7 @@
       "<span class='magic'>Adds 5-9 fire damage\n</span>",
       "<span class='magic'>6% Life stolen per hit</span>",
       "<span class='magic'>+10 to Energy</span>",
-      "<span class='magic'>+5 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 5% </span>",
       "<span class='magic'>+3 to Light Radius</span>"
     ],
     "pl": [
@@ -366,7 +366,7 @@
       "<span class='magic'>Adds 5-9 fire damage\n</span>",
       "<span class='magic'>6% Life stolen per hit</span>",
       "<span class='magic'>+10 to Energy</span>",
-      "<span class='magic'>+5 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 5% </span>",
       "<span class='magic'>+3 to Light Radius</span>"
     ]
   },
@@ -492,7 +492,7 @@
       "<span class='white'>Mace Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>+70-80% Enhanced damage\n</span>",
       "<span class='magic'>Adds 6-8 fire damage\n</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+60% Lightning Resist</span>",
       "<span class='magic'>+20% Fire Resist</span>"
     ],
@@ -505,7 +505,7 @@
       "<span class='white'>Mace Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>+70-80% Enhanced damage\n</span>",
       "<span class='magic'>Adds 6-8 fire damage\n</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+60% Lightning Resist</span>",
       "<span class='magic'>+20% Fire Resist</span>"
     ]
@@ -635,7 +635,7 @@
       "<span class='magic'>+100% Enhanced damage\n</span>",
       "<span class='magic'>+7 to Vitality</span>",
       "<span class='magic'>Magic Damage Reduced by 2</span>",
-      "<span class='magic'>+3-10 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 3-10</span>"
     ],
     "pl": [
       "<span class='unique'>Stoutnail</span>",
@@ -647,7 +647,7 @@
       "<span class='magic'>+100% Enhanced damage\n</span>",
       "<span class='magic'>+7 to Vitality</span>",
       "<span class='magic'>Magic Damage Reduced by 2</span>",
-      "<span class='magic'>+3-10 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 3-10</span>"
     ]
   },
   {
@@ -664,7 +664,7 @@
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>+50-60% Enhanced damage\n</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+50% Fire Resist</span>",
       "<span class='magic'>+2 to Light Radius</span>"
@@ -679,7 +679,7 @@
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>+50-60% Enhanced damage\n</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+50% Fire Resist</span>",
       "<span class='magic'>+2 to Light Radius</span>"
@@ -740,7 +740,7 @@
       "<span class='magic'>+20 to Maximum Damage</span>",
       "<span class='magic'>+50-60% Enhanced damage\n</span>",
       "<span class='magic'>5% Mana stolen per hit</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+25 Defense</span>"
     ],
     "pl": [
@@ -757,7 +757,7 @@
       "<span class='magic'>+20 to Maximum Damage</span>",
       "<span class='magic'>+50-60% Enhanced damage\n</span>",
       "<span class='magic'>5% Mana stolen per hit</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+25 Defense</span>"
     ]
   },
@@ -838,7 +838,7 @@
       "<span class='unique'>Great Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>95-133 to 145-203</span>",
       "<span class='white'>Durability: 60 of 60</span>",
-      "<span class='requirement'>Required Strength: 49</span>",
+      "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 29</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>+40% Increased Attack Speed</span>",
@@ -851,7 +851,7 @@
       "<span class='unique'>Great Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>95-133 to 145-203</span>",
       "<span class='white'>Durability: 60 of 60</span>",
-      "<span class='requirement'>Required Strength: 49</span>",
+      "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 29</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>+40% Increased Attack Speed</span>",
@@ -1010,7 +1010,7 @@
       "<span class='unique'>Azurewrath</span>",
       "<span class='unique'>Crystal Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>10 to 30</span>",
-      "<span class='white'>Durability: 20 of 20</span>",
+      "<span class='white'>Durability: 45 of 45</span>",
       "<span class='requirement'>Required Strength: 43</span>",
       "<span class='white'>Required Level: 13</span>",
       "<span class='white'>Sword Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -1018,14 +1018,13 @@
       "<span class='magic'>Adds 5-10 magic damage\n</span>",
       "<span class='magic'>+3-6 to Minimum Cold Damage</span>",
       "<span class='magic'>+50% Deadly Strike</span>",
-      "<span class='magic'>+10% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10% better chance of getting magic item</span>"
     ],
     "pl": [
       "<span class='unique'>Azurewrath</span>",
       "<span class='unique'>Crystal Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>10 to 30</span>",
-      "<span class='white'>Durability: 20 of 20</span>",
+      "<span class='white'>Durability: 45 of 45</span>",
       "<span class='requirement'>Required Strength: 43</span>",
       "<span class='white'>Required Level: 13</span>",
       "<span class='white'>Sword Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -1033,8 +1032,7 @@
       "<span class='magic'>Adds 5-10 magic damage\n</span>",
       "<span class='magic'>+3-6 to Minimum Cold Damage</span>",
       "<span class='magic'>+50% Deadly Strike</span>",
-      "<span class='magic'>+10% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10% better chance of getting magic item</span>"
     ]
   },
   {
@@ -1053,7 +1051,7 @@
       "<span class='magic'>+80-120% Enhanced damage\n</span>",
       "<span class='magic'>+100 to Attack Rating</span>",
       "<span class='magic'>Adds 10-15 fire damage\n</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+12 to Strength</span>"
     ],
     "pl": [
@@ -1068,7 +1066,7 @@
       "<span class='magic'>+80-120% Enhanced damage\n</span>",
       "<span class='magic'>+100 to Attack Rating</span>",
       "<span class='magic'>Adds 10-15 fire damage\n</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+12 to Strength</span>"
     ]
   },
@@ -1547,7 +1545,7 @@
       "<span class='magic'>+30% Increased Attack Speed</span>",
       "<span class='magic'>+30-50% Enhanced damage\n</span>",
       "<span class='magic'>+50 Target Defense</span>",
-      "<span class='magic'>+25 Slows target by</span>",
+      "<span class='magic'>Slows target by 25% </span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+8 to Dexterity</span>"
     ],
@@ -1563,7 +1561,7 @@
       "<span class='magic'>+30% Increased Attack Speed</span>",
       "<span class='magic'>+30-50% Enhanced damage\n</span>",
       "<span class='magic'>+50 Target Defense</span>",
-      "<span class='magic'>+25 Slows target by</span>",
+      "<span class='magic'>Slows target by 25% </span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+8 to Dexterity</span>"
     ]
@@ -1620,7 +1618,7 @@
       "<span class='magic'>+1 to Minimum Lightning Damage</span>",
       "<span class='magic'>+60 to Maximum Lightning Damage</span>",
       "<span class='magic'>All Resistances +15 \n</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8</span>"
     ],
     "pl": [
       "<span class='unique'>Lance of Yaggai</span>",
@@ -1635,7 +1633,7 @@
       "<span class='magic'>+1 to Minimum Lightning Damage</span>",
       "<span class='magic'>+60 to Maximum Lightning Damage</span>",
       "<span class='magic'>All Resistances +15 \n</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8</span>"
     ]
   },
   {
@@ -1716,7 +1714,7 @@
       "<span class='unique'>Steelgoad</span>",
       "<span class='unique'>Voulge</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>9-10 to 33-37</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 70 of 70</span>",
       "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 14</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
@@ -1724,14 +1722,13 @@
       "<span class='magic'>+30 to Attack Rating</span>",
       "<span class='magic'>+30% Deadly Strike</span>",
       "<span class='magic'>+96 Hit Causes Monster To Flee</span>",
-      "<span class='magic'>All Resistances +5 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +5 \n</span>"
     ],
     "pl": [
       "<span class='unique'>Steelgoad</span>",
       "<span class='unique'>Voulge</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>9-10 to 33-37</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 70 of 70</span>",
       "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 14</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
@@ -1739,8 +1736,7 @@
       "<span class='magic'>+30 to Attack Rating</span>",
       "<span class='magic'>+30% Deadly Strike</span>",
       "<span class='magic'>+96 Hit Causes Monster To Flee</span>",
-      "<span class='magic'>All Resistances +5 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +5 \n</span>"
     ]
   },
   {
@@ -1831,7 +1827,7 @@
       "<span class='magic'>+1 Prevent Monster Heal</span>",
       "<span class='magic'>+3 Hit blinds target</span>",
       "<span class='magic'>+1 Freezes target</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>-50 to Monster Defense Per Hit</span>",
       "<span class='magic'>-3 to Light Radius</span>"
     ],
@@ -1849,7 +1845,7 @@
       "<span class='magic'>+1 Prevent Monster Heal</span>",
       "<span class='magic'>+3 Hit blinds target</span>",
       "<span class='magic'>+1 Freezes target</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>-50 to Monster Defense Per Hit</span>",
       "<span class='magic'>-3 to Light Radius</span>"
     ]
@@ -1978,7 +1974,7 @@
       "<span class='magic'>+2 to Lightning (Sorceress Only)</span>",
       "<span class='magic'>+3 to Static Field (Sorceress Only)</span>",
       "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>+43 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 43% </span>",
       "<span class='magic'>+75% Lightning Resist</span>",
       "<span class='magic'>Damage Reduced by 5</span>"
     ],
@@ -1995,7 +1991,7 @@
       "<span class='magic'>+2 to Lightning (Sorceress Only)</span>",
       "<span class='magic'>+3 to Static Field (Sorceress Only)</span>",
       "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>+43 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 43% </span>",
       "<span class='magic'>+75% Lightning Resist</span>",
       "<span class='magic'>Damage Reduced by 5</span>"
     ]
@@ -2567,7 +2563,7 @@
       "<span class='magic'>+10 Defense</span>",
       "<span class='magic'>+100 Defense vs. Missile</span>",
       "<span class='magic'>+15% Lightning Resist</span>",
-      "<span class='magic'>+7 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 7</span>"
     ],
     "pl": [
       "<span class='unique'>Coif of Glory</span>",
@@ -2580,7 +2576,7 @@
       "<span class='magic'>+10 Defense</span>",
       "<span class='magic'>+100 Defense vs. Missile</span>",
       "<span class='magic'>+15% Lightning Resist</span>",
-      "<span class='magic'>+7 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 7</span>"
     ]
   },
   {
@@ -2659,10 +2655,10 @@
       "<span class='requirement'>Required Strength: 63</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+33 Hit Causes Monster To Flee</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+80% Enhanced Defense</span>",
       "<span class='magic'>Magic Damage Reduced by 2</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 3</span>",
       "<span class='magic'>+35 Damage Taken Goes To Mana</span>"
     ],
     "pl": [
@@ -2673,10 +2669,10 @@
       "<span class='requirement'>Required Strength: 63</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+33 Hit Causes Monster To Flee</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+80% Enhanced Defense</span>",
       "<span class='magic'>Magic Damage Reduced by 2</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 3</span>",
       "<span class='magic'>+35 Damage Taken Goes To Mana</span>"
     ]
   },
@@ -2698,7 +2694,7 @@
       "<span class='magic'>+30-60% Enhanced Defense</span>",
       "<span class='magic'>+40 Defense</span>",
       "<span class='magic'>+50% Poison Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>Undead Crown</span>",
@@ -2714,7 +2710,7 @@
       "<span class='magic'>+30-60% Enhanced Defense</span>",
       "<span class='magic'>+40 Defense</span>",
       "<span class='magic'>+50% Poison Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -2960,7 +2956,7 @@
       "<span class='magic'>+1-20 to Minimum Lightning Damage</span>",
       "<span class='magic'>+75-85% Enhanced Defense</span>",
       "<span class='magic'>+30% Lightning Resist</span>",
-      "<span class='magic'>+10-14 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10-14</span>"
     ],
     "pl": [
       "<span class='unique'>Sparking Mail</span>",
@@ -2972,7 +2968,7 @@
       "<span class='magic'>+1-20 to Minimum Lightning Damage</span>",
       "<span class='magic'>+75-85% Enhanced Defense</span>",
       "<span class='magic'>+30% Lightning Resist</span>",
-      "<span class='magic'>+10-14 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10-14</span>"
     ]
   },
   {
@@ -3075,7 +3071,7 @@
       "<span class='unique'>Field Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>204 to 243</span>",
       "<span class='white'>Durability: 48 of 48</span>",
-      "<span class='requirement'>Required Strength: 49</span>",
+      "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 28</span>",
       "<span class='magic'>+100-130% Enhanced Defense</span>",
       "<span class='magic'>+5 to Strength</span>",
@@ -3088,7 +3084,7 @@
       "<span class='unique'>Field Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>204 to 243</span>",
       "<span class='white'>Durability: 48 of 48</span>",
-      "<span class='requirement'>Required Strength: 49</span>",
+      "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 28</span>",
       "<span class='magic'>+100-130% Enhanced Defense</span>",
       "<span class='magic'>+5 to Strength</span>",
@@ -3139,7 +3135,7 @@
       "<span class='white'>Required Level: 28</span>",
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>All Resistances +35 \n</span>",
-      "<span class='magic'>+10 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 10</span>",
       "<span class='magic'>+100% extra gold from monsters</span>",
       "<span class='magic'>+2 to Light Radius</span>"
     ],
@@ -3152,7 +3148,7 @@
       "<span class='white'>Required Level: 28</span>",
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>All Resistances +35 \n</span>",
-      "<span class='magic'>+10 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 10</span>",
       "<span class='magic'>+100% extra gold from monsters</span>",
       "<span class='magic'>+2 to Light Radius</span>"
     ]
@@ -3201,7 +3197,7 @@
       "<span class='magic'>+100 to Attack Rating against Undead</span>",
       "<span class='magic'>+100% Enhanced Defense</span>",
       "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 25% </span>",
       "<span class='magic'>All Resistances +10 \n</span>"
     ],
     "pl": [
@@ -3215,7 +3211,7 @@
       "<span class='magic'>+100 to Attack Rating against Undead</span>",
       "<span class='magic'>+100% Enhanced Defense</span>",
       "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 25% </span>",
       "<span class='magic'>All Resistances +10 \n</span>"
     ]
   },
@@ -3227,7 +3223,7 @@
       "<span class='unique'>Pelta Lunata</span>",
       "<span class='unique'>Buckler</span>",
       "<span class='white'>Defense:</span> <span class='magic'>6 to 9</span>",
-      "<span class='white'>Durability: 12 of 12</span>",
+      "<span class='white'>Durability: 20 of 20</span>",
       "<span class='requirement'>Required Strength: 12</span>",
       "<span class='white'>Required Level: 2</span>",
       "<span class='magic'>+40% Faster Block Rate</span>",
@@ -3236,14 +3232,13 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+2 to Strength</span>",
       "<span class='magic'>+10 to Vitality</span>",
-      "<span class='magic'>+10 to Energy</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10 to Energy</span>"
     ],
     "pl": [
       "<span class='unique'>Pelta Lunata</span>",
       "<span class='unique'>Buckler</span>",
       "<span class='white'>Defense:</span> <span class='magic'>6 to 9</span>",
-      "<span class='white'>Durability: 12 of 12</span>",
+      "<span class='white'>Durability: 20 of 20</span>",
       "<span class='requirement'>Required Strength: 12</span>",
       "<span class='white'>Required Level: 2</span>",
       "<span class='magic'>+40% Faster Block Rate</span>",
@@ -3252,8 +3247,7 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+2 to Strength</span>",
       "<span class='magic'>+10 to Vitality</span>",
-      "<span class='magic'>+10 to Energy</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10 to Energy</span>"
     ]
   },
   {
@@ -3264,7 +3258,7 @@
       "<span class='unique'>Umbral Disk</span>",
       "<span class='unique'>Small Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>12 to 16</span>",
-      "<span class='white'>Durability: 16 of 16</span>",
+      "<span class='white'>Durability: 26 of 26</span>",
       "<span class='requirement'>Required Strength: 22</span>",
       "<span class='white'>Required Level: 9</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -3273,14 +3267,13 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+10 to Dexterity</span>",
       "<span class='magic'>+20 to Life</span>",
-      "<span class='magic'>-2 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-2 to Light Radius</span>"
     ],
     "pl": [
       "<span class='unique'>Umbral Disk</span>",
       "<span class='unique'>Small Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>12 to 16</span>",
-      "<span class='white'>Durability: 16 of 16</span>",
+      "<span class='white'>Durability: 26 of 26</span>",
       "<span class='requirement'>Required Strength: 22</span>",
       "<span class='white'>Required Level: 9</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -3289,8 +3282,7 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+10 to Dexterity</span>",
       "<span class='magic'>+20 to Life</span>",
-      "<span class='magic'>-2 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-2 to Light Radius</span>"
     ]
   },
   {
@@ -3301,7 +3293,7 @@
       "<span class='unique'>Stormguild</span>",
       "<span class='unique'>Large Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>19 to 24</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 34 of 34</span>",
       "<span class='requirement'>Required Strength: 34</span>",
       "<span class='white'>Required Level: 13</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -3310,14 +3302,13 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+25% Lightning Resist</span>",
       "<span class='magic'>Magic Damage Reduced by 1</span>",
-      "<span class='magic'>+3 Attacker Takes Lightning Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 3</span>"
     ],
     "pl": [
       "<span class='unique'>Stormguild</span>",
       "<span class='unique'>Large Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>19 to 24</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 34 of 34</span>",
       "<span class='requirement'>Required Strength: 34</span>",
       "<span class='white'>Required Level: 13</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -3326,8 +3317,7 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+25% Lightning Resist</span>",
       "<span class='magic'>Magic Damage Reduced by 1</span>",
-      "<span class='magic'>+3 Attacker Takes Lightning Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 3</span>"
     ]
   },
   {
@@ -3378,8 +3368,8 @@
       "<span class='magic'>+50% Chance of Open Wounds</span>",
       "<span class='magic'>+30-60% Enhanced Defense</span>",
       "<span class='magic'>+10 Defense</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
       "<span class='magic'>item_extrablood</span>"
     ],
     "pl": [
@@ -3393,8 +3383,8 @@
       "<span class='magic'>+50% Chance of Open Wounds</span>",
       "<span class='magic'>+30-60% Enhanced Defense</span>",
       "<span class='magic'>+10 Defense</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
       "<span class='magic'>item_extrablood</span>"
     ]
   },
@@ -3406,7 +3396,7 @@
       "<span class='unique'>Steelclash</span>",
       "<span class='unique'>Kite Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>27 to 38</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 45 of 45</span>",
       "<span class='requirement'>Required Strength: 47</span>",
       "<span class='white'>Required Level: 17</span>",
       "<span class='magic'>+1 to Paladin Skill Levels</span>",
@@ -3416,14 +3406,13 @@
       "<span class='magic'>+20 Defense</span>",
       "<span class='magic'>All Resistances +15 \n</span>",
       "<span class='magic'>Damage Reduced by 3</span>",
-      "<span class='magic'>+3 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+3 to Light Radius</span>"
     ],
     "pl": [
       "<span class='unique'>Steelclash</span>",
       "<span class='unique'>Kite Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>27 to 38</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 45 of 45</span>",
       "<span class='requirement'>Required Strength: 47</span>",
       "<span class='white'>Required Level: 17</span>",
       "<span class='magic'>+1 to Paladin Skill Levels</span>",
@@ -3433,8 +3422,7 @@
       "<span class='magic'>+20 Defense</span>",
       "<span class='magic'>All Resistances +15 \n</span>",
       "<span class='magic'>Damage Reduced by 3</span>",
-      "<span class='magic'>+3 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+3 to Light Radius</span>"
     ]
   },
   {
@@ -3445,7 +3433,7 @@
       "<span class='unique'>Bverrit Keep</span>",
       "<span class='unique'>Tower Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>41 to 57</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
+      "<span class='white'>Durability: 140 of 140</span>",
       "<span class='requirement'>Required Strength: 75</span>",
       "<span class='white'>Required Level: 19</span>",
       "<span class='magic'>+10% Increased Chance of Blocking</span>",
@@ -3453,14 +3441,13 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+5 to Strength</span>",
       "<span class='magic'>+75% Fire Resist</span>",
-      "<span class='magic'>Magic Damage Reduced by 5</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 5</span>"
     ],
     "pl": [
       "<span class='unique'>Bverrit Keep</span>",
       "<span class='unique'>Tower Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>41 to 57</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
+      "<span class='white'>Durability: 140 of 140</span>",
       "<span class='requirement'>Required Strength: 75</span>",
       "<span class='white'>Required Level: 19</span>",
       "<span class='magic'>+10% Increased Chance of Blocking</span>",
@@ -3468,8 +3455,7 @@
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+5 to Strength</span>",
       "<span class='magic'>+75% Fire Resist</span>",
-      "<span class='magic'>Magic Damage Reduced by 5</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 5</span>"
     ]
   },
   {
@@ -3616,7 +3602,7 @@
       "<span class='magic'>Adds 1-6 fire damage\n</span>",
       "<span class='magic'>+20-30% Enhanced Defense</span>",
       "<span class='magic'>+10 Defense</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 25% </span>"
     ],
     "pl": [
       "<span class='unique'>Magefist</span>",
@@ -3630,7 +3616,7 @@
       "<span class='magic'>Adds 1-6 fire damage\n</span>",
       "<span class='magic'>+20-30% Enhanced Defense</span>",
       "<span class='magic'>+10 Defense</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 25% </span>"
     ]
   },
   {
@@ -3711,7 +3697,7 @@
       "<span class='magic'>+2 to Leap (Barbarian Only)</span>",
       "<span class='magic'>+20-30% Enhanced Defense</span>",
       "<span class='magic'>+12 Defense</span>",
-      "<span class='magic'>+2 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 2</span>",
       "<span class='magic'>item_extrablood</span>"
     ],
     "pl": [
@@ -3726,7 +3712,7 @@
       "<span class='magic'>+2 to Leap (Barbarian Only)</span>",
       "<span class='magic'>+20-30% Enhanced Defense</span>",
       "<span class='magic'>+12 Defense</span>",
-      "<span class='magic'>+2 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 2</span>",
       "<span class='magic'>item_extrablood</span>"
     ]
   },
@@ -3842,7 +3828,7 @@
       "<span class='white'>Durability: 12 of 12</span>",
       "<span class='white'>Required Level: 7</span>",
       "<span class='magic'>+15 to Mana</span>",
-      "<span class='magic'>+30 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 30% </span>",
       "<span class='magic'>All Resistances +5 \n</span>",
       "<span class='magic'>+1 to Light Radius</span>"
     ],
@@ -3853,7 +3839,7 @@
       "<span class='white'>Durability: 12 of 12</span>",
       "<span class='white'>Required Level: 7</span>",
       "<span class='magic'>+15 to Mana</span>",
-      "<span class='magic'>+30 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 30% </span>",
       "<span class='magic'>All Resistances +5 \n</span>",
       "<span class='magic'>+1 to Light Radius</span>"
     ]
@@ -3972,7 +3958,7 @@
       "<span class='magic'>+5 to Strength</span>",
       "<span class='magic'>+10 to Dexterity</span>",
       "<span class='magic'>Damage Reduced by 3</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8</span>"
     ],
     "pl": [
       "<span class='unique'>Bladebuckle</span>",
@@ -3987,7 +3973,7 @@
       "<span class='magic'>+5 to Strength</span>",
       "<span class='magic'>+10 to Dexterity</span>",
       "<span class='magic'>Damage Reduced by 3</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8</span>"
     ]
   },
   {
@@ -4078,7 +4064,7 @@
       "<span class='unique'>ring</span>",
       "<span class='magic'>+50-75 to Attack Rating</span>",
       "<span class='magic'>Magic Damage Reduced by 3</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 3</span>",
       "<span class='magic'>+15-30% better chance of getting magic item</span>"
     ],
     "pl": [
@@ -4086,7 +4072,7 @@
       "<span class='unique'>ring</span>",
       "<span class='magic'>+50-75 to Attack Rating</span>",
       "<span class='magic'>Magic Damage Reduced by 3</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 3</span>",
       "<span class='magic'>+15-30% better chance of getting magic item</span>"
     ]
   },
@@ -4100,7 +4086,7 @@
       "<span class='magic'>4-7% Mana stolen per hit</span>",
       "<span class='magic'>+20 to Life</span>",
       "<span class='magic'>+5-8 Replenish Life</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ],
     "pl": [
       "<span class='unique'>Manald Heal</span>",
@@ -4108,7 +4094,7 @@
       "<span class='magic'>4-7% Mana stolen per hit</span>",
       "<span class='magic'>+20 to Life</span>",
       "<span class='magic'>+5-8 Replenish Life</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ]
   },
   {
@@ -4343,7 +4329,6 @@
       "<span class='unique'>Butcher's Pupil</span>",
       "<span class='unique'>Cleaver</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>55-60 to 132-149</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
       "<span class='requirement'>Required Strength: 68</span>",
       "<span class='white'>Required Level: 39</span>",
       "<span class='white'>Axe Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -4358,7 +4343,6 @@
       "<span class='unique'>Butcher's Pupil</span>",
       "<span class='unique'>Cleaver</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>55-60 to 132-149</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
       "<span class='requirement'>Required Strength: 68</span>",
       "<span class='white'>Required Level: 39</span>",
       "<span class='white'>Axe Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -4429,8 +4413,8 @@
       "<span class='magic'>4% Chance to cast level 8 Volcano on striking</span>",
       "<span class='magic'>+140-170% Enhanced damage\n</span>",
       "<span class='magic'>Adds 35-150 fire damage\n</span>",
-      "<span class='magic'>+50 Slows target by</span>",
-      "<span class='magic'>+1 Knockback</span>"
+      "<span class='magic'>Slows target by 50% </span>",
+      "<span class='magic'>Knockback</span>"
     ],
     "pl": [
       "<span class='unique'>Pompeii's Wrath</span>",
@@ -4444,8 +4428,8 @@
       "<span class='magic'>4% Chance to cast level 8 Volcano on striking</span>",
       "<span class='magic'>+140-170% Enhanced damage\n</span>",
       "<span class='magic'>Adds 35-150 fire damage\n</span>",
-      "<span class='magic'>+50 Slows target by</span>",
-      "<span class='magic'>+1 Knockback</span>"
+      "<span class='magic'>Slows target by 50% </span>",
+      "<span class='magic'>Knockback</span>"
     ]
   },
   {
@@ -4465,7 +4449,7 @@
       "<span class='magic'>+20 to Maximum Damage</span>",
       "<span class='magic'>+250 poison damage over 10 seconds\n</span>",
       "<span class='magic'>+30% Poison Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>"
     ],
     "pl": [
       "<span class='unique'>Guardian Naga</span>",
@@ -4480,7 +4464,7 @@
       "<span class='magic'>+20 to Maximum Damage</span>",
       "<span class='magic'>+250 poison damage over 10 seconds\n</span>",
       "<span class='magic'>+30% Poison Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>"
     ]
   },
   {
@@ -4500,7 +4484,7 @@
       "<span class='magic'>+49 to Vitality (Based on Character Level)</span>",
       "<span class='magic'>+20 Replenish Life</span>",
       "<span class='magic'>All Resistances +10 \n</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 4 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Warlord's Trust</span>",
@@ -4515,7 +4499,7 @@
       "<span class='magic'>+49 to Vitality (Based on Character Level)</span>",
       "<span class='magic'>+20 Replenish Life</span>",
       "<span class='magic'>All Resistances +10 \n</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 4 seconds</span>"
     ]
   },
   {
@@ -4527,13 +4511,13 @@
       "<span class='unique'>Bearded Axe </span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>55 to 129</span>",
       "<span class='white'>Durability: 35 of 35</span>",
-      "<span class='requirement'>Required Strength: 36</span>",
+      "<span class='requirement'>Required Strength: 37</span>",
       "<span class='white'>Required Level: 39</span>",
       "<span class='white'>Axe Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>+10% Faster Cast Rate</span>",
       "<span class='magic'>+165% Enhanced damage\n</span>",
       "<span class='magic'>+100 to Mana</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 25% </span>",
       "<span class='magic'>Magic Damage Reduced by 12-15</span>",
       "<span class='magic'>Level 1 Teleport (20/20 Charges)</span>",
       "<span class='magic'>Level 3 Decrepify (30/30 Charges)</span>",
@@ -4546,13 +4530,13 @@
       "<span class='unique'>Bearded Axe </span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>55 to 129</span>",
       "<span class='white'>Durability: 35 of 35</span>",
-      "<span class='requirement'>Required Strength: 36</span>",
+      "<span class='requirement'>Required Strength: 37</span>",
       "<span class='white'>Required Level: 39</span>",
       "<span class='white'>Axe Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>+10% Faster Cast Rate</span>",
       "<span class='magic'>+165% Enhanced damage\n</span>",
       "<span class='magic'>+100 to Mana</span>",
-      "<span class='magic'>+25 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 25% </span>",
       "<span class='magic'>Magic Damage Reduced by 12-15</span>",
       "<span class='magic'>Level 1 Teleport (20/20 Charges)</span>",
       "<span class='magic'>Level 3 Decrepify (30/30 Charges)</span>",
@@ -4569,7 +4553,7 @@
       "<span class='unique'>Stormrider</span>",
       "<span class='unique'>Tabar</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>83 to 229</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
+      "<span class='white'>Durability: 90 of 90</span>",
       "<span class='requirement'>Required Strength: 101</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='white'>Axe Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -4579,14 +4563,13 @@
       "<span class='magic'>Adds 35-75 damage\n</span>",
       "<span class='magic'>+100% Enhanced damage\n</span>",
       "<span class='magic'>+1-200 to Minimum Lightning Damage</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>"
     ],
     "pl": [
       "<span class='unique'>Stormrider</span>",
       "<span class='unique'>Tabar</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>83 to 229</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
+      "<span class='white'>Durability: 90 of 90</span>",
       "<span class='requirement'>Required Strength: 101</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='white'>Axe Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -4596,8 +4579,7 @@
       "<span class='magic'>Adds 35-75 damage\n</span>",
       "<span class='magic'>+100% Enhanced damage\n</span>",
       "<span class='magic'>+1-200 to Minimum Lightning Damage</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>"
     ]
   },
   {
@@ -4657,9 +4639,9 @@
       "<span class='magic'>+140-200% Enhanced damage\n</span>",
       "<span class='magic'>+30% Chance of Crushing Blow</span>",
       "<span class='magic'>+2 Hit blinds target</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+15-20 to Strength</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>The Minotaur</span>",
@@ -4673,9 +4655,9 @@
       "<span class='magic'>+140-200% Enhanced damage\n</span>",
       "<span class='magic'>+30% Chance of Crushing Blow</span>",
       "<span class='magic'>+2 Hit blinds target</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+15-20 to Strength</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -4695,7 +4677,7 @@
       "<span class='magic'>+40 to Life</span>",
       "<span class='magic'>+10% Increase Maximum Mana</span>",
       "<span class='magic'>All Resistances +10 \n</span>",
-      "<span class='magic'>+25 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 25</span>"
     ],
     "pl": [
       "<span class='unique'>Suicide Branch</span>",
@@ -4710,7 +4692,7 @@
       "<span class='magic'>+40 to Life</span>",
       "<span class='magic'>+10% Increase Maximum Mana</span>",
       "<span class='magic'>All Resistances +10 \n</span>",
-      "<span class='magic'>+25 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 25</span>"
     ]
   },
   {
@@ -4886,7 +4868,7 @@
       "<span class='magic'>8% Mana stolen per hit</span>",
       "<span class='magic'>+2 to Holy Freeze (Paladin Only)</span>",
       "<span class='magic'>+2 to Holy Shock (Paladin Only)</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10% </span>",
       "<span class='magic'>+15 Heal Stamina Plus</span>"
     ],
     "pl": [
@@ -4904,7 +4886,7 @@
       "<span class='magic'>8% Mana stolen per hit</span>",
       "<span class='magic'>+2 to Holy Freeze (Paladin Only)</span>",
       "<span class='magic'>+2 to Holy Shock (Paladin Only)</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10% </span>",
       "<span class='magic'>+15 Heal Stamina Plus</span>"
     ]
   },
@@ -4965,7 +4947,7 @@
       "<span class='magic'>+4 to Holy Bolt (Paladin Only)</span>",
       "<span class='magic'>+2 to Fist of the Heavens (Paladin Only)</span>",
       "<span class='magic'>+50 Defense</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>+4 to Light Radius</span>"
     ],
     "pl": [
@@ -4984,7 +4966,7 @@
       "<span class='magic'>+4 to Holy Bolt (Paladin Only)</span>",
       "<span class='magic'>+2 to Fist of the Heavens (Paladin Only)</span>",
       "<span class='magic'>+50 Defense</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>+4 to Light Radius</span>"
     ]
   },
@@ -4996,7 +4978,7 @@
       "<span class='unique'>Fleshrender</span>",
       "<span class='unique'>Barbed Club</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>64-74 to 107-125</span>",
-      "<span class='white'>Durability: 36 of 36</span>",
+      "<span class='white'>Durability: 56 of 56</span>",
       "<span class='requirement'>Required Strength: 30</span>",
       "<span class='white'>Required Level: 38</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5007,14 +4989,13 @@
       "<span class='magic'>+20% Chance of Crushing Blow</span>",
       "<span class='magic'>+20% Deadly Strike</span>",
       "<span class='magic'>+25% Chance of Open Wounds</span>",
-      "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+1 Prevent Monster Heal</span>"
     ],
     "pl": [
       "<span class='unique'>Fleshrender</span>",
       "<span class='unique'>Barbed Club</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>64-74 to 107-125</span>",
-      "<span class='white'>Durability: 36 of 36</span>",
+      "<span class='white'>Durability: 56 of 56</span>",
       "<span class='requirement'>Required Strength: 30</span>",
       "<span class='white'>Required Level: 38</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5025,8 +5006,7 @@
       "<span class='magic'>+20% Chance of Crushing Blow</span>",
       "<span class='magic'>+20% Deadly Strike</span>",
       "<span class='magic'>+25% Chance of Open Wounds</span>",
-      "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+1 Prevent Monster Heal</span>"
     ]
   },
   {
@@ -5148,7 +5128,7 @@
       "<span class='unique'>Earthshaker</span>",
       "<span class='unique'>Battle Hammer</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>98 to 162</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
+      "<span class='white'>Durability: 105 of 105</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 43</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -5157,14 +5137,13 @@
       "<span class='magic'>+30% Increased Attack Speed</span>",
       "<span class='magic'>+180% Enhanced damage\n</span>",
       "<span class='magic'>+1 Hit blinds target</span>",
-      "<span class='magic'>+1 Knockback</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Knockback</span>"
     ],
     "pl": [
       "<span class='unique'>Earthshaker</span>",
       "<span class='unique'>Battle Hammer</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>98 to 162</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
+      "<span class='white'>Durability: 105 of 105</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 43</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -5173,8 +5152,7 @@
       "<span class='magic'>+30% Increased Attack Speed</span>",
       "<span class='magic'>+180% Enhanced damage\n</span>",
       "<span class='magic'>+1 Hit blinds target</span>",
-      "<span class='magic'>+1 Knockback</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Knockback</span>"
     ]
   },
   {
@@ -5185,7 +5163,7 @@
       "<span class='unique'>Bloodtree Stump</span>",
       "<span class='unique'>War Club</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>148-169 to 218-249</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
+      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 124</span>",
       "<span class='white'>Required Level: 48</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5194,14 +5172,13 @@
       "<span class='magic'>+50% Chance of Crushing Blow</span>",
       "<span class='magic'>+3 to Mace Mastery (Barbarian Only)</span>",
       "<span class='magic'>+25 to Strength</span>",
-      "<span class='magic'>All Resistances +20 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +20 \n</span>"
     ],
     "pl": [
       "<span class='unique'>Bloodtree Stump</span>",
       "<span class='unique'>War Club</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>148-169 to 218-249</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
+      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 124</span>",
       "<span class='white'>Required Level: 48</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5210,8 +5187,7 @@
       "<span class='magic'>+50% Chance of Crushing Blow</span>",
       "<span class='magic'>+3 to Mace Mastery (Barbarian Only)</span>",
       "<span class='magic'>+25 to Strength</span>",
-      "<span class='magic'>All Resistances +20 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +20 \n</span>"
     ]
   },
   {
@@ -5222,7 +5198,6 @@
       "<span class='unique'>The Gavel of Pain</span>",
       "<span class='unique'>Martel de Fer</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>152-170 to 257-287</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 169</span>",
       "<span class='white'>Required Level: 45</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5231,14 +5206,13 @@
       "<span class='magic'>Indestructible</span>",
       "<span class='magic'>Adds 12-30 damage\n</span>",
       "<span class='magic'>+130-160% Enhanced damage\n</span>",
-      "<span class='magic'>+26 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 26</span>",
       "<span class='magic'>Level 8 Amplify Damage (3/3 Charges)</span>"
     ],
     "pl": [
       "<span class='unique'>The Gavel of Pain</span>",
       "<span class='unique'>Martel de Fer</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>152-170 to 257-287</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 169</span>",
       "<span class='white'>Required Level: 45</span>",
       "<span class='white'>Mace Class -</span> <span class='white'>Normal Attack Speed</span>",
@@ -5247,7 +5221,7 @@
       "<span class='magic'>Indestructible</span>",
       "<span class='magic'>Adds 12-30 damage\n</span>",
       "<span class='magic'>+130-160% Enhanced damage\n</span>",
-      "<span class='magic'>+26 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 26</span>",
       "<span class='magic'>Level 8 Amplify Damage (3/3 Charges)</span>"
     ]
   },
@@ -5259,7 +5233,7 @@
       "<span class='unique'>Bloodletter</span>",
       "<span class='unique'>Gladius</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>31 to 97</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 54 of 54</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 30</span>",
       "<span class='white'>Sword Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -5270,14 +5244,13 @@
       "<span class='magic'>8% Life stolen per hit</span>",
       "<span class='magic'>+2-4 to Sword Mastery (Barbarian Only)</span>",
       "<span class='magic'>+1-3 to Whirlwind (Barbarian Only)</span>",
-      "<span class='magic'>+10 Stamina Drain</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10 Stamina Drain</span>"
     ],
     "pl": [
       "<span class='unique'>Bloodletter</span>",
       "<span class='unique'>Gladius</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>31 to 97</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 54 of 54</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 30</span>",
       "<span class='white'>Sword Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -5288,8 +5261,7 @@
       "<span class='magic'>8% Life stolen per hit</span>",
       "<span class='magic'>+2-4 to Sword Mastery (Barbarian Only)</span>",
       "<span class='magic'>+1-3 to Whirlwind (Barbarian Only)</span>",
-      "<span class='magic'>+10 Stamina Drain</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+10 Stamina Drain</span>"
     ]
   },
   {
@@ -5300,7 +5272,7 @@
       "<span class='unique'>Coldsteel Eye</span>",
       "<span class='unique'>Cutlass</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>24-28 to 63-73</span>",
-      "<span class='white'>Durability: 22 of 22</span>",
+      "<span class='white'>Durability: 72 of 72</span>",
       "<span class='requirement'>Required Dexterity: 52</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 31</span>",
@@ -5310,14 +5282,13 @@
       "<span class='magic'>6% Mana stolen per hit</span>",
       "<span class='magic'>+50% Deadly Strike</span>",
       "<span class='magic'>+1 Hit blinds target</span>",
-      "<span class='magic'>+30 Slows target by</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Slows target by 30% </span>"
     ],
     "pl": [
       "<span class='unique'>Coldsteel Eye</span>",
       "<span class='unique'>Cutlass</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>24-28 to 63-73</span>",
-      "<span class='white'>Durability: 22 of 22</span>",
+      "<span class='white'>Durability: 72 of 72</span>",
       "<span class='requirement'>Required Dexterity: 52</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 31</span>",
@@ -5327,8 +5298,7 @@
       "<span class='magic'>6% Mana stolen per hit</span>",
       "<span class='magic'>+50% Deadly Strike</span>",
       "<span class='magic'>+1 Hit blinds target</span>",
-      "<span class='magic'>+30 Slows target by</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Slows target by 30% </span>"
     ]
   },
   {
@@ -5415,7 +5385,7 @@
       "<span class='unique'>Ginther's Rift</span>",
       "<span class='unique'>Dimensional Blade</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>26-32 to 70-87</span>",
-      "<span class='white'>Durability: 20 of 20</span>",
+      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Dexterity: 60</span>",
       "<span class='requirement'>Required Strength: 85</span>",
       "<span class='white'>Required Level: 37</span>",
@@ -5424,14 +5394,13 @@
       "<span class='magic'>+100-150% Enhanced damage\n</span>",
       "<span class='magic'>Adds 50-120 magic damage\n</span>",
       "<span class='magic'>Magic Damage Reduced by 7-12</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Repairs 1 durability in 5 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Ginther's Rift</span>",
       "<span class='unique'>Dimensional Blade</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>26-32 to 70-87</span>",
-      "<span class='white'>Durability: 20 of 20</span>",
+      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Dexterity: 60</span>",
       "<span class='requirement'>Required Strength: 85</span>",
       "<span class='white'>Required Level: 37</span>",
@@ -5440,8 +5409,7 @@
       "<span class='magic'>+100-150% Enhanced damage\n</span>",
       "<span class='magic'>Adds 50-120 magic damage\n</span>",
       "<span class='magic'>Magic Damage Reduced by 7-12</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Repairs 1 durability in 5 seconds</span>"
     ]
   },
   {
@@ -5524,7 +5492,7 @@
       "<span class='unique'>The Atlantean</span>",
       "<span class='unique'>Ancient Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>54-63 to 129-150</span>",
-      "<span class='white'>Durability: 44 of 44</span>",
+      "<span class='white'>Durability: 144 of 144</span>",
       "<span class='requirement'>Required Dexterity: 88</span>",
       "<span class='requirement'>Required Strength: 127</span>",
       "<span class='white'>Required Level: 42</span>",
@@ -5535,14 +5503,13 @@
       "<span class='magic'>+75 Defense</span>",
       "<span class='magic'>+16 to Strength</span>",
       "<span class='magic'>+12 to Dexterity</span>",
-      "<span class='magic'>+8 to Vitality</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+8 to Vitality</span>"
     ],
     "pl": [
       "<span class='unique'>The Atlantean</span>",
       "<span class='unique'>Ancient Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>54-63 to 129-150</span>",
-      "<span class='white'>Durability: 44 of 44</span>",
+      "<span class='white'>Durability: 144 of 144</span>",
       "<span class='requirement'>Required Dexterity: 88</span>",
       "<span class='requirement'>Required Strength: 127</span>",
       "<span class='white'>Required Level: 42</span>",
@@ -5553,8 +5520,7 @@
       "<span class='magic'>+75 Defense</span>",
       "<span class='magic'>+16 to Strength</span>",
       "<span class='magic'>+12 to Dexterity</span>",
-      "<span class='magic'>+8 to Vitality</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+8 to Vitality</span>"
     ]
   },
   {
@@ -5574,7 +5540,7 @@
       "<span class='magic'>+20% Faster Run/Walk</span>",
       "<span class='magic'>+50% Increased Attack Speed</span>",
       "<span class='magic'>+160-200% Enhanced damage\n</span>",
-      "<span class='magic'>+35 Slows target by</span>",
+      "<span class='magic'>Slows target by 35% </span>",
       "<span class='magic'>-70 to Monster Defense Per Hit</span>",
       "<span class='magic'>+10% Damage Reduced by</span>"
     ],
@@ -5591,7 +5557,7 @@
       "<span class='magic'>+20% Faster Run/Walk</span>",
       "<span class='magic'>+50% Increased Attack Speed</span>",
       "<span class='magic'>+160-200% Enhanced damage\n</span>",
-      "<span class='magic'>+35 Slows target by</span>",
+      "<span class='magic'>Slows target by 35% </span>",
       "<span class='magic'>-70 to Monster Defense Per Hit</span>",
       "<span class='magic'>+10% Damage Reduced by</span>"
     ]
@@ -5607,7 +5573,7 @@
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>59-67 to 140-158</span>",
       "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Dexterity: 14</span>",
-      "<span class='requirement'>Required Strength: 63</span>",
+      "<span class='requirement'>Required Strength: 64</span>",
       "<span class='white'>Required Level: 43</span>",
       "<span class='white'>Sword Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>5% Chance to cast level 3 Frozen Orb on striking</span>",
@@ -5624,7 +5590,7 @@
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>59-67 to 140-158</span>",
       "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Dexterity: 14</span>",
-      "<span class='requirement'>Required Strength: 63</span>",
+      "<span class='requirement'>Required Strength: 64</span>",
       "<span class='white'>Required Level: 43</span>",
       "<span class='white'>Sword Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>5% Chance to cast level 3 Frozen Orb on striking</span>",
@@ -5695,7 +5661,7 @@
       "<span class='magic'>+1-240 to Minimum Lightning Damage</span>",
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+10% to Maximum Lightning Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>",
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>",
       "<span class='magic'>+2 to Light Radius</span>"
     ],
     "pl": [
@@ -5715,7 +5681,7 @@
       "<span class='magic'>+1-240 to Minimum Lightning Damage</span>",
       "<span class='magic'>+30 Defense</span>",
       "<span class='magic'>+10% to Maximum Lightning Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>",
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>",
       "<span class='magic'>+2 to Light Radius</span>"
     ]
   },
@@ -5902,7 +5868,7 @@
       "<span class='magic'>+5 to Poison Dagger (Necromancer Only)</span>",
       "<span class='magic'>+4 to Poison Explosion (Necromancer Only)</span>",
       "<span class='magic'>+4 to Poison Nova (Necromancer Only)</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+50 Defense</span>"
     ],
     "pl": [
@@ -5920,7 +5886,7 @@
       "<span class='magic'>+5 to Poison Dagger (Necromancer Only)</span>",
       "<span class='magic'>+4 to Poison Explosion (Necromancer Only)</span>",
       "<span class='magic'>+4 to Poison Nova (Necromancer Only)</span>",
-      "<span class='magic'>+50 Slows target by</span>",
+      "<span class='magic'>Slows target by 50% </span>",
       "<span class='magic'>+50 Defense</span>"
     ]
   },
@@ -5941,7 +5907,7 @@
       "<span class='magic'>+150% Enhanced damage\n</span>",
       "<span class='magic'>+1-120 to Minimum Lightning Damage</span>",
       "<span class='magic'>Lightning Resist (Based on Character Level)</span>",
-      "<span class='magic'>+20 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 20</span>"
     ],
     "pl": [
       "<span class='unique'>Stormspike</span>",
@@ -5956,7 +5922,7 @@
       "<span class='magic'>+150% Enhanced damage\n</span>",
       "<span class='magic'>+1-120 to Minimum Lightning Damage</span>",
       "<span class='magic'>Lightning Resist (Based on Character Level)</span>",
-      "<span class='magic'>+20 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 20</span>"
     ]
   },
   {
@@ -6015,7 +5981,7 @@
       "<span class='white'>Spear Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>Adds 30-50 damage\n</span>",
       "<span class='magic'>+140-180% Enhanced damage\n</span>",
-      "<span class='magic'>+75 Slows target by</span>",
+      "<span class='magic'>Slows target by 75% </span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>to Life (Based on Character Level)</span>",
       "<span class='magic'>+50% Fire Resist</span>"
@@ -6031,7 +5997,7 @@
       "<span class='white'>Spear Class -</span> <span class='white'>Normal Attack Speed</span>",
       "<span class='magic'>Adds 30-50 damage\n</span>",
       "<span class='magic'>+140-180% Enhanced damage\n</span>",
-      "<span class='magic'>+75 Slows target by</span>",
+      "<span class='magic'>Slows target by 75% </span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>to Life (Based on Character Level)</span>",
       "<span class='magic'>+50% Fire Resist</span>"
@@ -6045,7 +6011,7 @@
       "<span class='unique'>Soulfeast Tine</span>",
       "<span class='unique'>War Fork</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>40-46 to 100-116</span>",
-      "<span class='white'>Durability: 28 of 28</span>",
+      "<span class='white'>Durability: 43 of 43</span>",
       "<span class='requirement'>Required Dexterity: 76</span>",
       "<span class='requirement'>Required Strength: 64</span>",
       "<span class='white'>Required Level: 35</span>",
@@ -6055,14 +6021,13 @@
       "<span class='magic'>7% Mana stolen per hit</span>",
       "<span class='magic'>7% Life stolen per hit</span>",
       "<span class='magic'>+20 Stamina Drain</span>",
-      "<span class='magic'>-20% Requirements</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-20% Requirements</span>"
     ],
     "pl": [
       "<span class='unique'>Soulfeast Tine</span>",
       "<span class='unique'>War Fork</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>40-46 to 100-116</span>",
-      "<span class='white'>Durability: 28 of 28</span>",
+      "<span class='white'>Durability: 43 of 43</span>",
       "<span class='requirement'>Required Dexterity: 76</span>",
       "<span class='requirement'>Required Strength: 64</span>",
       "<span class='white'>Required Level: 35</span>",
@@ -6072,8 +6037,7 @@
       "<span class='magic'>7% Mana stolen per hit</span>",
       "<span class='magic'>7% Life stolen per hit</span>",
       "<span class='magic'>+20 Stamina Drain</span>",
-      "<span class='magic'>-20% Requirements</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-20% Requirements</span>"
     ]
   },
   {
@@ -6091,7 +6055,7 @@
       "<span class='magic'>Adds 20-40 damage\n</span>",
       "<span class='magic'>+160-200% Enhanced damage\n</span>",
       "<span class='magic'>+45% Chance of Crushing Blow</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
+      "<span class='magic'>Repairs 1 durability in 10 seconds</span>",
       "<span class='magic'>Socketed (undefined})}</span>"
     ],
     "pl": [
@@ -6105,7 +6069,7 @@
       "<span class='magic'>Adds 20-40 damage\n</span>",
       "<span class='magic'>+160-200% Enhanced damage\n</span>",
       "<span class='magic'>+45% Chance of Crushing Blow</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
+      "<span class='magic'>Repairs 1 durability in 10 seconds</span>",
       "<span class='magic'>Socketed (undefined})}</span>"
     ]
   },
@@ -6196,7 +6160,7 @@
       "<span class='unique'>Bill</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>28-33 to 106-127</span>",
       "<span class='white'>Durability: 50 of 50</span>",
-      "<span class='requirement'>Required Strength: 71</span>",
+      "<span class='requirement'>Required Strength: 72</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>5% Chance to cast level 5 Weaken on striking</span>",
@@ -6211,7 +6175,7 @@
       "<span class='unique'>Bill</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>28-33 to 106-127</span>",
       "<span class='white'>Durability: 50 of 50</span>",
-      "<span class='requirement'>Required Strength: 71</span>",
+      "<span class='requirement'>Required Strength: 72</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
       "<span class='magic'>5% Chance to cast level 5 Weaken on striking</span>",
@@ -6355,7 +6319,7 @@
       "<span class='magic'>Adds 131-232 fire damage\n</span>",
       "<span class='magic'>+20% Enhanced Defense</span>",
       "<span class='magic'>+45% Fire Resist</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 8</span>",
       "<span class='magic'>-50% Requirements</span>"
     ],
     "pl": [
@@ -6374,7 +6338,7 @@
       "<span class='magic'>Adds 131-232 fire damage\n</span>",
       "<span class='magic'>+20% Enhanced Defense</span>",
       "<span class='magic'>+45% Fire Resist</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 8</span>",
       "<span class='magic'>-50% Requirements</span>"
     ]
   },
@@ -6396,7 +6360,7 @@
       "<span class='magic'>+175 to Mana</span>",
       "<span class='magic'>All Resistances +50 \n</span>",
       "<span class='magic'>Magic Damage Reduced by 15</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>"
     ],
     "pl": [
       "<span class='unique'>Razorswitch</span>",
@@ -6412,7 +6376,7 @@
       "<span class='magic'>+175 to Mana</span>",
       "<span class='magic'>All Resistances +50 \n</span>",
       "<span class='magic'>Magic Damage Reduced by 15</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>"
     ]
   },
   {
@@ -6423,7 +6387,7 @@
       "<span class='unique'>Ribcracker</span>",
       "<span class='unique'>Quarterstaff</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>54-62 to 143-169</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 130 of 130</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 31</span>",
       "<span class='white'>Staff Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -6434,14 +6398,13 @@
       "<span class='magic'>+50% Chance of Crushing Blow</span>",
       "<span class='magic'>+100% Enhanced Defense</span>",
       "<span class='magic'>+100 Defense</span>",
-      "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Dexterity</span>"
     ],
     "pl": [
       "<span class='unique'>Ribcracker</span>",
       "<span class='unique'>Quarterstaff</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>54-62 to 143-169</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 130 of 130</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 31</span>",
       "<span class='white'>Staff Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -6452,8 +6415,7 @@
       "<span class='magic'>+50% Chance of Crushing Blow</span>",
       "<span class='magic'>+100% Enhanced Defense</span>",
       "<span class='magic'>+100 Defense</span>",
-      "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Dexterity</span>"
     ]
   },
   {
@@ -6475,7 +6437,7 @@
       "<span class='magic'>+1 to Cold Mastery (Sorceress Only)</span>",
       "<span class='magic'>+20-25% Increase Maximum Life</span>",
       "<span class='magic'>All Resistances +20-40 \n</span>",
-      "<span class='magic'>+20 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 20</span>"
     ],
     "pl": [
       "<span class='unique'>Chromatic Ire</span>",
@@ -6492,7 +6454,7 @@
       "<span class='magic'>+1 to Cold Mastery (Sorceress Only)</span>",
       "<span class='magic'>+20-25% Increase Maximum Life</span>",
       "<span class='magic'>All Resistances +20-40 \n</span>",
-      "<span class='magic'>+20 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 20</span>"
     ]
   },
   {
@@ -6614,7 +6576,7 @@
       "<span class='magic'>+180-220% Enhanced damage\n</span>",
       "<span class='magic'>7-10% Life stolen per hit</span>",
       "<span class='magic'>+30% Chance of Open Wounds</span>",
-      "<span class='magic'>+30 Slows target by</span>",
+      "<span class='magic'>Slows target by 30% </span>",
       "<span class='magic'>+35 to Mana</span>"
     ],
     "pl": [
@@ -6629,7 +6591,7 @@
       "<span class='magic'>+180-220% Enhanced damage\n</span>",
       "<span class='magic'>7-10% Life stolen per hit</span>",
       "<span class='magic'>+30% Chance of Open Wounds</span>",
-      "<span class='magic'>+30 Slows target by</span>",
+      "<span class='magic'>Slows target by 30% </span>",
       "<span class='magic'>+35 to Mana</span>"
     ]
   },
@@ -6754,7 +6716,7 @@
       "<span class='magic'>+5-10 to Minimum Damage</span>",
       "<span class='magic'>+190-230% Enhanced damage\n</span>",
       "<span class='magic'>+20-30 to Maximum Damage</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+80 Defense vs. Missile</span>",
       "<span class='magic'>+50 to Life</span>"
     ],
@@ -6770,7 +6732,7 @@
       "<span class='magic'>+5-10 to Minimum Damage</span>",
       "<span class='magic'>+190-230% Enhanced damage\n</span>",
       "<span class='magic'>+20-30 to Maximum Damage</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+80 Defense vs. Missile</span>",
       "<span class='magic'>+50 to Life</span>"
     ]
@@ -6870,7 +6832,7 @@
       "<span class='magic'>+10-30 to Maximum Damage</span>",
       "<span class='magic'>+1-212 to Minimum Lightning Damage</span>",
       "<span class='magic'>+33% Chance of Open Wounds</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+30 to Life</span>",
       "<span class='magic'>+30-60% better chance of getting magic item</span>"
     ],
@@ -6887,7 +6849,7 @@
       "<span class='magic'>+10-30 to Maximum Damage</span>",
       "<span class='magic'>+1-212 to Minimum Lightning Damage</span>",
       "<span class='magic'>+33% Chance of Open Wounds</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+30 to Life</span>",
       "<span class='magic'>+30-60% better chance of getting magic item</span>"
     ]
@@ -7227,11 +7189,11 @@
       "<span class='requirement'>Required Strength: 55</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>+180-220% Enhanced Defense</span>",
       "<span class='magic'>+15% Lightning Resist</span>",
       "<span class='magic'>+20 Lightning Absorb</span>",
-      "<span class='magic'>+25 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 25</span>"
     ],
     "pl": [
       "<span class='unique'>Blackhorn's Face</span>",
@@ -7241,11 +7203,11 @@
       "<span class='requirement'>Required Strength: 55</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>+180-220% Enhanced Defense</span>",
       "<span class='magic'>+15% Lightning Resist</span>",
       "<span class='magic'>+20 Lightning Absorb</span>",
-      "<span class='magic'>+25 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 25</span>"
     ]
   },
   {
@@ -7353,29 +7315,27 @@
       "<span class='unique'>Skin of the Flayed One</span>",
       "<span class='unique'>Demonhide Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>307 to 397</span>",
-      "<span class='white'>Durability: 28 of 28</span>",
+      "<span class='white'>Durability: 58 of 58</span>",
       "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 31</span>",
       "<span class='magic'>5-7% Life stolen per hit</span>",
       "<span class='magic'>+150-190% Enhanced Defense</span>",
       "<span class='magic'>+15-25 Replenish Life</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>",
+      "<span class='magic'>Repairs 1 durability in 10 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Skin of the Flayed One</span>",
       "<span class='unique'>Demonhide Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>307 to 397</span>",
-      "<span class='white'>Durability: 28 of 28</span>",
+      "<span class='white'>Durability: 58 of 58</span>",
       "<span class='requirement'>Required Strength: 50</span>",
       "<span class='white'>Required Level: 31</span>",
       "<span class='magic'>5-7% Life stolen per hit</span>",
       "<span class='magic'>+150-190% Enhanced Defense</span>",
       "<span class='magic'>+15-25 Replenish Life</span>",
-      "<span class='magic'>+15 Attacker Takes Damage of</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 15</span>",
+      "<span class='magic'>Repairs 1 durability in 10 seconds</span>"
     ]
   },
   {
@@ -7386,29 +7346,27 @@
       "<span class='unique'>Iron Pelt</span>",
       "<span class='unique'>Trellised Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>208 to 506</span>",
-      "<span class='white'>Durability: 32 of 32</span>",
+      "<span class='white'>Durability: 157 of 157</span>",
       "<span class='requirement'>Required Strength: 61</span>",
       "<span class='white'>Required Level: 33</span>",
       "<span class='magic'>+50-100% Enhanced Defense</span>",
       "<span class='magic'>+198 Defense (Based on Character Level)</span>",
       "<span class='magic'>+25 to Life</span>",
       "<span class='magic'>Damage Reduced by 15-20</span>",
-      "<span class='magic'>Magic Damage Reduced by 10-16</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 10-16</span>"
     ],
     "pl": [
       "<span class='unique'>Iron Pelt</span>",
       "<span class='unique'>Trellised Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>208 to 506</span>",
-      "<span class='white'>Durability: 32 of 32</span>",
+      "<span class='white'>Durability: 157 of 157</span>",
       "<span class='requirement'>Required Strength: 61</span>",
       "<span class='white'>Required Level: 33</span>",
       "<span class='magic'>+50-100% Enhanced Defense</span>",
       "<span class='magic'>+198 Defense (Based on Character Level)</span>",
       "<span class='magic'>+25 to Life</span>",
       "<span class='magic'>Damage Reduced by 15-20</span>",
-      "<span class='magic'>Magic Damage Reduced by 10-16</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 10-16</span>"
     ]
   },
   {
@@ -7516,7 +7474,7 @@
       "<span class='unique'>Duriel's Shell</span>",
       "<span class='unique'>Cuirass</span>",
       "<span class='white'>Defense:</span> <span class='magic'>491 to 807</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 150 of 150</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
@@ -7527,14 +7485,13 @@
       "<span class='magic'>+20% Lightning Resist</span>",
       "<span class='magic'>+20% Fire Resist</span>",
       "<span class='magic'>+20% Poison Resist</span>",
-      "<span class='magic'>Cannot Be Frozen</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Cannot Be Frozen</span>"
     ],
     "pl": [
       "<span class='unique'>Duriel's Shell</span>",
       "<span class='unique'>Cuirass</span>",
       "<span class='white'>Defense:</span> <span class='magic'>491 to 807</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 150 of 150</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 41</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
@@ -7545,8 +7502,7 @@
       "<span class='magic'>+20% Lightning Resist</span>",
       "<span class='magic'>+20% Fire Resist</span>",
       "<span class='magic'>+20% Poison Resist</span>",
-      "<span class='magic'>Cannot Be Frozen</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Cannot Be Frozen</span>"
     ]
   },
   {
@@ -7557,29 +7513,27 @@
       "<span class='unique'>Skullder's Ire</span>",
       "<span class='unique'>Russet Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>587 to 732</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 90 of 90</span>",
       "<span class='requirement'>Required Strength: 97</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>Magic Damage Reduced by 10</span>",
       "<span class='magic'>better chance of getting magic item (Based on Character Level)</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Repairs 1 durability in 5 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Skullder's Ire</span>",
       "<span class='unique'>Russet Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>587 to 732</span>",
-      "<span class='white'>Durability: 30 of 30</span>",
+      "<span class='white'>Durability: 90 of 90</span>",
       "<span class='requirement'>Required Strength: 97</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>Magic Damage Reduced by 10</span>",
       "<span class='magic'>better chance of getting magic item (Based on Character Level)</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Repairs 1 durability in 5 seconds</span>"
     ]
   },
   {
@@ -7625,7 +7579,7 @@
       "<span class='unique'>Toothrow</span>",
       "<span class='unique'>Sharktooth Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>631 to 828</span>",
-      "<span class='white'>Durability: 48 of 48</span>",
+      "<span class='white'>Durability: 63 of 63</span>",
       "<span class='requirement'>Required Strength: 103</span>",
       "<span class='white'>Required Level: 48</span>",
       "<span class='magic'>+40% Chance of Open Wounds</span>",
@@ -7633,14 +7587,13 @@
       "<span class='magic'>+40-60 Defense</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+15% Fire Resist</span>",
-      "<span class='magic'>+20-40 Attacker Takes Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 20-40</span>"
     ],
     "pl": [
       "<span class='unique'>Toothrow</span>",
       "<span class='unique'>Sharktooth Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>631 to 828</span>",
-      "<span class='white'>Durability: 48 of 48</span>",
+      "<span class='white'>Durability: 63 of 63</span>",
       "<span class='requirement'>Required Strength: 103</span>",
       "<span class='white'>Required Level: 48</span>",
       "<span class='magic'>+40% Chance of Open Wounds</span>",
@@ -7648,8 +7601,7 @@
       "<span class='magic'>+40-60 Defense</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+15% Fire Resist</span>",
-      "<span class='magic'>+20-40 Attacker Takes Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 20-40</span>"
     ]
   },
   {
@@ -7660,7 +7612,7 @@
       "<span class='unique'>Atma's Wail</span>",
       "<span class='unique'>Embossed Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>622 to 988</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
+      "<span class='white'>Durability: 105 of 105</span>",
       "<span class='requirement'>Required Strength: 125</span>",
       "<span class='white'>Required Level: 51</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -7669,14 +7621,13 @@
       "<span class='magic'>+15 to Dexterity</span>",
       "<span class='magic'>+10 Replenish Life</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
-      "<span class='magic'>+20% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+20% better chance of getting magic item</span>"
     ],
     "pl": [
       "<span class='unique'>Atma's Wail</span>",
       "<span class='unique'>Embossed Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>622 to 988</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
+      "<span class='white'>Durability: 105 of 105</span>",
       "<span class='requirement'>Required Strength: 125</span>",
       "<span class='white'>Required Level: 51</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -7685,8 +7636,7 @@
       "<span class='magic'>+15 to Dexterity</span>",
       "<span class='magic'>+10 Replenish Life</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
-      "<span class='magic'>+20% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+20% better chance of getting magic item</span>"
     ]
   },
   {
@@ -7703,7 +7653,7 @@
       "<span class='magic'>+30-60 Damage to Demons</span>",
       "<span class='magic'>+200-250 to Attack Rating against Demons</span>",
       "<span class='magic'>+140-200% Enhanced Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>-2 to Light Radius</span>",
       "<span class='magic'>Socketed (undefined})}</span>"
     ],
@@ -7717,7 +7667,7 @@
       "<span class='magic'>+30-60 Damage to Demons</span>",
       "<span class='magic'>+200-250 to Attack Rating against Demons</span>",
       "<span class='magic'>+140-200% Enhanced Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>-2 to Light Radius</span>",
       "<span class='magic'>Socketed (undefined})}</span>"
     ]
@@ -7807,7 +7757,7 @@
       "<span class='magic'>+30% Faster Block Rate</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
       "<span class='magic'>+100-150% Enhanced Defense</span>",
-      "<span class='magic'>+10 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10</span>"
     ],
     "pl": [
       "<span class='unique'>Visceratuant</span>",
@@ -7820,7 +7770,7 @@
       "<span class='magic'>+30% Faster Block Rate</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
       "<span class='magic'>+100-150% Enhanced Defense</span>",
-      "<span class='magic'>+10 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10</span>"
     ]
   },
   {
@@ -7873,7 +7823,7 @@
       "<span class='magic'>+1-60 to Minimum Lightning Damage</span>",
       "<span class='magic'>+160-220% Enhanced Defense</span>",
       "<span class='magic'>+50% Lightning Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>Stormchaser</span>",
@@ -7890,7 +7840,7 @@
       "<span class='magic'>+1-60 to Minimum Lightning Damage</span>",
       "<span class='magic'>+160-220% Enhanced Defense</span>",
       "<span class='magic'>+50% Lightning Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -7901,7 +7851,7 @@
       "<span class='unique'>Tiamat's Rebuke</span>",
       "<span class='unique'>Dragon Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>144 to 204</span>",
-      "<span class='white'>Durability: 76 of 76</span>",
+      "<span class='white'>Durability: 116 of 116</span>",
       "<span class='requirement'>Required Strength: 91</span>",
       "<span class='white'>Required Level: 38</span>",
       "<span class='magic'>5% Chance to cast level 9 Frost Nova when struck</span>",
@@ -7911,14 +7861,13 @@
       "<span class='magic'>+1-120 to Minimum Lightning Damage</span>",
       "<span class='magic'>+27-53 to Minimum Cold Damage</span>",
       "<span class='magic'>+140-200% Enhanced Defense</span>",
-      "<span class='magic'>All Resistances +25-35 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +25-35 \n</span>"
     ],
     "pl": [
       "<span class='unique'>Tiamat's Rebuke</span>",
       "<span class='unique'>Dragon Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>144 to 204</span>",
-      "<span class='white'>Durability: 76 of 76</span>",
+      "<span class='white'>Durability: 116 of 116</span>",
       "<span class='requirement'>Required Strength: 91</span>",
       "<span class='white'>Required Level: 38</span>",
       "<span class='magic'>5% Chance to cast level 9 Frost Nova when struck</span>",
@@ -7928,8 +7877,7 @@
       "<span class='magic'>+1-120 to Minimum Lightning Damage</span>",
       "<span class='magic'>+27-53 to Minimum Cold Damage</span>",
       "<span class='magic'>+140-200% Enhanced Defense</span>",
-      "<span class='magic'>All Resistances +25-35 \n</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>All Resistances +25-35 \n</span>"
     ]
   },
   {
@@ -7940,7 +7888,7 @@
       "<span class='unique'>Gerke's Sanctuary</span>",
       "<span class='unique'>Pavise</span>",
       "<span class='white'>Defense:</span> <span class='magic'>193 to 268</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
+      "<span class='white'>Durability: 172 of 172</span>",
       "<span class='requirement'>Required Strength: 133</span>",
       "<span class='white'>Required Level: 44</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -7948,14 +7896,13 @@
       "<span class='magic'>+15 Replenish Life</span>",
       "<span class='magic'>All Resistances +20-30 \n</span>",
       "<span class='magic'>Damage Reduced by 11-16</span>",
-      "<span class='magic'>Magic Damage Reduced by 14-18</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 14-18</span>"
     ],
     "pl": [
       "<span class='unique'>Gerke's Sanctuary</span>",
       "<span class='unique'>Pavise</span>",
       "<span class='white'>Defense:</span> <span class='magic'>193 to 268</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
+      "<span class='white'>Durability: 172 of 172</span>",
       "<span class='requirement'>Required Strength: 133</span>",
       "<span class='white'>Required Level: 44</span>",
       "<span class='magic'>+30% Increased Chance of Blocking</span>",
@@ -7963,8 +7910,7 @@
       "<span class='magic'>+15 Replenish Life</span>",
       "<span class='magic'>All Resistances +20-30 \n</span>",
       "<span class='magic'>Damage Reduced by 11-16</span>",
-      "<span class='magic'>Magic Damage Reduced by 14-18</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 14-18</span>"
     ]
   },
   {
@@ -7975,7 +7921,7 @@
       "<span class='unique'>Radament's Sphere</span>",
       "<span class='unique'>Ancient Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>210 to 282</span>",
-      "<span class='white'>Durability: 80 of 80</span>",
+      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 50</span>",
       "<span class='magic'>5% Chance to cast level 5 Poison Nova when struck</span>",
@@ -7984,14 +7930,13 @@
       "<span class='magic'>+80 poison damage over 4 seconds\n</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>+75% Poison Resist</span>",
-      "<span class='magic'>Level 6 Poison Explosion (40/40 Charges)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Level 6 Poison Explosion (40/40 Charges)</span>"
     ],
     "pl": [
       "<span class='unique'>Radament's Sphere</span>",
       "<span class='unique'>Ancient Shield</span>",
       "<span class='white'>Defense:</span> <span class='magic'>210 to 282</span>",
-      "<span class='white'>Durability: 80 of 80</span>",
+      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 50</span>",
       "<span class='magic'>5% Chance to cast level 5 Poison Nova when struck</span>",
@@ -8000,8 +7945,7 @@
       "<span class='magic'>+80 poison damage over 4 seconds\n</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>+75% Poison Resist</span>",
-      "<span class='magic'>Level 6 Poison Explosion (40/40 Charges)</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Level 6 Poison Explosion (40/40 Charges)</span>"
     ]
   },
   {
@@ -8054,7 +7998,7 @@
       "<span class='magic'>+20% Deadly Strike</span>",
       "<span class='magic'>+70-120% Enhanced Defense</span>",
       "<span class='magic'>+50 to Life</span>",
-      "<span class='magic'>+47 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 47</span>",
       "<span class='magic'>+15 Damage Taken Goes To Mana</span>"
     ],
     "pl": [
@@ -8068,7 +8012,7 @@
       "<span class='magic'>+20% Deadly Strike</span>",
       "<span class='magic'>+70-120% Enhanced Defense</span>",
       "<span class='magic'>+50 to Life</span>",
-      "<span class='magic'>+47 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 47</span>",
       "<span class='magic'>+15 Damage Taken Goes To Mana</span>"
     ]
   },
@@ -8177,7 +8121,7 @@
       "<span class='unique'>Lava Gout</span>",
       "<span class='unique'>Battle Gauntlets</span>",
       "<span class='white'>Defense:</span> <span class='magic'>100 to 144</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
+      "<span class='white'>Durability: 38 of 38</span>",
       "<span class='requirement'>Required Strength: 88</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>2% Chance to cast level 10 Enchant on striking</span>",
@@ -8185,14 +8129,13 @@
       "<span class='magic'>Adds 13-46 fire damage\n</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
       "<span class='magic'>+24% Fire Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>Lava Gout</span>",
       "<span class='unique'>Battle Gauntlets</span>",
       "<span class='white'>Defense:</span> <span class='magic'>100 to 144</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
+      "<span class='white'>Durability: 38 of 38</span>",
       "<span class='requirement'>Required Strength: 88</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>2% Chance to cast level 10 Enchant on striking</span>",
@@ -8200,8 +8143,7 @@
       "<span class='magic'>Adds 13-46 fire damage\n</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
       "<span class='magic'>+24% Fire Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -8212,29 +8154,27 @@
       "<span class='unique'>Hellmouth</span>",
       "<span class='unique'>War Gauntlets</span>",
       "<span class='white'>Defense:</span> <span class='magic'>110 to 162</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 39 of 39</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>2% Chance to cast level 4 Meteor on striking</span>",
       "<span class='magic'>4% Chance to cast level 12 Firestorm on striking</span>",
       "<span class='magic'>Adds 15-72 fire damage\n</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
-      "<span class='magic'>+15 Fire Absorb</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 Fire Absorb</span>"
     ],
     "pl": [
       "<span class='unique'>Hellmouth</span>",
       "<span class='unique'>War Gauntlets</span>",
       "<span class='white'>Defense:</span> <span class='magic'>110 to 162</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
+      "<span class='white'>Durability: 39 of 39</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>2% Chance to cast level 4 Meteor on striking</span>",
       "<span class='magic'>4% Chance to cast level 12 Firestorm on striking</span>",
       "<span class='magic'>Adds 15-72 fire damage\n</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
-      "<span class='magic'>+15 Fire Absorb</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 Fire Absorb</span>"
     ]
   },
   {
@@ -8352,7 +8292,7 @@
       "<span class='unique'>War Traveler</span>",
       "<span class='unique'>Battle Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>100 to 139</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
+      "<span class='white'>Durability: 48 of 48</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>+25% Faster Run/Walk</span>",
@@ -8361,15 +8301,14 @@
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+10 to Vitality</span>",
       "<span class='magic'>+40 Stamina Drain</span>",
-      "<span class='magic'>+5-10 Attacker Takes Damage of</span>",
-      "<span class='magic'>+30-50% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 5-10</span>",
+      "<span class='magic'>+30-50% better chance of getting magic item</span>"
     ],
     "pl": [
       "<span class='unique'>War Traveler</span>",
       "<span class='unique'>Battle Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>100 to 139</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
+      "<span class='white'>Durability: 48 of 48</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 42</span>",
       "<span class='magic'>+25% Faster Run/Walk</span>",
@@ -8378,9 +8317,8 @@
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+10 to Vitality</span>",
       "<span class='magic'>+40 Stamina Drain</span>",
-      "<span class='magic'>+5-10 Attacker Takes Damage of</span>",
-      "<span class='magic'>+30-50% better chance of getting magic item</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 5-10</span>",
+      "<span class='magic'>+30-50% better chance of getting magic item</span>"
     ]
   },
   {
@@ -8391,8 +8329,8 @@
       "<span class='unique'>Gore Rider</span>",
       "<span class='unique'>War Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>114 to 162</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
-      "<span class='requirement'>Required Strength: 93</span>",
+      "<span class='white'>Durability: 34 of 34</span>",
+      "<span class='requirement'>Required Strength: 94</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>+30% Faster Run/Walk</span>",
       "<span class='magic'>+15% Chance of Crushing Blow</span>",
@@ -8400,15 +8338,14 @@
       "<span class='magic'>+10% Chance of Open Wounds</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>+20 Maximum Stamina</span>",
-      "<span class='magic'>-25% Requirements</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-25% Requirements</span>"
     ],
     "pl": [
       "<span class='unique'>Gore Rider</span>",
       "<span class='unique'>War Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>114 to 162</span>",
-      "<span class='white'>Durability: 24 of 24</span>",
-      "<span class='requirement'>Required Strength: 93</span>",
+      "<span class='white'>Durability: 34 of 34</span>",
+      "<span class='requirement'>Required Strength: 94</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>+30% Faster Run/Walk</span>",
       "<span class='magic'>+15% Chance of Crushing Blow</span>",
@@ -8416,8 +8353,7 @@
       "<span class='magic'>+10% Chance of Open Wounds</span>",
       "<span class='magic'>+160-200% Enhanced Defense</span>",
       "<span class='magic'>+20 Maximum Stamina</span>",
-      "<span class='magic'>-25% Requirements</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-25% Requirements</span>"
     ]
   },
   {
@@ -8428,29 +8364,27 @@
       "<span class='unique'>String of Ears</span>",
       "<span class='unique'>Demonhide Sash</span>",
       "<span class='white'>Defense:</span> <span class='magic'>75 to 98</span>",
-      "<span class='white'>Durability: 12 of 12</span>",
+      "<span class='white'>Durability: 22 of 22</span>",
       "<span class='requirement'>Required Strength: 20</span>",
       "<span class='white'>Required Level: 29</span>",
       "<span class='magic'>6-8% Life stolen per hit</span>",
       "<span class='magic'>+150-180% Enhanced Defense</span>",
       "<span class='magic'>+15 Defense</span>",
       "<span class='magic'>+10-15% Damage Reduced by</span>",
-      "<span class='magic'>Magic Damage Reduced by 10-15</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 10-15</span>"
     ],
     "pl": [
       "<span class='unique'>String of Ears</span>",
       "<span class='unique'>Demonhide Sash</span>",
       "<span class='white'>Defense:</span> <span class='magic'>75 to 98</span>",
-      "<span class='white'>Durability: 12 of 12</span>",
+      "<span class='white'>Durability: 22 of 22</span>",
       "<span class='requirement'>Required Strength: 20</span>",
       "<span class='white'>Required Level: 29</span>",
       "<span class='magic'>6-8% Life stolen per hit</span>",
       "<span class='magic'>+150-180% Enhanced Defense</span>",
       "<span class='magic'>+15 Defense</span>",
       "<span class='magic'>+10-15% Damage Reduced by</span>",
-      "<span class='magic'>Magic Damage Reduced by 10-15</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Magic Damage Reduced by 10-15</span>"
     ]
   },
   {
@@ -8501,7 +8435,7 @@
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>+15 to Vitality</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>-3 to Light Radius</span>"
     ],
     "pl": [
@@ -8515,7 +8449,7 @@
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>+15 to Vitality</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>-3 to Light Radius</span>"
     ]
   },
@@ -8642,7 +8576,7 @@
       "<span class='unique'>Veil of Steel</span>",
       "<span class='unique'>Spired Helm</span>",
       "<span class='white'>Defense:</span> <span class='magic'>184 to 256</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
+      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 192</span>",
       "<span class='white'>Required Level: 73</span>",
       "<span class='magic'>+60% Enhanced Defense</span>",
@@ -8650,14 +8584,13 @@
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+15 to Vitality</span>",
       "<span class='magic'>All Resistances +50 \n</span>",
-      "<span class='magic'>-4 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-4 to Light Radius</span>"
     ],
     "pl": [
       "<span class='unique'>Veil of Steel</span>",
       "<span class='unique'>Spired Helm</span>",
       "<span class='white'>Defense:</span> <span class='magic'>184 to 256</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
+      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 192</span>",
       "<span class='white'>Required Level: 73</span>",
       "<span class='magic'>+60% Enhanced Defense</span>",
@@ -8665,8 +8598,7 @@
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+15 to Vitality</span>",
       "<span class='magic'>All Resistances +50 \n</span>",
-      "<span class='magic'>-4 to Light Radius</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>-4 to Light Radius</span>"
     ]
   },
   {
@@ -8677,7 +8609,7 @@
       "<span class='unique'>The Gladiator's Bane</span>",
       "<span class='unique'>Wire Fleece</span>",
       "<span class='white'>Defense:</span> <span class='magic'>940 to 1446</span>",
-      "<span class='white'>Durability: 32 of 32</span>",
+      "<span class='white'>Durability: 135 of 135</span>",
       "<span class='requirement'>Required Strength: 111</span>",
       "<span class='white'>Required Level: 85</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -8687,14 +8619,13 @@
       "<span class='magic'>Magic Damage Reduced by 15-20</span>",
       "<span class='magic'>Cannot Be Frozen</span>",
       "<span class='magic'>Poison Length Reduced by 50%</span>",
-      "<span class='magic'>+20 Attacker Takes Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 20</span>"
     ],
     "pl": [
       "<span class='unique'>The Gladiator's Bane</span>",
       "<span class='unique'>Wire Fleece</span>",
       "<span class='white'>Defense:</span> <span class='magic'>940 to 1446</span>",
-      "<span class='white'>Durability: 32 of 32</span>",
+      "<span class='white'>Durability: 135 of 135</span>",
       "<span class='requirement'>Required Strength: 111</span>",
       "<span class='white'>Required Level: 85</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -8704,8 +8635,7 @@
       "<span class='magic'>Magic Damage Reduced by 15-20</span>",
       "<span class='magic'>Cannot Be Frozen</span>",
       "<span class='magic'>Poison Length Reduced by 50%</span>",
-      "<span class='magic'>+20 Attacker Takes Damage of</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Attacker Takes Damage of 20</span>"
     ]
   },
   {
@@ -8747,7 +8677,7 @@
       "<span class='unique'>Blackoak Shield</span>",
       "<span class='unique'>Luna</span>",
       "<span class='white'>Defense:</span> <span class='magic'>283 to 372</span>",
-      "<span class='white'>Durability: 84 of 84</span>",
+      "<span class='white'>Durability: 129 of 129</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 61</span>",
       "<span class='magic'>4% Chance to cast level 5 Weaken when struck</span>",
@@ -8756,14 +8686,13 @@
       "<span class='magic'>to Dexterity (Based on Character Level)</span>",
       "<span class='magic'>to Life (Based on Character Level)</span>",
       "<span class='magic'>Absorbs Cold Damage (Based on Character Level)</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>Blackoak Shield</span>",
       "<span class='unique'>Luna</span>",
       "<span class='white'>Defense:</span> <span class='magic'>283 to 372</span>",
-      "<span class='white'>Durability: 84 of 84</span>",
+      "<span class='white'>Durability: 129 of 129</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 61</span>",
       "<span class='magic'>4% Chance to cast level 5 Weaken when struck</span>",
@@ -8772,8 +8701,7 @@
       "<span class='magic'>to Dexterity (Based on Character Level)</span>",
       "<span class='magic'>to Life (Based on Character Level)</span>",
       "<span class='magic'>Absorbs Cold Damage (Based on Character Level)</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -8784,7 +8712,6 @@
       "<span class='unique'>Stormshield</span>",
       "<span class='unique'>Monarch</span>",
       "<span class='white'>Defense:</span> <span class='magic'>133 to 346</span>",
-      "<span class='white'>Durability: 86 of 86</span>",
       "<span class='requirement'>Required Strength: 156</span>",
       "<span class='white'>Required Level: 73</span>",
       "<span class='magic'>Indestructible</span>",
@@ -8795,13 +8722,12 @@
       "<span class='magic'>+60% Cold Resist</span>",
       "<span class='magic'>+25% Lightning Resist</span>",
       "<span class='magic'>+35% Damage Reduced by</span>",
-      "<span class='magic'>+10 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10</span>"
     ],
     "pl": [
       "<span class='unique'>Stormshield</span>",
       "<span class='unique'>Monarch</span>",
       "<span class='white'>Defense:</span> <span class='magic'>133 to 346</span>",
-      "<span class='white'>Durability: 86 of 86</span>",
       "<span class='requirement'>Required Strength: 156</span>",
       "<span class='white'>Required Level: 73</span>",
       "<span class='magic'>Indestructible</span>",
@@ -8812,7 +8738,7 @@
       "<span class='magic'>+60% Cold Resist</span>",
       "<span class='magic'>+25% Lightning Resist</span>",
       "<span class='magic'>+35% Damage Reduced by</span>",
-      "<span class='magic'>+10 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 10</span>"
     ]
   },
   {
@@ -8862,7 +8788,7 @@
       "<span class='unique'>Messerschmidt's Reaver</span>",
       "<span class='unique'>Champion Axe</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>177 to 561</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 75 of 75</span>",
       "<span class='requirement'>Required Dexterity: 59</span>",
       "<span class='requirement'>Required Strength: 167</span>",
       "<span class='white'>Required Level: 70</span>",
@@ -8874,14 +8800,13 @@
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+15 to Dexterity</span>",
       "<span class='magic'>+15 to Vitality</span>",
-      "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Energy</span>"
     ],
     "pl": [
       "<span class='unique'>Messerschmidt's Reaver</span>",
       "<span class='unique'>Champion Axe</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>177 to 561</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
+      "<span class='white'>Durability: 75 of 75</span>",
       "<span class='requirement'>Required Dexterity: 59</span>",
       "<span class='requirement'>Required Strength: 167</span>",
       "<span class='white'>Required Level: 70</span>",
@@ -8893,8 +8818,7 @@
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+15 to Dexterity</span>",
       "<span class='magic'>+15 to Vitality</span>",
-      "<span class='magic'>+15 to Energy</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Energy</span>"
     ]
   },
   {
@@ -8905,7 +8829,7 @@
       "<span class='unique'>Baranar's Star</span>",
       "<span class='unique'>Devil Star</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>129 to 159</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
+      "<span class='white'>Durability: 172 of 172</span>",
       "<span class='requirement'>Required Dexterity: 44</span>",
       "<span class='requirement'>Required Strength: 153</span>",
       "<span class='white'>Required Level: 65</span>",
@@ -8917,14 +8841,13 @@
       "<span class='magic'>+1-200 to Minimum Lightning Damage</span>",
       "<span class='magic'>+1-200 to Minimum Cold Damage</span>",
       "<span class='magic'>+15 to Strength</span>",
-      "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Dexterity</span>"
     ],
     "pl": [
       "<span class='unique'>Baranar's Star</span>",
       "<span class='unique'>Devil Star</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>129 to 159</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
+      "<span class='white'>Durability: 172 of 172</span>",
       "<span class='requirement'>Required Dexterity: 44</span>",
       "<span class='requirement'>Required Strength: 153</span>",
       "<span class='white'>Required Level: 65</span>",
@@ -8936,8 +8859,7 @@
       "<span class='magic'>+1-200 to Minimum Lightning Damage</span>",
       "<span class='magic'>+1-200 to Minimum Cold Damage</span>",
       "<span class='magic'>+15 to Strength</span>",
-      "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15 to Dexterity</span>"
     ]
   },
   {
@@ -8948,7 +8870,6 @@
       "<span class='unique'>Schaefer's Hammer</span>",
       "<span class='unique'>Legendary Mallet</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>100-114 to 122-140</span>",
-      "<span class='white'>Durability: 65 of 65</span>",
       "<span class='requirement'>Required Strength: 189</span>",
       "<span class='white'>Required Level: 79</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Normal Attack Speed</span>",
@@ -8967,7 +8888,6 @@
       "<span class='unique'>Schaefer's Hammer</span>",
       "<span class='unique'>Legendary Mallet</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>100-114 to 122-140</span>",
-      "<span class='white'>Durability: 65 of 65</span>",
       "<span class='requirement'>Required Strength: 189</span>",
       "<span class='white'>Required Level: 79</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Normal Attack Speed</span>",
@@ -8991,7 +8911,6 @@
       "<span class='unique'>The Cranium Basher</span>",
       "<span class='unique'>Thunder Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>119-132 to 560-632</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 253</span>",
       "<span class='white'>Required Level: 87</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -9008,7 +8927,6 @@
       "<span class='unique'>The Cranium Basher</span>",
       "<span class='unique'>Thunder Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>119-132 to 560-632</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 253</span>",
       "<span class='white'>Required Level: 87</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Fast Attack Speed</span>",
@@ -9074,7 +8992,6 @@
       "<span class='unique'>Champion Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>97-114 to 251-289</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>228-278 to 332-390</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
       "<span class='requirement'>Required Dexterity: 103</span>",
       "<span class='requirement'>Required Strength: 163</span>",
       "<span class='white'>Required Level: 69</span>",
@@ -9092,7 +9009,6 @@
       "<span class='unique'>Champion Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>97-114 to 251-289</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>228-278 to 332-390</span>",
-      "<span class='white'>Durability: 40 of 40</span>",
       "<span class='requirement'>Required Dexterity: 103</span>",
       "<span class='requirement'>Required Strength: 163</span>",
       "<span class='white'>Required Level: 69</span>",
@@ -9115,7 +9031,6 @@
       "<span class='unique'>Colossus Blade</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>62-87 to 162-227</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>145-203 to 287-402</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Dexterity: 110</span>",
       "<span class='requirement'>Required Strength: 189</span>",
       "<span class='white'>Required Level: 81</span>",
@@ -9135,7 +9050,6 @@
       "<span class='unique'>Colossus Blade</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>62-87 to 162-227</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>145-203 to 287-402</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Dexterity: 110</span>",
       "<span class='requirement'>Required Strength: 189</span>",
       "<span class='white'>Required Level: 81</span>",
@@ -9159,7 +9073,6 @@
       "<span class='unique'>Wizardspike</span>",
       "<span class='unique'>Bone Knife</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>23 to 49</span>",
-      "<span class='white'>Durability: 26 of 26</span>",
       "<span class='requirement'>Required Dexterity: 75</span>",
       "<span class='requirement'>Required Strength: 38</span>",
       "<span class='white'>Required Level: 61</span>",
@@ -9168,14 +9081,13 @@
       "<span class='magic'>+50 Faster Cast Rate</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
       "<span class='magic'>+123 to Mana (Based on Character Level)</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>All Resistances +75 \n</span>"
     ],
     "pl": [
       "<span class='unique'>Wizardspike</span>",
       "<span class='unique'>Bone Knife</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>23 to 49</span>",
-      "<span class='white'>Durability: 26 of 26</span>",
       "<span class='requirement'>Required Dexterity: 75</span>",
       "<span class='requirement'>Required Strength: 38</span>",
       "<span class='white'>Required Level: 61</span>",
@@ -9184,7 +9096,7 @@
       "<span class='magic'>+50 Faster Cast Rate</span>",
       "<span class='magic'>+15% Increase Maximum Mana</span>",
       "<span class='magic'>+123 to Mana (Based on Character Level)</span>",
-      "<span class='magic'>+15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 15% </span>",
       "<span class='magic'>All Resistances +75 \n</span>"
     ]
   },
@@ -9217,7 +9129,6 @@
       "<span class='unique'>Stormspire</span>",
       "<span class='unique'>Giant Thresher</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>100-140 to 285-399</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
       "<span class='requirement'>Required Dexterity: 140</span>",
       "<span class='requirement'>Required Strength: 188</span>",
       "<span class='white'>Required Level: 70</span>",
@@ -9230,13 +9141,12 @@
       "<span class='magic'>+1-237 to Minimum Lightning Damage</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+50% Lightning Resist</span>",
-      "<span class='magic'>+27 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 27</span>"
     ],
     "pl": [
       "<span class='unique'>Stormspire</span>",
       "<span class='unique'>Giant Thresher</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>100-140 to 285-399</span>",
-      "<span class='white'>Durability: 55 of 55</span>",
       "<span class='requirement'>Required Dexterity: 140</span>",
       "<span class='requirement'>Required Strength: 188</span>",
       "<span class='white'>Required Level: 70</span>",
@@ -9249,7 +9159,7 @@
       "<span class='magic'>+1-237 to Minimum Lightning Damage</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+50% Lightning Resist</span>",
-      "<span class='magic'>+27 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 27</span>"
     ]
   },
   {
@@ -9303,7 +9213,7 @@
       "<span class='magic'>+250% Enhanced damage\n</span>",
       "<span class='magic'>to Maximum Damage (Based on Character Level)</span>",
       "<span class='magic'>6-8% Mana stolen per hit</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+5 to Dexterity</span>",
       "<span class='magic'>+30 Heal Stamina Plus</span>"
@@ -9320,7 +9230,7 @@
       "<span class='magic'>+250% Enhanced damage\n</span>",
       "<span class='magic'>to Maximum Damage (Based on Character Level)</span>",
       "<span class='magic'>6-8% Mana stolen per hit</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+5 to Dexterity</span>",
       "<span class='magic'>+30 Heal Stamina Plus</span>"
@@ -9456,7 +9366,7 @@
       "<span class='magic'>+20% bonus to Attack Rating</span>",
       "<span class='magic'>+40 poison damage over 4 seconds\n</span>",
       "<span class='magic'>+75% Poison Resist</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
       "<span class='magic'>+3 to Light Radius</span>"
     ],
     "pl": [
@@ -9466,7 +9376,7 @@
       "<span class='magic'>+20% bonus to Attack Rating</span>",
       "<span class='magic'>+40 poison damage over 4 seconds\n</span>",
       "<span class='magic'>+75% Poison Resist</span>",
-      "<span class='magic'>+5 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 5</span>",
       "<span class='magic'>+3 to Light Radius</span>"
     ]
   },
@@ -9532,7 +9442,7 @@
       "<span class='magic'>+1-30 to Minimum Lightning Damage</span>",
       "<span class='magic'>Deadly Strike (Based on Character Level)</span>",
       "<span class='magic'>+35% Lightning Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>"
     ],
     "pl": [
       "<span class='unique'>Highlord's Wrath</span>",
@@ -9542,7 +9452,7 @@
       "<span class='magic'>+1-30 to Minimum Lightning Damage</span>",
       "<span class='magic'>Deadly Strike (Based on Character Level)</span>",
       "<span class='magic'>+35% Lightning Resist</span>",
-      "<span class='magic'>+15 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 15</span>"
     ]
   },
   {
@@ -9627,7 +9537,7 @@
       "<span class='magic'>+40% Increased Chance of Blocking</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
       "<span class='magic'>+20 to Energy</span>",
-      "<span class='magic'>+33 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 33% </span>",
       "<span class='magic'>All Resistances +40 \n</span>",
       "<span class='magic'>+5 to Mana after each Kill</span>"
     ],
@@ -9645,7 +9555,7 @@
       "<span class='magic'>+40% Increased Chance of Blocking</span>",
       "<span class='magic'>+150-200% Enhanced Defense</span>",
       "<span class='magic'>+20 to Energy</span>",
-      "<span class='magic'>+33 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 33% </span>",
       "<span class='magic'>All Resistances +40 \n</span>",
       "<span class='magic'>+5 to Mana after each Kill</span>"
     ]
@@ -10161,7 +10071,7 @@
       "<span class='magic'>+160-220% Enhanced damage\n</span>",
       "<span class='magic'>12-18% Life stolen per hit</span>",
       "<span class='magic'>+33% Chance of Open Wounds</span>",
-      "<span class='magic'>+25 Slows target by</span>"
+      "<span class='magic'>Slows target by 25% </span>"
     ],
     "pl": [
       "<span class='unique'>Gut Siphon</span>",
@@ -10176,7 +10086,7 @@
       "<span class='magic'>+160-220% Enhanced damage\n</span>",
       "<span class='magic'>12-18% Life stolen per hit</span>",
       "<span class='magic'>+33% Chance of Open Wounds</span>",
-      "<span class='magic'>+25 Slows target by</span>"
+      "<span class='magic'>Slows target by 25% </span>"
     ]
   },
   {
@@ -10231,7 +10141,7 @@
       "<span class='magic'>Adds 222-333 fire damage\n</span>",
       "<span class='magic'>7-13% Life stolen per hit</span>",
       "<span class='magic'>+15-20% Fire Resist</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>",
       "<span class='magic'>Level 23 Enchant (20/20 Charges)</span>"
     ],
     "pl": [
@@ -10247,7 +10157,7 @@
       "<span class='magic'>Adds 222-333 fire damage\n</span>",
       "<span class='magic'>7-13% Life stolen per hit</span>",
       "<span class='magic'>+15-20% Fire Resist</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>",
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>",
       "<span class='magic'>Level 23 Enchant (20/20 Charges)</span>"
     ]
   },
@@ -10466,7 +10376,7 @@
       "<span class='magic'>+33% Deadly Strike</span>",
       "<span class='magic'>+50% Chance of Open Wounds</span>",
       "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>+20 Slows target by</span>"
+      "<span class='magic'>Slows target by 20% </span>"
     ],
     "pl": [
       "<span class='unique'>Fleshripper</span>",
@@ -10483,7 +10393,7 @@
       "<span class='magic'>+33% Deadly Strike</span>",
       "<span class='magic'>+50% Chance of Open Wounds</span>",
       "<span class='magic'>+1 Prevent Monster Heal</span>",
-      "<span class='magic'>+20 Slows target by</span>"
+      "<span class='magic'>Slows target by 20% </span>"
     ]
   },
   {
@@ -10495,14 +10405,14 @@
       "<span class='unique'>Scourge</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>9-11 to 264-304</span>",
       "<span class='white'>Durability: 65 of 65</span>",
-      "<span class='requirement'>Required Dexterity: 61</span>",
+      "<span class='requirement'>Required Dexterity: 62</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 64</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>20% Chance to cast level 15 Tornado on striking</span>",
       "<span class='magic'>+50% Increased Attack Speed</span>",
       "<span class='magic'>+230-280% Enhanced damage\n</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>-20% Requirements</span>"
     ],
     "pl": [
@@ -10510,14 +10420,14 @@
       "<span class='unique'>Scourge</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>9-11 to 264-304</span>",
       "<span class='white'>Durability: 65 of 65</span>",
-      "<span class='requirement'>Required Dexterity: 61</span>",
+      "<span class='requirement'>Required Dexterity: 62</span>",
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 64</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>20% Chance to cast level 15 Tornado on striking</span>",
       "<span class='magic'>+50% Increased Attack Speed</span>",
       "<span class='magic'>+230-280% Enhanced damage\n</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>-20% Requirements</span>"
     ]
   },
@@ -10602,7 +10512,7 @@
       "<span class='unique'>Myrmidon Greaves</span>",
       "<span class='white'>Defense:</span> <span class='magic'>107 to 144</span>",
       "<span class='white'>Durability: 24 of 24</span>",
-      "<span class='requirement'>Required Strength: 166</span>",
+      "<span class='requirement'>Required Strength: 167</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+1-2 to Shadow Disciplines (Assassin Only)</span>",
       "<span class='magic'>+30% Faster Run/Walk</span>",
@@ -10616,7 +10526,7 @@
       "<span class='unique'>Myrmidon Greaves</span>",
       "<span class='white'>Defense:</span> <span class='magic'>107 to 144</span>",
       "<span class='white'>Durability: 24 of 24</span>",
-      "<span class='requirement'>Required Strength: 166</span>",
+      "<span class='requirement'>Required Strength: 167</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+1-2 to Shadow Disciplines (Assassin Only)</span>",
       "<span class='magic'>+30% Faster Run/Walk</span>",
@@ -10667,7 +10577,6 @@
       "<span class='unique'>Tyrael's Might</span>",
       "<span class='unique'>Sacred Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>1073 to 1502</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='white'>Required Level: 84</span>",
       "<span class='magic'>Indestructible</span>",
       "<span class='magic'>+20% Faster Run/Walk</span>",
@@ -10683,7 +10592,6 @@
       "<span class='unique'>Tyrael's Might</span>",
       "<span class='unique'>Sacred Armor</span>",
       "<span class='white'>Defense:</span> <span class='magic'>1073 to 1502</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='white'>Required Level: 84</span>",
       "<span class='magic'>Indestructible</span>",
       "<span class='magic'>+20% Faster Run/Walk</span>",
@@ -10875,7 +10783,6 @@
       "<span class='unique'>Leviathan</span>",
       "<span class='unique'>Kraken Shell</span>",
       "<span class='white'>Defense:</span> <span class='magic'>1128 to 1572</span>",
-      "<span class='white'>Durability: 48 of 48</span>",
       "<span class='requirement'>Required Strength: 174</span>",
       "<span class='white'>Required Level: 65</span>",
       "<span class='magic'>Indestructible</span>",
@@ -10888,7 +10795,6 @@
       "<span class='unique'>Leviathan</span>",
       "<span class='unique'>Kraken Shell</span>",
       "<span class='white'>Defense:</span> <span class='magic'>1128 to 1572</span>",
-      "<span class='white'>Durability: 48 of 48</span>",
       "<span class='requirement'>Required Strength: 174</span>",
       "<span class='white'>Required Level: 65</span>",
       "<span class='magic'>Indestructible</span>",
@@ -11018,7 +10924,7 @@
       "<span class='magic'>-7--15% to Enemy Cold Resistance</span>",
       "<span class='magic'>-7--15% to Enemy Lightning Resistance</span>",
       "<span class='magic'>-7--15% to Enemy Fire Resistance</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 10% </span>"
     ],
     "pl": [
       "<span class='unique'>Mang Song's Lesson</span>",
@@ -11033,7 +10939,7 @@
       "<span class='magic'>-7--15% to Enemy Cold Resistance</span>",
       "<span class='magic'>-7--15% to Enemy Lightning Resistance</span>",
       "<span class='magic'>-7--15% to Enemy Fire Resistance</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 10% </span>"
     ]
   },
   {
@@ -11081,7 +10987,6 @@
       "<span class='unique'>Ethereal Edge</span>",
       "<span class='unique'>Silver Edged Axe</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>155-173 to 275-308</span>",
-      "<span class='white'>Durability: 35 of 35</span>",
       "<span class='requirement'>Required Dexterity: 65</span>",
       "<span class='requirement'>Required Strength: 166</span>",
       "<span class='white'>Required Level: 74</span>",
@@ -11099,7 +11004,6 @@
       "<span class='unique'>Ethereal Edge</span>",
       "<span class='unique'>Silver Edged Axe</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>155-173 to 275-308</span>",
-      "<span class='white'>Durability: 35 of 35</span>",
       "<span class='requirement'>Required Dexterity: 65</span>",
       "<span class='requirement'>Required Strength: 166</span>",
       "<span class='white'>Required Level: 74</span>",
@@ -11131,7 +11035,7 @@
       "<span class='magic'>+10% Increased Attack Speed</span>",
       "<span class='magic'>3-6% Life stolen per hit</span>",
       "<span class='magic'>+120-160% Enhanced Defense</span>",
-      "<span class='magic'>+55-77 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 55-77</span>"
     ],
     "pl": [
       "<span class='unique'>Demonhorn's Edge</span>",
@@ -11146,7 +11050,7 @@
       "<span class='magic'>+10% Increased Attack Speed</span>",
       "<span class='magic'>3-6% Life stolen per hit</span>",
       "<span class='magic'>+120-160% Enhanced Defense</span>",
-      "<span class='magic'>+55-77 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 55-77</span>"
     ]
   },
   {
@@ -11158,7 +11062,7 @@
       "<span class='unique'>Thresher</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>34-40 to 408-479</span>",
       "<span class='white'>Durability: 65 of 65</span>",
-      "<span class='requirement'>Required Dexterity: 88</span>",
+      "<span class='requirement'>Required Dexterity: 89</span>",
       "<span class='requirement'>Required Strength: 114</span>",
       "<span class='white'>Required Level: 75</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
@@ -11175,7 +11079,7 @@
       "<span class='unique'>Thresher</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>34-40 to 408-479</span>",
       "<span class='white'>Durability: 65 of 65</span>",
-      "<span class='requirement'>Required Dexterity: 88</span>",
+      "<span class='requirement'>Required Dexterity: 89</span>",
       "<span class='requirement'>Required Strength: 114</span>",
       "<span class='white'>Required Level: 75</span>",
       "<span class='white'>Polearm Class -</span> <span class='white'>Fast Attack Speed</span>",
@@ -11406,7 +11310,6 @@
       "<span class='unique'>Ghostflame</span>",
       "<span class='unique'>Legend Spike</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>89-105 to 136-159</span>",
-      "<span class='white'>Durability: 47 of 47</span>",
       "<span class='requirement'>Required Dexterity: 67</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 62</span>",
@@ -11423,7 +11326,6 @@
       "<span class='unique'>Ghostflame</span>",
       "<span class='unique'>Legend Spike</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>89-105 to 136-159</span>",
-      "<span class='white'>Durability: 47 of 47</span>",
       "<span class='requirement'>Required Dexterity: 67</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 62</span>",
@@ -11445,7 +11347,6 @@
       "<span class='unique'>Shadow Killer</span>",
       "<span class='unique'>Battle Cestus</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>97-115 to 113-134</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
       "<span class='requirement'>Required Dexterity: 110</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 78</span>",
@@ -11462,7 +11363,6 @@
       "<span class='unique'>Shadow Killer</span>",
       "<span class='unique'>Battle Cestus</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>97-115 to 113-134</span>",
-      "<span class='white'>Durability: 72 of 72</span>",
       "<span class='requirement'>Required Dexterity: 110</span>",
       "<span class='requirement'>Required Strength: 110</span>",
       "<span class='white'>Required Level: 78</span>",
@@ -11696,7 +11596,6 @@
       "<span class='unique'>Steel Pillar</span>",
       "<span class='unique'>War Pike</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>102-118 to 551-640</span>",
-      "<span class='white'>Durability: 25 of 25</span>",
       "<span class='requirement'>Required Dexterity: 106</span>",
       "<span class='requirement'>Required Strength: 165</span>",
       "<span class='white'>Required Level: 69</span>",
@@ -11712,7 +11611,6 @@
       "<span class='unique'>Steel Pillar</span>",
       "<span class='unique'>War Pike</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>102-118 to 551-640</span>",
-      "<span class='white'>Durability: 25 of 25</span>",
       "<span class='requirement'>Required Dexterity: 106</span>",
       "<span class='requirement'>Required Strength: 165</span>",
       "<span class='white'>Required Level: 69</span>",
@@ -11741,7 +11639,7 @@
       "<span class='magic'>+90-120% Enhanced Defense</span>",
       "<span class='magic'>+10-20 to Dexterity</span>",
       "<span class='magic'>+5-9 Cold Absorb</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>-50% Requirements</span>"
     ],
     "pl": [
@@ -11756,7 +11654,7 @@
       "<span class='magic'>+90-120% Enhanced Defense</span>",
       "<span class='magic'>+10-20 to Dexterity</span>",
       "<span class='magic'>+5-9 Cold Absorb</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>-50% Requirements</span>"
     ]
   },
@@ -11768,7 +11666,6 @@
       "<span class='unique'>Crown of Ages</span>",
       "<span class='unique'>Corona</span>",
       "<span class='white'>Defense:</span> <span class='magic'>168 to 249</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Strength: 174</span>",
       "<span class='white'>Required Level: 82</span>",
       "<span class='magic'>Indestructible</span>",
@@ -11784,7 +11681,6 @@
       "<span class='unique'>Crown of Ages</span>",
       "<span class='unique'>Corona</span>",
       "<span class='white'>Defense:</span> <span class='magic'>168 to 249</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Strength: 174</span>",
       "<span class='white'>Required Level: 82</span>",
       "<span class='magic'>Indestructible</span>",
@@ -11889,10 +11785,10 @@
       "<span class='magic'>8% Chance to cast level 6 Iron Maiden when struck</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+190-220% Enhanced Defense</span>",
-      "<span class='magic'>+10-15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10-15% </span>",
       "<span class='magic'>+40-60% Cold Resist</span>",
       "<span class='magic'>Damage Reduced by 9-14</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Steel Carapace</span>",
@@ -11904,10 +11800,10 @@
       "<span class='magic'>8% Chance to cast level 6 Iron Maiden when struck</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+190-220% Enhanced Defense</span>",
-      "<span class='magic'>+10-15 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10-15% </span>",
       "<span class='magic'>+40-60% Cold Resist</span>",
       "<span class='magic'>Damage Reduced by 9-14</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>"
     ]
   },
   {
@@ -11924,7 +11820,7 @@
       "<span class='magic'>10% Chance to cast level 7 Lower Resist when struck</span>",
       "<span class='magic'>100% Chance to cast level 44 Nova when you Die</span>",
       "<span class='magic'>5-9% Life stolen per hit</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>+150-180% Enhanced Defense</span>",
       "<span class='magic'>+40-80% Cold Resist</span>"
     ],
@@ -11938,7 +11834,7 @@
       "<span class='magic'>10% Chance to cast level 7 Lower Resist when struck</span>",
       "<span class='magic'>100% Chance to cast level 44 Nova when you Die</span>",
       "<span class='magic'>5-9% Life stolen per hit</span>",
-      "<span class='magic'>+20 Slows target by</span>",
+      "<span class='magic'>Slows target by 20% </span>",
       "<span class='magic'>+150-180% Enhanced Defense</span>",
       "<span class='magic'>+40-80% Cold Resist</span>"
     ]
@@ -12205,7 +12101,7 @@
       "<span class='magic'>+10-15% to Fire Skill Damage</span>",
       "<span class='magic'>+3 to [random skill] ([Class] Only]</span>",
       "<span class='magic'>+10-20 Defense</span>",
-      "<span class='magic'>+10-15 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 10-15% </span>"
     ],
     "pl": [
       "<span class='unique'>Ormus' Robes</span>",
@@ -12220,7 +12116,7 @@
       "<span class='magic'>+10-15% to Fire Skill Damage</span>",
       "<span class='magic'>+3 to [random skill] ([Class] Only]</span>",
       "<span class='magic'>+10-20 Defense</span>",
-      "<span class='magic'>+10-15 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 10-15% </span>"
     ]
   },
   {
@@ -12262,7 +12158,7 @@
       "<span class='magic'>+1-473 to Minimum Lightning Damage</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
       "<span class='magic'>+3-9 Lightning Absorb</span>",
-      "<span class='magic'>+30 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 30</span>"
     ],
     "pl": [
       "<span class='unique'>Stormlash</span>",
@@ -12280,7 +12176,7 @@
       "<span class='magic'>+1-473 to Minimum Lightning Damage</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
       "<span class='magic'>+3-9 Lightning Absorb</span>",
-      "<span class='magic'>+30 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 30</span>"
     ]
   },
   {
@@ -12326,29 +12222,27 @@
       "<span class='unique'>Spike Thorn</span>",
       "<span class='unique'>Blade Barrier</span>",
       "<span class='white'>Defense:</span> <span class='magic'>325 to 410</span>",
-      "<span class='white'>Durability: 83 of 83</span>",
+      "<span class='white'>Durability: 333 of 333</span>",
       "<span class='requirement'>Required Strength: 118</span>",
       "<span class='white'>Required Level: 70</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>+15-20% Damage Reduced by</span>",
       "<span class='magic'>Attacker Takes Damage of (Based on Character Level)</span>",
-      "<span class='magic'>Socketed (1})}</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Socketed (1})}</span>"
     ],
     "pl": [
       "<span class='unique'>Spike Thorn</span>",
       "<span class='unique'>Blade Barrier</span>",
       "<span class='white'>Defense:</span> <span class='magic'>325 to 410</span>",
-      "<span class='white'>Durability: 83 of 83</span>",
+      "<span class='white'>Durability: 333 of 333</span>",
       "<span class='requirement'>Required Strength: 118</span>",
       "<span class='white'>Required Level: 70</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+120-150% Enhanced Defense</span>",
       "<span class='magic'>+15-20% Damage Reduced by</span>",
       "<span class='magic'>Attacker Takes Damage of (Based on Character Level)</span>",
-      "<span class='magic'>Socketed (1})}</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>Socketed (1})}</span>"
     ]
   },
   {
@@ -12403,7 +12297,7 @@
       "<span class='magic'>+7-14 to Arctic Blast (Druid Only)</span>",
       "<span class='magic'>+4 Freezes target</span>",
       "<span class='magic'>+7-15% Cold Absorb</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='unique'>Frostwind</span>",
@@ -12420,7 +12314,7 @@
       "<span class='magic'>+7-14 to Arctic Blast (Druid Only)</span>",
       "<span class='magic'>+4 Freezes target</span>",
       "<span class='magic'>+7-15% Cold Absorb</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -12547,7 +12441,7 @@
       "<span class='magic'>Maximum Stamina (Based on Character Level)</span>",
       "<span class='magic'>+50 Stamina Drain</span>",
       "<span class='magic'>+40-70% Poison Resist</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>"
     ],
     "pl": [
       "<span class='unique'>Sandstorm Trek</span>",
@@ -12564,7 +12458,7 @@
       "<span class='magic'>Maximum Stamina (Based on Character Level)</span>",
       "<span class='magic'>+50 Stamina Drain</span>",
       "<span class='magic'>+40-70% Poison Resist</span>",
-      "<span class='magic'>Repairs %d durability per second (Based on Character Level)</span>"
+      "<span class='magic'>Repairs 1 durability in 20 seconds</span>"
     ]
   },
   {
@@ -12583,9 +12477,9 @@
       "<span class='magic'>+170-200% Enhanced Defense</span>",
       "<span class='magic'>+10-20 to Strength</span>",
       "<span class='magic'>+17 to Dexterity</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10% </span>",
       "<span class='magic'>+10 Heal Stamina Plus</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>Level 33 Bone Prison (13/13 Charges)</span>",
       "<span class='magic'>Level 12 Life Tap (10/10 Charges)</span>"
     ],
@@ -12601,9 +12495,9 @@
       "<span class='magic'>+170-200% Enhanced Defense</span>",
       "<span class='magic'>+10-20 to Strength</span>",
       "<span class='magic'>+17 to Dexterity</span>",
-      "<span class='magic'>+10 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 10% </span>",
       "<span class='magic'>+10 Heal Stamina Plus</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>Level 33 Bone Prison (13/13 Charges)</span>",
       "<span class='magic'>Level 12 Life Tap (10/10 Charges)</span>"
     ]
@@ -12662,7 +12556,7 @@
       "<span class='white'>Required Level: 80</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+20 Faster Cast Rate</span>",
-      "<span class='magic'>+10 Slows target by</span>",
+      "<span class='magic'>Slows target by 10% </span>",
       "<span class='magic'>+90-120% Enhanced Defense</span>",
       "<span class='magic'>+5% Increase Maximum Mana</span>",
       "<span class='magic'>Level 3 Venom (11/11 Charges)</span>"
@@ -12676,7 +12570,7 @@
       "<span class='white'>Required Level: 80</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+20 Faster Cast Rate</span>",
-      "<span class='magic'>+10 Slows target by</span>",
+      "<span class='magic'>Slows target by 10% </span>",
       "<span class='magic'>+90-120% Enhanced Defense</span>",
       "<span class='magic'>+5% Increase Maximum Mana</span>",
       "<span class='magic'>Level 3 Venom (11/11 Charges)</span>"
@@ -12695,7 +12589,7 @@
       "<span class='white'>Required Level: 51</span>",
       "<span class='magic'>+10% Increased Attack Speed</span>",
       "<span class='magic'>5-7% Life stolen per hit</span>",
-      "<span class='magic'>+10 Slows target by</span>",
+      "<span class='magic'>Slows target by 10% </span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+2 to Mana after each Kill</span>",
       "<span class='magic'>-3 to Light Radius</span>"
@@ -12709,7 +12603,7 @@
       "<span class='white'>Required Level: 51</span>",
       "<span class='magic'>+10% Increased Attack Speed</span>",
       "<span class='magic'>5-7% Life stolen per hit</span>",
-      "<span class='magic'>+10 Slows target by</span>",
+      "<span class='magic'>Slows target by 10% </span>",
       "<span class='magic'>+15 to Strength</span>",
       "<span class='magic'>+2 to Mana after each Kill</span>",
       "<span class='magic'>-3 to Light Radius</span>"
@@ -12810,7 +12704,7 @@
       "<span class='requirement'>Required Strength: 106</span>",
       "<span class='white'>Required Level: 65</span>",
       "<span class='magic'>+10% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+250-320 Defense</span>",
       "<span class='magic'>+25-35 to Strength</span>",
       "<span class='magic'>Socketed (1-2})}</span>"
@@ -12823,7 +12717,7 @@
       "<span class='requirement'>Required Strength: 106</span>",
       "<span class='white'>Required Level: 65</span>",
       "<span class='magic'>+10% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>+250-320 Defense</span>",
       "<span class='magic'>+25-35 to Strength</span>",
       "<span class='magic'>Socketed (1-2})}</span>"
@@ -12849,7 +12743,7 @@
       "<span class='magic'>+150-200% bonus to Attack Rating</span>",
       "<span class='magic'>Adds 80-240 magic damage\n</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
-      "<span class='magic'>+25 Slows target by</span>",
+      "<span class='magic'>Slows target by 25% </span>",
       "<span class='magic'>Damage Reduced by 4-7</span>"
     ],
     "pl": [
@@ -12868,7 +12762,7 @@
       "<span class='magic'>+150-200% bonus to Attack Rating</span>",
       "<span class='magic'>Adds 80-240 magic damage\n</span>",
       "<span class='magic'>+33% Chance of Crushing Blow</span>",
-      "<span class='magic'>+25 Slows target by</span>",
+      "<span class='magic'>Slows target by 25% </span>",
       "<span class='magic'>Damage Reduced by 4-7</span>"
     ]
   },
@@ -13485,13 +13379,13 @@
       "<span class='set'>Civerb's Icon</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>+4 Replenish Life</span>",
-      "<span class='magic'>+40 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 40% </span>"
     ],
     "pl": [
       "<span class='set'>Civerb's Icon</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>+4 Replenish Life</span>",
-      "<span class='magic'>+40 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 40% </span>"
     ]
   },
   {
@@ -13661,8 +13555,8 @@
       "<span class='white'>Durability: 16 of 16</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 4</span>",
-      "<span class='magic'>+25 Slows target by</span>",
-      "<span class='magic'>+1 Knockback</span>"
+      "<span class='magic'>Slows target by 25% </span>",
+      "<span class='magic'>Knockback</span>"
     ],
     "pl": [
       "<span class='set'>Cleglaw's Pincers</span>",
@@ -13671,8 +13565,8 @@
       "<span class='white'>Durability: 16 of 16</span>",
       "<span class='requirement'>Required Strength: 25</span>",
       "<span class='white'>Required Level: 4</span>",
-      "<span class='magic'>+25 Slows target by</span>",
-      "<span class='magic'>+1 Knockback</span>"
+      "<span class='magic'>Slows target by 25% </span>",
+      "<span class='magic'>Knockback</span>"
     ]
   },
   {
@@ -13704,7 +13598,7 @@
       "<span class='requirement'>Required Strength: 45</span>",
       "<span class='white'>Required Level: 15</span>",
       "<span class='magic'>+30% Cold Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='set'>Iratha's Cuff</span>",
@@ -13714,7 +13608,7 @@
       "<span class='requirement'>Required Strength: 45</span>",
       "<span class='white'>Required Level: 15</span>",
       "<span class='magic'>+30% Cold Resist</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -13806,7 +13700,7 @@
       "<span class='requirement'>Required Strength: 60</span>",
       "<span class='white'>Required Level: 8</span>",
       "<span class='magic'>+40 Defense</span>",
-      "<span class='magic'>+4 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 4</span>"
     ],
     "pl": [
       "<span class='set'>Isenhart's Parry</span>",
@@ -13816,7 +13710,7 @@
       "<span class='requirement'>Required Strength: 60</span>",
       "<span class='white'>Required Level: 8</span>",
       "<span class='magic'>+40 Defense</span>",
-      "<span class='magic'>+4 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 4</span>"
     ]
   },
   {
@@ -14054,7 +13948,7 @@
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 17</span>",
       "<span class='magic'>Damage Reduced by 2</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 3</span>"
     ],
     "pl": [
       "<span class='set'>Milabrega's Robe</span>",
@@ -14064,7 +13958,7 @@
       "<span class='requirement'>Required Strength: 100</span>",
       "<span class='white'>Required Level: 17</span>",
       "<span class='magic'>Damage Reduced by 2</span>",
-      "<span class='magic'>+3 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 3</span>"
     ]
   },
   {
@@ -14148,13 +14042,13 @@
       "<span class='set'>Cathan's Sigil</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>item_fastergethitrate</span>",
-      "<span class='magic'>+5 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 5</span>"
     ],
     "pl": [
       "<span class='set'>Cathan's Sigil</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>item_fastergethitrate</span>",
-      "<span class='magic'>+5 Attacker Takes Lightning Damage of</span>"
+      "<span class='magic'>Attacker Takes Lightning Damage of 5</span>"
     ]
   },
   {
@@ -14864,13 +14758,13 @@
       "<span class='set'>Arcanna's Sign</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>+15 to Mana</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ],
     "pl": [
       "<span class='set'>Arcanna's Sign</span>",
       "<span class='set'>amulet</span>",
       "<span class='magic'>+15 to Mana</span>",
-      "<span class='magic'>+20 Regenerate Mana</span>"
+      "<span class='magic'>Regenerate Mana 20% </span>"
     ]
   },
   {
@@ -14910,7 +14804,7 @@
       "<span class='requirement'>Required Strength: 15</span>",
       "<span class='white'>Required Level: 15</span>",
       "<span class='magic'>+4 Replenish Life</span>",
-      "<span class='magic'>+2 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 2</span>"
     ],
     "pl": [
       "<span class='set'>Arcanna's Head</span>",
@@ -14920,7 +14814,7 @@
       "<span class='requirement'>Required Strength: 15</span>",
       "<span class='white'>Required Level: 15</span>",
       "<span class='magic'>+4 Replenish Life</span>",
-      "<span class='magic'>+2 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 2</span>"
     ]
   },
   {
@@ -15059,29 +14953,27 @@
       "<span class='set'>Natalya's Soul</span>",
       "<span class='set'>Mesh Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>37 to 44</span>",
-      "<span class='white'>Durability: 16 of 16</span>",
+      "<span class='white'>Durability: 66 of 66</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+40 Faster Run/Walk</span>",
       "<span class='magic'>+75-125 Defense</span>",
       "<span class='magic'>Heal Stamina Plus (Based on Character Level)</span>",
       "<span class='magic'>+15-25% Cold Resist</span>",
-      "<span class='magic'>+15-25% Lightning Resist</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15-25% Lightning Resist</span>"
     ],
     "pl": [
       "<span class='set'>Natalya's Soul</span>",
       "<span class='set'>Mesh Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>37 to 44</span>",
-      "<span class='white'>Durability: 16 of 16</span>",
+      "<span class='white'>Durability: 66 of 66</span>",
       "<span class='requirement'>Required Strength: 65</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+40 Faster Run/Walk</span>",
       "<span class='magic'>+75-125 Defense</span>",
       "<span class='magic'>Heal Stamina Plus (Based on Character Level)</span>",
       "<span class='magic'>+15-25% Cold Resist</span>",
-      "<span class='magic'>+15-25% Lightning Resist</span>",
-      "<span class='magic'>maxdurability</span>"
+      "<span class='magic'>+15-25% Lightning Resist</span>"
     ]
   },
   {
@@ -15097,7 +14989,7 @@
       "<span class='white'>Required Level: 36</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+90 Defense</span>",
-      "<span class='magic'>+17 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 17% </span>",
       "<span class='magic'>+40-50% Cold Resist</span>",
       "<span class='magic'>+5 to Light Radius</span>",
       "<span class='magic'>Socketed (2})}</span>"
@@ -15111,7 +15003,7 @@
       "<span class='white'>Required Level: 36</span>",
       "<span class='magic'>item_fastergethitrate</span>",
       "<span class='magic'>+90 Defense</span>",
-      "<span class='magic'>+17 Regenerate Mana</span>",
+      "<span class='magic'>Regenerate Mana 17% </span>",
       "<span class='magic'>+40-50% Cold Resist</span>",
       "<span class='magic'>+5 to Light Radius</span>",
       "<span class='magic'>Socketed (2})}</span>"
@@ -15197,7 +15089,6 @@
       "<span class='set'>Aldur's Advance</span>",
       "<span class='set'>Battle Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>39 to 47</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 45</span>",
       "<span class='magic'>Indestructible</span>",
@@ -15212,7 +15103,6 @@
       "<span class='set'>Aldur's Advance</span>",
       "<span class='set'>Battle Boots</span>",
       "<span class='white'>Defense:</span> <span class='magic'>39 to 47</span>",
-      "<span class='white'>Durability: 18 of 18</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 45</span>",
       "<span class='magic'>Indestructible</span>",
@@ -15381,7 +15271,6 @@
       "<span class='set'>Immortal King's Stone Crusher</span>",
       "<span class='set'>Ogre Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>231 to 318</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 225</span>",
       "<span class='white'>Required Level: 76</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -15397,7 +15286,6 @@
       "<span class='set'>Immortal King's Stone Crusher</span>",
       "<span class='set'>Ogre Maul</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>231 to 318</span>",
-      "<span class='white'>Durability: 60 of 60</span>",
       "<span class='requirement'>Required Strength: 225</span>",
       "<span class='white'>Required Level: 76</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -15419,7 +15307,7 @@
       "<span class='set'>Mesh Belt</span>",
       "<span class='white'>Defense:</span> <span class='magic'>35 to 40</span>",
       "<span class='white'>Durability: 16 of 16</span>",
-      "<span class='requirement'>Required Strength: 46</span>",
+      "<span class='requirement'>Required Strength: 47</span>",
       "<span class='white'>Required Level: 53</span>",
       "<span class='magic'>+20 to Dexterity</span>",
       "<span class='magic'>+30 to Mana</span>",
@@ -15432,7 +15320,7 @@
       "<span class='set'>Mesh Belt</span>",
       "<span class='white'>Defense:</span> <span class='magic'>35 to 40</span>",
       "<span class='white'>Durability: 16 of 16</span>",
-      "<span class='requirement'>Required Strength: 46</span>",
+      "<span class='requirement'>Required Strength: 47</span>",
       "<span class='white'>Required Level: 53</span>",
       "<span class='magic'>+20 to Dexterity</span>",
       "<span class='magic'>+30 to Mana</span>",
@@ -15508,7 +15396,7 @@
       "<span class='set'>Lacquered Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>433 to 541</span>",
       "<span class='white'>Durability: 55 of 55</span>",
-      "<span class='requirement'>Required Strength: 83</span>",
+      "<span class='requirement'>Required Strength: 84</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+400 Defense</span>",
       "<span class='magic'>+40% Cold Resist</span>",
@@ -15523,7 +15411,7 @@
       "<span class='set'>Lacquered Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>433 to 541</span>",
       "<span class='white'>Durability: 55 of 55</span>",
-      "<span class='requirement'>Required Strength: 83</span>",
+      "<span class='requirement'>Required Strength: 84</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+400 Defense</span>",
       "<span class='magic'>+40% Cold Resist</span>",
@@ -15576,7 +15464,7 @@
       "<span class='set'>Corona</span>",
       "<span class='white'>Defense:</span> <span class='magic'>168 to 290</span>",
       "<span class='white'>Durability: 50 of 50</span>",
-      "<span class='requirement'>Required Strength: 104</span>",
+      "<span class='requirement'>Required Strength: 105</span>",
       "<span class='white'>Required Level: 69</span>",
       "<span class='magic'>+50-75% Enhanced Defense</span>",
       "<span class='magic'>All Resistances +5 \n</span>",
@@ -15590,7 +15478,7 @@
       "<span class='set'>Corona</span>",
       "<span class='white'>Defense:</span> <span class='magic'>168 to 290</span>",
       "<span class='white'>Durability: 50 of 50</span>",
-      "<span class='requirement'>Required Strength: 104</span>",
+      "<span class='requirement'>Required Strength: 105</span>",
       "<span class='white'>Required Level: 69</span>",
       "<span class='magic'>+50-75% Enhanced Defense</span>",
       "<span class='magic'>All Resistances +5 \n</span>",
@@ -15641,7 +15529,7 @@
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>111-125 to 129-146</span>",
       "<span class='white'>Durability: 70 of 70</span>",
       "<span class='requirement'>Required Dexterity: 56</span>",
-      "<span class='requirement'>Required Strength: 77</span>",
+      "<span class='requirement'>Required Strength: 78</span>",
       "<span class='white'>Required Level: 53</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>+40% Increased Attack Speed</span>",
@@ -15656,7 +15544,7 @@
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>111-125 to 129-146</span>",
       "<span class='white'>Durability: 70 of 70</span>",
       "<span class='requirement'>Required Dexterity: 56</span>",
-      "<span class='requirement'>Required Strength: 77</span>",
+      "<span class='requirement'>Required Strength: 78</span>",
       "<span class='white'>Required Level: 53</span>",
       "<span class='white'>Mace Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
       "<span class='magic'>+40% Increased Attack Speed</span>",
@@ -15712,7 +15600,7 @@
       "<span class='magic'>+80-100 Defense</span>",
       "<span class='magic'>+5 Replenish Life</span>",
       "<span class='magic'>+150 to Mana</span>",
-      "<span class='magic'>+20 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 20</span>"
     ],
     "pl": [
       "<span class='set'>Trang-Oul's Guise</span>",
@@ -15725,7 +15613,7 @@
       "<span class='magic'>+80-100 Defense</span>",
       "<span class='magic'>+5 Replenish Life</span>",
       "<span class='magic'>+150 to Mana</span>",
-      "<span class='magic'>+20 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 20</span>"
     ]
   },
   {
@@ -15834,7 +15722,7 @@
       "<span class='set'>Troll Belt</span>",
       "<span class='white'>Defense:</span> <span class='magic'>59 to 66</span>",
       "<span class='white'>Durability: 18 of 18</span>",
-      "<span class='requirement'>Required Strength: 90</span>",
+      "<span class='requirement'>Required Strength: 91</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>+75-100 Defense</span>",
       "<span class='magic'>+66 to Life</span>",
@@ -15849,7 +15737,7 @@
       "<span class='set'>Troll Belt</span>",
       "<span class='white'>Defense:</span> <span class='magic'>59 to 66</span>",
       "<span class='white'>Durability: 18 of 18</span>",
-      "<span class='requirement'>Required Strength: 90</span>",
+      "<span class='requirement'>Required Strength: 91</span>",
       "<span class='white'>Required Level: 47</span>",
       "<span class='magic'>+75-100 Defense</span>",
       "<span class='magic'>+66 to Life</span>",
@@ -15896,7 +15784,7 @@
       "<span class='set'>Kraken Shell</span>",
       "<span class='white'>Defense:</span> <span class='magic'>417 to 721</span>",
       "<span class='white'>Durability: 48 of 48</span>",
-      "<span class='requirement'>Required Strength: 121</span>",
+      "<span class='requirement'>Required Strength: 122</span>",
       "<span class='white'>Required Level: 70</span>",
       "<span class='magic'>10% Chance to cast level 3 Glacial Spike when struck</span>",
       "<span class='magic'>+2 to Passive and Magic Skills (Amazon Only)</span>",
@@ -15910,7 +15798,7 @@
       "<span class='set'>Kraken Shell</span>",
       "<span class='white'>Defense:</span> <span class='magic'>417 to 721</span>",
       "<span class='white'>Durability: 48 of 48</span>",
-      "<span class='requirement'>Required Strength: 121</span>",
+      "<span class='requirement'>Required Strength: 122</span>",
       "<span class='white'>Required Level: 70</span>",
       "<span class='magic'>10% Chance to cast level 3 Glacial Spike when struck</span>",
       "<span class='magic'>+2 to Passive and Magic Skills (Amazon Only)</span>",
@@ -15935,7 +15823,7 @@
       "<span class='magic'>+45-50 Defense</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>+56% extra gold from monsters</span>"
     ],
     "pl": [
@@ -15949,7 +15837,7 @@
       "<span class='magic'>+45-50 Defense</span>",
       "<span class='magic'>+10 to Strength</span>",
       "<span class='magic'>+15 to Dexterity</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>+56% extra gold from monsters</span>"
     ]
   },
@@ -16023,7 +15911,7 @@
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+18% Cold Resist</span>",
       "<span class='magic'>+35-50% Poison Resist</span>",
-      "<span class='magic'>+8-10 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8-10</span>"
     ],
     "pl": [
       "<span class='set'>Telling of Beads</span>",
@@ -16031,7 +15919,7 @@
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+18% Cold Resist</span>",
       "<span class='magic'>+35-50% Poison Resist</span>",
-      "<span class='magic'>+8-10 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 8-10</span>"
     ]
   },
   {
@@ -16079,7 +15967,7 @@
       "<span class='magic'>+30 Faster Run/Walk</span>",
       "<span class='magic'>+25 Defense</span>",
       "<span class='magic'>+15-25 Maximum Stamina</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ],
     "pl": [
       "<span class='set'>Rite of Passage</span>",
@@ -16091,7 +15979,7 @@
       "<span class='magic'>+30 Faster Run/Walk</span>",
       "<span class='magic'>+25 Defense</span>",
       "<span class='magic'>+15-25 Maximum Stamina</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>"
+      "<span class='magic'>Half Freeze Duration</span>"
     ]
   },
   {
@@ -16193,7 +16081,6 @@
       "<span class='set'>Taebaek's Glory</span>",
       "<span class='set'>Ward</span>",
       "<span class='white'>Defense:</span> <span class='magic'>153 to 170</span>",
-      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 185</span>",
       "<span class='white'>Required Level: 81</span>",
       "<span class='magic'>Indestructible</span>",
@@ -16202,13 +16089,12 @@
       "<span class='magic'>+50 Defense</span>",
       "<span class='magic'>+100 to Mana</span>",
       "<span class='magic'>+30% Lightning Resist</span>",
-      "<span class='magic'>+30 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 30</span>"
     ],
     "pl": [
       "<span class='set'>Taebaek's Glory</span>",
       "<span class='set'>Ward</span>",
       "<span class='white'>Defense:</span> <span class='magic'>153 to 170</span>",
-      "<span class='white'>Durability: 100 of 100</span>",
       "<span class='requirement'>Required Strength: 185</span>",
       "<span class='white'>Required Level: 81</span>",
       "<span class='magic'>Indestructible</span>",
@@ -16217,7 +16103,7 @@
       "<span class='magic'>+50 Defense</span>",
       "<span class='magic'>+100 to Mana</span>",
       "<span class='magic'>+30% Lightning Resist</span>",
-      "<span class='magic'>+30 Attacker Takes Damage of</span>"
+      "<span class='magic'>Attacker Takes Damage of 30</span>"
     ]
   },
   {
@@ -16260,7 +16146,7 @@
       "<span class='set'>Spired Helm</span>",
       "<span class='white'>Defense:</span> <span class='magic'>114 to 159</span>",
       "<span class='white'>Durability: 40 of 40</span>",
-      "<span class='requirement'>Required Strength: 115</span>",
+      "<span class='requirement'>Required Strength: 116</span>",
       "<span class='white'>Required Level: 69</span>",
       "<span class='magic'>10% Chance to cast level 3 Weaken on striking</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -16274,7 +16160,7 @@
       "<span class='set'>Spired Helm</span>",
       "<span class='white'>Defense:</span> <span class='magic'>114 to 159</span>",
       "<span class='white'>Durability: 40 of 40</span>",
-      "<span class='requirement'>Required Strength: 115</span>",
+      "<span class='requirement'>Required Strength: 116</span>",
       "<span class='white'>Required Level: 69</span>",
       "<span class='magic'>10% Chance to cast level 3 Weaken on striking</span>",
       "<span class='magic'>item_fastergethitrate</span>",
@@ -16389,7 +16275,7 @@
       "<span class='magic'>+40 Faster Block Rate</span>",
       "<span class='magic'>+55% Increased Chance of Blocking</span>",
       "<span class='magic'>+175% Enhanced Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>+5 to Light Radius</span>"
     ],
     "pl": [
@@ -16402,7 +16288,7 @@
       "<span class='magic'>+40 Faster Block Rate</span>",
       "<span class='magic'>+55% Increased Chance of Blocking</span>",
       "<span class='magic'>+175% Enhanced Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
       "<span class='magic'>+5 to Light Radius</span>"
     ]
   },
@@ -16501,7 +16387,6 @@
       "<span class='set'>Hwanin's Justice</span>",
       "<span class='set'>Bill</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>42 to 159</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 28</span>",
       "<span class='white'>Polearm Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -16516,7 +16401,6 @@
       "<span class='set'>Hwanin's Justice</span>",
       "<span class='set'>Bill</span>",
       "<span class='white'>Two-Hand Damage:</span> <span class='magic'>42 to 159</span>",
-      "<span class='white'>Durability: 50 of 50</span>",
       "<span class='requirement'>Required Strength: 95</span>",
       "<span class='white'>Required Level: 28</span>",
       "<span class='white'>Polearm Class -</span> <span class='magic'>Very Fast Attack Speed</span>",
@@ -16536,7 +16420,6 @@
       "<span class='set'>Sazabi's Cobalt Redeemer</span>",
       "<span class='set'>Cryptic Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>12 to 192</span>",
-      "<span class='white'>Durability: 44 of 44</span>",
       "<span class='requirement'>Required Dexterity: 109</span>",
       "<span class='requirement'>Required Strength: 99</span>",
       "<span class='white'>Required Level: 73</span>",
@@ -16553,7 +16436,6 @@
       "<span class='set'>Sazabi's Cobalt Redeemer</span>",
       "<span class='set'>Cryptic Sword</span>",
       "<span class='white'>One-Hand Damage:</span> <span class='magic'>12 to 192</span>",
-      "<span class='white'>Durability: 44 of 44</span>",
       "<span class='requirement'>Required Dexterity: 109</span>",
       "<span class='requirement'>Required Strength: 99</span>",
       "<span class='white'>Required Level: 73</span>",
@@ -16644,7 +16526,7 @@
       "<span class='magic'>+20% Increased Attack Speed</span>",
       "<span class='magic'>+200% Enhanced damage\n</span>",
       "<span class='magic'>+35% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>All Resistances +20 \n</span>"
     ],
     "pl": [
@@ -16660,7 +16542,7 @@
       "<span class='magic'>+20% Increased Attack Speed</span>",
       "<span class='magic'>+200% Enhanced damage\n</span>",
       "<span class='magic'>+35% Chance of Crushing Blow</span>",
-      "<span class='magic'>+1 Knockback</span>",
+      "<span class='magic'>Knockback</span>",
       "<span class='magic'>All Resistances +20 \n</span>"
     ]
   },
@@ -16711,8 +16593,8 @@
       "<span class='requirement'>Required Strength: 20</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+75 Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>+10 Attacker Takes Damage of</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
+      "<span class='magic'>Attacker Takes Damage of 10</span>",
       "<span class='magic'>+35 Damage Taken Goes To Mana</span>"
     ],
     "pl": [
@@ -16723,8 +16605,8 @@
       "<span class='requirement'>Required Strength: 20</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+75 Defense</span>",
-      "<span class='magic'>+1 Half Freeze Duration</span>",
-      "<span class='magic'>+10 Attacker Takes Damage of</span>",
+      "<span class='magic'>Half Freeze Duration</span>",
+      "<span class='magic'>Attacker Takes Damage of 10</span>",
       "<span class='magic'>+35 Damage Taken Goes To Mana</span>"
     ]
   },
@@ -16836,7 +16718,7 @@
       "<span class='set'>Hellforged Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>421 to 530</span>",
       "<span class='white'>Durability: 60 of 60</span>",
-      "<span class='requirement'>Required Strength: 78</span>",
+      "<span class='requirement'>Required Strength: 79</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+300 Defense</span>",
@@ -16850,7 +16732,7 @@
       "<span class='set'>Hellforged Plate</span>",
       "<span class='white'>Defense:</span> <span class='magic'>421 to 530</span>",
       "<span class='white'>Durability: 60 of 60</span>",
-      "<span class='requirement'>Required Strength: 78</span>",
+      "<span class='requirement'>Required Strength: 79</span>",
       "<span class='white'>Required Level: 71</span>",
       "<span class='magic'>+1 to All Skills</span>",
       "<span class='magic'>+300 Defense</span>",
@@ -16900,7 +16782,7 @@
       "<span class='white'>Durability: 12 of 12</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+198 Defense (Based on Character Level)</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 8</span>",
       "<span class='magic'>+35% better chance of getting magic item</span>"
     ],
     "pl": [
@@ -16910,7 +16792,7 @@
       "<span class='white'>Durability: 12 of 12</span>",
       "<span class='white'>Required Level: 25</span>",
       "<span class='magic'>+198 Defense (Based on Character Level)</span>",
-      "<span class='magic'>+8 Attacker Takes Damage of</span>",
+      "<span class='magic'>Attacker Takes Damage of 8</span>",
       "<span class='magic'>+35% better chance of getting magic item</span>"
     ]
   },
