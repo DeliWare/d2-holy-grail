@@ -119,6 +119,8 @@ function executePropFunction({ set, val, func, stat }, propData) {
     'block2',
     'ease',
     'openwounds',
+    'item_maxdamage_percent_perlevel',
+    'item_damage_undead_perlevel',
     'dmg-undead',
     'extra-fire',
     'extra-cold',
@@ -193,36 +195,8 @@ function executePropFunction({ set, val, func, stat }, propData) {
     //   m(stat, null, r);
     //   break;
     case 17:
-      let minMax = [];
-      if (['item_vitality_perlevel', 'item_strength_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 0.5));
-        percent = false;
-      }
-      if (['item_maxdamage_percent_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 3));
-        percent = true;
-      }
-      if (['item_mana_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 1.25));
-        percent = false;
-      }
-      if (['item_armor_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 2));
-        percent = false;
-      }
-      if (['item_tohit_undead_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 5));
-        percent = false;
-      }
-      if (['item_tohit_undead_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 5));
-        percent = false;
-      }
-      if (['item_damage_undead_perlevel'].includes(stat)) {
-        minMax.push(Math.floor(CHARACTER_LEVEL * 2.5));
-        percent = true;
-      }
       fixedValues = true;
+      let minMax = [CHARACTER_LEVEL * (propData.par / 8)];
       translation = getPropertyRangeOrValue(minMax, percent) + findString(itemStatCost.descstrpos) + ' ' + findString('increaseswithplaylevelX');
 
       if (['item_replenish_quantity'].includes(stat)) {
