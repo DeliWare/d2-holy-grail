@@ -1,22 +1,49 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useFloating, shift, flip, offset } from '@floating-ui/react-dom';
 
-function Tooltip({ children, content }) {
+interface Props {
+  children: React.ReactNode;
+  content: React.ReactNode | string;
+  disableClass?: boolean;
+}
+
+function Tooltip({ children, content, disableClass = false }: Props) {
   const [isVisible, setIsVisible] = useState(false);
 
-  if (!content) {
-    return children;
-  }
+  const { x, y, reference, floating, strategy, update } = useFloating({
+    placement: 'right',
+    middleware: [shift(), flip(), offset(10)]
+  });
+
+  useEffect(() => {
+    if(isVisible) {
+      update();
+    }
+  }, [isVisible, update]);
 
   return (
-    <div
-      role='presentation'
-      className='tooltip-wrapper'
-      onMouseEnter={() => setIsVisible(true)}
-      onMouseLeave={() => setIsVisible(false)}
-    >
-      {children}
-      {isVisible && <div className='tooltip'>{content}</div>}
-    </div>
+    <>
+      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+      <span
+        role='dialog'
+        ref={reference}
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
+      >{children}</span>
+      <div
+        ref={floating}
+        className={disableClass ? '' : 'tooltip'}
+        style={{
+          position: strategy,
+          top: y ?? '',
+          left: x ?? '',
+          display: isVisible ? 'block' : 'none',
+          zIndex: 10
+        }}
+      >
+        {isVisible ? content : null}
+      </div>
+    </>
   );
 }
 

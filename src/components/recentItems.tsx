@@ -5,6 +5,7 @@ import { enUS, pl } from 'date-fns/locale';
 import { ITEM_PATH } from '../router/paths';
 import Tooltip from './tooltip';
 import ItemPreview from './itemPreview';
+import { BiCommentDetail } from 'react-icons/bi';
 
 function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -79,7 +80,7 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                     }}
                   >
                     <td className={item.type}>
-                      <Tooltip content={<ItemPreview item={item} lang={lang} />}>
+                      <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
                         {item[lang]}
                       </Tooltip>
                     </td>
@@ -87,6 +88,10 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                       <React.Fragment key={user}>
                         <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
                           {data.data[item.key]?.count}
+                          {' '}
+                          {data.data[item.key]?.comment && <Tooltip content={data.data[item.key]?.comment}>
+                            <BiCommentDetail />
+                          </Tooltip>}
                         </td>
                         {mode === 'solo' && <td>{data.data[item.key]?.comment}</td>}
                       </React.Fragment>

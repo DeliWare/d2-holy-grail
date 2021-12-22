@@ -77,7 +77,7 @@ header {
 }
 
 main {
-  margin-bottom: 10rem; // TODO remove, temp fix till popper is integrated
+  margin-bottom: 10rem;
 }
 
 input {
@@ -226,6 +226,10 @@ section {
   padding: 20px;
 }
 
+svg {
+  vertical-align: middle;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -286,16 +290,11 @@ section {
   }
 }
 
-.tooltip-wrapper {
-  position: relative;
-
-  .tooltip {
-    width: 100%;
-    position: absolute;
-    min-width: 100px;
-    padding: 1rem;
-    top: -50px;
-    left: 150px;
-    z-index: 2;
-  }
+.tooltip {
+  background: #222;
+  color: $colorText;
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 3px;
+  border: 1px solid $colorText;
 }
