@@ -165,12 +165,30 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+
+  &.link {
+    line-height: 1.6em;
+    transition: all .3s ease-in-out;
+    margin-bottom: 1em;
+
+    &:hover {
+      color: $colorRune;
+      padding-left: 0.2em;
+    }
+  }
 }
 
 h1 {
   margin: 20px 0 40px;
   font-family: $fontFamily;
   font-size: 30px;
+  text-align: center;
+}
+
+h2{
+  margin: 20px 0 40px;
+  font-family: $fontFamily;
+  font-size: 28px;
   text-align: center;
 }
 

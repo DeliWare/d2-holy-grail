@@ -62,11 +62,27 @@ function Item() {
       .then(() => navigate(HOME_PATH()));
   };
 
+  const parseLinkItemName = (name) => {
+    // used for d2rr.com and rankedboost.com
+    return name.toLowerCase()
+      .replaceAll("'", '')
+      .replaceAll(' ', '-');
+  }
+
+  const parseLinkItemNameForItemForge = (name) => {
+    const regex = /'./ig;
+    return name.toLowerCase()
+      .replaceAll(regex, '')
+      .replaceAll(' ', '-');
+  }
+
   return (
     <main>
       <section>
         <h1 className={item.type}>
-          <a href={`https://diablo.fandom.com/wiki/${item.en}`} target="__blank">
+          <a href={`https://diablo.fandom.com/wiki/${item.en}`}
+             target="__blank"
+             rel="noopener noreferrer">
             {item[lang]}
           </a>
         </h1>
@@ -150,6 +166,45 @@ function Item() {
       </section>
       <section>
         <ItemPreview item={item} lang={lang} />
+      </section>
+      <section>
+        <h2>{lang === 'pl' ? 'Zasoby' : 'Resources'}</h2>
+        <a href={`https://diablo.fandom.com/wiki/${item.en}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          Wiki: diablo.fandom.com
+        </a>
+        <a href={`https://d2rr.com/product/${parseLinkItemName(item.en)}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          Prices: d2rr.com
+        </a>
+        <a href={`https://itemforge.com/en/${parseLinkItemNameForItemForge(item.en)}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          Prices: itemforge.com
+        </a>
+        <a href={`https://d2.maxroll.gg/d2-drop-calculator#mf100;item=${item.type},${item.key}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          Drop calculator: maxroll.gg
+        </a>
+        <a href={`https://rankedboost.com/diablo-2/items/${parseLinkItemName(item.en)}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          Drop locations: rankedboost.com
+        </a>
+        <a href={`https://diablo2.wiki.fextralife.com/${item.en}`}
+           className="link"
+           target={'_blank'}
+           rel="noopener noreferrer">
+          fextralife.com
+        </a>
       </section>
     </main>
   );
