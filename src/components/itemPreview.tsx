@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { getItemDetails } from '../items';
 
 function ItemPreview({ item, lang }) {
-  const details = getItemDetails(item.key);
+  const details = useMemo(() => {
+    return getItemDetails(item.key);
+  }, [item.key]);
 
   if (!details) {
     return null;

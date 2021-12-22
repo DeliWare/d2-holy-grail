@@ -16,7 +16,7 @@ function Tooltip({ children, content, disableClass = false }: Props) {
   });
 
   useEffect(() => {
-    if(isVisible) {
+    if (isVisible) {
       update();
     }
   }, [isVisible, update]);
@@ -30,19 +30,18 @@ function Tooltip({ children, content, disableClass = false }: Props) {
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
       >{children}</span>
-      <div
+      {isVisible && <div
         ref={floating}
         className={disableClass ? '' : 'tooltip'}
         style={{
           position: strategy,
           top: y ?? '',
           left: x ?? '',
-          display: isVisible ? 'block' : 'none',
           zIndex: 10
         }}
       >
-        {isVisible ? content : null}
-      </div>
+        {content}
+      </div>}
     </>
   );
 }

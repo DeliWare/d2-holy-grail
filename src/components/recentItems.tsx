@@ -6,6 +6,7 @@ import { ITEM_PATH } from '../router/paths';
 import Tooltip from './tooltip';
 import ItemPreview from './itemPreview';
 import { BiCommentDetail } from 'react-icons/bi';
+import { isMobile } from 'react-device-detect';
 
 function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -80,16 +81,16 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                     }}
                   >
                     <td className={item.type}>
-                      <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
+                      {isMobile ? item[lang] : <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
                         {item[lang]}
-                      </Tooltip>
+                      </Tooltip>}
                     </td>
                     {parsedProfile.map(({ user, data }) => (
                       <React.Fragment key={user}>
                         <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
                           {data.data[item.key]?.count}
                           {' '}
-                          {data.data[item.key]?.comment && <Tooltip content={data.data[item.key]?.comment}>
+                          {mode === 'group' && data.data[item.key]?.comment && !isMobile && <Tooltip content={data.data[item.key]?.comment}>
                             <BiCommentDetail />
                           </Tooltip>}
                         </td>

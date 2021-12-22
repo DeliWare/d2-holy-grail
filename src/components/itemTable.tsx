@@ -5,6 +5,7 @@ import normalized from '../utils/normalized';
 import ItemPreview from './itemPreview';
 import { BiCommentDetail } from 'react-icons/bi';
 import Tooltip from './tooltip';
+import { isMobile } from 'react-device-detect';
 
 function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -48,16 +49,16 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
               }}
             >
               <td className={item.type}>
-                <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
+                {isMobile ? item[lang] : <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
                   {item[lang]}
-                </Tooltip>
+                </Tooltip>}
               </td>
               {parsedProfile.map(({ user, data: { data } }) => (
                 <React.Fragment key={user}>
                   <td>
                     {data[item.key]?.count}
                     {' '}
-                    {data[item.key]?.comment && <Tooltip content={data[item.key]?.comment}>
+                    {mode === 'group' && data[item.key]?.comment && !isMobile && <Tooltip content={data[item.key]?.comment}>
                       <BiCommentDetail />
                     </Tooltip>}
                   </td>
