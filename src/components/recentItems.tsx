@@ -6,10 +6,11 @@ import { ITEM_PATH } from '../router/paths';
 import Tooltip from './tooltip';
 import ItemPreview from './itemPreview';
 import { BiCommentDetail } from 'react-icons/bi';
-import { isMobile } from 'react-device-detect';
+import useWindowSize from '../hooks/useWindowSize';
 
 function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
+  const { isMobile } = useWindowSize();
 
   const recentItems = parsedProfile
     .reduce((arr, { user, username, data: { data } }) => {

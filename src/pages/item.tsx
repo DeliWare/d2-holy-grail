@@ -29,7 +29,6 @@ function Item() {
   );
 
   const [itemState, setItemState] = useState(userItem || { count: 0 });
-  const [newComment, setNewComment] = useState(false);
 
   const canBeEthereal = !['rune', 'set'].includes(item.type);
   const canBePerfect = item.type !== 'rune';
@@ -94,12 +93,11 @@ function Item() {
           </label>
 
           <label>
-            <span>{lang === 'pl' ? 'Komentarz:' : 'Comment:'}</span>
+            <span>{lang === 'pl' ? 'Wybierz Komentarz:' : 'Select Comment:'}</span>
             <select
               id="comment"
               value={itemState.comment}
               name="comment"
-              disabled={newComment}
               onChange={onChange}
             >
               <option value=""></option>
@@ -109,20 +107,12 @@ function Item() {
                 </option>
               ))}
             </select>
-            <button type="button" onClick={() => setNewComment(true)} disabled={newComment}>
-              ➕
-            </button>
           </label>
 
-          {newComment && (
-            <label>
-              <span>{lang === 'pl' ? 'Dodaj nowy komentarz:' : 'Add new comment:'}</span>
-              <textarea name="comment" value={itemState.comment} onChange={onChange} />
-              <button type="button" onClick={() => setNewComment(false)}>
-                ➖
-              </button>
-            </label>
-          )}
+          <label>
+            <span>{lang === 'pl' ? 'Komentarz:' : 'Comment'}</span>
+            <textarea name="comment" value={itemState.comment} onChange={onChange} />
+          </label>
 
           {canBeEthereal && (
             <label>

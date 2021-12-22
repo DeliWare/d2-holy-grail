@@ -5,10 +5,12 @@ import normalized from '../utils/normalized';
 import ItemPreview from './itemPreview';
 import { BiCommentDetail } from 'react-icons/bi';
 import Tooltip from './tooltip';
-import { isMobile } from 'react-device-detect';
+import useWindowSize from '../hooks/useWindowSize';
 
 function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
   const navigate = useNavigate();
+  const { isMobile } = useWindowSize();
+
   const matchingItems = search
     ? filteredItems.filter((item) => normalized(item.search).includes(normalized(search)))
     : [];
