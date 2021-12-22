@@ -5,7 +5,7 @@ import { enUS, pl } from 'date-fns/locale';
 import { ITEM_PATH } from '../router/paths';
 import Tooltip from './tooltip';
 import ItemPreview from './itemPreview';
-import { BiCommentDetail } from 'react-icons/bi';
+import { BiCommentDetail, BiGhost, BiStar } from 'react-icons/bi';
 import useWindowSize from '../hooks/useWindowSize';
 
 function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
@@ -90,10 +90,11 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                       <React.Fragment key={user}>
                         <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
                           {data.data[item.key]?.count}
-                          {' '}
                           {mode === 'group' && data.data[item.key]?.comment && !isMobile && <Tooltip content={data.data[item.key]?.comment}>
                             <BiCommentDetail />
                           </Tooltip>}
+                          {data.data[item.key]?.perfect && <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'}/>}
+                          {data.data[item.key]?.ethereal && <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'}/>}
                         </td>
                         {mode === 'solo' && <td>{data.data[item.key]?.comment}</td>}
                       </React.Fragment>

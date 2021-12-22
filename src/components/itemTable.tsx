@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ITEM_PATH } from '../router/paths';
 import normalized from '../utils/normalized';
 import ItemPreview from './itemPreview';
-import { BiCommentDetail } from 'react-icons/bi';
+import { BiCommentDetail, BiGhost, BiStar } from 'react-icons/bi';
 import Tooltip from './tooltip';
 import useWindowSize from '../hooks/useWindowSize';
 
@@ -59,10 +59,11 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
                 <React.Fragment key={user}>
                   <td>
                     {data[item.key]?.count}
-                    {' '}
                     {mode === 'group' && data[item.key]?.comment && !isMobile && <Tooltip content={data[item.key]?.comment}>
                       <BiCommentDetail />
                     </Tooltip>}
+                    {data[item.key]?.perfect && <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'}/>}
+                    {data[item.key]?.ethereal && <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'}/>}
                   </td>
                   {mode === 'solo' && <td>{data[item.key]?.comment}</td>}
                 </React.Fragment>

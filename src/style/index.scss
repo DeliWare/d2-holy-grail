@@ -158,6 +158,10 @@ table {
     &:first-child {
       border-left: $border;
     }
+
+    svg {
+      margin-left: 0.5em
+    }
   }
 }
 
