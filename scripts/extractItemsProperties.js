@@ -339,7 +339,7 @@ function getPropData(propNumber, key, item) {
     prop.par = item[`min${propNumber + 2}`];
   }
 
-  if (['fire-max', 'pois-max', 'pois-len'].includes(key)) {
+  if (['fire-max', 'pois-max', 'pois-len', '*enr'].includes(key)) {
     return null;
   }
 
@@ -636,7 +636,9 @@ function getArmorStats(itemDetails, item) {
 }
 
 function getOtherStats(itemDetails, item) {
-  return {};
+  return {
+    requiredLevel: item.lvlreq || 0
+  };
 }
 
 function getTypeClass(type) {
