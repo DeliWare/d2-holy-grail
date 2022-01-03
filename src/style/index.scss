@@ -281,7 +281,10 @@ svg {
   color: $colorRune;
 }
 
-.unique {
+.unique,
+.unique-weapon,
+.unique-armor,
+.unique-other {
   color: $colorUnique;
 }
 
@@ -320,4 +323,8 @@ svg {
   padding: 1em;
   border-radius: 3px;
   border: 1px solid $colorText;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }

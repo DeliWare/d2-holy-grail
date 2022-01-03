@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import RecentItems from '../components/recentItems';
-import { LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
+import { VIEW_KEY, LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
 import useAuth from '../hooks/useAuth';
 import { useProfile } from '../hooks/resources';
-import { getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
+import { getView, getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
 import items from '../items';
 import { DEFAULT_PATH } from '../router/paths';
 import useWindowSize from '../hooks/useWindowSize';
+import OrderItems from '../components/orderItems';
 
 function Home() {
   const { user } = useAuth();
@@ -17,6 +18,7 @@ function Home() {
   const navigate = useNavigate();
   const [type, setType] = useState(getType());
   const [mode, setMode] = useState(getMode());
+  const [view, setView] = useState(getView());
   const [lang, setLang] = useState(getLang());
   const search = params[DEFAULT_PATH()];
   const { isMobile } = useWindowSize();
@@ -35,6 +37,11 @@ function Home() {
   const saveMode = (value) => {
     setLocalStorage(MODE_KEY, value);
     setMode(value);
+  };
+
+  const saveView = (value) => {
+    setLocalStorage(VIEW_KEY, value);
+    setView(value);
   };
 
   const saveLang = (value) => {
@@ -77,10 +84,18 @@ function Home() {
           // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus={!isMobile}
         />
+        <button
+          onClick={() => saveView(view === 'recent' ? 'order' : 'recent')}
+          title={lang === 'pl' ? 'Domyślny widok' : 'Default view'}
+        >
+          {view === 'recent' ? (lang === 'pl' ? 'ostatnie' : 'recent') : lang === 'pl' ? 'nowy ład' : 'order'}
+        </button>
         <select className="right" value={type} onChange={saveType}>
           <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>
           <option value="rune">{lang === 'pl' ? 'runy' : 'runes'}</option>
-          <option value="unique">{lang === 'pl' ? 'unikaty' : 'uniques'}</option>
+          <option value="unique-weapon">{lang === 'pl' ? 'bronie' : 'weapons'}</option>
+          <option value="unique-armor">{lang === 'pl' ? 'pancerz' : 'armors'}</option>
+          <option value="unique-other">{lang === 'pl' ? 'inne' : 'others'}</option>
           <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
         </select>
         <button onClick={() => saveMode(mode === 'group' ? 'solo' : 'group')}>
@@ -96,17 +111,23 @@ function Home() {
             lang={lang}
             mode={mode}
             search={search}
+            type={type}
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}
           />
-        ) : (
+        ) : view === 'recent' ?
           <RecentItems
             lang={lang}
             mode={mode}
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}
+          /> : <OrderItems
+            lang={lang}
+            mode={mode}
+            parsedProfile={parsedProfile}
+            filteredItems={filteredItems}
           />
-        )}
+        }
       </main>
     </>
   );

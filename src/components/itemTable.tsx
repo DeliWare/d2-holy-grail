@@ -7,7 +7,7 @@ import { BiCommentDetail, BiGhost, BiStar } from 'react-icons/bi';
 import Tooltip from './tooltip';
 import useWindowSize from '../hooks/useWindowSize';
 
-function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
+function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
   const navigate = useNavigate();
   const { isMobile } = useWindowSize();
 
@@ -57,7 +57,7 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
               </td>
               {parsedProfile.map(({ user, data: { data } }) => (
                 <React.Fragment key={user}>
-                  <td>
+                  <td className="no-wrap">
                     {data[item.key]?.count}
                     {mode === 'group' && data[item.key]?.comment && !isMobile && <Tooltip content={data[item.key]?.comment}>
                       <BiCommentDetail />
@@ -74,6 +74,10 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems }) {
           <tr>
             <td colSpan={100} className="dimmed">
               {lang === 'pl' ? 'Nic nie znaleziono' : 'Nothing found'}
+              {type !== 'all' && <React.Fragment>
+                <br/>
+                {lang === 'pl' ? 'Uwaga! Filtr jest włączony' : 'Warning! Filter is on'}: {type}
+              </React.Fragment>}
             </td>
           </tr>
         )}

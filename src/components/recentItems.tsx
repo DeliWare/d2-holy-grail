@@ -88,7 +88,7 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                     </td>
                     {parsedProfile.map(({ user, data }) => (
                       <React.Fragment key={user}>
-                        <td className={mode === 'group' && user !== itemUser ? 'dimmed' : ''}>
+                        <td className={`${mode === 'group' && user !== itemUser ? 'dimmed' : ''} no-wrap`}>
                           {data.data[item.key]?.count}
                           {mode === 'group' && data.data[item.key]?.comment && !isMobile && <Tooltip content={data.data[item.key]?.comment}>
                             <BiCommentDetail />
