@@ -33,7 +33,7 @@ function loadData() {
 
 function loadItemNames() {
   if (itemNames === null) {
-    itemNames = JSON.parse(fs.readFileSync('../src/items/itemNames.json', 'utf8'));
+    itemNames = JSON.parse(fs.readFileSync('./data/itemNames.json', 'utf8'));
   }
 
   return itemNames;
@@ -865,7 +865,7 @@ function itemToParsedArray(item) {
     key: item.key,
     canBePerfect,
     canBeEthereal,
-    // item, // for development
+    item,
     en,
     pl: en
   };
