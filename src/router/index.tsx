@@ -6,11 +6,13 @@ import Login from '../pages/login';
 import Item from '../pages/item';
 import RequireAuth from './requireAuth';
 import RequireProfile from './requireProfile';
+import ScrollToTop from './scrollToTop';
 import { DEFAULT_PATH, ITEM_PATH, LOGIN_PATH } from './paths';
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path={LOGIN_PATH()} element={<Login />} />
         <Route
