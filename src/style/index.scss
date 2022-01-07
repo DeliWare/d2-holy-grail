@@ -160,7 +160,7 @@ table {
     }
 
     svg {
-      margin-left: 0.5em
+      margin-left: 0.5em;
     }
   }
 }
@@ -172,7 +172,7 @@ a {
 
   &.link {
     line-height: 1.6em;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     margin-bottom: 1em;
 
     &:hover {
@@ -189,7 +189,7 @@ h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   margin: 20px 0 40px;
   font-family: $fontFamily;
   font-size: 28px;

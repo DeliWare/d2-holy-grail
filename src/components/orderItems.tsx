@@ -14,8 +14,9 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
   const groups = useMemo(() => {
     const sortOrderGroups = ['rune', 'set', 'unique-weapon', 'unique-armor', 'unique-other'];
 
-    return sortBy(sortBy(filteredItems
-        .reduce((obj, { type, attr: { typeClass, tierName, set, tier } }) => {
+    return sortBy(
+      sortBy(
+        filteredItems.reduce((obj, { type, attr: { typeClass, tierName, set, tier } }) => {
           switch (type) {
             case 'rune':
               obj['Runes'] = {
@@ -44,12 +45,15 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
 
           return obj;
         }, {}),
-      (item) => item.tier), ({ type }) => sortOrderGroups.indexOf(type));
+        (item) => item.tier
+      ),
+      ({ type }) => sortOrderGroups.indexOf(type)
+    );
   }, [filteredItems]);
 
   const groupsWithItems = useMemo(() => {
-    return groups.map(group => {
-      group.items = filteredItems.filter(({ type, attr: { typeClass, tierName, set,isSet } }) => {
+    return groups.map((group) => {
+      group.items = filteredItems.filter(({ type, attr: { typeClass, tierName, set, isSet } }) => {
         if (group.type === 'rune') {
           return type === 'rune';
         }
@@ -68,31 +72,31 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
   return (
     <table>
       <thead>
-      <tr>
-        <th scope='col'>{lang === 'pl' ? 'Przedmiot' : 'Item'}</th>
-        {parsedProfile.map(({ username }) => (
-          <React.Fragment key={username}>
-            <th scope='col'>
-              {mode === 'solo' ? (
-                lang === 'pl' ? (
-                  'Ilość'
+        <tr>
+          <th scope="col">{lang === 'pl' ? 'Przedmiot' : 'Item'}</th>
+          {parsedProfile.map(({ username }) => (
+            <React.Fragment key={username}>
+              <th scope="col">
+                {mode === 'solo' ? (
+                  lang === 'pl' ? (
+                    'Ilość'
+                  ) : (
+                    'Count'
+                  )
                 ) : (
-                  'Count'
-                )
-              ) : (
-                <>
-                  {username.charAt(0).toUpperCase()}
-                  <span className='absolute'>{username}</span>
-                </>
-              )}
-            </th>
-            {mode === 'solo' && <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>}
-          </React.Fragment>
-        ))}
-      </tr>
+                  <>
+                    {username.charAt(0).toUpperCase()}
+                    <span className="absolute">{username}</span>
+                  </>
+                )}
+              </th>
+              {mode === 'solo' && <th>{lang === 'pl' ? 'Komentarz' : 'Comment'}</th>}
+            </React.Fragment>
+          ))}
+        </tr>
       </thead>
       <tbody>
-      {groupsWithItems.map((itemGroup) => (
+        {groupsWithItems.map((itemGroup) => (
           <React.Fragment key={itemGroup.en}>
             <tr className="sticky">
               <td colSpan={100}>{lang === 'pl' ? itemGroup.pl : itemGroup.en}</td>
@@ -106,19 +110,32 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
                   }}
                 >
                   <td className={item.type}>
-                    {isMobile ? item[lang] : <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
-                      {item[lang]}
-                    </Tooltip>}
+                    {isMobile ? (
+                      item[lang]
+                    ) : (
+                      <Tooltip
+                        content={<ItemPreview item={item} lang={lang} />}
+                        disableClass={true}
+                      >
+                        {item[lang]}
+                      </Tooltip>
+                    )}
                   </td>
                   {parsedProfile.map(({ user, data }) => (
                     <React.Fragment key={user}>
                       <td className="no-wrap">
                         {data.data[item.key]?.count}
-                        {mode === 'group' && data.data[item.key]?.comment && !isMobile && <Tooltip content={data.data[item.key]?.comment}>
-                          <BiCommentDetail />
-                        </Tooltip>}
-                        {data.data[item.key]?.perfect && <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'}/>}
-                        {data.data[item.key]?.ethereal && <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'}/>}
+                        {mode === 'group' && data.data[item.key]?.comment && !isMobile && (
+                          <Tooltip content={data.data[item.key]?.comment}>
+                            <BiCommentDetail />
+                          </Tooltip>
+                        )}
+                        {data.data[item.key]?.perfect && (
+                          <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'} />
+                        )}
+                        {data.data[item.key]?.ethereal && (
+                          <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'} />
+                        )}
                       </td>
                       {mode === 'solo' && <td>{data.data[item.key]?.comment}</td>}
                     </React.Fragment>
@@ -127,8 +144,7 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
               );
             })}
           </React.Fragment>
-        )
-      )}
+        ))}
       </tbody>
     </table>
   );

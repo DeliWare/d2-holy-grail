@@ -25,23 +25,27 @@ function Tooltip({ children, content, disableClass = false }: Props) {
     <>
       {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
       <span
-        role='dialog'
+        role="dialog"
         ref={reference}
         onMouseEnter={() => setIsVisible(true)}
         onMouseLeave={() => setIsVisible(false)}
-      >{children}</span>
-      {isVisible && <div
-        ref={floating}
-        className={disableClass ? '' : 'tooltip'}
-        style={{
-          position: strategy,
-          top: y ?? '',
-          left: x ?? '',
-          zIndex: 10
-        }}
       >
-        {content}
-      </div>}
+        {children}
+      </span>
+      {isVisible && (
+        <div
+          ref={floating}
+          className={disableClass ? '' : 'tooltip'}
+          style={{
+            position: strategy,
+            top: y ?? '',
+            left: x ?? '',
+            zIndex: 10
+          }}
+        >
+          {content}
+        </div>
+      )}
     </>
   );
 }

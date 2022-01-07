@@ -88,7 +88,13 @@ function Home() {
           onClick={() => saveView(view === 'recent' ? 'order' : 'recent')}
           title={lang === 'pl' ? 'Domyślny widok' : 'Default view'}
         >
-          {view === 'recent' ? (lang === 'pl' ? 'ostatnie' : 'recent') : lang === 'pl' ? 'nowy ład' : 'order'}
+          {view === 'recent'
+            ? lang === 'pl'
+              ? 'ostatnie'
+              : 'recent'
+            : lang === 'pl'
+            ? 'nowy ład'
+            : 'order'}
         </button>
         <select className="right" value={type} onChange={saveType}>
           <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>
@@ -115,19 +121,21 @@ function Home() {
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}
           />
-        ) : view === 'recent' ?
+        ) : view === 'recent' ? (
           <RecentItems
             lang={lang}
             mode={mode}
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}
-          /> : <OrderItems
+          />
+        ) : (
+          <OrderItems
             lang={lang}
             mode={mode}
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}
           />
-        }
+        )}
       </main>
     </>
   );

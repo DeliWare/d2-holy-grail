@@ -31,7 +31,7 @@ export function useUser(options = { manual: false }) {
     {
       url: MaxrollHost('grail?action=loadUser'),
       method: 'POST',
-      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` },
+      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` }
     },
     options
   );
@@ -42,7 +42,7 @@ export function useProfile(options = { manual: false }) {
     {
       url: MaxrollHost(`grail?action=loadProfile&id=${getLocalStorage(PROFILE_KEY)}`),
       method: 'POST',
-      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` },
+      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` }
     },
     options
   );
@@ -53,7 +53,7 @@ export function useSaveProfile(options = { manual: true }) {
     {
       url: MaxrollHost(`grail?action=saveProfile&id=${getLocalStorage(PROFILE_KEY)}`),
       method: 'POST',
-      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` },
+      headers: { Authorization: `Bearer ${getLocalStorage(TOKEN_KEY)}` }
     },
     options
   );

@@ -11,10 +11,11 @@ function ItemPreview({ item, lang }) {
   }
 
   return (
-    <section className='item-preview'>
-      {details && details[lang].map((prop) => {
-        return <div key={prop} dangerouslySetInnerHTML={{ __html: prop }} />;
-      })}
+    <section className="item-preview">
+      {details &&
+        details[lang].map((prop) => {
+          return <div key={prop} dangerouslySetInnerHTML={{ __html: prop }} />;
+        })}
     </section>
   );
 }

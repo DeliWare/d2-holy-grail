@@ -4,4 +4,3 @@ export function hashPassword(password: string): string {
   const SALT = 'SmartSalt';
   return MD5(`${SALT}${password}`);
 }
-

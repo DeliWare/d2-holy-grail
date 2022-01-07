@@ -8,14 +8,14 @@ export interface Item {
 }
 
 export interface ItemAttr {
-  isSet? :boolean;
-  set? :string;
-  itemType? :any; // TODO
-  rarity? :number;
-  tier? :number;
-  tierName? :string;
-  type? :any; // TODO
-  typeClass? :any; // TODO
+  isSet?: boolean;
+  set?: string;
+  itemType?: any; // TODO
+  rarity?: number;
+  tier?: number;
+  tierName?: string;
+  type?: any; // TODO
+  typeClass?: any; // TODO
 }
 
 export interface ItemDetails {

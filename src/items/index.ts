@@ -3,16 +3,18 @@ import grailItems from './items.json';
 import { Item, ItemDetails, ItemAttr } from './types';
 
 const getItemDetails = (itemKey): ItemDetails => {
-  return grailItems.find(({key}) => key === itemKey);
-}
+  return grailItems.find(({ key }) => key === itemKey);
+};
 
 const getItemAttributes = (itemKey): ItemAttr | Partial<ItemAttr> => {
   const details = getItemDetails(itemKey);
   if (!details) {
-    return { };
+    return {};
   }
 
-  const { item: { isSet, set, itemType, rarity, tier, tierName, typeClass, type } } = details;
+  const {
+    item: { isSet, set, itemType, rarity, tier, tierName, typeClass, type }
+  } = details;
 
   return {
     isSet,
@@ -39,22 +41,32 @@ const mapItemNames = (items, type, customSearch = ''): Item[] =>
       pl,
       search,
       type,
-      attr,
+      attr
     };
   });
 
-const armorItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Armor' && !isSet);
-const weaponItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Weapon' && !isSet);
-const otherItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Other' && !isSet);
+const armorItems = grailItems.filter(
+  ({ item: { itemType, isSet } }) => itemType === 'Armor' && !isSet
+);
+const weaponItems = grailItems.filter(
+  ({ item: { itemType, isSet } }) => itemType === 'Weapon' && !isSet
+);
+const otherItems = grailItems.filter(
+  ({ item: { itemType, isSet } }) => itemType === 'Other' && !isSet
+);
 const setItems = grailItems.filter(({ item: { isSet } }) => isSet);
 const runeItems = Object.entries(runes).map(([key, name]: [string, string]) => ({ key, name }));
 
 const items: Item[] = [
   ...mapItemNames(weaponItems, 'unique-weapon', 'uniques unikaty waepon broń'),
   ...mapItemNames(armorItems, 'unique-armor', 'uniques unikaty armor pancerz'),
-  ...mapItemNames(otherItems, 'unique-other', 'uniques unikaty jewlery bizuteria talizman amulet pierscien ring'),
+  ...mapItemNames(
+    otherItems,
+    'unique-other',
+    'uniques unikaty jewlery bizuteria talizman amulet pierscien ring'
+  ),
   ...mapItemNames(setItems, 'set', 'sets sety zestawy'),
-  ...mapItemNames(runeItems, 'rune', 'runes runa runy'),
-]
+  ...mapItemNames(runeItems, 'rune', 'runes runa runy')
+];
 
 export { items as default, getItemDetails };

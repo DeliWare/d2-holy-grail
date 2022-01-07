@@ -1,4 +1,11 @@
-import { VIEW_KEY, LANG_KEY, MODE_KEY, PROFILE_KEY, TYPE_KEY, USER_KEY } from '../config/localStorage';
+import {
+  VIEW_KEY,
+  LANG_KEY,
+  MODE_KEY,
+  PROFILE_KEY,
+  TYPE_KEY,
+  USER_KEY
+} from '../config/localStorage';
 
 export const getLocalStorage = (key: string) => window.localStorage.getItem(key);
 export const setLocalStorage = (key: string, value: string | number | object) =>

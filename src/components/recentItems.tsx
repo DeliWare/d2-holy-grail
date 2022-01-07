@@ -19,7 +19,7 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
           key,
           date,
           user,
-          username,
+          username
         });
       });
 
@@ -30,7 +30,7 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
   const groupedRecentItems = recentItems.reduce((obj, item) => {
     const dateDistance = formatDistanceToNowStrict(item.date, {
       addSuffix: true,
-      locale: lang === 'pl' ? pl : enUS,
+      locale: lang === 'pl' ? pl : enUS
     });
 
     obj[dateDistance] = obj[dateDistance] || [];
@@ -82,19 +82,36 @@ function RecentItems({ parsedProfile, lang, mode, filteredItems }) {
                     }}
                   >
                     <td className={item.type}>
-                      {isMobile ? item[lang] : <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
-                        {item[lang]}
-                      </Tooltip>}
+                      {isMobile ? (
+                        item[lang]
+                      ) : (
+                        <Tooltip
+                          content={<ItemPreview item={item} lang={lang} />}
+                          disableClass={true}
+                        >
+                          {item[lang]}
+                        </Tooltip>
+                      )}
                     </td>
                     {parsedProfile.map(({ user, data }) => (
                       <React.Fragment key={user}>
-                        <td className={`${mode === 'group' && user !== itemUser ? 'dimmed' : ''} no-wrap`}>
+                        <td
+                          className={`${
+                            mode === 'group' && user !== itemUser ? 'dimmed' : ''
+                          } no-wrap`}
+                        >
                           {data.data[item.key]?.count}
-                          {mode === 'group' && data.data[item.key]?.comment && !isMobile && <Tooltip content={data.data[item.key]?.comment}>
-                            <BiCommentDetail />
-                          </Tooltip>}
-                          {data.data[item.key]?.perfect && <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'}/>}
-                          {data.data[item.key]?.ethereal && <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'}/>}
+                          {mode === 'group' && data.data[item.key]?.comment && !isMobile && (
+                            <Tooltip content={data.data[item.key]?.comment}>
+                              <BiCommentDetail />
+                            </Tooltip>
+                          )}
+                          {data.data[item.key]?.perfect && (
+                            <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'} />
+                          )}
+                          {data.data[item.key]?.ethereal && (
+                            <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'} />
+                          )}
                         </td>
                         {mode === 'solo' && <td>{data.data[item.key]?.comment}</td>}
                       </React.Fragment>

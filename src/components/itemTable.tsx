@@ -51,19 +51,29 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
               }}
             >
               <td className={item.type}>
-                {isMobile ? item[lang] : <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
-                  {item[lang]}
-                </Tooltip>}
+                {isMobile ? (
+                  item[lang]
+                ) : (
+                  <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
+                    {item[lang]}
+                  </Tooltip>
+                )}
               </td>
               {parsedProfile.map(({ user, data: { data } }) => (
                 <React.Fragment key={user}>
                   <td className="no-wrap">
                     {data[item.key]?.count}
-                    {mode === 'group' && data[item.key]?.comment && !isMobile && <Tooltip content={data[item.key]?.comment}>
-                      <BiCommentDetail />
-                    </Tooltip>}
-                    {data[item.key]?.perfect && <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'}/>}
-                    {data[item.key]?.ethereal && <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'}/>}
+                    {mode === 'group' && data[item.key]?.comment && !isMobile && (
+                      <Tooltip content={data[item.key]?.comment}>
+                        <BiCommentDetail />
+                      </Tooltip>
+                    )}
+                    {data[item.key]?.perfect && (
+                      <BiStar title={lang === 'pl' ? 'Idealny' : 'Perfect'} />
+                    )}
+                    {data[item.key]?.ethereal && (
+                      <BiGhost title={lang === 'pl' ? 'Eteryczny' : 'Ethereal'} />
+                    )}
                   </td>
                   {mode === 'solo' && <td>{data[item.key]?.comment}</td>}
                 </React.Fragment>
@@ -74,10 +84,12 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
           <tr>
             <td colSpan={100} className="dimmed">
               {lang === 'pl' ? 'Nic nie znaleziono' : 'Nothing found'}
-              {type !== 'all' && <React.Fragment>
-                <br/>
-                {lang === 'pl' ? 'Uwaga! Filtr jest włączony' : 'Warning! Filter is on'}: {type}
-              </React.Fragment>}
+              {type !== 'all' && (
+                <React.Fragment>
+                  <br />
+                  {lang === 'pl' ? 'Uwaga! Filtr jest włączony' : 'Warning! Filter is on'}: {type}
+                </React.Fragment>
+              )}
             </td>
           </tr>
         )}
