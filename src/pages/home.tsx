@@ -29,6 +29,12 @@ function Home() {
     navigate(`/${encodeURIComponent(value)}`, { replace: true });
   };
 
+  const onKeyDown = ({ key }) => {
+    if (key === 'Delete') {
+      navigate('/', { replace: true });
+    }
+  };
+
   const saveType = ({ target: { value } }) => {
     setLocalStorage(TYPE_KEY, value);
     setType(value);
@@ -81,6 +87,7 @@ function Home() {
           placeholder={lang === 'pl' ? 'Szukaj' : 'Search'}
           value={search}
           onChange={onSearch}
+          onKeyDown={onKeyDown}
           // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus={!isMobile}
         />
