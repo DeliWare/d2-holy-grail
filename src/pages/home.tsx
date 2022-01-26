@@ -33,7 +33,8 @@ function Home() {
 
   const onKeyDown = ({ key }) => {
     if (key === 'Delete') {
-      navigate('/', { replace: true });
+      inputRef.current.value = '';
+      onChange();
     }
   };
 
