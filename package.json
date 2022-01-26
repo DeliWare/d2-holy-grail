@@ -37,7 +37,8 @@
     "lint": "eslint --fix ./src",
     "predeploy": "npm run build",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "convertItems": "node ./scripts/converter/main.js"
   },
   "eslintConfig": {
     "extends": [

@@ -12,7 +12,7 @@ const getItemAttributes = (itemKey): ItemAttr | Partial<ItemAttr> => {
     return { };
   }
 
-  const { item: { isSet, set, itemType, rarity, tier, tierName, typeClass, type } } = details;
+  const { item: { base: { isSet, set, itemType, rarity, tier, tierName, typeClass, type }} } = details;
 
   return {
     isSet,
@@ -43,10 +43,10 @@ const mapItemNames = (items, type, customSearch = ''): Item[] =>
     };
   });
 
-const armorItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Armor' && !isSet);
-const weaponItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Weapon' && !isSet);
-const otherItems = grailItems.filter(({ item: { itemType, isSet } }) => itemType === 'Other' && !isSet);
-const setItems = grailItems.filter(({ item: { isSet } }) => isSet);
+const armorItems = grailItems.filter(({ item: { base: { itemType, isSet } } }) => itemType === 'Armor' && !isSet);
+const weaponItems = grailItems.filter(({ item: { base: { itemType, isSet } } }) => itemType === 'Weapon' && !isSet);
+const otherItems = grailItems.filter(({ item: { base: { itemType, isSet } } }) => itemType === 'Other' && !isSet);
+const setItems = grailItems.filter(({ item: { base: { isSet } } }) => isSet);
 const runeItems = Object.entries(runes).map(([key, name]: [string, string]) => ({ key, name }));
 
 const items: Item[] = [
