@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import RecentItems from '../components/recentItems';
@@ -10,6 +10,7 @@ import items from '../items';
 import { DEFAULT_PATH } from '../router/paths';
 import useWindowSize from '../hooks/useWindowSize';
 import OrderItems from '../components/orderItems';
+import { debounce } from 'lodash-es';
 
 function Home() {
   const { user } = useAuth();
@@ -22,16 +23,18 @@ function Home() {
   const [lang, setLang] = useState(getLang());
   const search = params[DEFAULT_PATH()];
   const { isMobile } = useWindowSize();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const filteredItems = items.filter((item) => type === 'all' || item.type === type);
 
-  const onSearch = ({ target: { value } }) => {
-    navigate(`/${encodeURIComponent(value)}`, { replace: true });
-  };
+  const onChange = debounce(() => {
+    navigate(`/${encodeURIComponent(inputRef.current.value)}`, { replace: true });
+  }, 400);
 
   const onKeyDown = ({ key }) => {
     if (key === 'Delete') {
-      navigate('/', { replace: true });
+      inputRef.current.value = '';
+      onChange();
     }
   };
 
@@ -80,13 +83,14 @@ function Home() {
     <>
       <header>
         <input
+          ref={inputRef}
           className="grow"
           type="text"
           id="search"
           autoComplete="off"
           placeholder={lang === 'pl' ? 'Szukaj' : 'Search'}
-          value={search}
-          onChange={onSearch}
+          defaultValue={search}
+          onChange={onChange}
           onKeyDown={onKeyDown}
           // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus={!isMobile}
