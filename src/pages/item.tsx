@@ -76,8 +76,6 @@ function Item() {
     window.scrollTo(0, 0);
   }, []);
 
-  console.info(item.value.statPriority);
-
   return (
     <main>
       <section>
