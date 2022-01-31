@@ -157,6 +157,47 @@ table {
 
     &:first-child {
       border-left: $border;
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 1px;
+        bottom: 0;
+        width: 3px;
+      }
+    }
+
+    &.High {
+      &:before {
+        background-color: $colorHigh;
+      }
+    }
+
+    &.Med {
+      &:before {
+        background-color: $colorMed;
+      }
+    }
+
+    // &.Low {
+    //   &:before {
+    //     background-color: $colorLow;
+    //   }
+    // }
+
+    // &.None {
+    //   &:before {
+    //     background-color: $colorNone;
+    //   }
+    // }
+
+    &.TRASH {
+      &:before {
+        background-color: $colorTrash;
+      }
     }
 
     svg {

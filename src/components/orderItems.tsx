@@ -6,6 +6,7 @@ import ItemPreview from './itemPreview';
 import { sortBy } from 'lodash-es';
 import { BiCommentDetail, BiGhost, BiStar } from 'react-icons/bi';
 import useWindowSize from '../hooks/useWindowSize';
+import classNames from 'classnames';
 
 function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
   const navigate = useNavigate();
@@ -109,7 +110,7 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
                     navigate(ITEM_PATH(item.key));
                   }}
                 >
-                  <td className={item.type}>
+                  <td className={classNames(item.type, item.value?.value)}>
                     {isMobile ? (
                       item[lang]
                     ) : (

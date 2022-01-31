@@ -6,6 +6,7 @@ import ItemPreview from './itemPreview';
 import { BiCommentDetail, BiGhost, BiStar } from 'react-icons/bi';
 import Tooltip from './tooltip';
 import useWindowSize from '../hooks/useWindowSize';
+import classNames from 'classnames';
 
 function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
   const matchingItems = search
     ? filteredItems.filter((item) => normalized(item.search).includes(normalized(search)))
     : [];
+
+  console.info(matchingItems);
 
   return (
     <table>
@@ -50,7 +53,7 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
                 navigate(ITEM_PATH(item.key), { state: { search } });
               }}
             >
-              <td className={item.type}>
+              <td className={classNames(item.type, item.value?.value)}>
                 {isMobile ? (
                   item[lang]
                 ) : (

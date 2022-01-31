@@ -1,9 +1,16 @@
 $opacity: 0.3;
 $colorRune: #ffa800;
 $colorUnique: #c7b377;
+$colorRare: #ffff64;
 $colorMagic: #6969ff;
+$colorNormal: #ffffff;
 $colorRequirement: #ff4d4d;
 $colorSet: #0f0;
+$colorHigh: $colorUnique;
+$colorMed: $colorRare;
+$colorLow: $colorMagic;
+$colorNone: $colorNormal;
+$colorTrash: $colorRequirement;
 $colorPrimary: $colorUnique;
 $colorText: #eee;
 $colorTextDimmed: rgba($colorText, $opacity);

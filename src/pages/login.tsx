@@ -16,7 +16,6 @@ function Login() {
 
   useEffect(() => {
     if (data?.token) {
-      // @ts-expect-error location.state.from exists!
       const { from } = location.state || { from: { pathname: HOME_PATH() } };
 
       saveToken(data.token);
