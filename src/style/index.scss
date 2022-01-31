@@ -170,36 +170,6 @@ table {
       }
     }
 
-    &.High {
-      &:before {
-        background-color: $colorHigh;
-      }
-    }
-
-    &.Med {
-      &:before {
-        background-color: $colorMed;
-      }
-    }
-
-    // &.Low {
-    //   &:before {
-    //     background-color: $colorLow;
-    //   }
-    // }
-
-    // &.None {
-    //   &:before {
-    //     background-color: $colorNone;
-    //   }
-    // }
-
-    &.TRASH {
-      &:before {
-        background-color: $colorTrash;
-      }
-    }
-
     svg {
       margin-left: 0.5em;
     }
@@ -321,6 +291,46 @@ svg {
 
 .logo {
   align-self: center;
+}
+
+.High {
+  color: $colorHigh;
+
+  &:before {
+    background-color: $colorHigh;
+  }
+}
+
+.Med {
+  color: $colorMed;
+
+  &:before {
+    background-color: $colorMed;
+  }
+}
+
+// .Low {
+//   color: $colorLow;
+
+//   &:before {
+//     background-color: $colorLow;
+//   }
+// }
+
+// .None {
+//   color: $colorNone;
+
+//   &:before {
+//     background-color: $colorNone;
+//   }
+// }
+
+.TRASH {
+  color: $colorTrash;
+
+  &:before {
+    background-color: $colorTrash;
+  }
 }
 
 .white {

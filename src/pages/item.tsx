@@ -164,7 +164,7 @@ function Item() {
 
       {item.value && (
         <section>
-          <h2>{item.value.value}</h2>
+          <h2 className={item.value.value}>{item.value.value}</h2>
           {item.value.value !== 'TRASH' && (
             <>
               {item.value.details && <p>{item.value.details}</p>}
