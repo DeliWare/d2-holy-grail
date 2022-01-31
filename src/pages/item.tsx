@@ -76,6 +76,8 @@ function Item() {
     window.scrollTo(0, 0);
   }, []);
 
+  console.info(item.value.statPriority);
+
   return (
     <main>
       <section>
@@ -161,20 +163,31 @@ function Item() {
           </footer>
         </form>
       </section>
-      <section>
-        <ItemPreview item={item} lang={lang} />
-      </section>
 
       {item.value && (
         <section>
-          <h2>
-            {lang === 'pl' ? 'Wartość: ' : 'Value: '}
-            {item.value.value}
-          </h2>
-          {item.value.details && <p>{item.value.details}</p>}
-          {item.value.statPriority && <p>{item.value.statPriority}</p>}
+          <h2>{item.value.value}</h2>
+          {item.value.value !== 'TRASH' && (
+            <>
+              {item.value.details && <p>{item.value.details}</p>}
+              {item.value.statPriority && (
+                <>
+                  <span>Stat prio:</span>
+                  <ul>
+                    {item.value.statPriority.split('\n').map((prio) => (
+                      <li key={prio}>{prio}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </>
+          )}
         </section>
       )}
+
+      <section>
+        <ItemPreview item={item} lang={lang} />
+      </section>
 
       <section>
         <h2>{lang === 'pl' ? 'Zasoby' : 'Resources'}</h2>

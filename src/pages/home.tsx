@@ -25,7 +25,9 @@ function Home() {
   const { isMobile } = useWindowSize();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const filteredItems = items.filter((item) => type === 'all' || item.type === type);
+  const filteredItems = items.filter(
+    (item) => type === 'all' || item.type === type || item.value?.value === type
+  );
 
   const onChange = debounce(() => {
     navigate(`/${encodeURIComponent(inputRef.current.value)}`, { replace: true });
@@ -114,6 +116,11 @@ function Home() {
           <option value="unique-armor">{lang === 'pl' ? 'pancerz' : 'armors'}</option>
           <option value="unique-other">{lang === 'pl' ? 'inne' : 'others'}</option>
           <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
+          <option value="High">{lang === 'pl' ? 'wysoka' : 'high'}</option>
+          <option value="Med">{lang === 'pl' ? 'średnia' : 'medium'}</option>
+          <option value="Low">{lang === 'pl' ? 'niska' : 'low'}</option>
+          <option value="None">{lang === 'pl' ? 'żadna' : 'none'}</option>
+          <option value="TRASH">{lang === 'pl' ? 'śmieć' : 'trash'}</option>
         </select>
         <button onClick={() => saveMode(mode === 'group' ? 'solo' : 'group')}>
           {mode === 'group' ? (lang === 'pl' ? 'grupa' : 'group') : lang === 'pl' ? 'solo' : 'solo'}
