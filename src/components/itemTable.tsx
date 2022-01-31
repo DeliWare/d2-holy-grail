@@ -16,8 +16,6 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
     ? filteredItems.filter((item) => normalized(item.search).includes(normalized(search)))
     : [];
 
-  console.info(matchingItems);
-
   return (
     <table>
       <thead>
