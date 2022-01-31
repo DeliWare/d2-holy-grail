@@ -167,15 +167,21 @@ function Item() {
           <h2 className={item.value.value}>{item.value.value}</h2>
           {item.value.value !== 'TRASH' && (
             <>
-              {item.value.details && <p>{item.value.details}</p>}
+              {item.value.details && (
+                <ul>
+                  {item.value.details.split('\n').map((prio) => (
+                    <li key={prio}>{prio}</li>
+                  ))}
+                </ul>
+              )}
               {item.value.statPriority && (
                 <>
                   <span>Stat prio:</span>
-                  <ul>
+                  <ol>
                     {item.value.statPriority.split('\n').map((prio) => (
                       <li key={prio}>{prio}</li>
                     ))}
-                  </ul>
+                  </ol>
                 </>
               )}
             </>

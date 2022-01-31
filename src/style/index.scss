@@ -164,9 +164,9 @@ table {
         display: block;
         position: absolute;
         top: 0;
-        left: 1px;
+        left: 0;
         bottom: 0;
-        width: 3px;
+        width: 1px;
       }
     }
 
@@ -212,8 +212,21 @@ ul {
   margin-bottom: 1em;
 }
 
-li {
+ul {
+  list-style-type: disc;
+
+  li {
+    margin-left: 1em;
+  }
+}
+
+ol {
+  list-style-type: decimal;
   margin-left: 1em;
+
+  li {
+    margin-left: 1em;
+  }
 }
 
 label {
@@ -309,13 +322,13 @@ svg {
   }
 }
 
-// .Low {
-//   color: $colorLow;
+.Low {
+  color: $colorLow;
 
-//   &:before {
-//     background-color: $colorLow;
-//   }
-// }
+  &:before {
+    background-color: $colorLow;
+  }
+}
 
 // .None {
 //   color: $colorNone;
