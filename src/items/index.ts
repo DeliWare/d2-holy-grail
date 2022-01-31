@@ -29,7 +29,7 @@ const getItemAttributes = (itemKey): ItemAttr | Partial<ItemAttr> => {
 };
 
 const mapItemNames = (items, type, customSearch = ''): Item[] =>
-  items.map(({ item, key, name }) => {
+  items.map(({ item, key, name, value }) => {
     const en = item?.name?.en || item?.name?.key || name || key;
     const pl = item?.name?.pl || en;
     const attr = getItemAttributes(key);
@@ -41,7 +41,8 @@ const mapItemNames = (items, type, customSearch = ''): Item[] =>
       pl,
       search,
       type,
-      attr
+      attr,
+      value
     };
   });
 

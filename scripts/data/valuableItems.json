@@ -1,0 +1,3483 @@
+[
+  {
+    "key": "unique381",
+    "name": "Annihilus",
+    "value": "High",
+    "details": "Used on every build\nThe only Unique Small Charm",
+    "statPriority": "+x to all Attributes\nAll Resistances +x\n+x% to Experience Gained"
+  },
+  {
+    "key": "unique373",
+    "name": "Arachnid Mesh",
+    "value": "High",
+    "details": "Best in Slot for most Caster builds\nExample: Lightning Sentry Assassin",
+    "statPriority": null
+  },
+  {
+    "key": "unique268",
+    "name": "Bul-Kathos' Wedding Band",
+    "value": "High",
+    "details": "Best in Slot for +x to Skills reliant builds\nExample: Shock Wave Druid",
+    "statPriority": "x% Life stolen per hit"
+  },
+  {
+    "key": "unique344",
+    "name": "Crown of Ages",
+    "value": "High",
+    "details": "Recommended on most Hardcore builds\nExample: Poison Javelin Amazon\n",
+    "statPriority": "All Resistances +x\nDamage Reduced by x%\nSocketed (x)"
+  },
+  {
+    "key": "unique354",
+    "name": "Death's Fathom",
+    "value": "High",
+    "details": "Best damage Weapon for Cold Sorceress\nExample: Blizzard Sorceress",
+    "statPriority": "+x% to Cold Skill Damage\nLightning Resist +xx%\nFire Resist +xx%"
+  },
+  {
+    "key": "unique299",
+    "name": "Death's Web",
+    "value": "High",
+    "details": "Best in Slot for Poison Nova Necromancers",
+    "statPriority": "+x to Poison and Bone Skills\n-x% to Enemy Poison Resistance\n+x to Mana after each Kill\n+x to Life after each Kill"
+  },
+  {
+    "key": "unique367",
+    "name": "Eschuta's Temper",
+    "value": "High",
+    "details": "Best damage Weapon for\nLightning or Fire Sorceress",
+    "statPriority": "+x to Sorceress Skill Level\n+x% to Lightning Skill Damage\nOR\n+x% to Fire Skill Damage"
+  },
+  {
+    "key": "unique336",
+    "name": "Griffon's Eye",
+    "value": "High",
+    "details": "Best in Slot for most Lightning builds\nExample: Lightning Fury Amazon",
+    "statPriority": "-x% to Enemy Lightning Resistance\n+x% to Lightning Skill Damage"
+  },
+  {
+    "key": "unique248",
+    "name": "Harlequin Crest",
+    "value": "High",
+    "details": "Extremely sought after early on.\nBest in Slot on most Magic Find builds\nExample: Frozen Orb Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "unique400",
+    "name": "Hellfire Torch",
+    "value": "High",
+    "details": "Used on every build\nThe only Unique Large Charm\nValue depends on Class!\nSorceress > Paladin > Rest",
+    "statPriority": "+x to Class Skill Levels\n+x to all Attributes\nAll Resistances +x"
+  },
+  {
+    "key": "unique272",
+    "name": "Mara's Kaleidoscope",
+    "value": "High",
+    "details": "Most versatile Amulet for +x to Skills reliant builds\nExample: Summoner Necromancer",
+    "statPriority": "All Resistances +x"
+  },
+  {
+    "key": "unique343",
+    "name": "Nightwing's Veil",
+    "value": "High",
+    "details": "Best Helmet for damage on Cold Skill builds\nExample: Freezing Arrow Amazon",
+    "statPriority": "+x% to Cold Skill Damage\n+x to Dexterity\n+x Cold Absorb"
+  },
+  {
+    "key": "unique358",
+    "name": "Ormus' Robes",
+    "value": "High",
+    "details": "Best damage option for the Sorceress\nand niche Elemental damage builds\nExample: Blizzard Sorceress",
+    "statPriority": "+x to Skill (Sorceress Only)\n+x% to Cold Skill Damage*\n+x% to Lightning Skill Damage*\n+x% to Fire Skill Damage*\n*Only the Element of the build"
+  },
+  {
+    "key": "unique392",
+    "name": "Rainbow Facet",
+    "value": "High",
+    "details": "Increases the damage of builds using the type listed on the item.\nOnly valuable with perfect rolls, otherwise they're hard to trade.\nExample: Poison Nova Necromancer\nLightning > Cold > Fire > Poison",
+    "statPriority": "-x% to Enemy xx Resistance\n+x% to xx Skill Damage"
+  },
+  {
+    "key": "unique210",
+    "name": "Skin of the Vipermagi",
+    "value": "High",
+    "details": "Best in Slot for some Caster builds\nPowerful transition Item\nExample: Frozen Orb Meteor Sorceress",
+    "statPriority": "All Resistances +x\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "set077",
+    "name": "Tal Rasha's Adjudication",
+    "value": "High",
+    "details": "Best in Slot for Magic Find Sorceresses\nMostly used in combination with\nTal Rasha's Guardianship and Tal Rasha's Fine-Spun Cloth\nExample: Fire Wall Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "set079",
+    "name": "Tal Rasha's Guardianship",
+    "value": "High",
+    "details": "Best in Slot for Magic Find Sorceresses\nMostly used in combination with\nTal Rasha's Adjudication and Tal Rasha's Fine-Spun Cloth\nExample: Meteor Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "unique122",
+    "name": "The Stone of Jordan",
+    "value": "High",
+    "details": "Used to spawn Diablo Clone\nBest in Slot for builds that require +x to Skills",
+    "statPriority": null
+  },
+  {
+    "key": "unique240",
+    "name": "War Traveler",
+    "value": "High",
+    "details": "Best Boots for Magic Find builds\nBest in Slot for some Physical Damage builds\nExample: Multiple Shot Amazon",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique319",
+    "name": "Wisp Projector",
+    "value": "High",
+    "details": "Frequently used by Uber Tristram builds\nExample: Smite Paladin",
+    "statPriority": "Lightning Absorb x%\nx% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "set069",
+    "name": "Aldur's Advance",
+    "value": "Med",
+    "details": "Solid Boots that can be used on every build\nEspecially useful when in need of Fire Resist",
+    "statPriority": "Fire Resist +x%"
+  },
+  {
+    "key": "unique345",
+    "name": "Andariel's Visage",
+    "value": "Med",
+    "details": "Best in Slot for all Act 2 Mercenaries",
+    "statPriority": "+x% Life stolen per hit\n+x to Strength\n(Ethereal)"
+  },
+  {
+    "key": "unique341",
+    "name": "Boneflame",
+    "value": "Med",
+    "details": "Niche item\nHard to Trade",
+    "statPriority": "+x to Necromancer Skill Levels\nAll Resistances +x"
+  },
+  {
+    "key": "unique351",
+    "name": "Boneshade",
+    "value": "Med",
+    "details": "Solid option for Bone Spear Necromancers\nRequires good rolls\nHard to Trade because of White",
+    "statPriority": "+x to Bone Spear\n+x to Teeth\n+x to Bone Armor\n+x to Bone Spirit"
+  },
+  {
+    "key": "unique104",
+    "name": "Chance Guards",
+    "value": "Med",
+    "details": "Best Gloves for Magic and Gold Find builds\nExample: Gold Find Barbarian",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique364",
+    "name": "Dracul's Grasp",
+    "value": "Med",
+    "details": "Best in Slot for Melee Uber Tristram builds\nExample: Dragon Talon Assassin",
+    "statPriority": "+x to Strength\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique359",
+    "name": "Gheed's Fortune",
+    "value": "Med",
+    "details": "The only Unique Grand Charm\nUsed in most builds\nEspecially Magic and Gold Find builds\nExample: Gold Find Barbarian",
+    "statPriority": "All Stats are important\nPriority depends on the use"
+  },
+  {
+    "key": "set104",
+    "name": "Guillaume's Face",
+    "value": "Med",
+    "details": "Best in Slot for Melee Uber Tristram builds and Mercenaries in niche scenarios\nExample: Zeal Paladin",
+    "statPriority": null
+  },
+  {
+    "key": "unique285",
+    "name": "Herald of Zakarum",
+    "value": "Med",
+    "details": "Best in Slot for some Paladin builds\nExample: Zeal Paladin",
+    "statPriority": null
+  },
+  {
+    "key": "unique276",
+    "name": "Highlord's Wrath",
+    "value": "Med",
+    "details": "Best in Slot on many Attack builds\nExample: Dream Paladin",
+    "statPriority": null
+  },
+  {
+    "key": "unique280",
+    "name": "Homunculus",
+    "value": "Med",
+    "details": "Strong Item for Necromancers until Spirit is used\nBest in Slot when using Max Block\nExample: Poison Nova Necromancer",
+    "statPriority": null
+  },
+  {
+    "key": "set071",
+    "name": "Immortal King's Soul Cage",
+    "value": "Med",
+    "details": "Rarest piece of the Immortal King Set\nThe complete Set is a solid option for the\nWhirlwind Barbarian early on",
+    "statPriority": null
+  },
+  {
+    "key": "unique105",
+    "name": "Magefist",
+    "value": "Med",
+    "details": "Best in Slot for most Caster builds\nEspecially strong on Fire Skill builds\nExample: Hydra Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "unique375",
+    "name": "Metalgrid",
+    "value": "Med",
+    "details": "Strong option for Attack builds that require Resistances and Attack Rating\nUsed for \"Iron Golem Respecs\" (See Tips & Tricks)\nExample: Dragon Talon Assassin",
+    "statPriority": "All Resistances +x\n+x to Attack Rating"
+  },
+  {
+    "key": "unique388",
+    "name": "Ondal's Wisdom",
+    "value": "Med",
+    "details": "Provides the rare Stat of +5% to Experience Gained\nFrequently used to reach high Levels",
+    "statPriority": "+x to All Skills\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "unique275",
+    "name": "Raven Frost",
+    "value": "Med",
+    "details": "Best in Slot for most Attack builds due to Cannot be Frozen\nExample: Frenzy Barbarian",
+    "statPriority": "+x to Dexterity\n+x to Attack Rating"
+  },
+  {
+    "key": "unique184",
+    "name": "Ribcracker",
+    "value": "Med",
+    "details": "Used on some Druid Shapeshifting builds\nRequires good rolls and Ethereal quality\nExample: Werewolf Fury Druid",
+    "statPriority": "+x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "unique369",
+    "name": "Sandstorm Trek",
+    "value": "Med",
+    "details": "Best in Slot on some build variants\nOften used in PVP and Hardcore\nHard to Trade\nExample: Blessed Hammer Paladin",
+    "statPriority": "+x to Strength\n+x to Dexterity\nEthereal"
+  },
+  {
+    "key": "unique309",
+    "name": "Shadow Dancer",
+    "value": "Med",
+    "details": "Highest Kick Damage Boots\nUsed for Prebuff and Faster Hit Recovery",
+    "statPriority": "+x to Shadow Disciplines\n+x to Dexterity"
+  },
+  {
+    "key": "unique391",
+    "name": "Steelrend",
+    "value": "Med",
+    "details": "Only used on PVP builds",
+    "statPriority": "+x% Enhanced Damage\n+x to Strength"
+  },
+  {
+    "key": "unique360",
+    "name": "Stormlash",
+    "value": "Med",
+    "details": "Niche Item that is rarely used\nHard to Trade\nExample: Dragon Talon Assassin",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique284",
+    "name": "The Oculus",
+    "value": "Med",
+    "details": "Best in Slot for Magic Find Sorceresses\nDangerous on Hardcore\nExample: Frozen Orb Meteor Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "unique326",
+    "name": "The Reaper's Toll",
+    "value": "Med",
+    "details": "Best in Slot on some Mercenaries of\nPhysical Damage builds\nExample: Werewolf Fury Druid",
+    "statPriority": "Ethereal\n+x% Enhanced Damage\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique338",
+    "name": "Thunderstroke",
+    "value": "Med",
+    "details": "Best in Slot for boss killing setups of the\nLightning Fury Amazon",
+    "statPriority": "+x to Javelin and Spear Skills"
+  },
+  {
+    "key": "unique281",
+    "name": "Titan's Revenge",
+    "value": "Med",
+    "details": "Best Unique Weapon for Amazons using the\nJavelin and Spear Skill tree\nExample: Poison Javelin Amazon",
+    "statPriority": "Ethereal\n+x% Enhanced Damage\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique298",
+    "name": "Tomb Reaver",
+    "value": "Med",
+    "details": "Best in Slot on niche builds\nRequires extremely good rolls\nExample: Werewolf Fury Druid",
+    "statPriority": "Socketed (3) required\nEthereal\n+x% Enhanced Damage\nAll Resistances +x\nx% Better Chance of Getting Magic Items\n+x to Life after each Kill\n+x% Damage to Undead"
+  },
+  {
+    "key": "unique376",
+    "name": "Verdungo's Hearty Cord",
+    "value": "Med",
+    "details": "Provides large amounts of survivability\nUsed mostly in PVP, Hardcore and niche builds\nExample: Zeal Paladin",
+    "statPriority": "Damage Reduced by x%\n+x to Vitality\nReplenish Life +x"
+  },
+  {
+    "key": "unique238",
+    "name": "Waterwalk",
+    "value": "Med",
+    "details": "Provide great survivability",
+    "statPriority": "+x to Life"
+  },
+  {
+    "key": "unique251",
+    "name": "Arkaine's Valor",
+    "value": "Low",
+    "details": "Only usable with +2 to All Skills",
+    "statPriority": "+x to All Skills"
+  },
+  {
+    "key": "unique279",
+    "name": "Arreat's Face",
+    "value": "Low",
+    "details": "Best in Slot on most Barbarian Attack builds\nExample: Frenzy Barbarian",
+    "statPriority": "x% Life stolen per hit"
+  },
+  {
+    "key": "unique157",
+    "name": "Blade of Ali Baba",
+    "value": "Low",
+    "details": "Solid Weapon-Swap for Magic and Gold Find builds\nValue drops quickly\nExample: Gold Find Barbarian",
+    "statPriority": null
+  },
+  {
+    "key": "unique310",
+    "name": "Cerebus' Bite",
+    "value": "Low",
+    "details": "Hard to Trade and requires a good roll\nAlternative Helmet for Shapeshifting Druid builds",
+    "statPriority": "+4 to Shape Shifting Skills\n+x% Life stolen per hit\nx% Bonus to Attack Rating\n+x to Feral Rage"
+  },
+  {
+    "key": "unique206",
+    "name": "Crown of Thieves",
+    "value": "Low",
+    "details": "Good option for mid-game Attack builds\nStrong Helmet on Gold Find builds and Mercenaries\nExample: Gold Find Barbarian",
+    "statPriority": "Priority depends on use:\nx% Extra Gold from Monsters\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique330",
+    "name": "Darkforce Spawn",
+    "value": "Low",
+    "details": "Niche Item that requires a good roll\nHard to trade",
+    "statPriority": "+x to Poison and Bone Skills\n+x to Summoning Skills\n+x to Curses"
+  },
+  {
+    "key": "unique216",
+    "name": "Duriel's Shell",
+    "value": "Low",
+    "details": "Strong early game Body Armor for Mercenaries and Characters alike due to Cannot Be Frozen and strong Resistances",
+    "statPriority": "Ethereal (for Mercenary)"
+  },
+  {
+    "key": "unique379",
+    "name": "Giant Skull",
+    "value": "Low",
+    "details": "Niche item for Bow builds and Act 1 Mercenaries\nHard to Trade",
+    "statPriority": "Socketed (2 required)\nx to Strength"
+  },
+  {
+    "key": "unique115",
+    "name": "Goldwrap",
+    "value": "Low",
+    "details": "Best in Slot for Magic and Gold Find builds\nExample: Berserk Barbarian",
+    "statPriority": "x% Extra Gold from Monsters"
+  },
+  {
+    "key": "unique241",
+    "name": "Gore Rider",
+    "value": "Low",
+    "details": "Best in Slot for some Attack builds\nExample: Dragon Talon Assassin",
+    "statPriority": "Base Item upgrade through Horadric Cube recipe (For the example build)"
+  },
+  {
+    "key": "set081",
+    "name": "Griswold's Valor",
+    "value": "Low",
+    "details": "Very good transitional Magic Find Helmet",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique218",
+    "name": "Guardian Angel",
+    "value": "Low",
+    "details": "Used for very high survivability due to higher Maximum Resistances and lower Dexterity requirement for max Chance to Block",
+    "statPriority": null
+  },
+  {
+    "key": "unique390",
+    "name": "Head Hunter's Glory",
+    "value": "Low",
+    "details": "Used in niche builds\nHard to trade",
+    "statPriority": "Socketed (3 required)\nFire Resist +x%\n+x Life after each Kill"
+  },
+  {
+    "key": "unique371",
+    "name": "Heaven's Light",
+    "value": "Low",
+    "details": "Alternative Weapon option for melee Attack builds such as Smite and Zeal Paladin",
+    "statPriority": "+x% Enhanced Damage\n+x Life after each Demon Kill\n+x to Paladin Skill Levels"
+  },
+  {
+    "key": "set075",
+    "name": "Immortal King's Stone Crusher",
+    "value": "Low",
+    "details": "Only used in complete Immortal King Set gear setups\nMust have 40% Crushing Blow to be tradable\nHard to Trade",
+    "statPriority": "x% Chance of Crushing Blow"
+  },
+  {
+    "key": "set070",
+    "name": "Immortal King's Will",
+    "value": "Low",
+    "details": "Solid option for Magic and Gold Find Barbarians\nExample: Gold Find Barbarian",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique287",
+    "name": "Jalal's Mane",
+    "value": "Low",
+    "details": "Best in Slot for most Shapeshifting Druid builds\nExample: Rabies Druid",
+    "statPriority": null
+  },
+  {
+    "key": "unique357",
+    "name": "Kira's Guardian",
+    "value": "Low",
+    "details": "Good option to cap Resistances early on\nEspecially good for Attack builds due to\nCannot Be Frozen",
+    "statPriority": "All Resistances +x"
+  },
+  {
+    "key": "unique321",
+    "name": "Lacerator",
+    "value": "Low",
+    "details": "Best Unique Weapon for Throw Barbarians",
+    "statPriority": "+x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "set096",
+    "name": "Laying of Hands",
+    "value": "Low",
+    "details": "Best in Slot for many Attack builds\nHard to Trade\nExample: Multiple Shot Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "unique259",
+    "name": "Lightsabre",
+    "value": "Low",
+    "details": "Strong Weapon to Level-Up Melee Characters\nAlternative Weapon for Uber Tristram builds",
+    "statPriority": "+x% Enhanced Damage\nx% Mana stolen per hit"
+  },
+  {
+    "key": "set094",
+    "name": "M'avina's Caster",
+    "value": "Low",
+    "details": "Only used in full Mavina's Battle Hymn setups\nExample: Freezing Arrow Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "set090",
+    "name": "M'avina's True Sight",
+    "value": "Low",
+    "details": "Only used in full Mavina's Battle Hymn setups\nExample: Freezing Arrow Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "unique370",
+    "name": "Marrowwalk",
+    "value": "Low",
+    "details": "Best in Slot damage option for\nSummon Necromancers\nNiche uses on Uber Tristram builds",
+    "statPriority": "+x to Skeleton Mastery (Necromancer)\n+x to Strength"
+  },
+  {
+    "key": "unique120",
+    "name": "Nagelring",
+    "value": "Low",
+    "details": "Best in Slot for Magic Find builds\nExample: Berserk Barbarian",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "set065",
+    "name": "Natalya's Soul",
+    "value": "Low",
+    "details": "Very good early game Boots on most builds\nHard to Trade",
+    "statPriority": "Lightning Resist +x%\nCold Resist +x%"
+  },
+  {
+    "key": "unique243",
+    "name": "Razortail",
+    "value": "Low",
+    "details": "Best in Slot for most projectile builds\nExample: Lightning Fury Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "unique257",
+    "name": "Schaefer's Hammer",
+    "value": "Low",
+    "details": "Decent alternative for melee Attack builds",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique215",
+    "name": "Shaftstop",
+    "value": "Low",
+    "details": "Strong survivability option for melee Attack builds and Mercenaries",
+    "statPriority": "Ethereal (for Mercenaries)"
+  },
+  {
+    "key": "unique239",
+    "name": "Silkweave",
+    "value": "Low",
+    "details": "Highest Mana recovery Boots\nSolid option for high Area of Effect builds\nExample: Lightning Fury Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "unique217",
+    "name": "Skullder's Ire",
+    "value": "Low",
+    "details": "Strong option for early Magic Find\nGood for builds that don't require defensive Stats\nDrops in value quickly due to better setups\nExample: Lightning Fury Amazon",
+    "statPriority": "Ethereal"
+  },
+  {
+    "key": "unique203",
+    "name": "Stealskull",
+    "value": "Low",
+    "details": "Best in Slot for Magic Find Mercenaries\nHard to Trade",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique253",
+    "name": "Stormshield",
+    "value": "Low",
+    "details": "Best defensive Shield in the game\nHigh value in Hardcore\nExample: War Cry Barbarian",
+    "statPriority": null
+  },
+  {
+    "key": "unique242",
+    "name": "String of Ears",
+    "value": "Low",
+    "details": "Good option for early Attack builds",
+    "statPriority": "Damage Reduced by x%\nx% Life stolen per hit\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "set076",
+    "name": "Tal Rasha's Fine-Spun Cloth",
+    "value": "Low",
+    "details": "Best in Slot for Magic Find Sorceresses\nOnly used in combination with Tal Rasha's Guardianship and Tal Rasha's Adjudication",
+    "statPriority": "x% Better Chance of Getting Magic Items"
+  },
+  {
+    "key": "unique258",
+    "name": "The Cranium Basher",
+    "value": "Low",
+    "details": "Niche Weapon for melee Attack builds",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique246",
+    "name": "Thundergod's Vigor",
+    "value": "Low",
+    "details": "Higher damage option for Lightning Fury Amazons in low density scenarios\nFrequently used by Uber Tristram Builds for its Lightning Absorb",
+    "statPriority": null
+  },
+  {
+    "key": "set088",
+    "name": "Trang-Oul's Claws",
+    "value": "Low",
+    "details": "Best in Slot on some Caster Builds",
+    "statPriority": null
+  },
+  {
+    "key": "set089",
+    "name": "Trang-Oul's Girth",
+    "value": "Low",
+    "details": "Solid option to gain Cannot Be Frozen\nOften used in PVP",
+    "statPriority": null
+  },
+  {
+    "key": "unique208",
+    "name": "Vampire Gaze",
+    "value": "Low",
+    "details": "Best in Slot for some Mercenaries and niche melee Attack builds",
+    "statPriority": "Damage Reduced by x%\nx% Life stolen per hit\nx% Mana stolen per hit\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "unique292",
+    "name": "Warshrike",
+    "value": "Low",
+    "details": "Good option for Throw Barbarians\nHard to trade",
+    "statPriority": "x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "unique266",
+    "name": "Windforce",
+    "value": "Low",
+    "details": "Best in Slot for Physical Damage Bow Amazons\nExample: Multiple Shot Amazon",
+    "statPriority": "x% Mana stolen per hit"
+  },
+  {
+    "key": "unique262",
+    "name": "Wizardspike",
+    "value": "Low",
+    "details": "Super strong early-game option\nSituational in late-game\nHard to Trade",
+    "statPriority": null
+  },
+  {
+    "name": "Alma Negra",
+    "value": "None",
+    "details": "Niche for Zealers\nHard to Trade",
+    "statPriority": "+x% Enhanced Damage\n+x% Bonus to Attack Rating\n+x to Paladin Skill Levels\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "set052",
+    "name": "Angelic Halo",
+    "value": "None",
+    "details": "Used in combination of Angelic Wings\nUsed on PVP builds and during Leveling\nRarely in late-game",
+    "statPriority": null
+  },
+  {
+    "key": "set053",
+    "name": "Angelic Wings",
+    "value": "None",
+    "details": "Used in combination of Angelic Halo\nUsed on PVP builds and during Leveling\nRarely in late-game",
+    "statPriority": null
+  },
+  {
+    "key": "set056",
+    "name": "Arctic Binding",
+    "value": "None",
+    "details": "Decent Set for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "set055",
+    "name": "Arctic Furs",
+    "value": "None",
+    "details": "Decent Set for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "set054",
+    "name": "Arctic Horn",
+    "value": "None",
+    "details": "Decent Set for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "set057",
+    "name": "Arctic Mitts",
+    "value": "None",
+    "details": "Decent Set for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "unique141",
+    "name": "Arm of King Leoric",
+    "value": "None",
+    "details": "Good early-game Weapon for\nSummon Necromancer\nHard to Trade",
+    "statPriority": null
+  },
+  {
+    "key": "unique380",
+    "name": "Astreon's Iron Ward",
+    "value": "None",
+    "details": "Niche item in some melee Attack builds\nExamples: Smite and Zeal Paladin",
+    "statPriority": "Damage +x\n+x% Enhanced Damage\n+x% Bonus to Attack Rating\n+x to Combat Skills\nDamage Reduced by x"
+  },
+  {
+    "name": "Atmaâ€™s Scarab",
+    "value": "None",
+    "details": "Niche item for Physical Damage builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique301",
+    "name": "Azurewrath",
+    "value": "None",
+    "details": "Niche Act 3 or 5 Mercenary item",
+    "statPriority": "Level x Sanctuary Aura When Equipped\n+x to all Attributes"
+  },
+  {
+    "key": "unique256",
+    "name": "Baranar's Star",
+    "value": "None",
+    "details": "Versatile melee Leveling Weapon",
+    "statPriority": null
+  },
+  {
+    "key": "unique286",
+    "name": "Bartuc's Cut-Throat",
+    "value": "None",
+    "details": "Good early-game option for any Assassin build",
+    "statPriority": "+x% Enhanced Damage\nx% Life stolen per hit"
+  },
+  {
+    "key": "set044",
+    "name": "Berserker's Headgear",
+    "value": "None",
+    "details": "Strong early game option for Fire Resist",
+    "statPriority": null
+  },
+  {
+    "key": "unique142",
+    "name": "Blackhand Key",
+    "value": "None",
+    "details": "Good Necromancer Leveling Unique",
+    "statPriority": null
+  },
+  {
+    "key": "unique103",
+    "name": "Bloodfist",
+    "value": "None",
+    "details": "Best in Slot Leveling Unique for Leveling Characters",
+    "statPriority": null
+  },
+  {
+    "key": "unique152",
+    "name": "Bloodtree Stump",
+    "value": "None",
+    "details": "Decent Leveling Unique for Shapeshifting Druids or Whirlwind Barbarians",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique088",
+    "name": "Boneflesh",
+    "value": "None",
+    "details": "Decent early Leveling for Attack builds and Mercenary",
+    "statPriority": null
+  },
+  {
+    "key": "unique387",
+    "name": "Bonehew",
+    "value": "None",
+    "details": "Strong Mercenary option if Insight is not needed / available",
+    "statPriority": "+x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "unique023",
+    "name": "Bonesnap",
+    "value": "None",
+    "details": "Decent Leveling Unique for Shapeshifting Druids or Whirlwind Barbarians",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique198",
+    "name": "Buriza-Do Kyanon",
+    "value": "None",
+    "details": "Low budget option for Multiple Shot Amazons",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique130",
+    "name": "Butcher's Pupil",
+    "value": "None",
+    "details": "Decent melee Attack Weapon in early-game",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "set118",
+    "name": "Cow King's Hide",
+    "value": "None",
+    "details": "Good Leveling Set\nFull Set can be used for Magic Find builds",
+    "statPriority": null
+  },
+  {
+    "key": "set117",
+    "name": "Cow King's Horns",
+    "value": "None",
+    "details": "Good Leveling Set\nFull Set can be used for Magic Find builds",
+    "statPriority": null
+  },
+  {
+    "key": "set119",
+    "name": "Cow King's Hooves",
+    "value": "None",
+    "details": "Good Leveling Set\nFull Set can be used for Magic Find builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique214",
+    "name": "Crow Caw",
+    "value": "None",
+    "details": "Good Low Level option for Mercenaries and Attack builds",
+    "statPriority": null
+  },
+  {
+    "key": "set099",
+    "name": "Credendum",
+    "value": "None",
+    "details": "Decent transitional Item due to All Resistances",
+    "statPriority": null
+  },
+  {
+    "key": "unique271",
+    "name": "Crescent Moon",
+    "value": "None",
+    "details": "Decent Amulet for Attack builds early on if in need of Mana and / or Life Leech",
+    "statPriority": "x% Mana stolen per hit\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique019",
+    "name": "Crushflange",
+    "value": "None",
+    "details": "Early Leveling Weapon for melee attack builds\nCan be used for Uber Tristram builds",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique083",
+    "name": "Darkglow",
+    "value": "None",
+    "details": "Good Armor for Mercenaries and Characters at low Levels due to All Resistances",
+    "statPriority": null
+  },
+  {
+    "key": "unique314",
+    "name": "Death Cleaver",
+    "value": "None",
+    "details": "Alternative Weapon if Grief is not available",
+    "statPriority": "+x% Enhanced Damage\n+x Life after each Kill"
+  },
+  {
+    "key": "set047",
+    "name": "Death's Hand",
+    "value": "None",
+    "details": "Only used in combination with the Death's Hand\nSometimes used on PVP builds",
+    "statPriority": null
+  },
+  {
+    "key": "set048",
+    "name": "Death's Guard",
+    "value": "None",
+    "details": "Only used in combination with the Death's Guard\nExtremely powerful low Level setup\nSometimes used on PVP builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique296",
+    "name": "Demon Limb",
+    "value": "None",
+    "details": "Frequently used to pre-buff Attack based Characters for additional Attack Rating",
+    "statPriority": null
+  },
+  {
+    "key": "unique260",
+    "name": "Doombringer",
+    "value": "None",
+    "details": "Iconic Weapon for melee Attack builds\nCan easily be replaced by other Weapons",
+    "statPriority": "+x% Enhanced Damage\n+x% Life stolen per hit"
+  },
+  {
+    "key": "unique274",
+    "name": "Dwarf Star",
+    "value": "None",
+    "details": "Best in Slot for Gold Find Characters\nSometimes used in PVP against Fire builds\nExample: Gold Find Barbarian",
+    "statPriority": "Magic Damage Reduced by x"
+  },
+  {
+    "key": "unique151",
+    "name": "Earthshaker",
+    "value": "None",
+    "details": "Good option for Leveling an Elemental Druid",
+    "statPriority": null
+  },
+  {
+    "key": "unique304",
+    "name": "Fleshripper",
+    "value": "None",
+    "details": "Good early game alternative for Smite Paladins",
+    "statPriority": null
+  },
+  {
+    "key": "unique106",
+    "name": "Frostburn",
+    "value": "None",
+    "details": "Best in Slot for Energy Shield builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique320",
+    "name": "Gargoyle's Bite",
+    "value": "None",
+    "details": "Only used on the very niche Throw Barbarian",
+    "statPriority": "+x% Enhanced Damage\nEthereal\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique110",
+    "name": "Goblin Toe",
+    "value": "None",
+    "details": "Best in Slot for Smite Paladins",
+    "statPriority": null
+  },
+  {
+    "key": "unique091",
+    "name": "Goldskin",
+    "value": "None",
+    "details": "Good option for early Gold Find Barbarians",
+    "statPriority": null
+  },
+  {
+    "key": "unique195",
+    "name": "Goldstrike Arch",
+    "value": "None",
+    "details": "Budget Weapon option for the Multiple Shot Amazons",
+    "statPriority": "+x% Enhanced Damage\n+x% Damage to Demons\n+x% Damage to Undead\nx% Bonus to Attack Rating"
+  },
+  {
+    "key": "set082",
+    "name": "Griswold's Heart",
+    "value": "None",
+    "details": "Good early game Mercenary Armor to reach the Strength needed for Colossus Voulge\nUsually socketed with Perfect Amethysts\nFull Set used in niche setups",
+    "statPriority": null
+  },
+  {
+    "key": "set084",
+    "name": "Griswold's Honor",
+    "value": "None",
+    "details": "Full Set used in niche setups\nHighest Faster Block Rate value in the game",
+    "statPriority": null
+  },
+  {
+    "key": "set083",
+    "name": "Griswold's Redemption",
+    "value": "None",
+    "details": "Full Set used in niche setups",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique039",
+    "name": "Gull",
+    "value": "None",
+    "details": "The best early game Magic Find Weapons",
+    "statPriority": null
+  },
+  {
+    "key": "set102",
+    "name": "Haemosu's Adamant",
+    "value": "None",
+    "details": "Decent early game Mercenary Armor",
+    "statPriority": null
+  },
+  {
+    "key": "unique361",
+    "name": "Halaberd's Reign",
+    "value": "None",
+    "details": "Potential +4 to Battle Orders Helmet for Support Barbarians",
+    "statPriority": "+x to Battle Orders\n+x to Battle Command\nReplenish Life +x"
+  },
+  {
+    "key": "unique084",
+    "name": "Hawkmail",
+    "value": "None",
+    "details": "Strong low Level Armor for Attack builds and Mercenaries",
+    "statPriority": null
+  },
+  {
+    "key": "unique169",
+    "name": "Heart Carver",
+    "value": "None",
+    "details": "Source of Find Item to Barbarians without spending Skill Points",
+    "statPriority": null
+  },
+  {
+    "key": "unique236",
+    "name": "Hellmouth",
+    "value": "None",
+    "details": "Niche item for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "unique254",
+    "name": "Hellslayer",
+    "value": "None",
+    "details": "Decent Weapon option for Shapeshifting Druids or Whirlwind Barbarians",
+    "statPriority": null
+  },
+  {
+    "key": "unique107",
+    "name": "Hotspur",
+    "value": "None",
+    "details": "Strong Leveling Unique\nSometimes used in PVP",
+    "statPriority": null
+  },
+  {
+    "key": "set003",
+    "name": "Hsarus' Iron Heel",
+    "value": "None",
+    "details": "Strong Leveling Item",
+    "statPriority": null
+  },
+  {
+    "key": "set005",
+    "name": "Hsarus' Iron Stay",
+    "value": "None",
+    "details": "Strong Leveling Item",
+    "statPriority": null
+  },
+  {
+    "key": "set110",
+    "name": "Hwanin's Blessing",
+    "value": "None",
+    "details": "Niche source of Prevent Monster Heal",
+    "statPriority": null
+  },
+  {
+    "key": "set111",
+    "name": "Hwanin's Justice",
+    "value": "None",
+    "details": "Good Mercenaries Weapon before insight",
+    "statPriority": null
+  },
+  {
+    "key": "set072",
+    "name": "Immortal King's Detail",
+    "value": "None",
+    "details": "Sometimes used in combination with Immortal King's Forge or Immortal King's Pillar\nMore commonly used in full Set",
+    "statPriority": null
+  },
+  {
+    "key": "set073",
+    "name": "Immortal King's Forge",
+    "value": "None",
+    "details": "Sometimes used in combination with Immortal King's Detail or Immortal King's Pillar\nMore commonly used in full Set",
+    "statPriority": null
+  },
+  {
+    "key": "set074",
+    "name": "Immortal King's Pillar",
+    "value": "None",
+    "details": "Sometimes used in combination with Immortal King's Detail or Immortal King's Forge\nMore commonly used in full Set",
+    "statPriority": null
+  },
+  {
+    "key": "set041",
+    "name": "Infernal Cranium",
+    "value": "None",
+    "details": "Low Level Resistance Helmet",
+    "statPriority": null
+  },
+  {
+    "key": "unique237",
+    "name": "Infernostride",
+    "value": "None",
+    "details": "Solid option for Gold Find builds\nExample: Gold Find Barbarian",
+    "statPriority": "x% Extra Gold from Monsters"
+  },
+  {
+    "key": "set011",
+    "name": "Iratha's Coil",
+    "value": "None",
+    "details": "Full Iratha's Finery Set helps capping Resistances easily in low Levels",
+    "statPriority": null
+  },
+  {
+    "key": "set009",
+    "name": "Iratha's Collar",
+    "value": "None",
+    "details": "Full Iratha's Finery Set helps capping Resistances easily in low Levels",
+    "statPriority": null
+  },
+  {
+    "key": "set012",
+    "name": "Iratha's Cord",
+    "value": "None",
+    "details": "Full Iratha's Finery Set helps capping Resistances easily in low Levels",
+    "statPriority": null
+  },
+  {
+    "key": "set010",
+    "name": "Iratha's Cuff",
+    "value": "None",
+    "details": "Full Iratha's Finery Set helps capping Resistances easily in low Levels",
+    "statPriority": null
+  },
+  {
+    "key": "unique308",
+    "name": "Jade Talon",
+    "value": "None",
+    "details": "Used on niche Martial Arts Assassin builds",
+    "statPriority": "+x% Enhanced Damage\n+x to Martial Arts\n+x to Shadow Disciplines\nAll Resistances +x\nx% Mana stolen per hit"
+  },
+  {
+    "key": "unique173",
+    "name": "Kelpie Snare",
+    "value": "None",
+    "details": "Strong Mercenary Weapon with a massive Slow effect",
+    "statPriority": "+x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "unique190",
+    "name": "Kuko Shakaku",
+    "value": "None",
+    "details": "Strong Leveling Bow for Amazons",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique235",
+    "name": "Lava Gout",
+    "value": "None",
+    "details": "Niche Leveling Gloves",
+    "statPriority": null
+  },
+  {
+    "key": "unique317",
+    "name": "Leviathan",
+    "value": "None",
+    "details": "Good survivability Armor for Mercenaries and melee Attack builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique230",
+    "name": "Lidless Wall",
+    "value": "None",
+    "details": "Best in Slot Caster Shield until Spirit",
+    "statPriority": "+x to Mana after each kill"
+  },
+  {
+    "key": "set091",
+    "name": "M'avina's Embrace",
+    "value": "None",
+    "details": "Only used in full Mavina's Battle Hymn setups\nExample: Freezing Arrow Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "set092",
+    "name": "M'avina's Icy Clutch",
+    "value": "None",
+    "details": "Only used in full Mavina's Battle Hymn setups\nExample: Freezing Arrow Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "set093",
+    "name": "M'avina's Tenet",
+    "value": "None",
+    "details": "Only used in full Mavina's Battle Hymn setups\nExample: Freezing Arrow Amazon",
+    "statPriority": null
+  },
+  {
+    "key": "unique011",
+    "name": "Maelstrom",
+    "value": "None",
+    "details": "Early game Weapon for Casters",
+    "statPriority": "+x to Corpse Explosion\n+x to Amplify Damage"
+  },
+  {
+    "key": "set106",
+    "name": "Magnus' Skin",
+    "value": "None",
+    "details": "Good Gloves for Leveling Attack builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique322",
+    "name": "Mang Song's Lesson",
+    "value": "None",
+    "details": "Used in niche Sorceress builds",
+    "statPriority": "-x% to Enemy Fire Resistance\n-x% to Enemy Cold Resistance\n-x% to Enemy Lightning Resistance"
+  },
+  {
+    "key": "set021",
+    "name": "Milabrega's Orb",
+    "value": "None",
+    "details": "Early game Magic Find Shield prior to Rhyme",
+    "statPriority": null
+  },
+  {
+    "key": "unique225",
+    "name": "Moser's Blessed Circle",
+    "value": "None",
+    "details": "High Resistance Shield\nUsed during Leveling and in Hardcore",
+    "statPriority": null
+  },
+  {
+    "key": "set121",
+    "name": "Naj's Light Plate",
+    "value": "None",
+    "details": "Solid mid game progression Armor",
+    "statPriority": null
+  },
+  {
+    "key": "set120",
+    "name": "Naj's Puzzler",
+    "value": "None",
+    "details": "Best Teleport staff in the game\nUsed before Enigma",
+    "statPriority": null
+  },
+  {
+    "key": "set063",
+    "name": "Natalya's Mark",
+    "value": "None",
+    "details": "Used in Full Natalya's Odium setups on niche Martial Arts Assassins",
+    "statPriority": null
+  },
+  {
+    "key": "set064",
+    "name": "Natalya's Shadow",
+    "value": "None",
+    "details": "Used in Full Natalya's Odium setups on niche Martial Arts Assassins",
+    "statPriority": "Socketed (3 required)"
+  },
+  {
+    "key": "set062",
+    "name": "Natalya's Totem",
+    "value": "None",
+    "details": "Used in Full Natalya's Odium setups on niche Martial Arts Assassins\nGood All Resistances Helmet",
+    "statPriority": "All Resistances +20\n+x to Strength\n+x to Dexterity"
+  },
+  {
+    "key": "unique300",
+    "name": "Nature's Peace",
+    "value": "None",
+    "details": "Used on Nihlathak farming builds",
+    "statPriority": "Damage Reduced by x"
+  },
+  {
+    "key": "unique114",
+    "name": "Nightsmoke",
+    "value": "None",
+    "details": "Good Leveling Belt due to All Resistances",
+    "statPriority": null
+  },
+  {
+    "key": "unique117",
+    "name": "Nokozan Relic",
+    "value": "None",
+    "details": "Strong Amulet in areas with high Fire Damage",
+    "statPriority": null
+  },
+  {
+    "key": "unique374",
+    "name": "Nosferatu's Coil",
+    "value": "None",
+    "details": "Niche Belt for Attack builds",
+    "statPriority": "x% Life stolen per hit"
+  },
+  {
+    "key": "unique201",
+    "name": "Peasant Crown",
+    "value": "None",
+    "details": "Strong +1 to All Skills Helmet for Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "unique223",
+    "name": "Que-Hegan's Wisdom",
+    "value": "None",
+    "details": "Used in niche scenarios and mid-game\nNova Sorceresses and Lightning Fury Amazons can benefit a lot from Mana after each Kill",
+    "statPriority": null
+  },
+  {
+    "key": "unique090",
+    "name": "Rattlecage",
+    "value": "None",
+    "details": "Good Mercenary option to provide Crushing Blow Used as Swap for Bosses on melee Attack builds during Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "unique061",
+    "name": "Raven Claw",
+    "value": "None",
+    "details": "Best in Slot Weapon for Enchant Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "unique350",
+    "name": "Ravenlore",
+    "value": "None",
+    "details": "Best in Slot for Elemental Fire Druid Builds",
+    "statPriority": "-x% to Enemy Fire Resistance\nAll Resistances +x\n+x to Energy"
+  },
+  {
+    "key": "unique183",
+    "name": "Razorswitch",
+    "value": "None",
+    "details": "Strong Caster option instead of Spirit + Ancient's Pledge combination",
+    "statPriority": null
+  },
+  {
+    "name": "theRisingSun",
+    "value": "None",
+    "details": "High reduction of incoming Fire Damage",
+    "statPriority": null
+  },
+  {
+    "key": "unique025",
+    "name": "Rixot's Keen",
+    "value": "None",
+    "details": "Low Level Weapon with Crushing Blow",
+    "statPriority": null
+  },
+  {
+    "key": "unique089",
+    "name": "Rockfleece",
+    "value": "None",
+    "details": "Early game survivability Armor for melee Attack builds and Mercenaries",
+    "statPriority": null
+  },
+  {
+    "key": "unique202",
+    "name": "Rockstopper",
+    "value": "None",
+    "details": "Extremely strong survivability Helmet for Leveling",
+    "statPriority": "Lightning Resist +x%\nFire Resist +x%\nCold Resist +x%"
+  },
+  {
+    "key": "unique313",
+    "name": "Rune Master",
+    "value": "None",
+    "details": "Used in PVP sometimes",
+    "statPriority": "Socketed (5 required)\nEthereal"
+  },
+  {
+    "key": "set123",
+    "name": "Sander's Paragon",
+    "value": "None",
+    "details": "Early game Magic Find Helmet",
+    "statPriority": null
+  },
+  {
+    "key": "set124",
+    "name": "Sander's Riprap",
+    "value": "None",
+    "details": "Great utility Boots while Leveling",
+    "statPriority": null
+  },
+  {
+    "key": "set126",
+    "name": "Sander's Superstition",
+    "value": "None",
+    "details": "Great for early Leveling prior to Spirit",
+    "statPriority": null
+  },
+  {
+    "key": "set125",
+    "name": "Sander's Taboo",
+    "value": "None",
+    "details": "Good early Leveling Gloves, especially for Attack builds",
+    "statPriority": null
+  },
+  {
+    "name": "Saracenâ€™s Chance",
+    "value": "None",
+    "details": "Temporary Resistance and Attribute Amulet",
+    "statPriority": "All Resistances +x"
+  },
+  {
+    "key": "set113",
+    "name": "Sazabi's Ghost Liberator",
+    "value": "None",
+    "details": "Niche Mercenary Item",
+    "statPriority": "+x to Life"
+  },
+  {
+    "key": "set114",
+    "name": "Sazabi's Mental Sheath",
+    "value": "None",
+    "details": "Mid game progression Helm",
+    "statPriority": "Lightning Resist +x%\nFire Resist +x%"
+  },
+  {
+    "name": "Seraphâ€™s Hymn",
+    "value": "None",
+    "details": "Used for +2 to All Skills",
+    "statPriority": "+x to Defensive Auras\n+x% Damage to Demons\n+x% Damage to Undead\n+x to Attack Rating against Demons\n+x to Attack Rating against Undead"
+  },
+  {
+    "key": "set035",
+    "name": "Sigon's Gage",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "set040",
+    "name": "Sigon's Guard",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "set038",
+    "name": "Sigon's Sabot",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "set037",
+    "name": "Sigon's Shelter",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "set036",
+    "name": "Sigon's Visor",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "set039",
+    "name": "Sigon's Wrap",
+    "value": "None",
+    "details": "Versatile Leveling Set",
+    "statPriority": null
+  },
+  {
+    "key": "unique092",
+    "name": "Silks of the Victor",
+    "value": "None",
+    "details": "It says +1 to All Skills",
+    "statPriority": null
+  },
+  {
+    "key": "unique312",
+    "name": "Soul Drainer",
+    "value": "None",
+    "details": "Used on builds that require Dual Leech",
+    "statPriority": "x% Mana stolen per hit\nx% Life stolen per hit"
+  },
+  {
+    "key": "unique042",
+    "name": "Spectral Shard",
+    "value": "None",
+    "details": "Budget Wizardspike for Caster Builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique135",
+    "name": "Spellsteel",
+    "value": "None",
+    "details": "Used as source of Teleport in your Weapon-swap",
+    "statPriority": "Magic Damage Reduced by x"
+  },
+  {
+    "key": "unique176",
+    "name": "Spire of Honor",
+    "value": "None",
+    "details": "Niche Mercenary Weapon",
+    "statPriority": "+x% Enhanced Damage\nEthereal"
+  },
+  {
+    "key": "unique356",
+    "name": "Spirit Ward",
+    "value": "None",
+    "details": "Niche Shield for high Chance to Block and Resistances",
+    "statPriority": "x% Increased Chance of Blocking\nAll Restiances +x\n+x Cold Absorb"
+  },
+  {
+    "key": "unique245",
+    "name": "Snowclash",
+    "value": "None",
+    "details": "Best in Slot damage Belt for the Blizzard Sorceress",
+    "statPriority": null
+  },
+  {
+    "key": "unique099",
+    "name": "Steelclash",
+    "value": "None",
+    "details": "Good low Level Shield option, especially for Paladins",
+    "statPriority": null
+  },
+  {
+    "key": "unique139",
+    "name": "Suicide Branch",
+    "value": "None",
+    "details": "Very strong alternative to Spirit",
+    "statPriority": null
+  },
+  {
+    "key": "set080",
+    "name": "Tal Rasha's Horadric Crest",
+    "value": "None",
+    "details": "Used on early game Mercenaries and\nfull Tal Rasha's Wrappings setups",
+    "statPriority": null
+  },
+  {
+    "key": "set078",
+    "name": "Tal Rasha's Lidless Eye",
+    "value": "None",
+    "details": "Used only in full Tal Rasha's Wrappings setups",
+    "statPriority": "+x to Cold Mastery\n+x to Fire Mastery\n+x to Lightning Mastery"
+  },
+  {
+    "key": "set032",
+    "name": "Tancred's Hobnails",
+    "value": "None",
+    "details": "Great early-game Magic Find option in combination with Tancred's Weird",
+    "statPriority": null
+  },
+  {
+    "key": "set033",
+    "name": "Tancred's Weird",
+    "value": "None",
+    "details": "Great early-game Magic Find option in combination with Tancred's Hobnails",
+    "statPriority": null
+  },
+  {
+    "key": "unique072",
+    "name": "Tarnhelm",
+    "value": "None",
+    "details": "Solid Magic Find option until Harlequin Crest",
+    "statPriority": "+x% Better Chance of Finding Magic Items"
+  },
+  {
+    "key": "unique111",
+    "name": "Tearhaunch",
+    "value": "None",
+    "details": "Decent early-game Boots with All Resistances",
+    "statPriority": null
+  },
+  {
+    "key": "set095",
+    "name": "Telling of Beads",
+    "value": "None",
+    "details": "It says +1 to All Skills\nGood early to mid-game Amulet",
+    "statPriority": null
+  },
+  {
+    "key": "unique366",
+    "name": "Templar's Might",
+    "value": "None",
+    "details": "Used in niche builds",
+    "statPriority": "+x to Strength\n+x to Vitality\n+x to Offensive Auras"
+  },
+  {
+    "key": "unique051",
+    "name": "The Battlebranch",
+    "value": "None",
+    "details": "Decent low Level Mercenary Weapon",
+    "statPriority": null
+  },
+  {
+    "name": "The Catâ€™s Eye",
+    "value": "None",
+    "details": "Strong Amulet for Attack builds that require Increased Attack Speed\nCheap alternative to Highlord's Wrath",
+    "statPriority": null
+  },
+  {
+    "key": "unique118",
+    "name": "The Eye of Etlich",
+    "value": "None",
+    "details": "Low Level Requirement Amulet with +1 to All Skills",
+    "statPriority": "x% Life stolen per hit\nAdds x - x Cold Damage"
+  },
+  {
+    "key": "unique250",
+    "name": "The Gladiator's Bane",
+    "value": "None",
+    "details": "Used on Mercenaries and Attack builds in niche situation (e.g. Nihlathak farming)",
+    "statPriority": "Damage Reduced by x\nMagic Damage Reduced by x"
+  },
+  {
+    "key": "unique000",
+    "name": "The Gnasher",
+    "value": "None",
+    "details": "Strong budget Weapon for Smiter",
+    "statPriority": null
+  },
+  {
+    "key": "unique261",
+    "name": "The Grandfather",
+    "value": "None",
+    "details": "Iconic Weapon used in niche melee builds",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique102",
+    "name": "The Hand of Broc",
+    "value": "None",
+    "details": "Usable in very low Levels Attack builds and builds with high demand for Mana",
+    "statPriority": null
+  },
+  {
+    "key": "unique389",
+    "name": "The Redeemer",
+    "value": "None",
+    "details": "Good option for Zeal Paladins until Grief",
+    "statPriority": "Damage +x\n+x% Enhanced Damage"
+  },
+  {
+    "key": "unique209",
+    "name": "The Spirit Shroud",
+    "value": "None",
+    "details": "Solid early-game option for Attack builds that require +x to All Skills",
+    "statPriority": "Magic Damage Reduced by x"
+  },
+  {
+    "key": "unique101",
+    "name": "The Ward",
+    "value": "None",
+    "details": "Alternative to Ancient's Pledge if rolled well",
+    "statPriority": "All Resistances +x"
+  },
+  {
+    "key": "unique227",
+    "name": "Tiamat's Rebuke",
+    "value": "None",
+    "details": "Very strong Leveling Shield for Attack builds",
+    "statPriority": "All Resistances +x"
+  },
+  {
+    "key": "set085",
+    "name": "Trang-Oul's Guise",
+    "value": "None",
+    "details": "Used on niche setups using the full Set",
+    "statPriority": null
+  },
+  {
+    "key": "set086",
+    "name": "Trang-Oul's Scales",
+    "value": "None",
+    "details": "Used on niche setups using the full Set",
+    "statPriority": null
+  },
+  {
+    "key": "set087",
+    "name": "Trang-Oul's Wing",
+    "value": "None",
+    "details": "Used on niche setups using the full Set",
+    "statPriority": "Fire Resist +x%"
+  },
+  {
+    "key": "unique082",
+    "name": "Twitchthroe",
+    "value": "None",
+    "details": "Solid early-game Armor for Attack builds",
+    "statPriority": null
+  },
+  {
+    "key": "unique311",
+    "name": "Tyrael's Might",
+    "value": "None",
+    "details": "Used in very niche builds\nRarest item in the game, making it a great trophy",
+    "statPriority": "All Resistances +x\n+x to Strength\n+x% Damage to Demons"
+  },
+  {
+    "key": "unique077",
+    "name": "Undead Crown",
+    "value": "None",
+    "details": "Early-game Mercenary helmet option",
+    "statPriority": null
+  },
+  {
+    "key": "unique205",
+    "name": "Valkyrie Wing",
+    "value": "None",
+    "details": "Strong early-game option for Amazons that require +x to Skills",
+    "statPriority": "+x to Amazon Skill Levels\n+x to Mana after each Kill"
+  },
+  {
+    "key": "unique249",
+    "name": "Veil of Steel",
+    "value": "None",
+    "details": "Good option for Mercenaries when socketed with a Hel Rune\nNot a Nightwing's Veil = Sad",
+    "statPriority": null
+  },
+  {
+    "key": "set018",
+    "name": "Vidala's Fetlock",
+    "value": "None",
+    "details": "Good early game Boots and strong option for early Magic Find builds in combination with Vidala's Snare",
+    "statPriority": null
+  },
+  {
+    "key": "set020",
+    "name": "Vidala's Snare",
+    "value": "None",
+    "details": "Niche option for early Magic Find builds in combination with Vidala's Fetlock",
+    "statPriority": null
+  },
+  {
+    "key": "unique097",
+    "name": "Wall of the Eyeless",
+    "value": "None",
+    "details": "Good option for low Level Caster builds\nEspecially good on Nova Sorceresses due to Mana after each Kill",
+    "statPriority": null
+  },
+  {
+    "key": "unique186",
+    "name": "Warpspear",
+    "value": "None",
+    "details": "Solid Utility Weapon-Swap to pre-buff Energy Shield",
+    "statPriority": null
+  },
+  {
+    "key": "set107",
+    "name": "Whitstan's Guard",
+    "value": "None",
+    "details": "Good Hardcore Shield option\nRequires the least amount of Dexterity for maximum Chance to Block",
+    "statPriority": null
+  },
+  {
+    "key": "unique331",
+    "name": "Widowmaker",
+    "value": "None",
+    "details": "Used in niche PVP builds",
+    "statPriority": "+x% Enhanced Damage\n+x to Guided Arrow"
+  },
+  {
+    "key": "set105",
+    "name": "Wilhelm's Pride",
+    "value": "None",
+    "details": "Niche item that provides Mana and Life stolen per hit",
+    "statPriority": null
+  },
+  {
+    "key": "unique337",
+    "name": "Windhammer",
+    "value": "None",
+    "details": "Decent mid-game option for melee builds like the Fury Druid or Whirlwind Barbarian",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique192",
+    "name": "Witchwild String",
+    "value": "None",
+    "details": "Niche Act 1 Mercenary option to provide Physical Damage builds with Amplify Damage",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique064",
+    "name": "Wizendraw",
+    "value": "None",
+    "details": "Strong early game option for Freezing Arrow Amazons",
+    "statPriority": "-x% to Enemy Cold Resistance\n+x% Enhanced Damage"
+  },
+  {
+    "key": "unique052",
+    "name": "Woestave",
+    "value": "None",
+    "details": "Good early-game Mercenary Weapon to provide Open Wounds and a 50% Slow effect",
+    "statPriority": "+x% Enhanced Damage"
+  },
+  {
+    "key": "unique355",
+    "name": "Wolfhowl",
+    "value": "None",
+    "details": "Only used on the very niche Werewolf Barbarian\nNeeds to roll very well",
+    "statPriority": "+x to Warcries\n+x to Werewolf\n+x to Lycanthropy\n+x to Feral Rage\n+x to Strength\n+x to Dexterity\n+x to Vitality"
+  },
+  {
+    "key": "unique075",
+    "name": "Wormskull",
+    "value": "None",
+    "details": "Early-game Mercenary Helmet for Life stolen per hit",
+    "statPriority": null
+  },
+  {
+    "key": "unique386",
+    "name": "Wraith Flight",
+    "value": "None",
+    "details": "Only used on the very niche Throw Barbarian",
+    "statPriority": "+x% Enhanced Damage\nEthereal\nx% Life Stolen per hit"
+  },
+  {
+    "key": "set067",
+    "name": "Aldur's Deception",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set068",
+    "name": "Aldur's Rhythm",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set066",
+    "name": "Aldur's Stony Gaze",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set051",
+    "name": "Angelic Mantle",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set050",
+    "name": "Angelic Sickle",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set059",
+    "name": "Arcanna's Deathwand",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set061",
+    "name": "Arcanna's Flesh",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set060",
+    "name": "Arcanna's Head",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set058",
+    "name": "Arcanna's Sign",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique382",
+    "name": "Arioc's Needle",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique179",
+    "name": "Athena's Wrath",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique220",
+    "name": "Atma's Wail",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique005",
+    "name": "Axe of Fechmar",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique054",
+    "name": "Bane Ash",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique150",
+    "name": "Baezil's Vortex",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set046",
+    "name": "Berserker's Hatchet",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set045",
+    "name": "Berserker's Hauberk",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique071",
+    "name": "Biggin's Bonnet",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique163",
+    "name": "Bing Sz Wang",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique221",
+    "name": "Black Hades",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique170",
+    "name": "Blackbog's Sharp",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique207",
+    "name": "Blackhorn's Face",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique178",
+    "name": "Blackleach Blade",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique252",
+    "name": "Blackoak Shield",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique036",
+    "name": "Blacktongue",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique002",
+    "name": "Bladebone",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique116",
+    "name": "Bladebuckle",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique066",
+    "name": "Blastbark",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique080",
+    "name": "Blinkbat's Form",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  { "name": "bloodcrescent", "value": "TRASH", "details": "TRASH", "statPriority": "TRASH" },
+  {
+    "key": "unique332",
+    "name": "Blood Raven's Charge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique154",
+    "name": "Bloodletter",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique289",
+    "name": "Bloodmoon",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique045",
+    "name": "Bloodthief",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique020",
+    "name": "Bloodrise",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique137",
+    "name": "Boneslayer Blade",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique008",
+    "name": "Brainhew",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set115",
+    "name": "Bul-Kathos' Sacred Charge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set116",
+    "name": "Bul-Kathos' Tribal Guardian",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique100",
+    "name": "Bverrit Keep",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique140",
+    "name": "Carin Shard",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique378",
+    "name": "Carrion Wind",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set026",
+    "name": "Cathan's Mesh",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set025",
+    "name": "Cathan's Rule",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set029",
+    "name": "Cathan's Seal",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set028",
+    "name": "Cathan's Sigil",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set027",
+    "name": "Cathan's Visage",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set002",
+    "name": "Civerb's Cudgel",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set001",
+    "name": "Civerb's Icon",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set000",
+    "name": "Civerb's Ward",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique185",
+    "name": "Chromatic Ire",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set007",
+    "name": "Cleglaw's Claw",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set008",
+    "name": "Cleglaw's Pincers",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set006",
+    "name": "Cleglaw's Tooth",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique193",
+    "name": "Cliffkiller",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique165",
+    "name": "Cloudcrack",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique073",
+    "name": "Coif of Glory",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique129",
+    "name": "Coldkill",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique155",
+    "name": "Coldsteel Eye",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique222",
+    "name": "Corpsemourn",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique162",
+    "name": "Crainte Vomir",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique383",
+    "name": "Cranebeak",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique032",
+    "name": "Culwen's Point",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set100",
+    "name": "Dangoon's Teaching",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set098",
+    "name": "Dark Adherent",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique143",
+    "name": "Dark Clan Crusher",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique204",
+    "name": "Darksight Helm",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set049",
+    "name": "Death's Touch",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique291",
+    "name": "Deathbit",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique001",
+    "name": "Deathspade",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique340",
+    "name": "Demon's Arch",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique199",
+    "name": "Demon Machine",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique325",
+    "name": "Demonhorn's Edge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique048",
+    "name": "Dimoak's Hew",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique290",
+    "name": "Djinn Slayer",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique070",
+    "name": "Doomslinger",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique347",
+    "name": "Dragonscale",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique074",
+    "name": "Duskdeep",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique265",
+    "name": "Eaglehorn",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique385",
+    "name": "Earth Shifter",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique191",
+    "name": "Endlesshail",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique324",
+    "name": "Ethereal Edge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique315",
+    "name": "Executioner's Justice",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique014",
+    "name": "Felloak",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique368",
+    "name": "Firelizard's Talons",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique353",
+    "name": "Flamebellow",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique147",
+    "name": "Fleshrender",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique365",
+    "name": "Frostwind",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique228",
+    "name": "Gerke's Sanctuary",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique335",
+    "name": "Gimmershred",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique158",
+    "name": "Ginther's Rift",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique333",
+    "name": "Ghostflame",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique234",
+    "name": "Ghoulhide",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique012",
+    "name": "Gravenspine",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique233",
+    "name": "Gravepalm",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique079",
+    "name": "Greyform",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique182",
+    "name": "Grim's Burning Dead",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique030",
+    "name": "Griswold's Edge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique028",
+    "name": "Gleamscythe",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique244",
+    "name": "Gloom's Trap",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique108",
+    "name": "Gorefoot",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique006",
+    "name": "Goreshovel",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique133",
+    "name": "Guardian Naga",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique293",
+    "name": "Gut Siphon",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique146",
+    "name": "Hand of Blessed Light",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique159",
+    "name": "Headstriker",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique093",
+    "name": "Heavenly Garb",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique069",
+    "name": "Hellcast",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique065",
+    "name": "Hellclap",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique328",
+    "name": "Hellrack",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique031",
+    "name": "Hellplague",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique156",
+    "name": "Hexfire",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique175",
+    "name": "Hone Sundan",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique306",
+    "name": "Horizon's Tornado",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique076",
+    "name": "Howltusk",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set004",
+    "name": "Hsarus' Iron Fist",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique009",
+    "name": "Humongous",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique181",
+    "name": "Husoldal Evo",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set109",
+    "name": "Hwanin's Refuge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set108",
+    "name": "Hwanin's Splendor",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique087",
+    "name": "Iceblink",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique068",
+    "name": "Ichorsting",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set043",
+    "name": "Infernal Sign",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set042",
+    "name": "Infernal Torch",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique212",
+    "name": "Iron Pelt",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique022",
+    "name": "Ironstone",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set015",
+    "name": "Isenhart's Case",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set016",
+    "name": "Isenhart's Horns",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set013",
+    "name": "Isenhart's Lightbrand",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set014",
+    "name": "Isenhart's Parry",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique131",
+    "name": "Islestrike",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique035",
+    "name": "Kinemil's Awl",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique015",
+    "name": "Knell Striker",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique231",
+    "name": "Lance Guard",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique046",
+    "name": "Lance of Yaggai",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique196",
+    "name": "Langer Briser",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique067",
+    "name": "Leadcrow",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique112",
+    "name": "Lenymo",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique282",
+    "name": "Lycander's Aim",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique283",
+    "name": "Lycander's Flank",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique194",
+    "name": "Magewrath",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique121",
+    "name": "Manald Heal",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique349",
+    "name": "Medusa's Gaze",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique255",
+    "name": "Messerschmidt's Reaver",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set023",
+    "name": "Milabrega's Diadem",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set024",
+    "name": "Milabrega's Robe",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set022",
+    "name": "Milabrega's Rod",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique149",
+    "name": "Moonfall",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set122",
+    "name": "Naj's Circlet",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique384",
+    "name": "Nord's Tenderizer",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set103",
+    "name": "Ondal's Almighty",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique094",
+    "name": "Pelta Lunata",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique180",
+    "name": "Pierre Tombale Couant",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique160",
+    "name": "Plague Bearer",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique059",
+    "name": "Pluckeye",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique132",
+    "name": "Pompeii's Wrath",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique197",
+    "name": "Pus Spitter",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique229",
+    "name": "Radament's Sphere",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique004",
+    "name": "Rakescar",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique294",
+    "name": "Razor's Edge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique044",
+    "name": "Razortine",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set097",
+    "name": "Rite of Passage",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique189",
+    "name": "Riphook",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique037",
+    "name": "Ripsaw",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique062",
+    "name": "Rogue's Bow",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique016",
+    "name": "Rusthandle",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set112",
+    "name": "Sazabi's Cobalt Redeemer",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique055",
+    "name": "Serpent Lord",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique033",
+    "name": "Shadowfang",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique334",
+    "name": "Shadow Killer",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique027",
+    "name": "Skewer of Krintiz",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique003",
+    "name": "Skull Splitter",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique188",
+    "name": "Skystrike",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique211",
+    "name": "Skin of the Flayed One",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique187",
+    "name": "Skull Collector",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique113",
+    "name": "Snakecord",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique050",
+    "name": "Soul Harvest",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique174",
+    "name": "Soulfeast Tine",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique034",
+    "name": "Soulflay",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique085",
+    "name": "Sparking Mail",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique363",
+    "name": "Spike Thorn",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique168",
+    "name": "Spineripper",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique056",
+    "name": "Spire of Lazarus",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique213",
+    "name": "Spirit Forge",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique327",
+    "name": "Spirit Keeper",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique348",
+    "name": "Steel Carapace",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique342",
+    "name": "Steel Pillar",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique297",
+    "name": "Steel Shade",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique024",
+    "name": "Steeldriver",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique049",
+    "name": "Steelgoad",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique307",
+    "name": "Stone Crusher",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique316",
+    "name": "Stoneraven",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique226",
+    "name": "Stormchaser",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique017",
+    "name": "Stormeye",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique096",
+    "name": "Stormguild",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique136",
+    "name": "Stormrider",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique171",
+    "name": "Stormspike",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique264",
+    "name": "Stormspire",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique063",
+    "name": "Stormstrike",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique018",
+    "name": "Stoutnail",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique148",
+    "name": "Sureshrill Frost",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique098",
+    "name": "Swordback Hold",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique167",
+    "name": "Swordguard",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set101",
+    "name": "Taebaek's Glory",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set030",
+    "name": "Tancred's Crowbill",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set034",
+    "name": "Tancred's Skull",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set031",
+    "name": "Tancred's Spine",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique161",
+    "name": "The Atlantean",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique081",
+    "name": "The Centurion",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique007",
+    "name": "The Chieftain",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique040",
+    "name": "The Diggler",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique043",
+    "name": "The Dragon Chang",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique078",
+    "name": "The Face of Horror",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique145",
+    "name": "The Fetid Sprinkler",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique153",
+    "name": "The Gavel of Pain",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique021",
+    "name": "The General's Tan Do Li Ga",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique053",
+    "name": "The Grim Reaper",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique172",
+    "name": "The Impaler",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique058",
+    "name": "The Iron Jang Bong",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique041",
+    "name": "The Jade Tan Do",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique119",
+    "name": "The Mahim-Oak Curio",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique177",
+    "name": "The Meat Scraper",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique138",
+    "name": "The Minotaur",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique038",
+    "name": "The Patriarch",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique057",
+    "name": "The Salamander",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique288",
+    "name": "The Scalper",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique047",
+    "name": "The Tannr Gorerod",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique164",
+    "name": "The Vile Husk",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique166",
+    "name": "Todesfaelle Flamme",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique219",
+    "name": "Toothrow",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique010",
+    "name": "Torch of Iro",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique109",
+    "name": "Treads of Cthon",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique095",
+    "name": "Umbral Disk",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique013",
+    "name": "Ume's Lament",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set019",
+    "name": "Vidala's Ambush",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "set017",
+    "name": "Vidala's Barb",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique224",
+    "name": "Visceratuant",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique323",
+    "name": "Viperfork",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique232",
+    "name": "Venom Grip",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique086",
+    "name": "Venom Ward",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique134",
+    "name": "Warlord's Trust",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique060",
+    "name": "Witherstring",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  },
+  {
+    "key": "unique144",
+    "name": "Zakarum's Hand",
+    "value": "TRASH",
+    "details": "TRASH",
+    "statPriority": "TRASH"
+  }
+]

@@ -1,10 +1,12 @@
 /* eslint-disable no-case-declarations */
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs');
+const path = require('path');
 
 let strings = null;
 let data = null;
 let itemNames = null;
+let valuableItems = null;
 
 const ITEM_TYPES_ENUM = {
   WEAPON: 'Weapon',
@@ -17,7 +19,7 @@ const FRAME_LENGTH = 25;
 
 function loadStrings() {
   if (strings === null) {
-    strings = JSON.parse(fs.readFileSync('./data/strings.json', 'utf8'));
+    strings = JSON.parse(fs.readFileSync(path.join(__dirname, './data/strings.json'), 'utf8'));
   }
 
   return strings;
@@ -25,7 +27,7 @@ function loadStrings() {
 
 function loadData() {
   if (data === null) {
-    data = JSON.parse(fs.readFileSync('./data/data.json', 'utf8'));
+    data = JSON.parse(fs.readFileSync(path.join(__dirname, './data/data.json'), 'utf8'));
   }
 
   return data;
@@ -33,10 +35,20 @@ function loadData() {
 
 function loadItemNames() {
   if (itemNames === null) {
-    itemNames = JSON.parse(fs.readFileSync('./data/itemNames.json', 'utf8'));
+    itemNames = JSON.parse(fs.readFileSync(path.join(__dirname, './data/itemNames.json'), 'utf8'));
   }
 
   return itemNames;
+}
+
+function loadValuableItems() {
+  if (valuableItems === null) {
+    valuableItems = JSON.parse(
+      fs.readFileSync(path.join(__dirname, './data/valuableItems.json'), 'utf8')
+    );
+  }
+
+  return valuableItems;
 }
 
 function findString(key) {
@@ -91,46 +103,50 @@ function getPropertyRangeOrValue(values, percent, disablePrefixSuffix) {
     prefix = '';
     suffix = '';
   }
-  return isSame ? `${prefix}${values[0]}${percent ? '%' : ''}${suffix}` : `${prefix}${values[0]}-${values[1]}${percent ? '%' : ''}${suffix}`;
+  return isSame
+    ? `${prefix}${values[0]}${percent ? '%' : ''}${suffix}`
+    : `${prefix}${values[0]}-${values[1]}${percent ? '%' : ''}${suffix}`;
 }
 
 function executePropFunction({ set, val, func, stat }, propData) {
   let itemStatCost = data.itemStatCost[stat];
   let fixedValues = propData.min === propData.max;
   let translation;
-  let percent = propData.key.includes('%') || [
-    'cast1',
-    'crush',
-    'swing1',
-    'swing2',
-    'swing3',
-    'move2',
-    'deadly',
-    'res-all',
-    'res-fire',
-    'res-cold',
-    'res-ltng',
-    'res-pois',
-    'res-cold-max',
-    'res-pois-max',
-    'res-fire-max',
-    'res-ltng-max',
-    'block',
-    'block2',
-    'ease',
-    'openwounds',
-    'item_maxdamage_percent_perlevel',
-    'item_damage_undead_perlevel',
-    'dmg-undead',
-    'extra-fire',
-    'extra-cold',
-    'extra-ltng',
-    'extra-pois',
-    'pierce-fire',
-    'pierce-cold',
-    'pierce-pois',
-    'pierce-ltng'
-  ].includes(propData.key);
+  let percent =
+    propData.key.includes('%') ||
+    [
+      'cast1',
+      'crush',
+      'swing1',
+      'swing2',
+      'swing3',
+      'move2',
+      'deadly',
+      'res-all',
+      'res-fire',
+      'res-cold',
+      'res-ltng',
+      'res-pois',
+      'res-cold-max',
+      'res-pois-max',
+      'res-fire-max',
+      'res-ltng-max',
+      'block',
+      'block2',
+      'ease',
+      'openwounds',
+      'item_maxdamage_percent_perlevel',
+      'item_damage_undead_perlevel',
+      'dmg-undead',
+      'extra-fire',
+      'extra-cold',
+      'extra-ltng',
+      'extra-pois',
+      'pierce-fire',
+      'pierce-cold',
+      'pierce-pois',
+      'pierce-ltng'
+    ].includes(propData.key);
 
   switch (func) {
     // case 3:
@@ -138,18 +154,27 @@ function executePropFunction({ set, val, func, stat }, propData) {
     //   break;
     case 5:
       itemStatCost = data.itemStatCost['mindamage'];
-      translation = getPropertyRangeOrValue([propData.min, propData.max], false) + findString(itemStatCost.descstrpos);
+      translation =
+        getPropertyRangeOrValue([propData.min, propData.max], false) +
+        findString(itemStatCost.descstrpos);
       break;
     case 6:
       itemStatCost = data.itemStatCost['maxdamage'];
-      translation = getPropertyRangeOrValue([propData.min, propData.max], false) + findString(itemStatCost.descstrpos);
+      translation =
+        getPropertyRangeOrValue([propData.min, propData.max], false) +
+        findString(itemStatCost.descstrpos);
       break;
     case 7:
       itemStatCost = data.itemStatCost['maxdamage'];
-      translation = getPropertyRangeOrValue([propData.min, propData.max], true) + findString('strModEnhancedDamage');
+      translation =
+        getPropertyRangeOrValue([propData.min, propData.max], true) +
+        findString('strModEnhancedDamage');
       break;
     case 10:
-      translation = getCharTreeString(propData.par).replace('+%d ', getPropertyRangeOrValue([propData.min, propData.max]));
+      translation = getCharTreeString(propData.par).replace(
+        '+%d ',
+        getPropertyRangeOrValue([propData.min, propData.max])
+      );
       break;
     case 11:
       const skill = getSkill(propData.par);
@@ -186,7 +211,10 @@ function executePropFunction({ set, val, func, stat }, propData) {
       fixedValues = true;
       break;
     case 14:
-      translation = `${findString('Socketable')} (${getFlatPropertyValue([propData.min, propData.max])}})}`;
+      translation = `${findString('Socketable')} (${getFlatPropertyValue([
+        propData.min,
+        propData.max
+      ])}})}`;
       break;
     // case 15:
     //   m(stat, null, a);
@@ -197,19 +225,27 @@ function executePropFunction({ set, val, func, stat }, propData) {
     case 17:
       fixedValues = true;
       let minMax = [CHARACTER_LEVEL * (propData.par / 8)];
-      translation = getPropertyRangeOrValue(minMax, percent) + findString(itemStatCost.descstrpos) + ' ' + findString('increaseswithplaylevelX');
+      translation =
+        getPropertyRangeOrValue(minMax, percent) +
+        findString(itemStatCost.descstrpos) +
+        ' ' +
+        findString('increaseswithplaylevelX');
 
       if (['item_replenish_quantity'].includes(stat)) {
         translation = findString(itemStatCost.descstrpos) + ' ' + propData.par;
       }
       if (['item_replenish_durability'].includes(stat)) {
-        translation = findString('ModStre9u').replace('%d', 1).replace('%d', 100 / propData.par);
+        translation = findString('ModStre9u')
+          .replace('%d', 1)
+          .replace('%d', 100 / propData.par);
       }
       break;
     case 19:
       const skill19 = getSkill(propData.par);
       translation = findString(itemStatCost.descstrpos);
-      translation = `${findString('strchrlvl')} ${propData.max} ${skill19.skill} ${translation.replace('%d', propData.min).replace('%d', propData.min)}`;
+      translation = `${findString('strchrlvl')} ${propData.max} ${skill19.skill} ${translation
+        .replace('%d', propData.min)
+        .replace('%d', propData.min)}`;
       break;
     case 20:
       itemStatCost = data.itemStatCost['item_indesctructible'];
@@ -217,11 +253,13 @@ function executePropFunction({ set, val, func, stat }, propData) {
       fixedValues = true;
       break;
     case 21:
-      translation = getPropertyRangeOrValue([propData.min, propData.max], false) + getCharAllSkillString(val);
+      translation =
+        getPropertyRangeOrValue([propData.min, propData.max], false) + getCharAllSkillString(val);
       break;
     case 22:
     case 24:
-      translation = getPropertyRangeOrValue([propData.min, propData.max], false) + getSkillName(propData.par);
+      translation =
+        getPropertyRangeOrValue([propData.min, propData.max], false) + getSkillName(propData.par);
       break;
     case 23:
       translation = 'Ethereal (Cannot be Repaired)';
@@ -231,11 +269,12 @@ function executePropFunction({ set, val, func, stat }, propData) {
     //   m(stat, ''.concat(val, '#x'), i);
     //   break;
     default:
-
       switch (propData.key) {
         case 'res-all':
-          translation = findString('strModAllResistances')
-            .replace('+%d', getPropertyRangeOrValue([propData.min, propData.max], false));
+          translation = findString('strModAllResistances').replace(
+            '+%d',
+            getPropertyRangeOrValue([propData.min, propData.max], false)
+          );
           break;
         case 'explosivearrow':
         case 'nofreeze':
@@ -245,14 +284,22 @@ function executePropFunction({ set, val, func, stat }, propData) {
           break;
         case 'manasteal':
         case 'lifesteal':
-          translation = getPercentPropertyValue([propData.min, propData.max]) + findString(itemStatCost.descstrpos);
+          translation =
+            getPercentPropertyValue([propData.min, propData.max]) +
+            findString(itemStatCost.descstrpos);
           break;
         case 'res-pois-len':
-          translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], true, true);
+          translation =
+            findString(itemStatCost.descstrpos) +
+            ' ' +
+            getPropertyRangeOrValue([propData.min, propData.max], true, true);
           break;
         case 'red-dmg':
         case 'red-mag':
-          translation = findString(itemStatCost.descstrpos) + ' ' + getPropertyRangeOrValue([propData.min, propData.max], false, true);
+          translation =
+            findString(itemStatCost.descstrpos) +
+            ' ' +
+            getPropertyRangeOrValue([propData.min, propData.max], false, true);
           break;
         case 'dmg-norm':
           translation = findString('strModMinDamageRange')
@@ -268,7 +315,9 @@ function executePropFunction({ set, val, func, stat }, propData) {
         case 'pierce-cold':
         case 'pierce-pois':
         case 'pierce-ltng':
-          translation = getPropertyRangeOrValue([-propData.min, -propData.max], percent) + findString(itemStatCost.descstrpos);
+          translation =
+            getPropertyRangeOrValue([-propData.min, -propData.max], percent) +
+            findString(itemStatCost.descstrpos);
           break;
         case 'fire-min':
         case 'dmg-fire':
@@ -279,17 +328,23 @@ function executePropFunction({ set, val, func, stat }, propData) {
         case 'pois-min':
         case 'dmg-pois':
           translation = findString('strModPoisonDamage')
-            .replace('%d', Math.round(propData.min * propData.par / 256))
+            .replace('%d', Math.round((propData.min * propData.par) / 256))
             .replace('%d', propData.par / FRAME_LENGTH);
           fixedValues = true;
           break;
         case 'thorns':
         case 'light-thorns':
-          translation = findString(itemStatCost.descstrpos) + ' ' + getFlatPropertyValue([propData.min, propData.max]);
+          translation =
+            findString(itemStatCost.descstrpos) +
+            ' ' +
+            getFlatPropertyValue([propData.min, propData.max]);
           break;
         case 'slow':
         case 'regen-mana':
-          translation = findString(itemStatCost.descstrpos) + ' ' + getPercentPropertyValue([propData.min, propData.max]);
+          translation =
+            findString(itemStatCost.descstrpos) +
+            ' ' +
+            getPercentPropertyValue([propData.min, propData.max]);
           break;
         case 'knock':
         case 'half-freeze':
@@ -297,16 +352,21 @@ function executePropFunction({ set, val, func, stat }, propData) {
           fixedValues = true;
           break;
         default:
-          if ([
-            'poisonlength',
-            'coldlength',
-            'item_extrablood',
-            'item_fastergethitrate',
-            'maxdurability'
-          ].includes(stat)) { // todo
+          if (
+            [
+              'poisonlength',
+              'coldlength',
+              'item_extrablood',
+              'item_fastergethitrate',
+              'maxdurability'
+            ].includes(stat)
+          ) {
+            // todo
             translation = stat;
           } else {
-            translation = getPropertyRangeOrValue([propData.min, propData.max], percent) + findString(itemStatCost.descstrpos);
+            translation =
+              getPropertyRangeOrValue([propData.min, propData.max], percent) +
+              findString(itemStatCost.descstrpos);
           }
       }
   }
@@ -314,7 +374,9 @@ function executePropFunction({ set, val, func, stat }, propData) {
   return {
     stat,
     func,
-    priority: (itemStatCost ? itemStatCost.descpriority || 0 : 0) + .001 * (itemStatCost ? itemStatCost.id || 0 : 0),
+    priority:
+      (itemStatCost ? itemStatCost.descpriority || 0 : 0) +
+      0.001 * (itemStatCost ? itemStatCost.id || 0 : 0),
     fixedValues,
     name: {
       en: translation,
@@ -360,12 +422,15 @@ function getPropData(propNumber, key, item) {
   }
 
   // TODO functions can be 7
-  const calculatedProp = executePropFunction({
-    set: property[1].set1,
-    val: property[1].val1,
-    func: property[1].func1,
-    stat: property[1].stat1
-  }, prop);
+  const calculatedProp = executePropFunction(
+    {
+      set: property[1].set1,
+      val: property[1].val1,
+      func: property[1].func1,
+      stat: property[1].stat1
+    },
+    prop
+  );
 
   const hideMaxMin = [11].includes(property[1].func1); // hide
   return {
@@ -400,8 +465,8 @@ function calculateItemDmg({ min, max }, item) {
   if (dmgPercent || dmgMaxPerLvl) {
     const dmgMaxPerLvlMax = dmgMaxPerLvl ? Math.floor(CHARACTER_LEVEL * 3) : 0;
 
-    result.min[0] = Math.floor(result.min[0] * (1 + (dmgPercent.min) / 100));
-    result.min[1] = Math.floor(result.min[1] * (1 + (dmgPercent.max) / 100));
+    result.min[0] = Math.floor(result.min[0] * (1 + dmgPercent.min / 100));
+    result.min[1] = Math.floor(result.min[1] * (1 + dmgPercent.max / 100));
     result.max[0] = Math.floor(result.max[0] * (1 + (dmgPercent.min + dmgMaxPerLvlMax) / 100));
     result.max[1] = Math.floor(result.max[1] * (1 + (dmgPercent.max + dmgMaxPerLvlMax) / 100));
   }
@@ -532,11 +597,16 @@ function getAttackSpeed(baseAttackSpeed, item, itemDetails) {
   }
 
   const speedBreakpoints = weaponAttackSpeed[weaponClass][index];
-  const translation = attackSpeed >= speedBreakpoints[3] ? findString('WeaponAttackVerySlow') :
-    attackSpeed >= speedBreakpoints[2] ? findString('WeaponAttackSlow') :
-      attackSpeed >= speedBreakpoints[1] ? findString('WeaponAttackNormal') :
-        attackSpeed >= speedBreakpoints[0] ? findString('WeaponAttackFast') :
-          findString('WeaponAttackVeryFast');
+  const translation =
+    attackSpeed >= speedBreakpoints[3]
+      ? findString('WeaponAttackVerySlow')
+      : attackSpeed >= speedBreakpoints[2]
+      ? findString('WeaponAttackSlow')
+      : attackSpeed >= speedBreakpoints[1]
+      ? findString('WeaponAttackNormal')
+      : attackSpeed >= speedBreakpoints[0]
+      ? findString('WeaponAttackFast')
+      : findString('WeaponAttackVeryFast');
 
   return {
     attackSpeed: {
@@ -588,8 +658,8 @@ function calculateItemArmor({ min, max }, item) {
 
   const ac = props.find(({ key }) => key === 'ac%');
   if (ac) {
-    result.min = Math.floor(result.min * (1 + (ac.min) / 100));
-    result.max = Math.floor(result.max * (1 + (ac.max) / 100));
+    result.min = Math.floor(result.min * (1 + ac.min / 100));
+    result.max = Math.floor(result.max * (1 + ac.max / 100));
   }
 
   const acLvl = props.find(({ key }) => key === 'ac/lvl');
@@ -688,7 +758,12 @@ function getItemBaseData(item) {
     return;
   }
 
-  const tier = itemDetails.code === itemDetails.ultracode ? 3 : itemDetails.code === itemDetails.ubercode ? 2 : 1;
+  const tier =
+    itemDetails.code === itemDetails.ultracode
+      ? 3
+      : itemDetails.code === itemDetails.ubercode
+      ? 2
+      : 1;
 
   return {
     itemType,
@@ -720,13 +795,9 @@ const CLASS_UNIQUE = 'unique';
 const CLASS_SET = 'set';
 const CLASS_REQUIREMENT = 'requirement';
 
-const ITEMS_NOT_ETHEREAL = [
-  'bow'
-];
+const ITEMS_NOT_ETHEREAL = ['bow'];
 
-const ITEMS_WITHOUT_DURABILITY = [
-  'bow'
-];
+const ITEMS_WITHOUT_DURABILITY = ['bow'];
 
 function getCanBePerfect(item) {
   return item.props.every((prop) => prop.fixedValues);
@@ -736,6 +807,22 @@ function getCanBeEthereal(item) {
   const weaponClass = item.stats.weaponClass;
 
   return !ITEMS_NOT_ETHEREAL.includes(weaponClass);
+}
+
+function getItemValue(item) {
+  const valuableItem = valuableItems.find(({ key }) => key === item.key);
+
+  if (valuableItem) {
+    const { value, details, statPriority } = valuableItem;
+
+    return {
+      value,
+      details,
+      statPriority
+    };
+  }
+
+  return {};
 }
 
 function getItemDurability(item) {
@@ -761,7 +848,23 @@ function getClassRestriction(item) {
       class: 'Necromancer'
     },
     {
-      items: ['am2', 'am7', 'amc', 'am1', 'am6', 'amb', 'am5', 'ama', 'amf', 'am9', 'am4', 'ame', 'am3', 'am8', 'amd'],
+      items: [
+        'am2',
+        'am7',
+        'amc',
+        'am1',
+        'am6',
+        'amb',
+        'am5',
+        'ama',
+        'amf',
+        'am9',
+        'am4',
+        'ame',
+        'am3',
+        'am8',
+        'amd'
+      ],
       class: 'Amazon'
     },
     {
@@ -799,6 +902,7 @@ function itemToParsedArray(item) {
   const isOther = item.itemType === ITEM_TYPES_ENUM.OTHER;
   const canBePerfect = getCanBePerfect(item);
   const canBeEthereal = getCanBeEthereal(item);
+  const value = getItemValue(item);
   const durability = getItemDurability(item);
   const classRestriction = getClassRestriction(item);
   const en = [];
@@ -813,26 +917,44 @@ function itemToParsedArray(item) {
   if (isWeapon) {
     // Damage
     if (item.stats.dmgThrowBase.min) {
-      en.push(`<span class='${CLASS_WHITE}'>Throw Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgThrowModified.min)} to ${getFlatPropertyValue(item.stats.dmgThrowModified.max)}</span>`);
+      en.push(
+        `<span class='${CLASS_WHITE}'>Throw Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(
+          item.stats.dmgThrowModified.min
+        )} to ${getFlatPropertyValue(item.stats.dmgThrowModified.max)}</span>`
+      );
     }
 
     if (item.stats.dmgBase.min) {
-      en.push(`<span class='${CLASS_WHITE}'>One-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgModified.min)} to ${getFlatPropertyValue(item.stats.dmgModified.max)}</span>`);
+      en.push(
+        `<span class='${CLASS_WHITE}'>One-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(
+          item.stats.dmgModified.min
+        )} to ${getFlatPropertyValue(item.stats.dmgModified.max)}</span>`
+      );
     }
 
     if (item.stats.dmgTwoHandedBase.min) {
-      en.push(`<span class='${CLASS_WHITE}'>Two-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.dmgTwoHeadedModified.min)} to ${getFlatPropertyValue(item.stats.dmgTwoHeadedModified.max)}</span>`);
+      en.push(
+        `<span class='${CLASS_WHITE}'>Two-Hand Damage:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(
+          item.stats.dmgTwoHeadedModified.min
+        )} to ${getFlatPropertyValue(item.stats.dmgTwoHeadedModified.max)}</span>`
+      );
     }
   }
 
   if (isArmor) {
     if (item.stats.armorModified) {
-      en.push(`<span class='${CLASS_WHITE}'>Defense:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(item.stats.armorModified.min)} to ${getFlatPropertyValue(item.stats.armorModified.max)}</span>`);
+      en.push(
+        `<span class='${CLASS_WHITE}'>Defense:</span> <span class='${CLASS_MAGIC}'>${getFlatPropertyValue(
+          item.stats.armorModified.min
+        )} to ${getFlatPropertyValue(item.stats.armorModified.max)}</span>`
+      );
     }
   }
 
   if (durability) {
-    en.push(`<span class='${CLASS_WHITE}'>Durability: ${item.durability} of ${item.durability}</span>`);
+    en.push(
+      `<span class='${CLASS_WHITE}'>Durability: ${item.durability} of ${item.durability}</span>`
+    );
   }
 
   if (classRestriction) {
@@ -840,11 +962,15 @@ function itemToParsedArray(item) {
   }
 
   if (item.stats.requiredDexterity) {
-    en.push(`<span class='${CLASS_REQUIREMENT}'>Required Dexterity: ${item.stats.requiredDexterity}</span>`);
+    en.push(
+      `<span class='${CLASS_REQUIREMENT}'>Required Dexterity: ${item.stats.requiredDexterity}</span>`
+    );
   }
 
   if (item.stats.requiredStrength) {
-    en.push(`<span class='${CLASS_REQUIREMENT}'>Required Strength: ${item.stats.requiredStrength}</span>`);
+    en.push(
+      `<span class='${CLASS_REQUIREMENT}'>Required Strength: ${item.stats.requiredStrength}</span>`
+    );
   }
 
   if (item.stats.requiredLevel) {
@@ -852,11 +978,15 @@ function itemToParsedArray(item) {
   }
 
   if (isWeapon) {
-    en.push(`<span class='${CLASS_WHITE}'>${item.typeClass.en} -</span> <span class='${item.stats.attackSpeed.modified ? CLASS_MAGIC : CLASS_WHITE}'>${item.stats.attackSpeed.en}</span>`);
+    en.push(
+      `<span class='${CLASS_WHITE}'>${item.typeClass.en} -</span> <span class='${
+        item.stats.attackSpeed.modified ? CLASS_MAGIC : CLASS_WHITE
+      }'>${item.stats.attackSpeed.en}</span>`
+    );
   }
 
   item.props
-    .filter(prop => !['dur'].includes(prop.key))
+    .filter((prop) => !['dur'].includes(prop.key))
     .forEach((prop) => {
       en.push(`<span class='${CLASS_MAGIC}'>${prop.name.en}</span>`);
     });
@@ -867,7 +997,8 @@ function itemToParsedArray(item) {
     canBeEthereal,
     item,
     en,
-    pl: en
+    pl: en,
+    value
   };
 }
 
@@ -875,6 +1006,7 @@ function convert() {
   loadStrings();
   loadData();
   loadItemNames();
+  loadValuableItems();
 
   const items = { ...data.uniqueItems, ...data.setItems };
   const res = Object.keys(items)
@@ -906,7 +1038,7 @@ function convert() {
       });
     });
 
-  fs.writeFileSync('../src/items/items.json', JSON.stringify(res));
+  fs.writeFileSync(path.join(__dirname, '../src/items/items.json'), JSON.stringify(res));
   console.log(`Success. Converted ${res.length} items`);
 }
 
@@ -914,10 +1046,7 @@ function getCharAllSkillString(index) {
   const charStats = data.charStats;
 
   const res = Object.values(charStats).reduce((acc, val) => {
-    return [
-      ...acc,
-      val.strallskills
-    ];
+    return [...acc, val.strallskills];
   }, []);
 
   return findString(res[index]);

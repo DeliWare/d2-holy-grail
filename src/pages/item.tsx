@@ -164,6 +164,18 @@ function Item() {
       <section>
         <ItemPreview item={item} lang={lang} />
       </section>
+
+      {item.value && (
+        <section>
+          <h2>
+            {lang === 'pl' ? 'Wartość: ' : 'Value: '}
+            {item.value.value}
+          </h2>
+          {item.value.details && <p>{item.value.details}</p>}
+          {item.value.statPriority && <p>{item.value.statPriority}</p>}
+        </section>
+      )}
+
       <section>
         <h2>{lang === 'pl' ? 'Zasoby' : 'Resources'}</h2>
         <a

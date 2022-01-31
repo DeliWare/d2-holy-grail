@@ -5,6 +5,7 @@ export interface Item {
   search: string;
   type: 'unique-weapon' | 'unique-armor' | 'unique-other' | 'set' | 'rune';
   attr: ItemAttr;
+  value?: ItemValue;
 }
 
 export interface ItemAttr {
@@ -25,4 +26,10 @@ export interface ItemDetails {
   item: any; // TODO
   en: string[];
   pl: string[];
+}
+
+export interface ItemValue {
+  value: string;
+  details: string;
+  statPriority: string;
 }
