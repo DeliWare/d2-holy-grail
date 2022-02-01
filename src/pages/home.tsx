@@ -69,7 +69,9 @@ function Home() {
         Object.entries(parsedData.data).forEach(([key, { count }]: [string, { count: string }]) => {
           const item = filteredItems.find((item) => item.key === key);
 
-          if (!item || !count) {
+          console.info(item, count);
+
+          if (!item || !Number(count)) {
             delete parsedData.data[key];
           }
         });
