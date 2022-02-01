@@ -167,6 +167,10 @@ table {
         left: 0;
         bottom: 0;
         width: 1px;
+
+        @media (min-width: 768px) {
+          width: 3px;
+        }
       }
     }
 
@@ -330,19 +334,19 @@ svg {
   }
 }
 
-// .None {
-//   color: $colorNone;
+.None {
+  color: $colorNone;
 
-//   &:before {
-//     background-color: $colorNone;
-//   }
-// }
+  &:before {
+    background-color: $colorNone;
+  }
+}
 
 .TRASH {
   color: $colorTrash;
 
   &:before {
-    background-color: $colorTrash;
+    content: none;
   }
 }
 
