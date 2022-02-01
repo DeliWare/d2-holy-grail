@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/d2-holy-grail/static/css/main.89828922.chunk.css",
-    "main.js": "/d2-holy-grail/static/js/main.659a40df.chunk.js",
-    "main.js.map": "/d2-holy-grail/static/js/main.659a40df.chunk.js.map",
+    "main.js": "/d2-holy-grail/static/js/main.6767fa3c.chunk.js",
+    "main.js.map": "/d2-holy-grail/static/js/main.6767fa3c.chunk.js.map",
     "runtime-main.js": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js",
     "runtime-main.js.map": "/d2-holy-grail/static/js/runtime-main.cb929bfb.js.map",
     "static/js/2.583adefd.chunk.js": "/d2-holy-grail/static/js/2.583adefd.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.cb929bfb.js",
     "static/js/2.583adefd.chunk.js",
     "static/css/main.89828922.chunk.css",
-    "static/js/main.659a40df.chunk.js"
+    "static/js/main.6767fa3c.chunk.js"
   ]
 }
