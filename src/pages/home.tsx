@@ -100,6 +100,7 @@ function Home() {
         <button
           onClick={() => saveView(view === 'recent' ? 'order' : 'recent')}
           title={lang === 'pl' ? 'Domyślny widok' : 'Default view'}
+          tabIndex={-1}
         >
           {view === 'recent'
             ? lang === 'pl'
@@ -109,7 +110,7 @@ function Home() {
             ? 'nowy ład'
             : 'order'}
         </button>
-        <select className="right" value={type} onChange={saveType}>
+        <select className="right" value={type} onChange={saveType} tabIndex={-1}>
           <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>
           <option value="rune">{lang === 'pl' ? 'runy' : 'runes'}</option>
           <option value="unique-weapon">{lang === 'pl' ? 'bronie' : 'weapons'}</option>
@@ -122,10 +123,10 @@ function Home() {
           <option value="None">{lang === 'pl' ? 'żadna' : 'none'}</option>
           <option value="TRASH">{lang === 'pl' ? 'śmieć' : 'trash'}</option>
         </select>
-        <button onClick={() => saveMode(mode === 'group' ? 'solo' : 'group')}>
+        <button onClick={() => saveMode(mode === 'group' ? 'solo' : 'group')} tabIndex={-1}>
           {mode === 'group' ? (lang === 'pl' ? 'grupa' : 'group') : lang === 'pl' ? 'solo' : 'solo'}
         </button>
-        <button onClick={() => saveLang(lang === 'pl' ? 'en' : 'pl')}>
+        <button onClick={() => saveLang(lang === 'pl' ? 'en' : 'pl')} tabIndex={-1}>
           {lang === 'pl' ? 'pl' : 'en'}
         </button>
       </header>

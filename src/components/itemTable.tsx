@@ -52,13 +52,15 @@ function ItemTable({ parsedProfile, search, lang, mode, filteredItems, type }) {
               }}
             >
               <td className={classNames(item.type, item.value?.value)}>
-                {isMobile ? (
-                  item[lang]
-                ) : (
-                  <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
-                    {item[lang]}
-                  </Tooltip>
-                )}
+                <button>
+                  {isMobile ? (
+                    item[lang]
+                  ) : (
+                    <Tooltip content={<ItemPreview item={item} lang={lang} />} disableClass={true}>
+                      {item[lang]}
+                    </Tooltip>
+                  )}
+                </button>
               </td>
               {parsedProfile.map(({ user, data: { data } }) => (
                 <React.Fragment key={user}>

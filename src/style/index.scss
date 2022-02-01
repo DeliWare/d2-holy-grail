@@ -177,6 +177,13 @@ table {
     svg {
       margin-left: 0.5em;
     }
+
+    button {
+      &:focus {
+        outline: 1px solid $colorText;
+        outline-offset: 3px;
+      }
+    }
   }
 }
 

@@ -111,16 +111,18 @@ function OrderItems({ parsedProfile, lang, mode, filteredItems }) {
                   }}
                 >
                   <td className={classNames(item.type, item.value?.value)}>
-                    {isMobile ? (
-                      item[lang]
-                    ) : (
-                      <Tooltip
-                        content={<ItemPreview item={item} lang={lang} />}
-                        disableClass={true}
-                      >
-                        {item[lang]}
-                      </Tooltip>
-                    )}
+                    <button>
+                      {isMobile ? (
+                        item[lang]
+                      ) : (
+                        <Tooltip
+                          content={<ItemPreview item={item} lang={lang} />}
+                          disableClass={true}
+                        >
+                          {item[lang]}
+                        </Tooltip>
+                      )}
+                    </button>
                   </td>
                   {parsedProfile.map(({ user, data }) => (
                     <React.Fragment key={user}>
