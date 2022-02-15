@@ -37,6 +37,12 @@ function Item() {
     setItemState({ ...itemState, [name]: value });
   };
 
+  const onKeyDown = ({ key }) => {
+    if (key === 'Escape') {
+      navigate(-1);
+    }
+  };
+
   const onDecrementCount = () => {
     setItemState({ ...itemState, count: Math.max(0, itemState.count - 1) });
   };
@@ -98,6 +104,7 @@ function Item() {
               value={Number(itemState.count).toString()}
               min={0}
               onChange={onChange}
+              onKeyDown={onKeyDown}
               autoComplete="off"
               // eslint-disable-next-line jsx-a11y/no-autofocus
               autoFocus={!isMobile}
