@@ -227,7 +227,9 @@ function Item() {
           Prices: itemforge.com
         </a>
         <a
-          href={`https://d2.maxroll.gg/d2-drop-calculator#mf100;item=${item.type},${item.key}`}
+          href={`https://d2.maxroll.gg/d2-drop-calculator#mf100;item=${item.type.split('-')[0]},${
+            item.key
+          }`}
           className="link"
           target={'_blank'}
           rel="noopener noreferrer"
