@@ -1,5 +1,5 @@
 /* eslint-disable no-case-declarations */
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const path = require('path');
 
@@ -1039,7 +1039,7 @@ function convert() {
     });
 
   fs.writeFileSync(path.join(__dirname, '../src/items/items.json'), JSON.stringify(res));
-  console.log(`Success. Converted ${res.length} items`);
+  console.log(`Success. Converted ${res.length} items.`);
 }
 
 function getCharAllSkillString(index) {

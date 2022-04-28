@@ -175,21 +175,16 @@ function Item() {
           {item.value.value !== 'TRASH' && (
             <>
               {item.value.details && (
-                <ul>
-                  {item.value.details.split('\n').map((prio) => (
-                    <li key={prio}>{prio}</li>
-                  ))}
-                </ul>
+                <p
+                  className="center item-value"
+                  dangerouslySetInnerHTML={{ __html: item.value.details }}
+                />
               )}
               {item.value.statPriority && (
-                <>
-                  <span>Stat prio:</span>
-                  <ol>
-                    {item.value.statPriority.split('\n').map((prio) => (
-                      <li key={prio}>{prio}</li>
-                    ))}
-                  </ol>
-                </>
+                <p
+                  className="center item-value"
+                  dangerouslySetInnerHTML={{ __html: item.value.statPriority }}
+                />
               )}
             </>
           )}
@@ -200,7 +195,7 @@ function Item() {
         <ItemPreview item={item} lang={lang} />
       </section>
 
-      <section>
+      <section className="center">
         <h2>{lang === 'pl' ? 'Zasoby' : 'Resources'}</h2>
         <a
           href={`https://diablo.fandom.com/wiki/${item.en}`}
