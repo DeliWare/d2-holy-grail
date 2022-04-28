@@ -34,7 +34,7 @@ const getValueableItems = async () => {
         name,
         value,
         details,
-        statPriority
+        statPriority: statPriority === '-' ? null : statPriority
       });
     }
 
