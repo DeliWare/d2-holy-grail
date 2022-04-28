@@ -2,10 +2,17 @@ import React, { useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import ItemTable from '../components/itemTable';
 import RecentItems from '../components/recentItems';
-import { VIEW_KEY, LANG_KEY, MODE_KEY, TYPE_KEY } from '../config/localStorage';
+import { VIEW_KEY, LANG_KEY, MODE_KEY, TYPE_KEY, PROFILE_KEY } from '../config/localStorage';
 import useAuth from '../hooks/useAuth';
 import { useProfile } from '../hooks/resources';
-import { getView, getLang, getMode, getType, setLocalStorage } from '../utils/localStorage';
+import {
+  getView,
+  getLang,
+  getMode,
+  getType,
+  setLocalStorage,
+  removeLocalStorage
+} from '../utils/localStorage';
 import items from '../items';
 import { DEFAULT_PATH } from '../router/paths';
 import useWindowSize from '../hooks/useWindowSize';
@@ -60,6 +67,11 @@ function Home() {
     setLang(value);
   };
 
+  const switchProfile = () => {
+    removeLocalStorage(PROFILE_KEY);
+    navigate(0);
+  };
+
   const parsedProfile =
     profile &&
     (mode === 'solo' ? profile.filter((profileUser) => profileUser.user === user) : profile).map(
@@ -97,6 +109,9 @@ function Home() {
           // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus={!isMobile}
         />
+        <button onClick={switchProfile} tabIndex={-1}>
+          {lang === 'pl' ? 'Profil' : 'Profile'}
+        </button>
         <button
           onClick={() => saveView(view === 'recent' ? 'order' : 'recent')}
           title={lang === 'pl' ? 'Domyślny widok' : 'Default view'}
