@@ -7,6 +7,7 @@ function ChooseProfile({ profiles, saveProfile }) {
 
   return (
     <select onChange={onChange}>
+      <option></option>
       {profiles.map((profile) => (
         <option key={profile.id} value={profile.id}>
           {profile.name}

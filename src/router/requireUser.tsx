@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCallback, useEffect, useState } from 'react';
-import { PROFILE_KEY } from '../config/localStorage';
+import { PROFILE_KEY, PROFILE_NAME } from '../config/localStorage';
 import { useUser } from '../hooks/resources';
 import { getLang, getProfile, setLocalStorage } from '../utils/localStorage';
 import ChooseProfile from '../components/chooseProfile';
@@ -15,10 +15,19 @@ function RequireUser({ children }) {
     name: JSON.parse(profile.data).name
   }));
 
-  const saveProfile = useCallback((profile: string) => {
-    setLocalStorage(PROFILE_KEY, profile);
-    setProfile(profile);
-  }, []);
+  const saveProfile = useCallback(
+    (profileId: string) => {
+      const profileName = profiles.find(({ id }) => id === profileId)?.name;
+
+      if (profileName) {
+        setLocalStorage(PROFILE_NAME, profiles.find(({ id }) => id === profileId)?.name);
+      }
+
+      setLocalStorage(PROFILE_KEY, profileId);
+      setProfile(profileId);
+    },
+    [profiles]
+  );
 
   useEffect(() => {
     if (!data) {
