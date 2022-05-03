@@ -65,7 +65,7 @@ function Home() {
     setMode(value);
   };
 
-  const saveView = (value) => {
+  const saveView = ({ target: { value } }) => {
     setLocalStorage(VIEW_KEY, value);
     setView(value);
   };
@@ -120,26 +120,18 @@ function Home() {
         <button onClick={switchProfile} tabIndex={-1}>
           {getLocalStorage(PROFILE_NAME) || (lang === 'pl' ? 'Profil' : 'Profile')}
         </button>
-        <button
-          onClick={() => saveView(view === 'recent' ? 'order' : 'recent')}
-          title={lang === 'pl' ? 'Domyślny widok' : 'Default view'}
-          tabIndex={-1}
-        >
-          {view === 'recent'
-            ? lang === 'pl'
-              ? 'ostatnie'
-              : 'recent'
-            : lang === 'pl'
-            ? 'nowy ład'
-            : 'order'}
-        </button>
+        <select className="right" value={view} onChange={saveView} tabIndex={-1}>
+          <option value="recent">{lang === 'pl' ? 'ostatnie' : 'recent'}</option>
+          <option value="loot">{lang === 'pl' ? 'łupy' : 'loot'}</option>
+          <option value="all">{lang === 'pl' ? 'wszystko' : 'all'}</option>
+        </select>
         <select className="right" value={type} onChange={saveType} tabIndex={-1}>
-          <option value="all">{lang === 'pl' ? 'wszystko' : 'everything'}</option>
+          <option value="all">{lang === 'pl' ? 'wszystko' : 'all'}</option>
           <option value="rune">{lang === 'pl' ? 'runy' : 'runes'}</option>
+          <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
           <option value="unique-weapon">{lang === 'pl' ? 'bronie' : 'weapons'}</option>
           <option value="unique-armor">{lang === 'pl' ? 'pancerz' : 'armors'}</option>
           <option value="unique-other">{lang === 'pl' ? 'inne' : 'others'}</option>
-          <option value="set">{lang === 'pl' ? 'zestawy' : 'sets'}</option>
           <option value="High">{lang === 'pl' ? 'wysoka' : 'high'}</option>
           <option value="Med">{lang === 'pl' ? 'średnia' : 'medium'}</option>
           <option value="Low">{lang === 'pl' ? 'niska' : 'low'}</option>
@@ -173,6 +165,7 @@ function Home() {
         ) : (
           <OrderItems
             lang={lang}
+            view={view}
             mode={mode}
             parsedProfile={parsedProfile}
             filteredItems={filteredItems}

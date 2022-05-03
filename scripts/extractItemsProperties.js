@@ -781,7 +781,7 @@ function getItemBaseData(item) {
     ...(itemType === ITEM_TYPES_ENUM.ARMOR && { stats: getArmorStats(itemDetails, item) }),
     ...(itemType === ITEM_TYPES_ENUM.OTHER && { stats: getOtherStats(itemDetails, item) }),
     durability: itemDetails.durability || null,
-    set: item.set || null,
+    set: itemNames[item.set] || null,
     isSet: !!item.set,
     tier,
     tierName: ['None', 'Normal', 'Exceptional', 'Elite'][tier],

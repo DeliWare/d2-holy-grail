@@ -147,6 +147,12 @@ table {
         color: $colorTextDimmed;
         z-index: 1;
       }
+
+      &.full {
+        td {
+          color: $colorText;
+        }
+      }
     }
   }
 
